@@ -1,2 +1,6 @@
 簡單來說，一個『boot loader』是當電腦開起來以後第一個跑的軟體\(當然看架構，像是PC上第一個跑得應該是BIOS，然後在將控制權交給boot loader\)，主要的工作是讀取kernel到RAM裡面以後然後將控制權交給kernel，然後kernel接力以後在啟動所有的硬體，其他的subsystems，將root filesystem掛載起來，最後在啟動init程序。
 
+
+
+Grub其中一個特質就是他的靈活性，因為Grub知道許多file system和kernel的格式，所以你可以直接讀取任何一個你想要的作業系統，並不需要知道他在磁碟上的實體位置，只要由kernel在的disk上的partiotion和你的檔案名稱就可以了。
+
