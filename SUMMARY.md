@@ -1,6 +1,6 @@
 # Summary
 
 * [Introduction](README.md)
-* [First Chapter](chapter1.md)
+* [bootload - Grub](bootload---grub.md)
 * [Ref](ref.md)
 
