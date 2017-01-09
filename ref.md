@@ -6,5 +6,3 @@
 
 [Ubuntu-Grub2](https://help.ubuntu.com/community/Grub2)
 
-[free-electrons-The GRUB bootloader](http://free-electrons.com/docs/grub/)
-
