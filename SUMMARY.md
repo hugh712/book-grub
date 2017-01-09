@@ -7,5 +7,6 @@
     * [Resolutions](resolutions.md)
 * Re-install
 * Modules
+* Serial Console
 * [Ref](ref.md)
 
