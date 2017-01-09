@@ -4,6 +4,7 @@
 * [bootload - Grub](bootload---grub.md)
 * [Settings](settings.md)
     * [Images](images.md)
-    * Resolutions
+    * [Resolutions](resolutions.md)
+* Re-install
 * [Ref](ref.md)
 
