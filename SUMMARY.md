@@ -6,5 +6,6 @@
     * [Images](images.md)
     * [Resolutions](resolutions.md)
 * Re-install
+* Modules
 * [Ref](ref.md)
 

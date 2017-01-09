@@ -6,3 +6,7 @@
 
 [Ubuntu-Grub2](https://help.ubuntu.com/community/Grub2)
 
+[Understanding the Various Grub Modules](http://www.linux.org/threads/understanding-the-various-grub-modules.7535/)
+
+
+
