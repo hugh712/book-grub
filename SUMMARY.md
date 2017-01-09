@@ -15,5 +15,4 @@
 * Re-install
 * Modules
 * Serial Console
-* Booting from network
 
