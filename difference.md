@@ -1,3 +1,5 @@
+# GRUB和GRUB2的主要差異
+
 GRUB2是修改GRUB而成的，主要的差異如下:
 
 * 組態檔名稱由『menu.lst』或是『grub.conf』改成『grub.cfg』，有新語法跟新的指令，所以GRUB的語法沒辦法直接拿過來GRUB2用。
@@ -19,6 +21,10 @@ GRUB2是修改GRUB而成的，主要的差異如下:
 * image files的組成跟之前不一樣，Stage 1, Stage 1.5和 Stage 2已經不存在了。
 
 * GRUB2將許多的功能都改成動態模組\(Dynamically loaded modules\)，所以主要的映像檔可以更小更有彈性。
+
+
+
+# GRUB的功能
 
 
 
