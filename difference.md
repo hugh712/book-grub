@@ -140,13 +140,9 @@ GRUB2的主要設計兼容於『[Multiboot Specification](https://www.gnu.org/so
 
 支援讀取各種BIOS可辨認的磁碟。
 
-
-
 ### Detect all installed RAM
 
 Grub2可以在PC兼容的PC上找到所有已經安裝的RAM，這部分是使用進階的BIOS技術來找到所有記憶體的區間，但是並不是所有的kernel都會用到這個資訊就對了。
-
-
 
 ### Support Logical Block Address mode
 
@@ -154,11 +150,9 @@ Grub2可以在PC兼容的PC上找到所有已經安裝的RAM，這部分是使�
 
 ### Support network booting
 
-
+雖然基礎上來說GRUB是個以磁碟為基礎的bootloader，但是它也支援網路功能，像是可以使用TFTP協定從網路讀取作業系統映像檔。
 
 ### Support remote terminals
 
-
-
-
+有些電腦沒有支援console模式，所以GRUB提供了remote terminal的功能，這樣你就可以從遠端的host來操控GRUB。
 
