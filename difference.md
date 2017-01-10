@@ -30,5 +30,73 @@ GRUB2的主要設計兼容於『[Multiboot Specification](https://www.gnu.org/so
 * 必須對kernel開發者的支援。
 * 對於FreeBSD, NetBSD, OpenBSD和 Linux的向下相容，對於『Proprietary kernels』\(eg.  DOS, Windows, OS/2\)則是使用chain-loading的方式。
 
+除了一些特殊的相容模式以外\(chain-loading和Linux piggyback格式\)，所有個kernel都會以Multiboot Spec.上的狀態啟動。除了以上的基本需求外，底下列出所有的功能:
+
+
+
+### Recognize multiple executable formats
+
+支援許多的a.out格式，並且也可以讀取Symbol table。
+
+### Support non-Multiboot kernels
+
+支援其他
+
+
+
+Load multiples modules
+
+
+
+Load a configuration file
+
+
+
+Provide a menu interface
+
+
+
+Have a flexible command-line interface
+
+
+
+Support multiple filesystem types
+
+
+
+Support automatic decompression
+
+
+
+Access data on any installed device
+
+
+
+
+
+Be independent of drive geometry translations
+
+
+
+
+
+Detect all installed RAM
+
+
+
+Support Logical Block Address mode
+
+
+
+Support network booting
+
+
+
+Support remote terminals
+
+
+
+
+
 
 
