@@ -54,7 +54,7 @@ GRUB2的主要設計兼容於『[Multiboot Specification](https://www.gnu.org/so
 
 ### Have a flexible command-line interface
 
-
+提供一個相當有彈性的command-line介面，可以從menu那邊存取，也可以編輯任何的命令，又或者是你想要編輯一個全新的boot command set，如果沒有組態的話，GRUB2會直接進入command-line裡面。
 
 Support multiple filesystem types
 
