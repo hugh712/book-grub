@@ -68,11 +68,15 @@ GRUB2的主要設計兼容於『[Multiboot Specification](https://www.gnu.org/so
 
 * _BtrFS _
 
-       包含: raid0, raid1, raid10, gzip 和 lzo。
+  ```
+   包含: raid0, raid1, raid10, gzip 和 lzo。
+  ```
 
 * _cpio_
 
-       包含: little- 和 big-endian bin, odc 和 newc variants。
+  ```
+   包含: little- 和 big-endian bin, odc 和 newc variants。
+  ```
 
 * _Linux ext2/ext3/ext4_
 
@@ -86,19 +90,25 @@ GRUB2的主要設計兼容於『[Multiboot Specification](https://www.gnu.org/so
 
 * _ISO9660_
 
-       包含 Joliet, Rock-ridge 和 multi-chunk files。
+  ```
+   包含 Joliet, Rock-ridge 和 multi-chunk files。
+  ```
 
 * _JFS_
 
 * _Minix fs_
 
-       包含 versions 1, 2 和 3。
+  ```
+   包含 versions 1, 2 和 3。
+  ```
 
 * _nilfs2_
 
 * _NTFS_
 
-        包含壓縮。
+  ```
+    包含壓縮。
+  ```
 
 * _ReiserFS_
 
@@ -118,15 +128,17 @@ GRUB2的主要設計兼容於『[Multiboot Specification](https://www.gnu.org/so
 
 * _ZFS_
 
-       包含lzjb, gzip, zle, mirror, stripe, raidz1/2/3 和 AES-CCM/AES-GCM加密。
-
-
+  ```
+   包含lzjb, gzip, zle, mirror, stripe, raidz1/2/3 和 AES-CCM/AES-GCM加密。
+  ```
 
 ### Support automatic decompression
 
+會自動解壓縮gzip或是Xz2壓縮檔，可以節省很多空間和傳輸時間。但是因為像是kernel module一定會是壓縮檔，所以像類似這種的檔案就要需要用特殊的module-loading命令。
+
+### Access data on any installed device
 
 
-Access data on any installed device
 
 Be independent of drive geometry translations
 
