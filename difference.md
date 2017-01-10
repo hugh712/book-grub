@@ -32,71 +32,41 @@ GRUB2的主要設計兼容於『[Multiboot Specification](https://www.gnu.org/so
 
 除了一些特殊的相容模式以外\(chain-loading和Linux piggyback格式\)，所有個kernel都會以Multiboot Spec.上的狀態啟動。除了以上的基本需求外，底下列出所有的功能:
 
-
-
 ### Recognize multiple executable formats
 
 支援許多的a.out格式，並且也可以讀取Symbol table。
 
 ### Support non-Multiboot kernels
 
-支援其他
+支援許多其他32-bit缺少Multiboot的kernel，也支援其他boot loader的Chain-loading。
 
 
 
-Load multiples modules
+### Load multiples modules
 
+支援多種的modules。
 
+### Load a configuration file
 
-Load a configuration file
-
-
+支援可讀的文字組態檔，也可以動態讀取其它的組態檔或是將預先設定好的組態檔
 
 Provide a menu interface
 
-
-
 Have a flexible command-line interface
-
-
 
 Support multiple filesystem types
 
-
-
 Support automatic decompression
-
-
 
 Access data on any installed device
 
-
-
-
-
 Be independent of drive geometry translations
-
-
-
-
 
 Detect all installed RAM
 
-
-
 Support Logical Block Address mode
-
-
 
 Support network booting
 
-
-
 Support remote terminals
-
-
-
-
-
-
 
