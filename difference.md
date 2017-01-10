@@ -22,9 +22,13 @@ GRUB2是修改GRUB而成的，主要的差異如下:
 
 * GRUB2將許多的功能都改成動態模組\(Dynamically loaded modules\)，所以主要的映像檔可以更小更有彈性。
 
-
-
 # GRUB的功能
+
+GRUB2的主要設計兼容於『[Multiboot Specification](https://www.gnu.org/software/grub/manual/multiboot/multiboot.html#Top)』，並且根據底下的需求:
+
+* 基本功能對使用者必須很直覺。
+* 必須對kernel開發者的支援。
+* 對於FreeBSD, NetBSD, OpenBSD和 Linux的向下相容，對於『Proprietary kernels』\(eg.  DOS, Windows, OS/2\)則是使用chain-loading的方式。
 
 
 
