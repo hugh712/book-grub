@@ -38,9 +38,7 @@ GRUB2的主要設計兼容於『[Multiboot Specification](https://www.gnu.org/so
 
 ### Support non-Multiboot kernels
 
-支援許多其他32-bit缺少Multiboot的kernel，也支援其他boot loader的Chain-loading。
-
-
+支援許多其他32-bit不支援Multiboot的kernel，也支援其他boot loader的Chain-loading。
 
 ### Load multiples modules
 
@@ -48,9 +46,11 @@ GRUB2的主要設計兼容於『[Multiboot Specification](https://www.gnu.org/so
 
 ### Load a configuration file
 
-支援可讀的文字組態檔，也可以動態讀取其它的組態檔或是將預先設定好的組態檔
+支援可讀的文字組態檔，也可以動態讀取其它的組態檔或是將預先設定好的組態檔給嵌到GRUB的映像檔裡。
 
-Provide a menu interface
+### Provide a menu interface
+
+支援圖形化介面，列出所有目前的boot指令。
 
 Have a flexible command-line interface
 
