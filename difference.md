@@ -69,13 +69,13 @@ GRUB2的主要設計兼容於『[Multiboot Specification](https://www.gnu.org/so
 * _BtrFS _
 
   ```
-   包含: raid0, raid1, raid10, gzip 和 lzo。
+  包含: raid0, raid1, raid10, gzip 和 lzo。
   ```
 
 * _cpio_
 
   ```
-   包含: little- 和 big-endian bin, odc 和 newc variants。
+  包含: little- 和 big-endian bin, odc 和 newc variants。
   ```
 
 * _Linux ext2/ext3/ext4_
@@ -91,7 +91,7 @@ GRUB2的主要設計兼容於『[Multiboot Specification](https://www.gnu.org/so
 * _ISO9660_
 
   ```
-   包含 Joliet, Rock-ridge 和 multi-chunk files。
+  包含 Joliet, Rock-ridge 和 multi-chunk files。
   ```
 
 * _JFS_
@@ -99,7 +99,7 @@ GRUB2的主要設計兼容於『[Multiboot Specification](https://www.gnu.org/so
 * _Minix fs_
 
   ```
-   包含 versions 1, 2 和 3。
+  包含 versions 1, 2 和 3。
   ```
 
 * _nilfs2_
@@ -107,7 +107,7 @@ GRUB2的主要設計兼容於『[Multiboot Specification](https://www.gnu.org/so
 * _NTFS_
 
   ```
-    包含壓縮。
+  包含壓縮。
   ```
 
 * _ReiserFS_
@@ -129,7 +129,7 @@ GRUB2的主要設計兼容於『[Multiboot Specification](https://www.gnu.org/so
 * _ZFS_
 
   ```
-   包含lzjb, gzip, zle, mirror, stripe, raidz1/2/3 和 AES-CCM/AES-GCM加密。
+  包含lzjb, gzip, zle, mirror, stripe, raidz1/2/3 和 AES-CCM/AES-GCM加密。
   ```
 
 ### Support automatic decompression
@@ -138,15 +138,27 @@ GRUB2的主要設計兼容於『[Multiboot Specification](https://www.gnu.org/so
 
 ### Access data on any installed device
 
+支援讀取各種BIOS可辨認的磁碟。
 
 
-Be independent of drive geometry translations
 
-Detect all installed RAM
+### Detect all installed RAM
 
-Support Logical Block Address mode
+Grub2可以在PC兼容的PC上找到所有已經安裝的RAM，這部分是使用進階的BIOS技術來找到所有記憶體的區間，但是並不是所有的kernel都會用到這個資訊就對了。
 
-Support network booting
 
-Support remote terminals
+
+### Support Logical Block Address mode
+
+在比較傳統的磁碟呼叫\(traditional disk calls\)\(也叫做_CHS mode_\)中，存在著一個幾何的轉換問題，就是BIOS無法存取超過磁碟的1024磁柱，所以空間的存取就被限制在508MB到8GB之間。因為各個平台之間這部分並沒有標準的介面，所以GRUB也無法去解決這個問題。然而，也一些比較新的平台有著一個新的介面，叫做Logical Block Address \(_LBA_\) mode，只要GRUB自動去偵測到支援這個模式的話就會去採用它，在LBA模式底下，GRUB可以存取到整顆硬碟。
+
+### Support network booting
+
+
+
+### Support remote terminals
+
+
+
+
 
