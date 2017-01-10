@@ -8,5 +8,5 @@
 
 [Understanding the Various Grub Modules](http://www.linux.org/threads/understanding-the-various-grub-modules.7535/)
 
-
+[Partitioning\_schemes](https://en.wikipedia.org/wiki/Disk_partitioning#Partitioning_schemes)
 

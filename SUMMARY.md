@@ -3,7 +3,7 @@
 * [Introduction](README.md)
 * [bootload - Grub](bootload---grub.md)
     * [Difference](difference.md)
-* Naming convention
+* [Naming convention](naming-convention.md)
 * Installation
 * Booting
 * Configuration files
@@ -19,4 +19,5 @@
 * Re-install
 * Modules
 * Image files
+* [Ref](ref.md)
 
