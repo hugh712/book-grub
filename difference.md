@@ -52,7 +52,9 @@ GRUB2的主要設計兼容於『[Multiboot Specification](https://www.gnu.org/so
 
 支援圖形化介面，列出所有目前的boot指令。
 
-Have a flexible command-line interface
+### Have a flexible command-line interface
+
+
 
 Support multiple filesystem types
 
