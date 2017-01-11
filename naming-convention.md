@@ -24,9 +24,11 @@ fd代表的是軟碟\(floppy disk\)，0代表的是磁碟\(drive\)編號，GRUB�
 
 另外一件事要特別注意的是，GRUB並沒有特別區分IDE和SCSI，不管磁碟的介面，都是直接從0開始計算。一般來說，通常IDE介面會比SCSI的號碼還要小，雖然說如果你在BIOS裡面交換你的IDE和SCSI的開機順序的話，並不會直接反映在剛剛的規則上就對了。
 
+所以到這邊我們已經有disk和partition了，接下來就只剩下檔案，看一下底下的Case:
 
+![](Imgs/Name/Name002.PNG)
 
-所以到這邊我們已經有disk和partition了，接下來就只剩下檔案，
+描述的是第一個disk上的第一個partition上的檔案vmlinuz，argument completion也是用在檔案的部分。
 
 
 
