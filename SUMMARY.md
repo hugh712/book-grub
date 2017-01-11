@@ -6,7 +6,7 @@
 * [Naming convention](naming-convention.md)
 * [Installation](installation.md)
     * [Installing GRUB using grub-install](installing-grub-using-grub-install.md)
-    * Making a GRUB bootable CD-ROM
+    * [Making a GRUB bootable CD-ROM](making-a-grub-bootable-cd-rom.md)
     * Device map
     * BIOS Installation
 * [Start GRUB](start-grub.md)
