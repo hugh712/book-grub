@@ -15,7 +15,25 @@ sdb      8:16   0  512M  0 disk
 sr0     11:0    1 1024M  0 rom
 ```
 
-  
+`root@hugh-VirtualBox:/home/hugh# fdisk /dev/sdb ` 
+
+
+
+```
+root@hugh-VirtualBox:/home/hugh# parted /dev/sdb1 -l
+Model: ATA VBOX HARDDISK (scsi)
+Disk /dev/sdb: 537MB
+Sector size (logical/physical): 512B/512B
+Partition Table: msdos
+Disk Flags: 
+
+Number  Start   End    Size   Type     File system  Flags
+ 1      1049kB  211MB  210MB  primary
+
+```
+
+
+
 
 
 
