@@ -19,6 +19,14 @@ sr0     11:0    1 1024M  0 rom
 
 
 
+
+```
+root@hugh-VirtualBox:/home/hugh# mkfs.ext4 /dev/sdb1
+```
+
+
+
+
 ```
 root@hugh-VirtualBox:/home/hugh# parted /dev/sdb1 -l
 Model: ATA VBOX HARDDISK (scsi)
@@ -28,9 +36,25 @@ Partition Table: msdos
 Disk Flags: 
 
 Number  Start   End    Size   Type     File system  Flags
- 1      1049kB  211MB  210MB  primary
+ 1      1049kB  211MB  210MB  primary  ext4
+
 
 ```
+
+
+
+```
+root@hugh-VirtualBox:/home/hugh# mount /dev/sdb1 /mnt
+root@hugh-VirtualBox:/home/hugh# mkdir /mnt/boot
+root@hugh-VirtualBox:/home/hugh# grub-install /dev/sdb --boot-directory=/mnt/boot
+Installing for i386-pc platform.
+Installation finished. No error reported.
+
+root@hugh-VirtualBox:/home/hugh# ls /mnt/boot/grub/
+fonts  grubenv  i386-pc  locale
+```
+
+
 
 
 
