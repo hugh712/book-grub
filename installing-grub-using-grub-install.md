@@ -57,7 +57,7 @@ root@hugh-VirtualBox:/home/hugh# umount /mnt
 
 ```
 
-其實grub-install只是一個sheel script，真正建制GRUB的任務是透過『grub-mkimage』和『grub-setup』，當然你也可以直接用這兩個指令來建制你的GRUB，但是除非你真的很熟悉GRUB的運作，最好不要這樣作，因為在一台正在運作的OS上操作這些步驟是很危險的。
+其實grub-install只是一個shell script，真正建制GRUB的任務是透過『grub-mkimage』和『grub-setup』，當然你也可以直接用這兩個指令來建制你的GRUB，但是除非你真的很熟悉GRUB的運作，最好不要這樣作，因為在一台正在運作的OS上操作這些步驟是很危險的。
 
 
 
