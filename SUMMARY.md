@@ -3,8 +3,9 @@
 * [Introduction](README.md)
 * [bootload - Grub](bootload---grub.md)
     * [Difference](difference.md)
+* [Start GRUB](start-grub.md)
 * [Naming convention](naming-convention.md)
-* Installation
+* [Installation](installation.md)
 * Booting
 * Configuration files
 * Themes
