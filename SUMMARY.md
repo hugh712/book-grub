@@ -3,9 +3,13 @@
 * [Introduction](README.md)
 * [bootload - Grub](bootload---grub.md)
     * [Difference](difference.md)
-* [Start GRUB](start-grub.md)
 * [Naming convention](naming-convention.md)
 * [Installation](installation.md)
+    * Installing GRUB using grub-install
+    * Making a GRUB bootable CD-ROM
+    * Device map
+    * BIOS Installation
+* [Start GRUB](start-grub.md)
 * Booting
 * Configuration files
 * Themes
