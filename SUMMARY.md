@@ -5,7 +5,7 @@
     * [Difference](difference.md)
 * [Naming convention](naming-convention.md)
 * [Installation](installation.md)
-    * Installing GRUB using grub-install
+    * [Installing GRUB using grub-install](installing-grub-using-grub-install.md)
     * Making a GRUB bootable CD-ROM
     * Device map
     * BIOS Installation
