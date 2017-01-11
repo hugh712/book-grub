@@ -2,22 +2,21 @@
 
 `# grub-install /dev/hda`
 
-`root@hugh-VirtualBox:/home/hugh\# lsblk
 
+
+```
+root@hugh-VirtualBox:/home/hugh\# lsblk
 NAME   MAJ:MIN RM  SIZE RO TYPE MOUNTPOINT
-
 sda      8:0    0   16G  0 disk 
-
 ├─sda1   8:1    0   14G  0 part /
-
 ├─sda2   8:2    0    1K  0 part 
-
 └─sda5   8:5    0    2G  0 part \[SWAP\]
-
 sdb      8:16   0  512M  0 disk 
+sr0     11:0    1 1024M  0 rom
+```
 
-sr0     11:0    1 1024M  0 rom  
-`
+  
+
 
 
 
