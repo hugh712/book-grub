@@ -12,19 +12,19 @@ fd代表的是軟碟\(floppy disk\)，0代表的是磁碟\(drive\)編號，GRUB�
 
 上面這個例子代表的是第一顆disk的第一個『extended partition』延伸分區，在GRUB裡面要特別注意的是『extended partition』的編號是從5開始，不管你這顆硬碟上前面有多少個『primary partition』。
 
-
-
 在GRUB裡面想要存取disk或是partition，你都要用相對應的語法來存取，像是底下的兩個case:
 
 `set root=(fd0)`
 
 `parttool (hd0,msdos3) hidden-`
 
-
-
 為方便使用者找到相關的device，GRUB也提供了argument completion，像是底下這個case，你只要按『tab』以後，GRUB就會列出所有的disk，partition甚至是檔案名稱:
 
 ![](Imgs/Name/Name001.PNG)
+
+
+
+
 
 
 
