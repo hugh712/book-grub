@@ -2,7 +2,13 @@ GRUB上的裝置名稱有它的特殊語法，所以使用GRUB第一件事，就
 
 `(fd0)`
 
-fd代表的是軟碟\(floppy disk\)，0代表的是磁碟\(drive\)號碼，GRUB的磁碟號碼是從0開始，所以這個裝置檔描述代表的是GRUB會用到整個軟碟。底下第二個例子:
+fd代表的是軟碟\(floppy disk\)，0代表的是磁碟\(drive\)編號，GRUB的disk number是從0開始，所以這個裝置檔描述代表的是GRUB會用到整個floppy disk。底下第二個例子:
 
-\(hd0,msdos2\)
+`(hd0,msdos2)`
+
+這個例子，hd代表的是硬碟『hard disk drive』，0一樣代表是disk number，所以就是第一顆硬碟。『msdos』代表的是『partition scheme』，2代表的是分區『partition』編號\(又或者是在BSD上的PC slice number\)，之前有說過disk number是從0開始，但是這邊要注意的是，partition number卻是從1開始，所以整個描述就是代表它是第一顆disk的第二個partion。
+
+\(hd0,msdos5\)
+
+上面這個例子代表的是第一顆disk的第一個『extended partition』延伸分區，在GRUB裡面要特別注意的是『extended partition』的編號是從5開始，不管你這顆硬碟上前面有多少個『primary partition』。
 
