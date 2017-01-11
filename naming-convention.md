@@ -22,7 +22,5 @@ fd代表的是軟碟\(floppy disk\)，0代表的是磁碟\(drive\)編號，GRUB�
 
 ![](Imgs/Name/Name001.PNG)
 
-
-
-另外一件事要特別注意的是，GRUB並沒有特別
+另外一件事要特別注意的是，GRUB並沒有特別區分IDE和SCSI，不管磁碟的介面，都是直接從0開始計算，
 
