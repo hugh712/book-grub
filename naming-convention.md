@@ -31,7 +31,4 @@ fd代表的是軟碟\(floppy disk\)，0代表的是磁碟\(drive\)編號，GRUB�
 描述的是第一個disk上的第一個partition上的檔案vmlinuz，argument completion也是用在檔案的部分。
 
 
-# partition scheme
-
-剛剛上面有提到『[partition scheme](https://en.wikipedia.org/wiki/Disk_partitioning)』，參考了一下wikipedia，這邊大概說明一下，
 
