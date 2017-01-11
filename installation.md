@@ -5,4 +5,6 @@
 - image directory <br>   
     就是剛剛說的，GRUB images預設安裝的資料夾。
 - boot directory <br>
+    bootloader存放的資料夾，通常是『/boot』。
+    
     
