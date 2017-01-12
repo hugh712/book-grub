@@ -23,6 +23,8 @@ root@hugh-VirtualBox:/home/hugh# mkdir -p iso/boot/grub
 ```
 root@hugh-VirtualBox:/home/hugh# cp /boot/grub/grub.cfg iso/boot/grub/
 ```
+所以假設現在grub資料夾裡面已經有所有的資料了，就可以來建立映像檔了，只要一行簡單的指令:
+
 
 ```
 root@hugh-VirtualBox:/home/hugh# grub-mkrescue -o grub.iso iso
