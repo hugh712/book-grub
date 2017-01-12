@@ -8,14 +8,19 @@ GRUB也可以直接由CD-ROM或是USB上驅動，這部分需要一份映像檔�
 ```
 root@hugh-VirtualBox:/home/hugh# apt-get install xorriso
 ```
+xorriso是一個可以從POSIX相容的檔案系統裡將檔案給製作成『Rock Ridge enhanced ISO 9660』格式的檔案系統映像檔程式。grub-mkrescue裡面主要會用到xorriso和mkisofs，這邊只要先知道有用到這兩支就好了，細節就先不探討。
 
-
+首先，要先建立一個最上層的資料夾:
+```
+root@hugh-VirtualBox:/home/hugh# mkdir iso
+```
+然後為GRUB建立資料夾
+```
+root@hugh-VirtualBox:/home/hugh# mkdir -p iso/boot/grub
+```
 
 
 ```
-
-root@hugh-VirtualBox:/home/hugh# mkdir -p iso/boot/grub
-
 root@hugh-VirtualBox:/home/hugh# cp /boot/grub/grub.cfg iso/boot/grub/
 
 
