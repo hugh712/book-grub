@@ -46,6 +46,6 @@ root@hugh-VirtualBox:/home/hugh# file grub.iso
 grub.iso: DOS/MBR boot sector; GRand Unified Bootloader, stage1 version 0x79, boot drive 0xbb, stage2 address 0x8e70, 1st sector stage2 0xb8db31c3, stage2 segment 0x201 ISO 9660 CD-ROM filesystem data (DOS/MBR boot sector) 'ISOIMAGE' (bootable)
 
 ```
-如同上面看到的，
+如同上面看到的，這個映像檔建出來後，是個DOS/MBR boot sector
 
 
