@@ -18,12 +18,13 @@ root@hugh-VirtualBox:/home/hugh# mkdir iso
 ```
 root@hugh-VirtualBox:/home/hugh# mkdir -p iso/boot/grub
 ```
-
+有需要的話，可以將相關的組態給複製到grub資料夾裡:
 
 ```
 root@hugh-VirtualBox:/home/hugh# cp /boot/grub/grub.cfg iso/boot/grub/
+```
 
-
+```
 root@hugh-VirtualBox:/home/hugh# grub-mkrescue -o grub.iso iso
 xorriso 1.4.2 : RockRidge filesystem manipulator, libburnia project.
 
