@@ -1,10 +1,16 @@
-
+GRUB也可以直接由CD-ROM或是USB上驅動，
 
 
 
 
 ```
 root@hugh-VirtualBox:/home/hugh# apt-get install xorriso
+
+root@hugh-VirtualBox:/home/hugh# mkdir -p iso/boot/grub
+
+root@hugh-VirtualBox:/home/hugh# cp /boot/grub/grub.cfg iso/boot/grub/
+
+
 root@hugh-VirtualBox:/home/hugh# grub-mkrescue -o grub.iso iso
 xorriso 1.4.2 : RockRidge filesystem manipulator, libburnia project.
 
@@ -20,6 +26,7 @@ xorriso : NOTE : Copying to System Area: 512 bytes from file '/usr/lib/grub/i386
 ISO image produced: 2540 sectors
 Written to medium : 2540 sectors at LBA 0
 Writing to 'stdio:grub.iso' completed successfully.
-
 ```
+
+
 
