@@ -10,6 +10,8 @@ root@hugh-VirtualBox:/home/hugh# apt-get install xorriso
 ```
 
 
+
+
 ```
 
 root@hugh-VirtualBox:/home/hugh# mkdir -p iso/boot/grub
