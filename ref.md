@@ -10,3 +10,5 @@
 
 [Partitioning\_schemes](https://en.wikipedia.org/wiki/Disk_partitioning#Partitioning_schemes)
 
+[Grub2-ISOBoot](https://help.ubuntu.com/community/Grub2/ISOBoot)
+
