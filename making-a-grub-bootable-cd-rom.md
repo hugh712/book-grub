@@ -1,19 +1,16 @@
 GRUB也可以直接由CD-ROM或是USB上驅動，這部分需要一份映像檔叫做-『cdboot.img』，然後還有另一個映像檔-『core.img』。core.img的使用至少應該有『iso9660』和『biosdisk』模組，而你的CD-ROM通常也需要包含組態檔-『grub.cfg』和其他的模組，總之就像如下公式:
 
-
-
 `GRUB CD-ROM = cdboot.img + core.img + [grub.cfg] + [modules]`
 
-
-
-
-
-
-
+底下說明一下如果要建立一個簡單的GRUB rescue CD要怎麼做，這部份需要用到一個程式叫做-『grub-mkrescue』，使用這個程式需要先安裝『xorriso』套件:
 
 
 ```
 root@hugh-VirtualBox:/home/hugh# apt-get install xorriso
+```
+
+
+```
 
 root@hugh-VirtualBox:/home/hugh# mkdir -p iso/boot/grub
 
