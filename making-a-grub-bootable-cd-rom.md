@@ -4,26 +4,31 @@ GRUB也可以直接由CD-ROM或是USB上驅動，這部分需要一份映像檔�
 
 底下說明一下如果要建立一個簡單的GRUB rescue CD要怎麼做，這部份需要用到一個程式叫做-『grub-mkrescue』，使用這個程式需要先安裝『xorriso』套件:
 
-
 ```
 root@hugh-VirtualBox:/home/hugh# apt-get install xorriso
 ```
+
 xorriso是一個可以從POSIX相容的檔案系統裡將檔案給製作成『Rock Ridge enhanced ISO 9660』格式的檔案系統映像檔程式。grub-mkrescue裡面主要會用到xorriso和mkisofs，這邊只要先知道有用到這兩支就好了，細節就先不探討。
 
 首先，要先建立一個最上層的資料夾:
+
 ```
 root@hugh-VirtualBox:/home/hugh# mkdir iso
 ```
+
 然後為GRUB建立資料夾
+
 ```
 root@hugh-VirtualBox:/home/hugh# mkdir -p iso/boot/grub
 ```
+
 有需要的話，可以將相關的組態/moudles給複製到grub資料夾裡:
 
 ```
 root@hugh-VirtualBox:/home/hugh# cp /boot/grub/grub.cfg iso/boot/grub/
 ```
-所以假設現在grub資料夾裡面已經有所有的資料了，就可以來建立映像檔了，只要一行簡單的指令(底下也列出相關結果):
+
+所以假設現在grub資料夾裡面已經有所有的資料了，就可以來建立映像檔了，只要一行簡單的指令\(底下也列出相關結果\):
 
 ```
 root@hugh-VirtualBox:/home/hugh# grub-mkrescue -o grub.iso iso
@@ -44,8 +49,7 @@ Writing to 'stdio:grub.iso' completed successfully.
 
 root@hugh-VirtualBox:/home/hugh# file grub.iso
 grub.iso: DOS/MBR boot sector; GRand Unified Bootloader, stage1 version 0x79, boot drive 0xbb, stage2 address 0x8e70, 1st sector stage2 0xb8db31c3, stage2 segment 0x201 ISO 9660 CD-ROM filesystem data (DOS/MBR boot sector) 'ISOIMAGE' (bootable)
-
 ```
-如同上面看到的，這個映像檔建出來後，是個DOS/MBR boot sector
+
 
 
