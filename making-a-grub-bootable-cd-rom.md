@@ -41,7 +41,11 @@ xorriso : NOTE : Copying to System Area: 512 bytes from file '/usr/lib/grub/i386
 ISO image produced: 2540 sectors
 Written to medium : 2540 sectors at LBA 0
 Writing to 'stdio:grub.iso' completed successfully.
-```
 
+root@hugh-VirtualBox:/home/hugh# file grub.iso
+grub.iso: DOS/MBR boot sector; GRand Unified Bootloader, stage1 version 0x79, boot drive 0xbb, stage2 address 0x8e70, 1st sector stage2 0xb8db31c3, stage2 segment 0x201 ISO 9660 CD-ROM filesystem data (DOS/MBR boot sector) 'ISOIMAGE' (bootable)
+
+```
+如同上面看到的，
 
 
