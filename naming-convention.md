@@ -1,4 +1,12 @@
-GRUB上的裝置名稱有它的特殊語法，所以使用GRUB第一件事，就是要知道這些語法，不然你會不知道如何去找到對的裝置\(device\)/分區\(partition\)。第一個要知道的是，GRUB對裝置的描述一定要在成對的小括號『\(\)』裡面，第一個例子如下:
+GRUB上的裝置名稱有它的特殊語法，所以使用GRUB第一件事，就是要知道這些語法，不然你會不知道如何去找到對的裝置\(device\)/分區\(partition\)。第一個要知道的是，GRUB對裝置的描述一定要在成對的小括號『\(\)』裡面，語法如下:
+
+
+```
+(device[,partmap-name1part-num1[,partmap-name2part-num2[,...]]])
+```
+
+
+底下先來看一個例子:
 
 `(fd0)`
 
@@ -29,6 +37,4 @@ fd代表的是軟碟\(floppy disk\)，0代表的是磁碟\(drive\)編號，GRUB�
 ![](Imgs/Name/Name002.PNG)
 
 描述的是第一個disk上的第一個partition上的檔案vmlinuz，argument completion也是用在檔案的部分。
-
-
 
