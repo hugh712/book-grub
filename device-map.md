@@ -8,5 +8,17 @@
 
 \(device\) file
 
+看一下剛剛我產生的device.map
+
+
+```
+vim /boot/grub/device.map
+
+(hd0)   /dev/disk/by-id/ata-VBOX_HARDDISK_VB3b4a075c-2d880932
+```
+
+
+
+
 
 
