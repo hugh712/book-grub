@@ -8,7 +8,7 @@ GRUB上的裝置名稱有它的特殊語法，所以使用GRUB第一件事，就
 - Memdisk和host則是被限制只能有一個disk，所以只會有一個driver名稱；
 - RAID (md), ofdisk (ieee1275 和 nand), LVM (lv), LDM 和 arcdisk (arc)則是使用disk固有的名稱前面在加driver的名稱(只有nand使用別名『nand』，如果有衝突的話就是後面用數字去點綴)，如果語法上有逗號(commas)的話要記得用跳脫字元點綴；
 - Loopback則是根據loopback命令上面所使用的名字；
-- Hostdisk則是是用在device.map(接下來的章節會介紹)裡面的定義，只要它的格式是『[fhc]d[0-9]*』或是『hostdisk/&lt;OS DEVICE>』；此外，對於crypto和RAID(md)你可以使用『&lt;driver name>uuid/&lt;uuid>』的語法。
+- Hostdisk則是使用在device.map(接下來的章節會介紹)裡面的定義，只要它的格式是『[fhc]d[0-9]*』或是『hostdisk/&lt;OS DEVICE>』；此外，對於crypto和RAID(md)你可以使用『&lt;driver name>uuid/&lt;uuid>』的語法。
 
 底下列出上面所講解過的device清單:
 
