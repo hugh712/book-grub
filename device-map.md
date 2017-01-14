@@ -18,9 +18,11 @@ vim /boot/grub/device.map
 
 root@hugh-VirtualBox:/boot/grub# ls -la /dev/disk/by-id/ata-VBOX_HARDDISK_VB3b4a075c-2d880932
 lrwxrwxrwx 1 root root 9  一  14 13:53 /dev/disk/by-id/ata-VBOX_HARDDISK_VB3b4a075c-2d880932 -> ../../sda
-
 ```
 
+但是不幸的是，OS的device name也常常不穩定，Linux kernel也是常常在開機途中修改到這部份，prefix也是會根據不同的driver subsystem的使用狀況而改變，所以就是在某些系統上的device.map需要很常的去修改。
+
+GRUB為了避免以上提到的所有問題，所以現在都採用UUID或是file system label的作法
 
 
 
