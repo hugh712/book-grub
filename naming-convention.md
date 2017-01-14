@@ -53,7 +53,6 @@ fd代表的是軟碟\(floppy disk\)，0代表的是磁碟\(drive\)編號，GRUB�
 上面這個例子代表的是第一顆disk的第一個『extended partition』延伸分區，在GRUB裡面要特別注意的是『extended partition』的編號是從5開始，不管你這顆硬碟上前面有多少個『primary partition』。
 
 
-
 ```
 (tftp)
 (http)
