@@ -12,7 +12,7 @@
 
 
 ```
-cat /boot/grub/device.map
+root@hugh-VirtualBox:/boot/grub# cat device.map
 (hd0)   /dev/disk/by-id/ata-VBOX_HARDDISK_VB3b4a075c-2d880932
 
 root@hugh-VirtualBox:/boot/grub# ls -la /dev/disk/by-id/ata-VBOX_HARDDISK_VB3b4a075c-2d880932
