@@ -4,7 +4,7 @@
 
 `sudo grub-mkdevicemap`
 
-這個指令會將device.map給安裝到/boot/grub/裡面，所以如果這個檔案存在的話，GRUB的相關程式就會將它從BIOS讀取到OS device，這個檔案的組成如下:
+這個指令會將device.map給安裝到/boot/grub/裡面，所以如果在開機時這個檔案存在的話，GRUB的相關程式就會將它從BIOS讀取到OS device，這個檔案的組成如下:
 
 \(device\) file
 
