@@ -15,6 +15,10 @@
 vim /boot/grub/device.map
 
 (hd0)   /dev/disk/by-id/ata-VBOX_HARDDISK_VB3b4a075c-2d880932
+
+root@hugh-VirtualBox:/boot/grub# ls -la /dev/disk/by-id/ata-VBOX_HARDDISK_VB3b4a075c-2d880932
+lrwxrwxrwx 1 root root 9  一  14 13:53 /dev/disk/by-id/ata-VBOX_HARDDISK_VB3b4a075c-2d880932 -> ../../sda
+
 ```
 
 
