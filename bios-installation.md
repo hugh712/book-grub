@@ -7,7 +7,7 @@
 
 2. core image可以被安裝到一個file system裡面，又或者是可以被安裝到一系列的blocks裡面，這兩種方式都要能確保可以在這個partition的第一個sector裡。
 
-上面的兩種方式都有其缺點，第一種的話，主要是放置在embedding area並無法保證這個保留區域是絕對安全的，又或者是這會牽扯到一些license的限制問題，或者是系統有時候在建制partition的時候沒有在第一個partition留有足夠的空間等等問題。第二種方式就很有可能被一些filesystem的功能所影響，像是『tail packing』還是『fsck』等等會去影響到block的功能。
+上面的兩種方式都有其缺點，第一種的話，主要是放置在embedding area並無法保證這個保留區域是絕對安全的，又或者是這會牽扯到一些license的限制問題，或者是系統有時候在建制partition的時候沒有在第一個partition留有足夠的空間等等問題。第二種方式就很有可能被一些filesystem的功能所影響，像是『tail packing』還是『fsck』等等會去影響到block的功能，所以其實依賴於filesystem的作法其實也是很脆弱的。
 
 
 
