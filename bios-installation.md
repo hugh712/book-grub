@@ -24,6 +24,6 @@ GRUB的研發團隊通常會建議將GRUB嵌在第一個partition之前，你必
 ```
 # parted /dev/disk set partition-number bios_grub on
 ```
-2. 如果是使用gdisk的話，就要把partition type設定成『0xEF02』。或者是如果要直接設定GUID的話，就把它設定成『21686148-6449-6e6f-744e656564454649』。這邊要特別注意你選擇的partition，因為在安裝過程中，如果GRUB有找到BIOS Boot Partition的話，會自動的把它覆寫掉，
+2. 如果是使用gdisk的話，就要把partition type設定成『0xEF02』。或者是如果要直接設定GUID的話，就把它設定成『21686148-6449-6e6f-744e656564454649』。這邊要特別注意你選擇的partition，因為在安裝過程中，如果GRUB有找到BIOS Boot Partition的話，會自動的把它覆寫掉。
 
 
