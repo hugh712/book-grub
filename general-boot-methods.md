@@ -1,0 +1,1 @@
+GRUB有兩種不同的啟動方式，第一種是直接讀取作業系統，第二種是chain-load其他的boot loader，而這個boot loader會在讀取其他的作業系統。

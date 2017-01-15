@@ -11,6 +11,9 @@
     * [BIOS Installation](bios-installation.md)
 * [Start GRUB](start-grub.md)
 * Booting
+    * [General boot methods](general-boot-methods.md)
+    * Loopback booting
+    * OS-specific notes
 * Configuration files
 * Themes
 * Booting from network
