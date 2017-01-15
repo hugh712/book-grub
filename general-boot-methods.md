@@ -6,3 +6,4 @@ Multiboot是GRUB本來就有支援的格式，而且Linux, FreeBSD, NetBSD 和Op
 在kernel和root filesystem都載入的狀況之下，要直接啟動作業系統的話，只要一個指令-『boot』就好了，這部份只要先知道這個就好，後面會有完整的case。而如果是要啟動DOS或是Windows的話，需要有特殊的作法，這邊就不探討，有需要的可以直接看官方手冊。
 
 # 使用Chain-loading
+如果作業系統沒有支援Multiboot而且在GRUB裡面也沒有支援這個作業系統的話，那就必須要用chain-loaded的方式，
