@@ -12,7 +12,7 @@
 * [Start GRUB](start-grub.md)
 * Booting
     * [General boot methods](general-boot-methods.md)
-    * Loopback booting
+    * [Loopback booting](loopback-booting.md)
     * OS-specific notes
 * Configuration files
 * Themes
