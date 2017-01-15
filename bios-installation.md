@@ -24,6 +24,6 @@ GRUB的研發團隊通常會建議將GRUB嵌在第一個partition之前，你必
 ```
 # parted /dev/disk set partition-number bios_grub on
 ```
-2. 如果是使用gdisk的話，就要把partition
+2. 如果是使用gdisk的話，就要把partition type設定成『0xEF02』。
 
 
