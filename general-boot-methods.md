@@ -7,3 +7,17 @@ Multiboot是GRUB本來就有支援的格式，而且Linux, FreeBSD, NetBSD 和Op
 
 # 使用Chain-loading
 如果作業系統沒有支援Multiboot而且在GRUB裡面也沒有支援這個作業系統的話，那就必須要用chain-loaded的方式，這個方式主要是讀取另一個boot loader並且在real mode底下跳到那個位址上去。
+
+這部份的話就需要用到命令『chainloader』，使用這個之前通常需要先設定你的GRUB modules和設定你的root device，所以將以上的資訊全部都湊齊之後，會有如下的格式，主要是描述在windows系統底下的第一顆磁碟的第一個partition：
+
+```
+menuentry "Windows" {
+	insmod chain
+	insmod ntfs
+	set root=(hd0,1)
+	chainloader +1
+}
+```
+
+
+
