@@ -11,8 +11,6 @@
 
 GRUB的研發團隊通常會建議將GRUB嵌在第一個partition之前，你必須確保第一個partition至少會是在磁碟一開始的31 KiB(63 sectors)之後;但是現在的硬碟因為效能的關係，所以可以將第一個partition給擴充到1 MiB的地方比較好。
 
-
-
-
-
 # GPT
+
+
