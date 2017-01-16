@@ -13,7 +13,7 @@
 * Booting
     * [General boot methods](general-boot-methods.md)
     * [Loopback booting](loopback-booting.md)
-    * OS-specific notes
+    * [OS-specific notes](os-specific-notes.md)
 * Configuration files
 * Themes
 * Booting from network
