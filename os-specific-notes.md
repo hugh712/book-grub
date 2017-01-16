@@ -19,7 +19,19 @@ grub> linux /vmlinuz root=/dev/sda1 acpi=off
 ```
 grub> linux16 /vmlinuz root=/dev/sda1 acpi=off
 ```
-3. 
+3. 如果你有initrd的話，直接在指令『linux』後面使用:
+```
+grub> initrd /initrd
+```
+跟指令『linux』一樣，如果不支援32位元的話，請用:
+```
+grub> initrd16 /initrd
+```
+4. 最後一步，使用『boot』啟動。
+
+
+
+
 
 
 
