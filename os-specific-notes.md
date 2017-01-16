@@ -3,14 +3,20 @@
 在GRUB裡想要啟動GNU/Linux算是相對的簡單，因為Linux本身就整合成Multiboot兼容的作業系統，通常一般的步驟會如下所示:
 
 1. 將GRUB的root device設定成跟Linux一樣，可以利用底下的指令幫你完成這部份的功能。
-
 ```
 search --set=root --file /vmlinuz
 ```
-
 2. 使用指令『linux』來讀取kernel:
-
 ```
 grub> linux /vmlinuz root=/dev/sda1
 ```
+至於如果你想要加一些kernel的參數的話，可以直接加到後面，像是底下的例子，主要是將acpi給設定成off:
+```
+grub> linux /vmlinuz root=/dev/sda1 acpi=off
+```
+其他的kernel參數則請參考Linux source tree的文件 - 『』。
+3. 
+
+
+
 
