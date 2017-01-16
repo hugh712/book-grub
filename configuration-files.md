@@ -2,3 +2,4 @@ GRUB最主要的組態主要是『grub.cfg』，通常是在『/boot/grub』底�
 
 
 # Simple configuration
+『grub-mkconfig』所產生的『grub.cfg』適用在很多的case，當你的distro upgrade時，系統會自動的幫你抓到最新的kernel並且自動產生『menu entry』。
