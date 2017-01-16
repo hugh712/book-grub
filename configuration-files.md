@@ -1,0 +1,1 @@
+GRUB最主要的組態主要是『grub.cfg』，通常是在『/boot/grub』底下。

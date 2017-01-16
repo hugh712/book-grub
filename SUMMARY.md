@@ -14,7 +14,7 @@
     * [General boot methods](general-boot-methods.md)
     * [Loopback booting](loopback-booting.md)
     * [OS-specific notes](os-specific-notes.md)
-* Configuration files
+* [Configuration files](configuration-files.md)
 * Themes
 * Booting from network
 * Image files
