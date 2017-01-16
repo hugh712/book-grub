@@ -10,7 +10,6 @@ search --set=root --file /vmlinuz
 
 2. 使用指令『linux』來讀取kernel:
 
-
 ```
 grub> linux /vmlinuz root=/dev/sda1
 ```
