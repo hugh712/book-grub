@@ -15,6 +15,13 @@ grub> linux /vmlinuz root=/dev/sda1
 grub> linux /vmlinuz root=/dev/sda1 acpi=off
 ```
 其他的kernel參數，因為我一直找不到官方的文件，好像已經刪掉了，但是有一個我很常看的機構『free-electrons』上面有，有興趣的可以參考一下 - 『[kernel-parameters](http://lxr.free-electrons.com/source/Documentation/kernel-parameters.txt)』。
+有些BIOS像是APM或是EDD並沒有提供32-bit的協定，所以在這些比較特殊的BIOS上你就要使用『linux16』:
+```
+grub> linux16 /vmlinuz root=/dev/sda1 acpi=off
+```
+
+
+
 3. 
 
 
