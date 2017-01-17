@@ -27,7 +27,8 @@ GRUB_DEFAULT='Example GNU/Linux distribution'
 ```
 除了以上兩種可能以外 - 『數字』和『標頭』以外，還有第三種，就是可以把它設定成『saved』，這個選項主要是藉由選項『GRUB_SAVEDEFAULT』來儲存預設的menu entry，預設的數字是『0』，除了由『GRUB_SAVEDEFAULT』選項來自動儲存以外，你也可以用grub-set-default或是grub-reboot。
 
-- GRUB_SAVEDEFAULT
+- GRUB_SAVEDEFAULT <br>
+如果這個選項是被設定成『true』，
 
 - GRUB_TIMEOUT
 
