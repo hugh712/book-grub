@@ -13,6 +13,7 @@ GRUB_TERMINAL_INPUT="console serial"
 底下列出所有可用的『KEY』和其說明:
 
 - GRUB_DEFAULT
+設定預設的menu entry
 
 - GRUB_SAVEDEFAULT
 
