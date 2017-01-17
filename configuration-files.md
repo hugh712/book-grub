@@ -25,14 +25,6 @@ menuentry 'Example GNU/Linux distribution' --class gnu-linux {
 ```
 GRUB_DEFAULT='Example GNU/Linux distribution'
 ```
-
-
-
-
-
-
-
-
 除了以上兩種可能以外，還有第三種，就是可以把它設定成『saved』，
 
 - GRUB_SAVEDEFAULT
