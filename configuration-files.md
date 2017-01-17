@@ -13,7 +13,7 @@ GRUB_TERMINAL_INPUT="console serial"
 底下列出所有可用的『KEY』和其說明:
 
 - GRUB_DEFAULT<br>
-設定預設的menu entry
+設定預設的menu entry，可以是一個數字，或者是menu entry的標題，如果是數字的話，代表的是從0開始數的menu entry編號，除了以上兩種可能以外，還有第三種，就是可以把它設定成『saved』，
 
 - GRUB_SAVEDEFAULT
 
