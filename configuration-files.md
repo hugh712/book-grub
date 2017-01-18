@@ -56,10 +56,10 @@ GRUB_DEFAULT='Example GNU/Linux distribution'
 
 - GRUB_TERMINAL_INPUT
 選擇終端機(terminal)的輸入裝置，當然你可以在這邊選擇多重的裝置，中間請用空白隔開。有效的terminal輸入名稱其實取決於你的平台，但是通常會有以下的幾個:
-	- console (PC BIOS and EFI consoles)
+	- console (PC BIOS 和 EFI consoles)
 	- serial (serial terminal)
 	- ofconsole (Open Firmware console)
-	- at_keyboard (PC AT keyboard, mainly useful with Coreboot)
+	- at_keyboard (PC AT keyboard, 主要會用在Coreboot)
 	- usb_keyboard (USB keyboard using the HID Boot Protocol, for cases where the firmware does not handle this).
 
 
