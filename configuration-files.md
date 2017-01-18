@@ -63,7 +63,8 @@ GRUB_DEFAULT='Example GNU/Linux distribution'
 	- usb_keyboard (主要是使用HID boot protocol的USB鍵盤，這部分是以防firmware沒有去處理這部分)。
 
 - GRUB_TERMINAL_OUTPUT
-選擇終端機(terminal)的輸出裝置，當然你可以在這邊選擇多重的裝置，中間請用空白隔開。
+選擇終端機(terminal)的輸出裝置，當然你可以在這邊選擇多重的裝置，中間請用空白隔開。有效的terminal輸出名稱其實取決於你的平台，但是通常會有以下的幾個:
+
 
 
 
