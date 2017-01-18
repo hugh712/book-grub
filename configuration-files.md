@@ -41,7 +41,7 @@ GRUB_DEFAULT='Example GNU/Linux distribution'
 ![](Imgs/Config/config001.PNG)
 
 - GRUB_HIDDEN_TIMEOUT_QUIET
-通常會跟『GRUB_HIDDEN_TIMEOUT』一起共用，如果將這個設定成true的話，將不會顯示
+通常會跟『GRUB_HIDDEN_TIMEOUT』一起共用，如果將這個設定成true的話，將不會顯示倒數計時器，設定成false的話則會顯示，但是我在Ubutu上面怎麼設定都沒有效果就對了。
 
 - GRUB_DEFAULT_BUTTON  
 - GRUB_TIMEOUT_BUTTON  
