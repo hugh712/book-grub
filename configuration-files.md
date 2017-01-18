@@ -52,7 +52,7 @@ GRUB_DEFAULT='Example GNU/Linux distribution'
 有些筆電(laptop)的供應商會在啟動特定的作業系統時，提供額外的開機按鈕，像是『Asus EeePC 1005PE』，『Dell XPS M1530』等等，而GRUB也支援這部份的需求，這部分的需求請直接看手冊，主要是藉由在這個地方寫入CMOS裡的位址。
 
 - GRUB_DISTRIBUTOR
-
+主要由你的GRUB的distro來設定這個選項，把它設定成他們的辨識名稱，這樣通成會在menu entry 標題的部份產生更多的資訊。
 - GRUB_TERMINAL_INPUT
 
 - GRUB_TERMINAL_OUTPUT
