@@ -31,7 +31,7 @@ GRUB_DEFAULT='Example GNU/Linux distribution'
 如果這個選項是被設定成『true』，當你在開機選擇menu entry時，GRUB會將你的選擇儲存起來，這樣下一次開機的預設就會變成這個，接下來，底下兩個說明會有點饒舌，『GRUB_SAVEDEFAULT』只有在『GRUB_SAVEDEFAULT=saved』時有用，但是這又是兩個分開的選項，因為如果伴隨著『grub-set-default』或是『grub-reboot』的話，『GRUB_DEFAULT=saved』只有在沒有『GRUB_SAVEDEFAULT』的狀況才有效。這個選項預設是不啟用，而且依賴於『environment block』，所以可能不適用於所有的case。
 
 - GRUB_TIMEOUT <br>
-如果有做相關設定的話，通常在開機倒數時，按下任何鍵就會進入選單，這個選項主要就是在控制多少秒倒數，預設的話是『5』秒，如果設定成『0』的話，代表直接用預設選項啟動不倒數，設定成『-1』的話，代表會一直等下去。目前因為太不直觀了，所以如果這個值為非0的話，就不該啟用『GRUB_HIDDEN_TIMEOUT』，但是如果你『GRUB_TIMEOUT』設定為非0值，但是你的『GRUB_HIDDEN_TIMEOUT』也有設定的話，則
+如果有做這個設定的話，通常在進入選單後就會開始倒數，這個選項主要就是在控制多少秒倒數，預設的話是『5』秒，如果設定成『0』的話，代表直接用預設選項啟動不倒數，設定成『-1』的話，代表會一直等下去。目前因為太不直觀了，所以如果這個值為非0的話，就不該啟用『GRUB_HIDDEN_TIMEOUT』，但是如果你『GRUB_TIMEOUT』設定為非0值，但是你的『GRUB_HIDDEN_TIMEOUT』也有設定的話，則
 
 ![](Imgs/Config/config002.PNG)
 
