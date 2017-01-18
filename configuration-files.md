@@ -70,9 +70,6 @@ GRUB_DEFAULT='Example GNU/Linux distribution'
 	- ofconsole (Open Firmware console)
 	- vga_text (VGA text output, 主要是用在Coreboot).
 
-
-
-
 - GRUB_TERMINAL
 
 - GRUB_SERIAL_COMMAND
