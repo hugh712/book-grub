@@ -101,7 +101,9 @@ GRUB_DEFAULT='Example GNU/Linux distribution'
 
 - GRUB_DISABLE_LINUX_UUID
 
-- GRUB_DISABLE_RECOVERY
+- GRUB_DISABLE_RECOVERY <br>
+如果這個選項設定成『true』，
+
 
 - GRUB_VIDEO_BACKEND
 
