@@ -71,7 +71,7 @@ GRUB_DEFAULT='Example GNU/Linux distribution'
 	- vga_text (VGA text output, 主要是用在Coreboot).
 
 - GRUB_TERMINAL
-
+如果這個選項設定成『true』，則會將『』和『』覆寫成相同的值。
 - GRUB_SERIAL_COMMAND
 
 - GRUB_CMDLINE_LINUX
