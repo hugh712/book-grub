@@ -82,7 +82,7 @@ GRUB_DEFAULT='Example GNU/Linux distribution'
 如果你的GRUB想要使用serial console的話就要設定這個serial port，語法的話後面的章節會介紹。
 
 - GRUB_CMDLINE_LINUX
-要加入到menu entry的Command-line的參數，主要是傳給kernel的。
+要加入到menu entry的Command-line的參數，主要是傳給kernel的，不論是一般或者是救援模式。
 
 - GRUB_CMDLINE_LINUX_DEFAULT
 
