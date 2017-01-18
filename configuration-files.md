@@ -55,7 +55,7 @@ GRUB_DEFAULT='Example GNU/Linux distribution'
 主要由你的GRUB的distro來設定這個選項，把它設定成他們的辨識名稱，這樣通成會在menu entry 標題的部份產生更多的資訊。
 
 - GRUB_TERMINAL_INPUT
-選擇終端機(terminal)的輸入裝置，當然你可以在這邊選擇多重的裝置，中間請用空白隔開。有效的terminal輸入名稱其實取決於你的平台，但是通常會有以下的幾個:
+選擇終端機(terminal)的輸入裝置，當然你可以在這邊選擇多重的裝置，中間請用空白隔開。有效的terminal輸入名稱其實取決於你的平台，但是通常會有以下的幾個(預設都是使用系統原生的terminal輸入):
 	- console (PC BIOS 和 EFI consoles)
 	- serial (serial terminal)
 	- ofconsole (Open Firmware console)
@@ -63,7 +63,12 @@ GRUB_DEFAULT='Example GNU/Linux distribution'
 	- usb_keyboard (主要是使用HID boot protocol的USB鍵盤，這部分是以防firmware沒有去處理這部分)。
 
 - GRUB_TERMINAL_OUTPUT
-選擇終端機(terminal)的輸出裝置，當然你可以在這邊選擇多重的裝置，中間請用空白隔開。有效的terminal輸出名稱其實取決於你的平台，但是通常會有以下的幾個:
+選擇終端機(terminal)的輸出裝置，當然你可以在這邊選擇多重的裝置，中間請用空白隔開。有效的terminal輸出名稱其實取決於你的平台，但是通常會有以下的幾個(預設都是使用系統原生的terminal輸出):
+	- console (PC BIOS and EFI consoles)
+	- serial (serial terminal)
+	- gfxterm (graphics-mode output)
+	- ofconsole (Open Firmware console)
+	- vga_text (VGA text output, mainly useful with Coreboot).
 
 
 
