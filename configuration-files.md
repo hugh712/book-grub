@@ -70,7 +70,7 @@ GRUB_DEFAULT='Example GNU/Linux distribution'
 	- ofconsole (Open Firmware console)
 	- vga_text (VGA text output, 主要是用在Coreboot).
 
-- GRUB_TERMINAL
+- GRUB_TERMINAL <br>
 如果這個選項設定成『true』，則會將『GRUB_TERMINAL_INPUT』和『GRUB_TERMINAL_OUTPUT』覆寫成相同的值。
 
 - GRUB_SERIAL_COMMAND
