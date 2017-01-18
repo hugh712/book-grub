@@ -60,8 +60,7 @@ GRUB_DEFAULT='Example GNU/Linux distribution'
 	- serial (serial terminal)
 	- ofconsole (Open Firmware console)
 	- at_keyboard (PC AT keyboard, 主要會用在Coreboot)
-	- usb_keyboard (USB keyboard using the HID Boot Protocol, for cases where the firmware does not handle this).
-
+	- usb_keyboard (主要是使用HID boot protocol的USB鍵盤，這部分是以防firmware沒有去處理這部分)。
 
 - GRUB_TERMINAL_OUTPUT
 選擇終端機(terminal)的輸出裝置，當然你可以在這邊選擇多重的裝置，中間請用空白隔開。
