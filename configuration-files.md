@@ -102,7 +102,7 @@ GRUB_DEFAULT='Example GNU/Linux distribution'
 - GRUB_DISABLE_LINUX_UUID
 
 - GRUB_DISABLE_RECOVERY <br>
-如果這個選項設定成『true』，
+如果這個選項設定成『true』，則在menu上不顯示救援模式(recovery mode)。
 
 
 - GRUB_VIDEO_BACKEND
