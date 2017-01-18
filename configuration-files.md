@@ -35,12 +35,12 @@ GRUB_DEFAULT='Example GNU/Linux distribution'
 
 ![](Imgs/Config/config002.PNG)
 
-- GRUB_HIDDEN_TIMEOUT
+- GRUB_HIDDEN_TIMEOUT <br>
 上一個選項是『GRUB_TIMEOUT』，主要是在定義menu出現"後"要倒數幾秒，如果倒數完之前沒有按任何鍵的話，將會直接以預設的選項開機。這個選項則是相反，主要是設定menu出現"前"會倒數幾秒，如果將這個選項直接設定成『0』的話，將不會倒數，除非你直接按某些特定的鍵才會顯示，在Ubuntu裡面則是用『Shift』。
 
 ![](Imgs/Config/config001.PNG)
 
-- GRUB_HIDDEN_TIMEOUT_QUIET
+- GRUB_HIDDEN_TIMEOUT_QUIET <br>
 通常會跟『GRUB_HIDDEN_TIMEOUT』一起共用，
 	- 如果將這個設定成『true』的話，將不會顯示倒數計時器。
 	- 設定成『false』的話則會顯示，但是我在Ubuntu上面怎麼設定都是false就對了。
