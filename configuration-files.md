@@ -70,6 +70,9 @@ GRUB_DEFAULT='Example GNU/Linux distribution'
 	- ofconsole (Open Firmware console)
 	- vga_text (VGA text output, 主要是用在Coreboot).
 
+底下舉個例子，將OUTPUT改成console的話，圖型化介面就會變成底下這樣:
+![](Imgs/Config/config003.PNG)
+
 - GRUB_TERMINAL <br>
 	- 如果有設定這個選項，則會將『GRUB_TERMINAL_INPUT』和『GRUB_TERMINAL_OUTPUT』覆寫成相同的值。像是:
 	GRUB_
