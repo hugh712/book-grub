@@ -64,11 +64,11 @@ GRUB_DEFAULT='Example GNU/Linux distribution'
 
 - GRUB_TERMINAL_OUTPUT
 選擇終端機(terminal)的輸出裝置，當然你可以在這邊選擇多重的裝置，中間請用空白隔開。有效的terminal輸出名稱其實取決於你的平台，但是通常會有以下的幾個(預設都是使用系統原生的terminal輸出):
-	- console (PC BIOS and EFI consoles)
+	- console (PC BIOS 和 EFI consoles)
 	- serial (serial terminal)
 	- gfxterm (graphics-mode output)
 	- ofconsole (Open Firmware console)
-	- vga_text (VGA text output, mainly useful with Coreboot).
+	- vga_text (VGA text output, 主要是用在Coreboot).
 
 
 
