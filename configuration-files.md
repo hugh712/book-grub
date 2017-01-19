@@ -45,7 +45,7 @@ GRUB_DEFAULT='Example GNU/Linux distribution'
 	- 如果將這個設定成『true』的話，將不會顯示倒數計時器。
 	- 設定成『false』的話則會顯示，但是我在Ubuntu上面怎麼設定都是false就對了。
 
-- GRUB_DEFAULT_BUTTON <br>  
+- GRUB_DEFAULT_BUTTON <br>
 - GRUB_TIMEOUT_BUTTON  <br>
 - GRUB_HIDDEN_TIMEOUT_BUTTON <br>  
 - GRUB_BUTTON_CMOS_ADDRESS  <br>
