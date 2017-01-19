@@ -123,7 +123,7 @@ GRUB_DEFAULT='Example GNU/Linux distribution'
 - GRUB_GFXPAYLOAD_LINUX
 
 - GRUB_DISABLE_OS_PROBER
-
+一般來說，grub-mkconfig會試著使用外部的作業系統偵測程式(os-prober)來偵測在同一個系統裡安裝的作業系統，並且產生適當的menu entry，如果將這個設定成true的話則會關閉這個功能。
 - GRUB_INIT_TUNE <br>
 當GRUB開始時，主機板會出逼聲，通常在使用者無法直接看到螢幕時很有用，這部分主要是透過一個程式叫做『play』去實做的。
 
