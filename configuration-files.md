@@ -115,7 +115,7 @@ GRUB_DEFAULT='Example GNU/Linux distribution'
 - GRUB_BACKGROUND
 
 - GRUB_THEME
-
+如果你是使用『gfxterm』圖形化終端機的話，這個參數可以設定主題。
 - GRUB_GFXPAYLOAD_LINUX
 
 - GRUB_DISABLE_OS_PROBER
