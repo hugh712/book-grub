@@ -54,7 +54,7 @@ GRUB_DEFAULT='Example GNU/Linux distribution'
 - GRUB_DISTRIBUTOR <br>
 主要由你的GRUB的distro來設定這個選項，把它設定成他們的辨識名稱，這樣通成會在menu entry 標題的部份產生更多的資訊。
 
-- GRUB_TERMINAL_INPUT
+- GRUB_TERMINAL_INPUT<br>
 選擇終端機(terminal)的輸入裝置，當然你可以在這邊選擇多重的裝置，中間請用空白隔開。有效的terminal輸入名稱其實取決於你的平台，但是通常會有以下的幾個(預設都是使用系統原生的terminal輸入):
 	- console (PC BIOS 和 EFI consoles)
 	- serial (serial terminal)
@@ -62,7 +62,7 @@ GRUB_DEFAULT='Example GNU/Linux distribution'
 	- at_keyboard (PC AT keyboard, 主要會用在Coreboot)
 	- usb_keyboard (主要是使用HID boot protocol的USB鍵盤，這部分是以防firmware沒有去處理這部分)。
 
-- GRUB_TERMINAL_OUTPUT
+- GRUB_TERMINAL_OUTPUT <br>
 選擇終端機(terminal)的輸出裝置，當然你可以在這邊選擇多重的裝置，中間請用空白隔開。有效的terminal輸出名稱其實取決於你的平台，但是通常會有以下的幾個(預設都是使用系統原生的terminal輸出):
 	- console (PC BIOS 和 EFI consoles)
 	- serial (serial terminal)
@@ -78,10 +78,10 @@ GRUB_DEFAULT='Example GNU/Linux distribution'
 	`GRUB_TERMINAL=console` <br>
 	統一將input和output都設定成console
 
-- GRUB_SERIAL_COMMAND
+- GRUB_SERIAL_COMMAND <br>
 如果你的GRUB想要使用serial console的話就要設定這個serial port，語法的話後面的章節會介紹。
 
-- GRUB_CMDLINE_LINUX
+- GRUB_CMDLINE_LINUX <br>
 要加入到menu entry的Command-line的參數，不論是一般或者是救援模式，主要是傳給kernel的。
 
 - GRUB_CMDLINE_LINUX_DEFAULT <br>
@@ -94,8 +94,8 @@ GRUB_DEFAULT='Example GNU/Linux distribution'
 - GRUB_CMDLINE_GNUMACH <br>
 就像是『GRUB_CMDLINE_LINUX』，但是是給GNU Mach用的。
 
-- GRUB_CMDLINE_XEN
-- GRUB_CMDLINE_XEN_DEFAULT
+- GRUB_CMDLINE_XEN <br>
+- GRUB_CMDLINE_XEN_DEFAULT <br>
 這兩個選項的參數會在Linux和Xen menu entry的case之下依附於『GRUB_CMDLINE_LINUX』和『GRUB_CMDLINE_LINUX_DEFAULT』的參數後面。
 
 - GRUB_CMDLINE_LINUX_XEN_REPLACE
