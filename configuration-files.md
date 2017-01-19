@@ -125,7 +125,7 @@ GRUB_DEFAULT='Example GNU/Linux distribution'
 - GRUB_DISABLE_OS_PROBER
 
 - GRUB_INIT_TUNE
-
+當GRUB開始時，主機板會出逼聲，通常在使用者無法直接看到螢幕時很有用，這部分主要是透過一個程式叫做『play』去實做的。
 - GRUB_BADRAM
 如果這個選項有被設定的話，GRUB將會發起一個badram的命令，這個命令會將RAM裡面某些特定區域給濾掉，代表這些區域已經毀損。
 
