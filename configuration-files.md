@@ -127,6 +127,7 @@ GRUB_DEFAULT='Example GNU/Linux distribution'
 - GRUB_INIT_TUNE
 
 - GRUB_BADRAM
+如果這個選項有被設定的話，GRUB將會發起一個badram的命令，這個命令會在RAM裡面的某些特定區域填滿。
 
 - GRUB_PRELOAD_MODULES <br>
 這個選項可以被設定成一系列的GRUB module(模組)，每個module的名稱都用空白所隔開，設定以後，在grub.cfg開始的時候，會盡快的去讀取這個些module。
