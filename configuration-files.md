@@ -109,6 +109,7 @@ GRUB_DEFAULT='Example GNU/Linux distribution'
 如果這個選項設定成『true』，則在menu上不顯示救援模式(recovery mode)。
 
 - GRUB_VIDEO_BACKEND
+通常如果需要顯卡的支援的話，就代表你在使用『gfxterm』圖形化終端機，或者是選項『GRUB_GFXPAYLOAD_LINUX』被啟動了，這樣grub-mkconfig將會讀取所有的GRUB的Video driver，並且使用一個最匹配你硬體的driver。但是通常不太需要動到這個參數，除非你有特殊需求。在『grub-install』執行以後，可取得的video driver清單都會在『/boot/grub/video.lst』。
 
 - GRUB_GFXMODE <br>
 如果你是使用『gfxterm』圖形化終端機的話，這個選項可以設定其解析度。這邊要特別注意的是這個選項只能用在你的顯卡支援VESA BIOS Extensions (VBE)的狀況之下才能用，預設的選項是『auto』，在接下來的內容裡會解釋一下這些參數。
