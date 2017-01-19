@@ -110,7 +110,7 @@ GRUB_DEFAULT='Example GNU/Linux distribution'
 
 - GRUB_VIDEO_BACKEND
 
-- GRUB_GFXMODE
+- GRUB_GFXMODE <br>
 如果你是使用『gfxterm』圖形化終端機的話，這個選項可以設定其解析度。這邊要特別注意的是這個選項只能用在你的顯卡支援VESA BIOS Extensions (VBE)的狀況之下才能用，預設的選項是『auto』，在接下來的內容裡會解釋一下這些參數。
 
 - GRUB_BACKGROUND
