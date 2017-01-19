@@ -85,7 +85,7 @@ GRUB_DEFAULT='Example GNU/Linux distribution'
 要加入到menu entry的Command-line的參數，不論是一般或者是救援模式，主要是傳給kernel的。
 
 - GRUB_CMDLINE_LINUX_DEFAULT <br>
-一般除非『GRUB_DISABLE_RECOVERY』設定成true，不然通常會有兩個menu entry出現 -『預設』和『救援模式』，而這個選項主要就是列出要傳給那預設的開機選項的參數，就是在『GRUB_CMDLINE_LINUX』裡面的參數。
+一般除非『GRUB_DISABLE_RECOVERY』設定成true，不然通常會有兩個menu entry出現 -『預設』和『救援模式』，而這個選項主要就是列出要傳給那『預設』的開機選項的參數，不會傳給『救援模式』。
 
 - GRUB_CMDLINE_NETBSD <br>
 - GRUB_CMDLINE_NETBSD_DEFAULT <br>
