@@ -121,7 +121,7 @@ GRUB_DEFAULT='Example GNU/Linux distribution'
 如果你是使用『gfxterm』圖形化終端機的話，這個參數可以設定主題。
 
 - GRUB_GFXPAYLOAD_LINUX
-如果將這個選項設定成『text』的話記會強制將kernel給啟動到文字模式(text mode)，
+如果將這個選項設定成『text』的話記會強制將kernel給啟動到文字模式(text mode)；如果是設定成『keep』，
 
 
 - GRUB_DISABLE_OS_PROBER
