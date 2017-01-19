@@ -103,7 +103,7 @@ GRUB_DEFAULT='Example GNU/Linux distribution'
 這兩個選項的參數將會在Linux和Xen menu entry的case之下將GRUB_CMDLINE_LINUX』和『GRUB_CMDLINE_LINUX_DEFAULT』的參數取代掉。
 
 - GRUB_DISABLE_LINUX_UUID <br>
-
+一般來說，grub-mkconfig會為menu entry建立『universally-unique identifiers (UUIDs)』，
 
 - GRUB_DISABLE_RECOVERY <br>
 如果這個選項設定成『true』，則在menu上不顯示救援模式(recovery mode)。
