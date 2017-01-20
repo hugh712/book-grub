@@ -37,8 +37,6 @@ GRUB裡面的變數/判斷式/迴圈等等都跟Bourne shell差不多，這部�
 # Comments - 註解
 當一個字組的前面有個『#』時，跟Bourne shell一樣，代表接下來的內容都會變成註解，不會被執行。
 
-# Compound commands
-
 # Built-in Commands
 
 
