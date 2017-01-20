@@ -36,6 +36,7 @@ if in menuentry select then time until while
 
 # Comments - 註解
 當一個字組的前面有個『#』時，代表接下來的內容都會變成註解，不會被執行。
+
 # Simple commands
 
 # Compound commands
