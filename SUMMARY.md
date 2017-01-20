@@ -15,6 +15,9 @@
     * [Loopback booting](loopback-booting.md)
     * [OS-specific notes](os-specific-notes.md)
 * [Configuration files](configuration-files.md)
+    * [Config-Format](config-format.md)
+    * Multi-boot manual config
+    * Embedding a configuration file
 * Themes
 * Booting from network
 * Image files
