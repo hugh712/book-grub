@@ -32,7 +32,7 @@ if in menuentry select then time until while
 將字元/文字放在兩個雙引號之間的話也會消除其特性，但是無法消除『$』和『\』的特性。跳脫字元『\』只有背後是接空白或是『$』,『"』,『\』才有意義，因為這樣會消除這四個特殊字元的特性。此外，雙引號可以使用跳脫字元的方式被包括在另一組雙引號中間(eg. "\"\"")。
 
 
-# Variable expansion
+# Variable expansion - 變數/判斷式
 GRUB裡面的變數/判斷式/迴圈等等都跟Bourne shell差不多，這部分有需要的可以直接參考鳥哥 - 『[BASH](http://linux.vbird.org/linux_basic/0320bash.php)』和『[Shell Script](http://linux.vbird.org/linux_basic/0340bashshell-scripts.php)』。
 # Comments - 註解
 當一個字組的前面有個『#』時，跟Bourne shell一樣，代表接下來的內容都會變成註解，不會被執行。
