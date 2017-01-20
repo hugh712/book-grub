@@ -17,7 +17,6 @@ if in menuentry select then time until while
 ```
 當然不是全部的字都有目的，有些是為了未來可能會使用，所以先保留下來的。
 
-
 # Quoting
 
 # Variable expansion
