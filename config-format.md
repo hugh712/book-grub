@@ -33,11 +33,9 @@ if in menuentry select then time until while
 
 
 # Variable expansion
-
+GRUB裡面的變數/判斷式/迴圈等等都跟Bourne shell差不多，這部分有需要的可以直接參考鳥哥 - 『[BASH](http://linux.vbird.org/linux_basic/0320bash.php)』和『[Shell Script](http://linux.vbird.org/linux_basic/0340bashshell-scripts.php)』。
 # Comments - 註解
-當一個字組的前面有個『#』時，代表接下來的內容都會變成註解，不會被執行。
-
-# Simple commands
+當一個字組的前面有個『#』時，跟Bourne shell一樣，代表接下來的內容都會變成註解，不會被執行。
 
 # Compound commands
 
