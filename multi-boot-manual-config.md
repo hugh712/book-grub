@@ -15,11 +15,10 @@ menuentry "my Ubuntu 16.04" {
 ```
 grub-mkrescue -o grub.iso iso
 ```
-
-
-
-
+接下來將這個映像檔給掛載起來以後重開機，直接看到以下畫面:
 ![](Imgs/Config/config004.png)
-
+按『e』看一下裡面的內容如下:
+![](Imgs/Config/config005.png)
+然後直接按『F10』應該就沒問題可以直接開機了。
 
 
