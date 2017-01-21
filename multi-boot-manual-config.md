@@ -10,8 +10,13 @@ menuentry "my Ubuntu 16.04" {
         initrd /initrd.img
 }
 ```
-2. 
+2. 然後在將以上的所有內容給建立救援映像檔：<br>
+
+```
 grub-mkrescue -o grub.iso iso
+```
+
+
 
 
 ![](Imgs/Config/config004.png)
