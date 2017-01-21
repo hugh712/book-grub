@@ -1,0 +1,1 @@
+GRUB可以將組態檔直接給嵌到core image裡面，所以在進入『normal mode』之前這個組態會被讀取。
