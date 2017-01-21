@@ -10,9 +10,10 @@ menuentry "my Ubuntu 16.04" {
         initrd /initrd.img
 }
 ```
-2. 然後在將以上的所有內容給建立救援映像檔：<br>
+2. 然後在將grub給安裝到目錄下，然後將以上的所有內容給建立救援映像檔：<br>
 
 ```
+grub-install /dev/sda --boot-directory=/mnt/boot
 grub-mkrescue -o grub.iso iso
 ```
 接下來將這個映像檔給掛載起來以後重開機，直接看到以下畫面:
