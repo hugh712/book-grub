@@ -9,7 +9,6 @@ menuentry "my Ubuntu 16.04" {
         linux /vmlinuz root=UUID=8c9eb01d-b58b-4e19-acdb-e1028004a637
         initrd /initrd.img
 }
-
 ```
 2. 
 grub-mkrescue -o grub.iso iso
