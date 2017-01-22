@@ -44,6 +44,7 @@ menuentry "my Ubuntu 16.04" {
 }
 ```
 如上可以看到開機後系統會自己去讀『grub.cfg』，然後將root設定成CD-ROM的路徑，然後設定prefix，然後讀另一個組態檔 - 『test.cfg』，控制權交過去後，發現是個menuentry，所以頁面上就顯示了相關的menuentry資訊如下：
+![](Imgs/Config/config006.png)
 
 
 
