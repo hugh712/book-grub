@@ -24,9 +24,8 @@ fi
 ```
 上面這個例子看起來沒有menu entry的存在，但是可以用『configfile』的方式將其讀進來。
 
-下面舉個我自己寫的例子，主要有兩個檔案『grub.cfg』和『test.cfg』，
+下面舉個我自己寫的例子，主要有兩個檔案『grub.cfg』和『test.cfg』，但是是用『救援模式』image的方式來實做：
 主要的內容如下：
-
 
 ```
 #grub.cfg
@@ -34,7 +33,6 @@ search.fs_label ISOIMAGE root
 set prefix=($root)/boot/grub
 configfile /boot/grub/test.cfg
 ```
-
 
 ```
 #test.cfg
@@ -45,7 +43,7 @@ menuentry "my Ubuntu 16.04" {
         initrd /initrd.img
 }
 ```
-
+如上可以看到開機後系統會自己去讀『grub.cfg』，然後將root設定成CD-ROM的路徑，然後設定prefix，然後讀另一個組態檔 - 『test.cfg』，控制權交過去後，發現是個menuentry，所以頁面上就顯示了相關的menuentry資訊如下：
 
 
 
