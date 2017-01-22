@@ -22,8 +22,7 @@ else
     fi
 fi
 ```
-
-
+上面這個例子看起來沒有menu entry的存在，但是可以用『configfile』的方式將其讀進來。
 
 
 
