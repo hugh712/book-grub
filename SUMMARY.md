@@ -18,7 +18,7 @@
     * [Config-Format](config-format.md)
     * [Multi-boot manual config](multi-boot-manual-config.md)
     * [Embedding a configuration file](embedding-a-configuration-file.md)
-* Themes
+* [Themes](themes.md)
 * Booting from network
 * Image files
 * Filesystem syntax and semantics
