@@ -24,6 +24,34 @@ fi
 ```
 上面這個例子看起來沒有menu entry的存在，但是可以用『configfile』的方式將其讀進來。
 
+下面舉個我自己寫的例子，主要有兩個檔案『grub.cfg』和『test.cfg』，
+主要的內容如下：
+
+
+```
+#grub.cfg
+search.fs_label ISOIMAGE root
+set prefix=($root)/boot/grub
+configfile /boot/grub/test.cfg
+```
+
+
+```
+#test.cfg
+menuentry "my Ubuntu 16.04" {
+        set root=(hd0,msdos1)
+        set prefix=($root)/boot/grub
+        linux /vmlinuz root=UUID=8c9eb01d-b58b-4e19-acdb-e1028004a637
+        initrd /initrd.img
+}
+```
+
+
+
+
+
+
+
 
 
 
