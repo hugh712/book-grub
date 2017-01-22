@@ -6,6 +6,25 @@ GRUB可以將組態檔直接給嵌到core image裡面，所以在進入『normal
 search.fs_uuid 01234567-89ab-cdef-0123-456789abcdef root
 set prefix=($root)/boot/grub
 ```
+上面這個只是個簡單的例子，因為它只設定了『root』和『prefix』，如果想要操作更複雜的case的話，像是從其他的組態檔裡面去讀取設定，或是從其他的資料夾裡面去讀取組態的話，必須要先把『configfile』和『normal』
+模組包含在core image裡面，然後在某個組態檔裡面去呼叫命令『configfile』來讀取其他的檔案，底下舉個官方的例子，這個例子需要三個模組『echo』，『search_label』和『test』在core image裡面：
+```
+search.fs_label grub root
+if [ -e /boot/grub/example/test1.cfg ]; then
+    set prefix=($root)/boot/grub
+    configfile /boot/grub/example/test1.cfg
+else
+    if [ -e /boot/grub/example/test2.cfg ]; then
+        set prefix=($root)/boot/grub
+        configfile /boot/grub/example/test2.cfg
+    else
+        echo "Could not find an example configuration file!"
+    fi
+fi
+```
+
+
+
 
 
 
