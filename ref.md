@@ -14,3 +14,5 @@
 
 [Grub2_theme_tutorial](http://wiki.rosalab.ru/en/index.php/Grub2_theme_tutorial)
 
+[SDB:Booting from the Network with GRUB](https://tr.opensuse.org/SDB:Booting_from_the_Network_with_GRUB)
+
