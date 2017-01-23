@@ -1,9 +1,7 @@
 如果你的BIOS可以支援Preboot eXecution Environment (PXE)的話，GRUB可以支援PXE網路開機，底下描述一下相關步驟:
 
 # 準備一台TFTP伺服器
-```
-sudo apt-get install tftp
-```
+這部分請參考一下文章『[how do i install and run a tftp server](http://askubuntu.com/questions/201505/how-do-i-install-and-run-a-tftp-server)』。
 
 # 產生PXE boot image:
 
