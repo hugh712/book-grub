@@ -19,7 +19,7 @@
     * [Multi-boot manual config](multi-boot-manual-config.md)
     * [Embedding a configuration file](embedding-a-configuration-file.md)
 * [Themes](themes.md)
-* Booting from network
+* [Booting from network](booting-from-network.md)
 * Image files
 * Filesystem syntax and semantics
 * User Interface
