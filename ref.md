@@ -16,3 +16,5 @@
 
 [SDB:Booting from the Network with GRUB](https://tr.opensuse.org/SDB:Booting_from_the_Network_with_GRUB)
 
+[Is it possible to add some 'PXE Network Boot' option to GRUB?](http://unix.stackexchange.com/questions/190865/is-it-possible-to-add-some-pxe-network-boot-option-to-grub)
+
