@@ -8,4 +8,5 @@
 grub-mkimage --format=i386-pc-pxe --output=grub.pxe --prefix='(pxe)/boot/grub' pxe pxecmd
 ```
 
+# 複製相關檔案
 
