@@ -13,3 +13,4 @@ grub-mkimage --format=i386-pc-pxe --output=grub.pxe --prefix='(pxe)/boot/grub' p
 
 # 複製相關檔案
 
+將檔案『grub.pxe』，『/boot/grub/*.mod』和『 /boot/grub/*.lst』複製到PXE(TFTP)server上面，並且確保在TFTP server的路徑『/boot/grub/』底下的『*.mod』和『*.lst』可以被存取。
