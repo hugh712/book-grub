@@ -12,3 +12,5 @@
 
 [Grub2-ISOBoot](https://help.ubuntu.com/community/Grub2/ISOBoot)
 
+[Grub2_theme_tutorial](http://wiki.rosalab.ru/en/index.php/Grub2_theme_tutorial)
+
