@@ -12,4 +12,6 @@ grub> terminal_input serial; terminal_output serial
 ```
 terminal_input serial console
 ```
+在上面的例子中，一定要將input跟output打在同一行，不然你將其一的控制權交出去後，你就會發現沒辦法操控了。
 
+要使用serial terminal另外一個限制是，GRUB會假設你的terminal emulator是相容於VT100的，當然以現在來說幾乎所有的case都相容VT100，但是如果沒有相容的話就是傳參數『--dump』進去搂。
