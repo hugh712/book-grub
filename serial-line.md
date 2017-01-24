@@ -1,0 +1,1 @@
+在GRUB底下也可以使用serial termical。
