@@ -20,6 +20,7 @@
     * [Embedding a configuration file](embedding-a-configuration-file.md)
 * [Themes](themes.md)
 * [Booting from network](booting-from-network.md)
+* [Serial Line](serial-line.md)
 * [Image files](image-files.md)
 * Filesystem syntax and semantics
 * User Interface
