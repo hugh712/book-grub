@@ -7,4 +7,9 @@ grub> terminal_input serial; terminal_output serial
 ```
 上面這個例子使用命令『serial』然後指定『com1』，然後『Bound Rate』是『9600』，如果你想要用COM2的話，則要將參數改為『--unit=1』，serial這個指令會在後面在介紹其他的參數語用法。
 
-『terminal_input』和『terminal_output』則是選擇你要使用哪種類型的terminal。以上面的case來說
+『terminal_input』和『terminal_output』則是選擇你要使用哪種類型的terminal。以上面的case來說，terminal就會是一個serial terminal，但是你仍然可以多傳一個參數『console』，像是底下這個case一樣:
+
+```
+terminal_input serial console
+```
+
