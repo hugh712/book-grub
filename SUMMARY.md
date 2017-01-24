@@ -20,7 +20,7 @@
     * [Embedding a configuration file](embedding-a-configuration-file.md)
 * [Themes](themes.md)
 * [Booting from network](booting-from-network.md)
-* Image files
+* [Image files](image-files.md)
 * Filesystem syntax and semantics
 * User Interface
 * Environment Variable

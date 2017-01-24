@@ -1,1 +1,1 @@
-如果你的BIOS可以支援Preboot eXecution Environment (PXE)的話，GRUB可以支援PXE網路開機，但是這篇文章不探討PXE所以先跳過。
+如果你的BIOS可以支援Preboot eXecution Environment (PXE)的話，GRUB可以支援PXE網路開機，但是因為這已經是PXE的範圍了，所以這邊跳過不探討。
