@@ -5,4 +5,4 @@
 grub> serial --unit=0 --speed=9600
 grub> terminal_input serial; terminal_output serial
 ```
-
+上面這個例子使用命令『serial』然後指定『com1』，然後bound rate是
