@@ -172,6 +172,9 @@ GRUB2已經沒有單獨的Stage 2 image，相對的是在run-time時載入『/bo
 
 ### stage2_eltorito
 在GRUB2裡面，從CD-ROM開機的image現在都用『cdboot.img』和『core.img』來處理，確保裡面包含了『iso9660』的模組，如果想要建立救援碟的話，這部分可以直接用『grub-mkrescure』來達成。
+
 ### nbgrub
 在GRUB2裡面沒有相對應nbgrub的功能。
+
 ### pxegrub
+在GRUB2裡面，用網路啟動的PXE image現在都用『pxeboot.img』和『core.img』來達成。
