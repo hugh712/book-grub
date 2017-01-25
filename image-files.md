@@ -19,10 +19,6 @@ boot.img: DOS/MBR boot sector
 diskboot.img: data
 ```
 
-
-
-
-
 # cdboot.img
 
 # pxeboot.img
