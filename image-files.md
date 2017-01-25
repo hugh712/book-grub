@@ -39,16 +39,13 @@ pxeboot.img: data
 
 # lnxboot.img
 
-如果是用LILO開機的話，這個image可以被放置在core image的前頭，這樣可以讓core image看起來很像Linux Kernel，這樣LILO可以用『image=』sector來開機。
+如果是用LILO開機的話，這個image可以被放置在core image的前頭，這樣可以讓core image看起來很像Linux Kernel，這樣LILO可以用『image=sector來開機。
 
 ```
 # ll lnxboot.img; file lnxboot.img
 -rw-r--r-- 1 root root 1024  六  17  2016 lnxboot.img
 lnxboot.img: Linux kernel x86 boot executable bzImage, version \353fHdrS\003\002, RW-rootFS,
 ```
-
-
-
 
 # kernel.img
 
