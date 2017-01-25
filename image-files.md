@@ -37,9 +37,18 @@ cdboot.img: data
 pxeboot.img: data
 ```
 
-
-
 # lnxboot.img
+
+如果是用LILO(一個很舊的)開機的話，
+
+```
+# ll lnxboot.img; file lnxboot.img
+-rw-r--r-- 1 root root 1024  六  17  2016 lnxboot.img
+lnxboot.img: Linux kernel x86 boot executable bzImage, version \353fHdrS\003\002, RW-rootFS,
+```
+
+
+
 
 # kernel.img
 
