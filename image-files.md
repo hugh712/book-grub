@@ -10,11 +10,9 @@ GRUB是由許多image所組成的，一系列的bootstrap images\(對應各種�
 boot.img: DOS/MBR boot sector
 ```
 
-
-
-
-
 # diskboot.img
+
+
 
 # cdboot.img
 
