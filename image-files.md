@@ -57,6 +57,8 @@ kernel.img: ELF 32-bit LSB executable, Intel 80386, version 1 (SYSV), statically
 ```
 
 # core.img
+GRUB的主要核心image，
+
 
 # \*.mod
 
