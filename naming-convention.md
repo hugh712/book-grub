@@ -80,5 +80,7 @@ fd代表的是軟碟\(floppy disk\)，0代表的是磁碟\(drive\)編號，GRUB�
 描述的是第一個disk上的第一個partition上的檔案vmlinuz，argument completion也是用在檔案的部分，其實就是把device的部份換成以上所講的格式，其實語法就跟Linux的shell差不多了。
 
 # block lists
+有時候有些檔案沒有在任何的檔案系統上，這時候就需要block list的支援，像是如果你要用chainloader的話就要使用block list，語法如下:
+[offset]+length[,[offset]+length]…
 
 
