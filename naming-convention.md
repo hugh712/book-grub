@@ -91,6 +91,6 @@ eg.
 ```
 上面的例子代表GRUB會讀取block 0~99，block 200和 block 300~599，如果你省略offset的話，GRUB會假設offset是0。
 
-
+其中有一個規則跟檔案名稱語法一樣，如果一個blocklist沒有包含device name的話，則GRUB就會使用root device，所以『(hd0,2)+1』代表的就是『』
 
 
