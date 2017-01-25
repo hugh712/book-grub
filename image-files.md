@@ -65,9 +65,6 @@ GRUB的主要核心image，是從『kernel image』和一堆的modules裡，借�
 /boot/grub/i386-pc/core.img: data
 ```
 
-
-
-
 # \*.mod
 
 
