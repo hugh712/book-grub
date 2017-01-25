@@ -14,6 +14,18 @@ boot.img: DOS/MBR boot sector
 
 
 
+
+
+```
+# ll diskboot.img; file diskboot.img
+-rw-r--r-- 1 root root 512  六  17  2016 diskboot.img
+diskboot.img: data
+```
+
+
+
+
+
 # cdboot.img
 
 # pxeboot.img
