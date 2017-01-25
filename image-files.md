@@ -22,6 +22,12 @@ diskboot.img: data
 # cdboot.img
 如果你是用CD-ROM開機的話，這個image就會被當成core image的第一個sector。行為來說就跟『diskboot.img』一樣。
 
+```
+# ll cdboot.img; file cdboot.img
+-rw-r--r-- 1 root root 2048  六  17  2016 cdboot.img
+cdboot.img: data
+```
+
 # pxeboot.img
 
 # lnxboot.img
