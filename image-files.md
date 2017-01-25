@@ -50,6 +50,12 @@ lnxboot.img: Linux kernel x86 boot executable bzImage, version \353fHdrS\003\002
 # kernel.img
 這個image包含了GRUB基本的run-time功能，像是裝置框架(device frameworks)，檔案處理(file handling)，環境變數(environment variables)和救援模式的CMD parser等等，這個image很少直接使用。
 
+```
+# ll kernel.img; file kernel.img
+-rw-r--r-- 1 root root 28116  六  17  2016 kernel.img
+kernel.img: ELF 32-bit LSB executable, Intel 80386, version 1 (SYSV), statically linked, stripped
+```
+
 # core.img
 
 # \*.mod
