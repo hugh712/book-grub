@@ -6,7 +6,7 @@ GRUB是由許多image所組成的，一系列的bootstrap images\(對應各種�
 
 ```
 # ll boot.img; file boot.img
--rw-r--r-- 1 root root 512  1  25 08:49 boot.img
+-rw-r--r-- 1 root root 512  一  25 08:49 boot.img
 boot.img: DOS/MBR boot sector
 ```
 
