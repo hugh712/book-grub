@@ -22,6 +22,8 @@ GRUB2是修改GRUB而成的，主要的差異如下:
 
 * GRUB2將許多的功能都改成動態模組\(Dynamically loaded modules\)，所以主要的映像檔可以更小更有彈性。
 
+<hr>
+
 # GRUB的功能
 
 GRUB2的主要設計兼容於『[Multiboot Specification](https://www.gnu.org/software/grub/manual/multiboot/multiboot.html#Top)』，並且根據底下的需求:
@@ -32,6 +34,8 @@ GRUB2的主要設計兼容於『[Multiboot Specification](https://www.gnu.org/so
 
 除了一些特殊的相容模式以外\(chain-loading和Linux piggyback格式\)，所有個kernel都會以Multiboot Spec.上的狀態啟動。除了以上的基本需求外，底下列出所有的功能:
 
+<hr>
+
 ### Recognize multiple executable formats
 
 支援許多的a.out格式，並且也可以讀取Symbol table。
@@ -40,21 +44,31 @@ GRUB2的主要設計兼容於『[Multiboot Specification](https://www.gnu.org/so
 
 支援許多其他32-bit不支援Multiboot的kernel，也支援其他boot loader的Chain-loading。
 
+<hr>
+
 ### Load multiples modules
 
 支援多種的modules。
+
+<hr>
 
 ### Load a configuration file
 
 支援可讀的文字組態檔，也可以動態讀取其它的組態檔或是將預先設定好的組態檔給嵌到GRUB的映像檔裡。
 
+<hr>
+
 ### Provide a menu interface
 
 支援圖形化介面，列出所有目前的boot指令。
 
+<hr>
+
 ### Have a flexible command-line interface
 
 提供一個相當有彈性的command-line\(命令列\)介面，可以從menu那邊存取，也可以編輯任何的命令，又或者是你想要編輯一個全新的boot command set，如果沒有組態的話，GRUB2會直接進入command-line裡面。而GRUB2的command-line支援使用tab-completion，可以根據內容來列出裝置，partitions和檔案。
+
+<hr>
 
 ### Support multiple filesystem types
 
@@ -131,31 +145,42 @@ GRUB2的主要設計兼容於『[Multiboot Specification](https://www.gnu.org/so
   ```
   包含lzjb, gzip, zle, mirror, stripe, raidz1/2/3 和 AES-CCM/AES-GCM加密。
   ```
+<hr>
 
 ### Support automatic decompression
 
 會自動解壓縮gzip或是Xz2壓縮檔，可以節省很多空間和傳輸時間。但是因為像是kernel module一定會是壓縮檔，所以像類似這種的檔案就要需要用特殊的module-loading命令。
 
+<hr>
+
 ### Access data on any installed device
 
 支援讀取各種BIOS可辨認的磁碟。
+
+<hr>
 
 ### Detect all installed RAM
 
 Grub2可以在PC兼容的PC上找到所有已經安裝的RAM，這部分是使用進階的BIOS技術來找到所有記憶體的區間，但是並不是所有的kernel都會用到這個資訊就對了。
 
+<hr>
+
 ### Support Logical Block Address mode
 
 在比較傳統的磁碟呼叫\(traditional disk calls\)\(也叫做_CHS mode_\)中，存在著一個幾何的轉換問題，就是BIOS無法存取超過磁碟的1024磁柱，所以空間的存取就被限制在508MB到8GB之間。因為各個平台之間這部分並沒有標準的介面，所以GRUB也無法去解決這個問題。然而，也一些比較新的平台有著一個新的介面，叫做Logical Block Address \(_LBA_\) mode，只要GRUB自動去偵測到支援這個模式的話就會去採用它，在LBA模式底下，GRUB可以存取到整顆硬碟。
+
+<hr>
 
 ### Support network booting
 
 雖然基礎上來說GRUB是個以磁碟為基礎的bootloader，但是它也支援網路功能，像是可以使用TFTP協定從網路讀取作業系統映像檔。
 
+<hr>
+
 ### Support remote terminals
 
 有些電腦沒有支援console模式，所以GRUB提供了remote terminal的功能，這樣你就可以從遠端的host來操控GRUB。
-
+<hr>
 # 主要模式差異
 因為GRUB2本來就和舊版的設計不一樣，底下列出一些舊版GRUB使用者會很常問的相關差異:
 
