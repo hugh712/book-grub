@@ -89,6 +89,7 @@ fd代表的是軟碟\(floppy disk\)，0代表的是磁碟\(drive\)編號，GRUB�
 eg.
 0+100,200+1,300+300
 ```
+上面的例子代表GRUB會讀取block 0~99，block 200和 block 300~599，如果你省略offset的話，GRUB會假設offset是0。
 
 
 
