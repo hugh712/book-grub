@@ -57,7 +57,7 @@ kernel.img: ELF 32-bit LSB executable, Intel 80386, version 1 (SYSV), statically
 ```
 
 # core.img
-GRUB的主要核心image，是從『kernel image』和一堆的modules裡，借由『grub-mkimage』所建立出來的，
+GRUB的主要核心image，是從『kernel image』和一堆的modules裡，借由『grub-mkimage』所建立出來的，通常這個image已經有足夠的module來存取『/boot/grub』，並且讀取『kernel.img』裡面的所有功能。這些模組化的設計讓這個core image可以保持的很小，有需要時在插入就好，畢竟在這個區域常常都會小於32KB。
 
 
 # \*.mod
