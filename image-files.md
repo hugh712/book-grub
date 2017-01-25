@@ -13,8 +13,6 @@ boot.img: DOS/MBR boot sector
 # diskboot.img
 當你從硬碟(hard disk)開機時，這個image會被當成core image的第一個sector，它會將剩下的core image讀入記憶體然後將控制權交給kernel，因為在這個時間點檔案系統還沒好，所以會將core image的位址用block list的格式給編碼進這個image。
 
-
-
 ```
 # ll diskboot.img; file diskboot.img
 -rw-r--r-- 1 root root 512  六  17  2016 diskboot.img
