@@ -20,6 +20,7 @@ diskboot.img: data
 ```
 
 # cdboot.img
+如果你是用CD-ROM開機的話，這個image就會被當成core image的第一個sector。行為來說就跟『diskboot.img』一樣。
 
 # pxeboot.img
 
