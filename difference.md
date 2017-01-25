@@ -168,6 +168,7 @@ Grub2可以在PC兼容的PC上找到所有已經安裝的RAM，這部分是使�
 舊版的可以在某些限制底下單獨執行Stage 1 或是 Stage 2，但是GRUB2的話則是一定需要『core.img』的存在。
 
 ### stage2
+GRUB2已經沒有單獨的Stage 2 image，相對的是在run-time時載入『/boot/grub』裡面的模組。
 
 ### stage2_eltorito
 
