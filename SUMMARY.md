@@ -23,7 +23,7 @@
 * [Serial Line](serial-line.md)
 * [Image files](image-files.md)
 * [User Interface](user-interface.md)
-* Environment Variable
+* [Environment Variable](environment-variable.md)
 * [Settings](settings.md)
   * [Images](images.md)
   * [Resolutions](resolutions.md)
