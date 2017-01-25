@@ -31,6 +31,13 @@ cdboot.img: data
 # pxeboot.img
 當你透過網路用PXE開機的話，這個image就會被當成core image的第一個sector。
 
+```
+# ll pxeboot.img;file pxeboot.img
+-rw-r--r-- 1 root root 1024  六  17  2016 pxeboot.img
+pxeboot.img: data
+```
+
+
 
 # lnxboot.img
 
