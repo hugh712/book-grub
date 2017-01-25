@@ -156,3 +156,4 @@ Grub2可以在PC兼容的PC上找到所有已經安裝的RAM，這部分是使�
 
 有些電腦沒有支援console模式，所以GRUB提供了remote terminal的功能，這樣你就可以從遠端的host來操控GRUB。
 
+
