@@ -66,6 +66,6 @@ GRUB的主要核心image，是從『kernel image』和一堆的modules裡，借�
 ```
 
 # \*.mod
-
+像在『core.img』那邊介紹過的，GRUB的設計是採模組化設計，所以通常都會伴隨著一堆module，有些module會自動的載入，其他的module就不會，這部分就是如果你需要時，就像Linux一樣，直接用『insmod』就好。
 
 
