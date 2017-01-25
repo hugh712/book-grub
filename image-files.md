@@ -29,6 +29,8 @@ cdboot.img: data
 ```
 
 # pxeboot.img
+當你透過網路用PXE開機的話，這個image就會被當成core image的第一個sector。
+
 
 # lnxboot.img
 
