@@ -6,7 +6,7 @@ GRUB裡面的環境變數(environment variables)，就像是Unix-like系統一�
   	當chain-loading到其他的boot loader時，GRUB可能需要知道與root device相關的BIOS drive number，這樣它才可以去設定registers。這部分的話也可以透過命令『devicemap』來達成。
 
 • chosen: <br>	
-  	
+  	這個變數需要搭配『GRUB_SAVEDEFAULT』和『GRUB_DEFAULT』的使用，因為設定成會儲存上一次的選擇，才會用到這個變數。
 • color_highlight:	  	
 
 • color_normal:	  	
