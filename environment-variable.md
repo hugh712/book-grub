@@ -7,6 +7,10 @@ GRUB裡面的環境變數(environment variables)，就像是Unix-like系統一�
 
 • chosen: <br>	
   	這個變數需要搭配『GRUB_SAVEDEFAULT』和『GRUB_DEFAULT』的使用，因為設定成會儲存上一次的選擇，才會用到這個變數。
+  
+
+  ![](Imgs/env/env001.PNG)
+  
 • color_highlight:	  	
 
 • color_normal:	  	
