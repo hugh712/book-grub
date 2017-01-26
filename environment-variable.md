@@ -10,7 +10,6 @@ GRUB裡面的環境變數(environment variables)，就像是Unix-like系統一�
   
   ![](Imgs/env/env002.PNG)
 
-
   ![](Imgs/env/env001.PNG)
   
 • color_highlight:	  	
