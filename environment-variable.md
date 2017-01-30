@@ -32,9 +32,7 @@ GRUB裡面的環境變數(environment variables)，就像是Unix-like系統一�
   - light-red
   - light-magenta
   - yellow
-  - white
-
-• debug:	  	
+  - white	  	
 
 • default:	  	
 
