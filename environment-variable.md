@@ -42,6 +42,7 @@ GRUB裡面的環境變數(environment variables)，就像是Unix-like系統一�
 
 • gfxmode:	  	
 設定『gfxterm』圖形化terminal的解析度，
+
 • gfxpayload:	  	
 
 • gfxterm_font:	  	
