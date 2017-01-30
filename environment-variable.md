@@ -41,7 +41,7 @@ GRUB裡面的環境變數(environment variables)，就像是Unix-like系統一�
 這個變數如果有被設定，代表如果預設的menu entry有問題導致失敗的話，就會選擇這一個。
 
 • gfxmode:	  	
-
+設定『gfxterm』圖形化terminal的解析度，
 • gfxpayload:	  	
 
 • gfxterm_font:	  	
