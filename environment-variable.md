@@ -43,7 +43,8 @@ GRUB裡面的環境變數(environment variables)，就像是Unix-like系統一�
 • **gfxmode**:	  	
 設定『gfxterm』圖形化terminal的解析度，這邊注意你只能使用你的顯卡經由VESA BIOS Extensions(VBE)支援的模式，預設的話是『auto』。這個解析度選項需要至少一個或以上的模式，中間以逗號『,』或是分號『;』來隔開，然後系統就會從第一個依序的找到能使用的，但是注意每一種都一定要是底下這種格式『auto』,『width x height』或是『width x height x depth』。
 
-• **gfxpayload**:	  	
+• **gfxpayload**:	 
+主要藉由取代boot option『vga=』控制Linux Kernel開始的video mode， 	
 
 • gfxterm_font:	  	
 
