@@ -34,16 +34,16 @@ GRUB裡面的環境變數(environment variables)，就像是Unix-like系統一�
   - yellow
   - white	  	
 
-• default:	  	
+• **default**:	  	
   這個變數如果有被設定的話，代表有預設的menu entry，通常是在某個timeout以後就會進入這個menu entry裡面，這個menu entry有可能是一個數字或是一串文字。這個變數通常都會經過『GRUB_DEFAULT』，『grub-set-default』或是『grub-reboot』來設定。
   
-• fallback:	  	
+• **fallback**:	  	
 這個變數如果有被設定，代表如果預設的menu entry有問題導致失敗的話，就會選擇這一個。
 
-• gfxmode:	  	
+• **gfxmode**:	  	
 設定『gfxterm』圖形化terminal的解析度，這邊注意你只能使用你的顯卡經由VESA BIOS Extensions(VBE)支援的模式，預設的話是『auto』。這個解析度選項需要至少一個或以上的模式，中間以逗號『,』或是分號『;』來隔開，然後系統就會從第一個依序的找到能使用的，但是注意每一種都一定要是底下這種格式『auto』,『width x height』或是『width x height x depth』。
 
-• gfxpayload:	  	
+• **gfxpayload**:	  	
 
 • gfxterm_font:	  	
 
