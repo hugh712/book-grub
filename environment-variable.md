@@ -14,7 +14,25 @@ GRUB裡面的環境變數(environment variables)，就像是Unix-like系統一�
   
 • **color_highlight**:	  	
 這個變數主要就是如果你現在terminal螢幕上有highlight的地方的話，它的文字顏色/背景顏色各是什麼。預設的話是『black/white』。其他可挑選的顏色請參考『color_normal』。
-• **color_normal**:	  	
+
+• **color_normal**:	
+主要在terminal螢幕上的文字/背景顏色，預設為『white/black』，有沒有發現剛好跟『highlight』的預設是相反的。可用的顏色列出如下：
+  - black
+  - blue
+  - green
+  - cyan
+  - red
+  - magenta
+  - brown
+  - light-gray
+  - dark-gray
+  - light-blue
+  - light-green
+  - light-cyan
+  - light-red
+  - light-magenta
+  - yellow
+  - white
 
 • debug:	  	
 
