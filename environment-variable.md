@@ -2,11 +2,11 @@ GRUB裡面的環境變數(environment variables)，就像是Unix-like系統一�
 
 # Special environment variables
 
-• biosnum: <br>	
+• **biosnum**: <br>	
   	當chain-loading到其他的boot loader時，GRUB可能需要知道與root device相關的BIOS drive number，這樣它才可以去設定registers。這部分的話也可以透過命令『devicemap』來達成。
 
-• chosen: <br>	
-  	這個變數需要搭配『GRUB_SAVEDEFAULT』和『GRUB_DEFAULT』的使用，因為設定成會儲存上一次的選擇，才會用到這個變數。底下這張圖可以看到我將
+• **chosen**: <br>	
+  	這個變數需要搭配『GRUB_SAVEDEFAULT』和『GRUB_DEFAULT』的使用，因為設定成會儲存上一次的選擇，才會用到這個變數。底下兩張圖可以看到我將『GRUB_SAVEDEFAULT』設定為true和『GRUB_DEFAULT』設定為saved，第一次開機自己選擇用kernel 4.4.0-31開機後，在下一次『chosen』和『default』就會把我上一次所選擇的版本給儲存起來了。
   
   ![](Imgs/env/env002.PNG)
 
