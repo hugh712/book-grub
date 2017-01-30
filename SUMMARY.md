@@ -10,7 +10,7 @@
   * [Device map](device-map.md)
   * [BIOS Installation](bios-installation.md)
 * [Start GRUB](start-grub.md)
-* Booting
+* [Booting](booting.md)
   * [General boot methods](general-boot-methods.md)
   * [Loopback booting](loopback-booting.md)
   * [OS-specific notes](os-specific-notes.md)
