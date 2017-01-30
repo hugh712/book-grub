@@ -47,7 +47,7 @@ GRUB裡面的環境變數(environment variables)，就像是Unix-like系統一�
 主要藉由取代『boot option "vga="』控制Linux Kernel開始的video mode，可以設定成『text』來讓Linux kernel強迫開機成正常的『text mode』，設定成『keep』則保持在使用『gfxmode』的圖形化介面上，這個變數通常是由『GRUB_GFXPAYLOAD_LINUX』來決定的，所以就不要手動去設定，其他的資訊請直接參考『GRUB_GFXPAYLOAD_LINUX』。
 
 • gfxterm_font:	  	
-
+設定一個字體來讓『gfxterm』圖形化terminal用，如果沒有指定的話，GRUB就會使用任何一個可以取得的字體。
 • icondir:	  	
 
 • lang:	  	
