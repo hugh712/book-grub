@@ -49,8 +49,9 @@ GRUB裡面的環境變數(environment variables)，就像是Unix-like系統一�
 • **gfxterm_font**:	  	
 設定一個字體來讓『gfxterm』圖形化terminal用，如果沒有指定的話，GRUB就會使用任何一個可以取得的字體。
 
-• icondir:	  	
+• **icondir**:	  	
 這個變數是關於GRUB的圖形化選單icons的設定資料夾。
+
 • lang:	  	
 
 • locale_dir:	  	
