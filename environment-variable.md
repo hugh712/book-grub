@@ -90,8 +90,6 @@ echo "${1}set menu_color_highlight=white/blue"
 
 • prefix:	  	
 
-  	
-
 • root:	  	
 
 • superusers:	  	
