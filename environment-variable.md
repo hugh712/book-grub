@@ -79,7 +79,10 @@ echo "${1}set menu_color_highlight=white/blue"
 • **net_pxe_hostname**:	  	
 • **net_pxe_ip**:	  	
 • **net_pxe_mac**:	  	
-• **net_pxe_rootpath**:	  	
+• **net_pxe_rootpath**:	  
+• **pxe_blksize**:	  	
+• **pxe_default_gateway**:	  	
+• **pxe_default_server**:		
 以上這幾個變數都是關於PXE的部份，這邊就不探討。
 
 • **pager**:	  	
@@ -87,11 +90,7 @@ echo "${1}set menu_color_highlight=white/blue"
 
 • prefix:	  	
 
-• pxe_blksize:	  	
-
-• pxe_default_gateway:	  	
-
-• pxe_default_server:	  	
+  	
 
 • root:	  	
 
