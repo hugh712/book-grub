@@ -1,4 +1,4 @@
-# <font color="red">關於此篇文章</font>
+# 關於此篇文章
 
 『BootLoader』，繼BIOS以後，第一個執行的程式，主要的工作是讀取kernel到RAM裡面以後將控制權交給kernel，所以bootloader的重要性可想而知，這篇文章想要研究一下用在各個distros上的bootloader - 『GRUB2』。
 
