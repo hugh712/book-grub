@@ -94,7 +94,7 @@ echo "${1}set menu_color_highlight=white/blue"
 • **root**:	  	
 root的裝置名稱，只要你沒有特別指定你的檔案的裝置在那的話，都會用這個預設的，通常都會跟『prefix』的值有相關。舉個例子來說，如果GRUB被安裝在第一顆硬碟的第一個partition，則『prefix』則應該被設定成『(hd0,msdos1)/boot/grub』，『root』的話就是『hd0,msdos1』。
 
-• superusers:	  	
+• **superusers**:	  	
 
 • theme:	  	
 
