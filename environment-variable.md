@@ -72,6 +72,7 @@ GRUB裡面的環境變數(environment variables)，就像是Unix-like系統一�
 • net_pxe_mac:	  	
 • net_pxe_rootpath:	  	
 以上這幾個變數都是關於PXE的部份，這邊就不探討。
+
 • pager:	  	
 
 • prefix:	  	
