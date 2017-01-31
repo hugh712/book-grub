@@ -1,1 +1,9 @@
 /* CSS for website */
+Title1{
+  font-size: 150%;
+  font-weight: bold;
+  font-family: "儷黑 Pro", "微軟正黑體";
+  background: #000 url(http://farm9.staticflickr.com/8190/28759402542_3ed83b3069_b.jpg) left top repeat-y;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
