@@ -61,7 +61,14 @@ GRUB裡面的環境變數(environment variables)，就像是Unix-like系統一�
 
 • **menu_color_highlight**:	  	
 • **menu_color_normal**:	  	
-上面兩個是menu entry的hightlight/non-highlight顏色主題，顏色的搭配都是以前景/背景為組合，直接舉個例子:
+上面兩個是menu entry的hightlight/non-highlight顏色主題，顏色的搭配都是以前景/背景為組合，直接舉個例子，直接修改『/etc/grub.d/05_debian_theme』，將主要的menu entry顏色主題改為：
+
+```
+echo "${1}set menu_color_normal=cyan/blue"
+echo "${1}set menu_color_highlight=white/blue"
+```
+然後執行『update-grub』後重開機，畫面如下：
+![](Imgs/env/env003.png)
 
 
 
