@@ -56,6 +56,8 @@ GRUB裡面的環境變數(environment variables)，就像是Unix-like系統一�
 設定『language code』，主要是由命令『gettext』來轉換字串時會用到這個變數。grub-mkconfig執行時將會根據你的系統的locale值來設定一個合理的變數給GRUB。
 
 • locale_dir:	  	
+設定多國語言檔所在的路徑，通常預設會是『/boot/grub/locale』，如果沒有的話就代表多國語言是被取消的。grub-mkconfig執行時將會根據你的系統的locale值來設定一個合理的變數給GRUB。
+
 
 • menu_color_highlight:	  	
 
