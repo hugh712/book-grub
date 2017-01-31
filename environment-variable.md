@@ -59,9 +59,9 @@ GRUB裡面的環境變數(environment variables)，就像是Unix-like系統一�
 設定多國語言檔所在的路徑，通常預設會是『/boot/grub/locale』，如果沒有的話就代表多國語言是被取消的。grub-mkconfig執行時將會根據你的系統的locale值來設定一個合理的變數給GRUB。
 
 
-• menu_color_highlight:	  	
+• **menu_color_highlight**:	  	
 
-• menu_color_normal:	  	
+• **menu_color_normal**:	  	
 
 • net_pxe_boot_file:	  	
 • net_pxe_dhcp_server_name:	  	
