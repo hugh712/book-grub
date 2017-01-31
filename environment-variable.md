@@ -70,6 +70,7 @@ echo "${1}set menu_color_highlight=white/blue"
 然後執行『update-grub』後重開機，畫面如下：
 ![](Imgs/env/env003.png)
 
+可以看到，因為背景都設定成藍色，而non-highlight(沒有被選到的)的顏色為cyan，highlight(被選到的)的顏色為white。
 
 
 • **net_pxe_boot_file**:	  	
