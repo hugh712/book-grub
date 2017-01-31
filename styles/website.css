@@ -1,5 +1,6 @@
 /* CSS for website */
-body {
-  background-color: #fff;
-  color: #f00;
+h1 {
+  background: #000 url(http://farm9.staticflickr.com/8190/28759402542_3ed83b3069_b.jpg) left top repeat-y;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
 }
