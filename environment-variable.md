@@ -92,7 +92,8 @@ echo "${1}set menu_color_highlight=white/blue"
 這個變數非常的重要，主要是設定『/boot/grub』的資料夾絕對位置，通常在『grub-install』時GRUB就會設定好了，然後GRUB的moudles就會動態的從這個變數去讀取相關的資訊，所以如果這個變數不正確的話，會連最簡單的modules都無法讀取。
 
 • **root**:	  	
-root的device name，
+root的裝置名稱，只要你沒有特別指定你的檔案的裝置在那的話，都會用這個預設的，通常都會跟『prefix』的值有相關。舉個例子來說，如果GRUB被安裝在第一顆硬碟的第一個partition，則『prefix』則應該被設定成『(hd0,msdos1)/boot/grub』，『root』的話就是『hd0,msdos1』。
+
 • superusers:	  	
 
 • theme:	  	
