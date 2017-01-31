@@ -64,21 +64,14 @@ GRUB裡面的環境變數(environment variables)，就像是Unix-like系統一�
 • menu_color_normal:	  	
 
 • net_pxe_boot_file:	  	
-
 • net_pxe_dhcp_server_name:	  	
-
 • net_pxe_domain:	  	
-
 • net_pxe_extensionspath:	  	
-
 • net_pxe_hostname:	  	
-
 • net_pxe_ip:	  	
-
 • net_pxe_mac:	  	
-
 • net_pxe_rootpath:	  	
-
+以上這幾個變數都是關於PXE的部份，這邊就不探討。
 • pager:	  	
 
 • prefix:	  	
