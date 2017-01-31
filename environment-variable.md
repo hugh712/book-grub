@@ -88,7 +88,8 @@ echo "${1}set menu_color_highlight=white/blue"
 • **pager**:	  	
 如果設定成1的話，就很像是linux shell的less的分頁效果。預設的話不會設定這個變數。
 
-• prefix:	  	
+• **prefix**:	  	
+這個變數非常的重要，主要是設定『/boot/grub』的資料夾絕對位置，通常在『grub-install』時GRUB就會設定好了，然後GRUB的moudles就會動態的從這個變數去讀取相關的資訊，所以如果這個變數不正確的話，會連最簡單的modules都無法讀取。
 
 • root:	  	
 
