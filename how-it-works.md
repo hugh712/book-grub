@@ -6,4 +6,4 @@
 
 ![](Imgs/Flow/nboot.png)
 
-
+看到上圖，正常的開機流程中，當BIOS/UEFI將控制權交給MBR/GPT中的GRUB後，前兩個重要的步驟就是找到『prefix』和『root』，然後就會使用命令『normal』而進入『normal mode』，如果進入normal mode失敗的話，就會直接進入『rescure mode(救援模式)』
