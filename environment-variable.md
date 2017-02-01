@@ -97,7 +97,8 @@ root的裝置名稱，只要你沒有特別指定你的檔案的裝置在那的�
 • **superusers**:	  	
 這個變數可以被設定成一系列的superuser名稱，可以用於權限的控制。
 
-• **theme**:	  	
+• **theme**:	 
+這個變數設定成包含GRUB圖形化選單主題的資料夾路徑，通常這個變數都是由每個distro的『GRUB_THEME』去設定的，像是debian-like的就是在『/etc/grub.d/05_debian_theme』裡。	
 
 • **timeout**:	  	
 
