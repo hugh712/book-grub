@@ -27,7 +27,7 @@ GRUB2的主要設計兼容於『[Multiboot Specification](https://www.gnu.org/so
 
 ## Load a configuration file
 
-支援可讀的文字組態檔，也可以動態讀取其它的組態檔或是將預先設定好的組態檔給嵌到GRUB的映像檔裡。
+支援可讀的文字組態檔，也可以動態讀取其它的組態檔或是將預先設定好的組態檔給嵌到GRUB2的映像檔裡。
 
 
 
