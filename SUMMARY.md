@@ -27,7 +27,7 @@
 * [User Interface](user-interface.md)
 * [Environment Variable](environment-variable.md)
 * [Commands-GRUB](commands.md)
-* Commands-System
+* [Commands-System](commands-system.md)
 * [Settings](settings.md)
   * [Images](images.md)
   * [Resolutions](resolutions.md)
