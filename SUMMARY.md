@@ -3,6 +3,7 @@
 * [Introduction](README.md)
 * [bootload - Grub](bootload---grub.md)
   * [Difference](difference.md)
+  * Feature
 * [How it works](how-it-works.md)
 * [Naming convention](naming-convention.md)
 * [Installation](installation.md)
