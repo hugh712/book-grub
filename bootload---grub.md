@@ -2,7 +2,7 @@
 
 
 
-Gordon Matzigkeit，一個GRUB狂熱者，對GRUB的描述是:
+_Gordon Matzigkeit_，一個GRUB狂熱者，對GRUB的描述是(有興趣者請自行體會，我就不翻譯了):
 
 『Some people like to acknowledge both the operating system and kernel when they talk about their computers, so they might say they use “GNU/Linux” or “GNU/Hurd”. Other people seem to think that the kernel is the most important part of the system, so they like to call their GNU operating systems “Linux systems.”
 
