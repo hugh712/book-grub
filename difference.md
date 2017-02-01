@@ -36,41 +36,41 @@ GRUB2的主要設計兼容於『[Multiboot Specification](https://www.gnu.org/so
 
 <hr>
 
-### Recognize multiple executable formats
+## Recognize multiple executable formats
 
 支援許多的a.out格式，並且也可以讀取Symbol table。
 
-### Support non-Multiboot kernels
+## Support non-Multiboot kernels
 
 支援許多其他32-bit不支援Multiboot的kernel，也支援其他boot loader的Chain-loading。
 
 <hr>
 
-### Load multiples modules
+## Load multiples modules
 
 支援多種的modules。
 
 <hr>
 
-### Load a configuration file
+## Load a configuration file
 
 支援可讀的文字組態檔，也可以動態讀取其它的組態檔或是將預先設定好的組態檔給嵌到GRUB的映像檔裡。
 
 <hr>
 
-### Provide a menu interface
+## Provide a menu interface
 
 支援圖形化介面，列出所有目前的boot指令。
 
 <hr>
 
-### Have a flexible command-line interface
+## Have a flexible command-line interface
 
 提供一個相當有彈性的command-line\(命令列\)介面，可以從menu那邊存取，也可以編輯任何的命令，又或者是你想要編輯一個全新的boot command set，如果沒有組態的話，GRUB2會直接進入command-line裡面。而GRUB2的command-line支援使用tab-completion，可以根據內容來列出裝置，partitions和檔案。
 
 <hr>
 
-### Support multiple filesystem types
+## Support multiple filesystem types
 
 支援很多種的檔案系統，而且可以直接用blocklist來指定檔案，目前支援的有:
 
@@ -147,59 +147,59 @@ GRUB2的主要設計兼容於『[Multiboot Specification](https://www.gnu.org/so
   ```
 <hr>
 
-### Support automatic decompression
+## Support automatic decompression
 
 會自動解壓縮gzip或是Xz2壓縮檔，可以節省很多空間和傳輸時間。但是因為像是kernel module一定會是壓縮檔，所以像類似這種的檔案就要需要用特殊的module-loading命令。
 
 <hr>
 
-### Access data on any installed device
+## Access data on any installed device
 
 支援讀取各種BIOS可辨認的磁碟。
 
 <hr>
 
-### Detect all installed RAM
+## Detect all installed RAM
 
 Grub2可以在PC兼容的PC上找到所有已經安裝的RAM，這部分是使用進階的BIOS技術來找到所有記憶體的區間，但是並不是所有的kernel都會用到這個資訊就對了。
 
 <hr>
 
-### Support Logical Block Address mode
+## Support Logical Block Address mode
 
 在比較傳統的磁碟呼叫\(traditional disk calls\)\(也叫做_CHS mode_\)中，存在著一個幾何的轉換問題，就是BIOS無法存取超過磁碟的1024磁柱，所以空間的存取就被限制在508MB到8GB之間。因為各個平台之間這部分並沒有標準的介面，所以GRUB也無法去解決這個問題。然而，也一些比較新的平台有著一個新的介面，叫做Logical Block Address \(_LBA_\) mode，只要GRUB自動去偵測到支援這個模式的話就會去採用它，在LBA模式底下，GRUB可以存取到整顆硬碟。
 
 <hr>
 
-### Support network booting
+## Support network booting
 
 雖然基礎上來說GRUB是個以磁碟為基礎的bootloader，但是它也支援網路功能，像是可以使用TFTP協定從網路讀取作業系統映像檔。
 
 <hr>
 
-### Support remote terminals
+## Support remote terminals
 
 有些電腦沒有支援console模式，所以GRUB提供了remote terminal的功能，這樣你就可以從遠端的host來操控GRUB。
 <hr>
 # 主要模式差異
 因為GRUB2本來就和舊版的設計不一樣，底下列出一些舊版GRUB使用者會很常問的相關差異:
 
-### stage1
+## stage1
 舊版的stage 1到GRUB2以後就變成『boot.img』，它們有相同功能。
 
-### *_stage1_5
+## *_stage1_5
 在舊版的stage 1.5會引入足夠的檔案系統功能，這樣接下來才能在在這個階段支援更大的檔案，但是在GRUB2裡，這部分的功已經被『core.img』所取代掉，而且『core.img』會比舊版的更穩定，功能更強大；而且在GRUB2裡面提供了『rescue shell』，這樣就算你在無法讀取任何的module的狀況下，也可以手動的復原。『core.img』是用更加有彈性來建立的，它允許GRUB2支援其他更進階的檔案系統類型，像是LVM和RAID。
 
 舊版的可以在某些限制底下單獨執行Stage 1 或是 Stage 2，但是GRUB2的話則是一定需要『core.img』的存在。
 
-### stage2
+## stage2
 GRUB2已經沒有單獨的Stage 2 image，相對的是在run-time時載入『/boot/grub』裡面的模組。
 
-### stage2_eltorito
+## stage2_eltorito
 在GRUB2裡面，從CD-ROM開機的image現在都用『cdboot.img』和『core.img』來處理，確保裡面包含了『iso9660』的模組，如果想要建立救援碟的話，這部分可以直接用『grub-mkrescure』來達成。
 
-### nbgrub
+## nbgrub
 在GRUB2裡面沒有相對應nbgrub的功能。
 
-### pxegrub
+## pxegrub
 在GRUB2裡面，用網路啟動的PXE image現在都用『pxeboot.img』和『core.img』來達成。
