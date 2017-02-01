@@ -18,7 +18,7 @@ GRUB2是修改GRUB而成的，主要的差異如下:
 
 * GRUB2的介面可以被轉換。
 
-* image files的組成跟之前不一樣，Stage 1, Stage 1.5和 Stage 2已經不存在了。
+* Image檔案的組成跟之前不一樣，Stage 1, Stage 1.5和 Stage 2已經不存在了。
 
 * GRUB2將許多的功能都改成動態模組\(Dynamically loaded modules\)，所以主要的映像檔可以更小更有彈性。
 
