@@ -36,7 +36,7 @@ GRUB2是修改GRUB而成的，主要的差異如下:
 舊版的可以在某些限制底下單獨執行Stage 1 或是 Stage 2，但是GRUB2的話則是一定需要『core.img』的存在。
 
 ## stage2
-GRUB2已經沒有單獨的Stage 2 image，相對的是在run-time時載入『/boot/grub』裡面的模組。
+GRUB2已經沒有單獨的Stage 2 映像檔，相對的是在run-time時載入『/boot/grub』裡面的模組。
 
 ## stage2_eltorito
 在GRUB2裡面，從CD-ROM開機的image現在都用『cdboot.img』和『core.img』來處理，確保裡面包含了『iso9660』的模組，如果想要建立救援碟的話，這部分可以直接用『grub-mkrescure』來達成。
