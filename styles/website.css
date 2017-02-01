@@ -4,3 +4,8 @@ h1 {
   background-size: 100% 100%;
   background-repeat: no-repeat;
 }
+h2{
+  background:  url(https://c1.staticflickr.com/1/289/31797665664_4d52a6b2a0_b.jpg) left bottom repeat-y;
+  background-size: 100% 80%;
+  background-repeat: no-repeat;
+}
