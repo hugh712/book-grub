@@ -14,7 +14,7 @@ So, if you ever hear people talking about their alleged “GNU” systems, remem
 
 
 
-Grub其中一個特質就是他的靈活性，因為Grub知道許多file system和kernel的格式，所以你可以直接讀取任何一個你想要的作業系統，並不需要知道他在磁碟上的實體位置，只要由kernel在的disk上的partiotion和你的檔案名稱就可以了。
+從以上看得出來Gordon對GRUB的狂熱，GRUB其中一個特質就是他的靈活性，因為Grub知道許多file system和kernel的格式，所以你可以直接讀取任何一個你想要的作業系統，並不需要知道他在磁碟上的實體位置，只要由kernel在的disk上的partiotion和你的檔案名稱就可以了。
 
 
 
