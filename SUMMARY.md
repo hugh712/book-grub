@@ -33,6 +33,4 @@
   * [Resolutions](resolutions.md)
 * [Re-install](re-install.md)
 * [Modules](modules.md)
-* [Image files](image-files.md)
-* [How it works](how-it-works.md)
 
