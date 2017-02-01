@@ -24,11 +24,12 @@
 * [Image files](image-files.md)
 * [User Interface](user-interface.md)
 * [Environment Variable](environment-variable.md)
+* Commands
 * [Settings](settings.md)
   * [Images](images.md)
   * [Resolutions](resolutions.md)
-* Re-install
-* Modules
+* [Re-install](re-install.md)
+* [Modules](modules.md)
 * Image files
 * [Ref](ref.md)
 
