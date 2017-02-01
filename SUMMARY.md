@@ -12,7 +12,6 @@
   * [Making a GRUB bootable CD-ROM](making-a-grub-bootable-cd-rom.md)
   * [Device map](device-map.md)
   * [BIOS Installation](bios-installation.md)
-* [Start GRUB](start-grub.md)
 * [Booting](booting.md)
   * [General boot methods](general-boot-methods.md)
   * [Loopback booting](loopback-booting.md)
@@ -34,6 +33,6 @@
   * [Resolutions](resolutions.md)
 * [Re-install](re-install.md)
 * [Modules](modules.md)
-* Image files
-* How it works
+* [Image files](image-files.md)
+* [How it works](how-it-works.md)
 
