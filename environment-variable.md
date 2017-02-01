@@ -101,6 +101,7 @@ root的裝置名稱，只要你沒有特別指定你的檔案的裝置在那的�
 這個變數設定成包含GRUB圖形化選單主題的資料夾路徑，通常這個變數都是由每個distro的『GRUB_THEME』去設定的，像是debian-like的就是在『/etc/grub.d/05_debian_theme』裡。	
 
 • **timeout**:	  	
+設定在使用預設的menu entry啟動之前，GRUB會等待多久的時間，如果你有按任何鍵的話，就會中斷倒數。『0』的話就是直接以預設的menu entry啟動，『-1』的話就是會一直等。這個變數通常都由『GRUB_TIMEOUT』和『GRUB_HIDDEN_TIMEOUT』的組合來設定的。
 
 
 
