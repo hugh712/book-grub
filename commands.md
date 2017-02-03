@@ -107,6 +107,13 @@ word和stop是data bits和stop bits，data bits必須是5~8，stop bits必須是
 parity的值會是『no』,『odd』,『even』其一，預設的話是『no』。
 
 ## terminal_input
+列出或選擇一個輸入terminal。如果沒有輸入參數的話，就是列出所有已啟動
+和可取得的輸入terminal。如果沒有參數但是有一系列的terminal名稱的話，就會只讓列出的terminal名稱啟動。
+
+--append,
+
+--remove,
+
 
 ## terminal_output
 
