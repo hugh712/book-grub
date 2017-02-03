@@ -128,6 +128,12 @@ Command: terminal_input [--append|--remove] [terminal1] [terminal2] …
 
 
 ## terminal_output
+```
+Command: terminal_output [--append|--remove] [terminal1] [terminal2] …
+```
+
+
+
 
 ## terminfo
 ## acpi	  	
