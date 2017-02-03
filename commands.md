@@ -131,7 +131,7 @@ Command: terminal_input [--append|--remove] [terminal1] [terminal2] …
 ```
 Command: terminal_output [--append|--remove] [terminal1] [terminal2] …
 ```
-
+列出或選擇一個輸出terminal。
 
 
 
