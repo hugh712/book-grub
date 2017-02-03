@@ -23,48 +23,48 @@ GRUB的命令分為兩個群組:
 
 ## terminfo
 
- acpi:	  	
-• badram:	  	
-• blocklist:	  	
-• boot:	  	
-• cat:	  	
-• chainloader:	  	
-• cmp:	  	
-• configfile:	  	
-• cpuid:	  	
-• crc:	  	
-• date:	  	
-• drivemap:	  	
-• echo:	  	
-• export:	  	
-• false:	  	
-• gettext:	  	
-• gptsync:	  	
-• halt:	  	
-• help:	  	
-• initrd:	  	Load a Linux initrd
-• initrd16:	  	Load a Linux initrd (16-bit mode)
-• insmod:	  	Insert a module
-• keystatus:	  	Check key modifier status
-• linux:	  	Load a Linux kernel
-• linux16:	  	Load a Linux kernel (16-bit mode)
-• list_env:	  	List variables in environment block
-• load_env:	  	Load variables from environment block
-• loopback:	  	Make a device from a filesystem image
-• ls:	  	List devices or files
-• normal:	  	Enter normal mode
-• normal_exit:	  	Exit from normal mode
-• parttool:	  	Modify partition table entries
-• password:	  	Set a clear-text password
-• password_pbkdf2:	  	Set a hashed password
-• play:	  	Play a tune
-• pxe_unload:	  	Unload the PXE environment
-• read:	  	Read user input
-• reboot:	  	Reboot your computer
-• save_env:	  	Save variables to environment block
-• search:	  	Search devices by file, label, or UUID
-• sendkey:	  	Emulate keystrokes
-• set:	  	Set an environment variable
-• true:	  	Do nothing, successfully
-• unset:	  	Unset an environment variable
-• uppermem:	  	Set the upper memory size
+- acpi:	  	
+- badram:	  	
+- blocklist:	  	
+- boot:	  	
+- cat:	  	
+- chainloader:	  	
+- cmp:	  	
+- configfile:	  	
+- cpuid:	  	
+- crc:	  	
+- date:	  	
+- drivemap:	  	
+- echo:	  	
+- export:	  	
+- false:	  	
+- gettext:	  	
+- gptsync:	  	
+- halt:	  	
+- help:	  	
+- initrd:	  	
+- initrd16:	  	
+- insmod:	  	
+- keystatus:	  	
+- linux:	  	
+- linux16:	  	
+- list_env:	  	
+- load_env:	  	
+- loopback:	  	
+- ls:	  	
+- normal:	  	
+- normal_exit:	  	
+- parttool:	  	
+- password:	  	
+- password_pbkdf2:	  	
+- play:	  	
+- pxe_unload:	  	
+- read:	  	
+- reboot:	  	
+- save_env:	  	
+- search:	  	
+- sendkey:	  	
+- set:	  	
+- true:	  	
+- unset:	  	
+- uppermem:	  	
