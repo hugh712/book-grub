@@ -12,9 +12,6 @@ GRUB的命令分為兩個群組:
 ## menuentry
 ## submenu
 
-
-
-
 # general commands
 
 - serial
