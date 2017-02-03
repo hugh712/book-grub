@@ -15,7 +15,17 @@ Command: menuentry title [--class=class …] [--users=users] [--unrestricted] [-
 ```
 這個命令用來定義GRUB menu entry的title。當在menu上這個entry被選到時，GRUB會將變數『chosen』的值設定成這個title，然後執行大括弧裡面的所有命令，如果最後一行的命令執行成功，沒有什麼意外而回傳err的話，kernel就應該被讀取，且自動執行『boot』命令。
 
+--class,  
+這個參數是用來將不同的menu entry給設定成相同的class群組，menu的theme有可能會根據不同的class風格而呈現不同的效果。
 
+--users,
+這個參數主要是授權給特殊的使用者才能使用這個menu entry。
+
+--unrestricted,
+授權給所有使用者來存取特殊的menu entry。
+
+--hotkey
+結合menu entry與某個熱鍵(hotkey)，有可能是單一個字母鍵，或者是別名(eg. 'backspace', 'tab' 或是 'delete')。
 
 ## submenu
 ```

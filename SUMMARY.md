@@ -33,4 +33,5 @@
   * [Resolutions](resolutions.md)
 * [Re-install](re-install.md)
 * [Modules](modules.md)
+* Parsing of my grub.cfg
 
