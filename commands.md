@@ -13,7 +13,7 @@ GRUB的命令分為兩個群組:
 ```
 Command: menuentry title [--class=class …] [--users=users] [--unrestricted] [--hotkey=key] { command; … }
 ```
-
+這個命令用來定義GRUB menu entry的title。當在menu上這個entry被選到時，GRUB會將變數『chosen』的值設定成這個title，然後執行大括弧裡面的所有命令，如果最後一行的命令執行成功，沒有什麼意外而回傳err的話，kernel就應該被讀取，且自動執行『boot』命令。
 
 
 
