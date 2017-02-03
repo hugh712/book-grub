@@ -31,7 +31,7 @@ Command: menuentry title [--class=class …] [--users=users] [--unrestricted] [-
 ```
 Command: submenu title [--class=class …] [--users=users] [--unrestricted] [--hotkey=key] { menu entries … }
 ```
-
+這個命令定義一個子選單(sub menu)，然後一個新的選單 - title就會被加到menu上，當這個menu被選到後，會在顯示一個新的menu，然後這個新的menu上會有其他的entry。這個命令的參數就跟『menuentry』一樣。
 
 
 # general commands
