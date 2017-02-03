@@ -121,7 +121,7 @@ Command: terminal_input [--append|--remove] [terminal1] [terminal2] …
 和可取得的輸入terminal。如果沒有其他參數但是有一系列的terminal名稱的話，就會只讓列出的terminal名稱啟動。
 
 --append,
-後面會接一個/多個terminal的名稱，然後這個選項會將這個terminal加到啟動輸入清單裡面。裡面每個terminal都會提供GRUB輸入。
+後面會接一個/多個terminal的名稱，然後這個選項會將這個terminal加到啟動輸入清單裡面。清單裡面每個terminal都會提供GRUB輸入。
 
 --remove,
 後面會接一個/多個terminal的名稱，然後這個選項會從啟動清單裡面將這個terminal移除掉。
@@ -135,7 +135,7 @@ Command: terminal_output [--append|--remove] [terminal1] [terminal2] …
 和可取得的輸出terminal。如果沒有其他參數但是有一系列的terminal名稱的話，就會只讓列出的terminal名稱啟動。
 
 --append,
-後面會接一個/多個terminal的名稱，然後這個選項會將這個terminal加到啟動輸出清單裡面。裡面每個terminal都會接到GRUB的輸出資訊。
+後面會接一個/多個terminal的名稱，然後這個選項會將這個terminal加到啟動輸出清單裡面。清單裡面每個terminal都會接到GRUB的輸出資訊。
 
 --remove,
 後面會接一個/多個terminal的名稱，然後這個選項會從啟動清單裡面將這個terminal移除掉。
