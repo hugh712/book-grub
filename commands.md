@@ -10,7 +10,19 @@ GRUB的命令分為兩個群組:
 - submenu
 
 ## menuentry
+```
+Command: menuentry title [--class=class …] [--users=users] [--unrestricted] [--hotkey=key] { command; … }
+```
+
+
+
+
 ## submenu
+```
+Command: submenu title [--class=class …] [--users=users] [--unrestricted] [--hotkey=key] { menu entries … }
+```
+
+
 
 # general commands
 
