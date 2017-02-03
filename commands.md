@@ -131,7 +131,8 @@ Command: terminal_input [--append|--remove] [terminal1] [terminal2] …
 ```
 Command: terminal_output [--append|--remove] [terminal1] [terminal2] …
 ```
-列出或選擇一個輸出terminal。
+列出或選擇一個輸出terminal。如果沒有輸入參數的話，就是列出所有已啟動
+和可取得的輸出terminal。
 
 
 
