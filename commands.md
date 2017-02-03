@@ -88,6 +88,11 @@ Command: submenu title [--class=class …] [--users=users] [--unrestricted] [--h
 
 
 ## serial
+```
+Command: serial [--unit=unit] [--port=port] [--speed=speed] [--word=word] [--parity=parity] [--stop=stop]
+```
+
+
 初始化一個串列設備(serial device)，這邊要特別注意的是，這個命令一定要搭配『terminal_input』和『terminal_output』的使用。
 
 --unit,
@@ -107,6 +112,11 @@ word和stop是data bits和stop bits，data bits必須是5~8，stop bits必須是
 parity的值會是『no』,『odd』,『even』其一，預設的話是『no』。
 
 ## terminal_input
+```
+Command: terminal_input [--append|--remove] [terminal1] [terminal2] …
+```
+
+
 列出或選擇一個輸入terminal。如果沒有輸入參數的話，就是列出所有已啟動
 和可取得的輸入terminal。如果沒有參數但是有一系列的terminal名稱的話，就會只讓列出的terminal名稱啟動。
 
