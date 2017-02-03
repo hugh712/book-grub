@@ -3,6 +3,11 @@
 
 GRUB的命令分為兩個群組:
 1. 只能在menu使用。
-2. menu和command-line都能使用。
+2. menu和command-line都能使用(general commands)。
 
 # menu only
+
+
+menuentry
+
+submenu
