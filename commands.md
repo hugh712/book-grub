@@ -88,7 +88,7 @@ Command: submenu title [--class=class …] [--users=users] [--unrestricted] [--h
 
 
 ## serial
-初始化一個串列設備(serial device)，
+初始化一個串列設備(serial device)，這邊要特別注意的是，這個命令一定要搭配『terminal_input』和『terminal_output』的使用。
 
 --unit,
 代表哪個serial port會被使用，範圍是0~3，預設的話是0，對應port的話是COM1。
