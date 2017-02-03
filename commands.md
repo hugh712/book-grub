@@ -92,15 +92,26 @@ Command: submenu title [--class=class …] [--users=users] [--unrestricted] [--h
 
 --unit,
 代表哪個serial port會被使用，範圍是0~3，預設的話是0，對應port的話是COM1。
+
 --port,
 代表哪個I/O port UART會被找到。
+
 --speed,
 這是傳輸速率，預設是9600。
+
 --word,
+--stop,
+word和stop是data bits和stop bits，data bits必須是5~8，stop bits必須是1或2，預設的話是data bits - 8和stop bit - 1。
 
 --parity,
+parity的值會是『no』,『odd』,『even』其一，預設的話是『no』。
 
---stop,
+
+
+
+
+
+
 
 ## terminal_input
 ## terminal_output
