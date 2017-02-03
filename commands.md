@@ -8,21 +8,16 @@ GRUB的命令分為兩個群組:
 # menu only
 
 
-## menuentry
-
-## submenu
+- menuentry
+- submenu
 
 
 # general commands
 
-## serial
-
-## terminal_input
-
-## terminal_output
-
-## terminfo
-
+- serial
+- terminal_input
+- terminal_output
+- terminfo
 - acpi:	  	
 - badram:	  	
 - blocklist:	  	
