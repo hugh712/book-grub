@@ -8,6 +8,17 @@ GRUB的命令分為兩個群組:
 # menu only
 
 
-menuentry
+## menuentry
 
-submenu
+## submenu
+
+
+# general commands
+
+## serial
+
+## terminal_input
+
+## terminal_output
+
+## terminfo
