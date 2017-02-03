@@ -88,6 +88,20 @@ Command: submenu title [--class=class …] [--users=users] [--unrestricted] [--h
 
 
 ## serial
+初始化一個串列設備(serial device)，
+
+--unit,
+代表哪個serial port會被使用，範圍是0~3，預設的話是0，對應port的話是COM1。
+--port,
+
+--speed,
+
+--word,
+
+--parity,
+
+--stop,
+
 ## terminal_input
 ## terminal_output
 ## terminfo
