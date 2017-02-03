@@ -140,12 +140,14 @@ Command: terminal_output [--append|--remove] [terminal1] [terminal2] …
 --remove,
 後面會接一個/多個terminal的名稱，然後這個選項會從啟動清單裡面將這個terminal移除掉。
 
-
-
-
-
-
 ## terminfo
+
+```
+Command: terminfo [-a|-u|-v] [term]
+```
+
+
+
 ## acpi	  	
 ## badram	  	
 ## blocklist	  	
