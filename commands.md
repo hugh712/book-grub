@@ -107,12 +107,6 @@ word和stop是data bits和stop bits，data bits必須是5~8，stop bits必須是
 parity的值會是『no』,『odd』,『even』其一，預設的話是『no』。
 
 
-
-
-
-
-
-
 ## terminal_input
 ## terminal_output
 ## terminfo
