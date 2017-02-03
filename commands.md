@@ -93,9 +93,9 @@ Command: submenu title [--class=class …] [--users=users] [--unrestricted] [--h
 --unit,
 代表哪個serial port會被使用，範圍是0~3，預設的話是0，對應port的話是COM1。
 --port,
-
+代表哪個I/O port UART會被找到。
 --speed,
-
+這是傳輸速率，預設是9600。
 --word,
 
 --parity,
