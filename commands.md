@@ -145,6 +145,11 @@ Command: terminal_output [--append|--remove] [terminal1] [terminal2] …
 ```
 Command: terminfo [-a|-u|-v] [term]
 ```
+這個命令會定義你的terminal的顯示功能，主要是藉由在terminfo database裡面給定一個entry的名字來設定。
+
+目前可取得的terminal類型是『vt100』，『vt100-color』， 『ieee1275』和 『dumb』，如果你還想要加入其他的類型的支援的話，這方面需要和官方聯繫。
+
+參數-a(--ascii)，-u(--utf8)，-v（--visual-utf8)控制non-ASCII的文字怎麼顯示，『-a』代表ASCII-only; 『-u』代表邏輯順序(logically-ordered)的UTF-8，『-v』代表的是視覺邏輯的UTF-8。
 
 
 
