@@ -165,7 +165,8 @@ Command: acpi [-1|-2] [--exclude=table1,…|--load-only=table1,…] [--oemid=id]
 ```
 Command: badram addr,mask[,addr,mask...]
 ```
-這個命令會通知記憶體管理哪個記憶體的區域必須被過濾掉，被過濾掉的原因通常是因為這個區域已經毀損了。當GRUB將控制權交給kernel時，也會有一份memory map，這些被濾掉的記憶體當然也會包含在其中，所以你的作業系統也會知道哪些記憶體區塊是有問題的。
+這個命令會通知記憶體管理哪個記憶體的區域必須被過濾掉，被過濾掉的原因通常是因為這個區域已經毀損了。當GRUB將控制權交給kernel時，也會有一份memory map，這些被濾掉的記憶體當然也會包含在其中，所以你的作業系統也會知道哪些記憶體區塊是有問題的。但是並不是所有的kernel都會支援這個行為，有支援的kernel包含了Linux, GNU Mach和FreeBSD等等。
+
 
 
 		  	
