@@ -84,7 +84,6 @@ Command: submenu title [--class=class …] [--users=users] [--unrestricted] [--h
 - set	  	
 - true	  	
 - unset	  	
-- uppermem	
 
 
 ## serial
@@ -285,5 +284,5 @@ Command: drivemap -l|-r|[-s] from_drive to_drive
 ## set	  	
 ## true	  	
 ## unset	  	
-## uppermem
+
     
