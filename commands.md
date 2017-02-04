@@ -235,8 +235,13 @@ Command: crc file
 ```
 顯示一個檔案的CRC32 checksum。
 
+## date 
+```
+Command: date [[year-]month-day] [hour:minute[:second]]
+```
 
-## date 	
+
+	
 ## drivemap	  	
 ## echo  	
 ## export	  	
