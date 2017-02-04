@@ -233,7 +233,7 @@ Command: cpuid [-l]
 ```
 Command: crc file
 ```
-
+顯示一個檔案的CRC32 checksum。
 
 
 ## date 	
