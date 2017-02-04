@@ -157,6 +157,9 @@ Command: terminfo [-a|-u|-v] [term]
 ```
 Command: acpi [-1|-2] [--exclude=table1,…|--load-only=table1,…] [--oemid=id] [--oemtable=table] [--oemtablerev=rev] [--oemtablecreator=creator] [--oemtablecreatorrev=rev] [--no-ebda] filename …
 ```
+通常現在的BIOS都有實做Advanced Configuration and Power Interface (ACPI)，並且定義描述相容於ACPI的作業系統和韌體之間介面的各種table。在有些case底下，這些預設的table只會支援特定的作業系統，所以有必要的話必須要置換這些table。
+
+正常來說，這個命令將會置換在擴充BIOS資料區域中的Root System Description Pointer (RSDP)，這樣才會指到新的table。但是如果你用參數『--no-ebda』的話，這個新的table將只會被GRUB知道，或者是GRUB的EFI模擬系統。
 
 
 	
