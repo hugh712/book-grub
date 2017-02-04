@@ -239,6 +239,7 @@ Command: crc file
 ```
 Command: date [[year-]month-day] [hour:minute[:second]]
 ```
+如果沒有任何參數的話，就會顯示目前的日期和時間。
 
 
 	
