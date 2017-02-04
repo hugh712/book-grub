@@ -184,6 +184,14 @@ Command: boot
 啟動已經載入的作業系統或是chain-loader，但是這個指令通常只會在互動式的cmd才需要，因為在menu entry的最後面會自動呼叫。
 
 ## cat	  	
+```
+Command: cat [--dos] file
+```
+
+
+
+
+
 ## chainloader	  	
 ## cmp	  	
 ## configfile	  	
