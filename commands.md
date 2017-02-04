@@ -203,7 +203,14 @@ Command: chainloader [--force] file
 --force,
 強制的讀取檔案，不論它是否是正確的signature，通常是在你想要讀取一個有缺陷的boot loader時就需要用到。
 	  	
-## cmp	  	
+## cmp	  
+```
+Command: cmp file1 file2
+```
+
+
+
+		
 ## configfile	  	
 ## cpuid	  	
 ## crc	  	
