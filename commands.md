@@ -169,7 +169,13 @@ Command: badram addr,mask[,addr,mask...]
 
 這部份的語法會跟[Memtest86+ utility](http://www.memtest.org/)一樣，就是一系列的address/mask。
 	  	
-## blocklist	  	
+## blocklist	
+```
+Command: blocklist file
+```
+印出檔案裡的block list。
+
+  	
 ## boot	  	
 ## cat	  	
 ## chainloader	  	
