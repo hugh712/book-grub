@@ -207,6 +207,17 @@ Command: chainloader [--force] file
 ```
 Command: cmp file1 file2
 ```
+比較兩個檔案，如果是size不一樣的話，會顯示像是：
+```
+Differ in size: 0x1234 [foo], 0x4321 [bar]
+```
+如果size一樣但是bytes不一樣的話，會顯示像是：
+```
+Differ at the offset 777: 0xbe [foo], 0xef [bar]
+```
+至於完全一樣的話，就不會顯示任何東西。
+
+
 
 
 
