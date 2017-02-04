@@ -194,12 +194,13 @@ grub> cat /etc/fstab
 ```
 如果有用參數『--dos』的話，結尾符號是CLRF的windows格式話就不會特別顯示，但是如果你沒有加這個參數，那結尾就會有一個『&lt;d>』。
 
+## chainloader
+```
+Command: chainloader [--force] file
+```
 
 
-
-
-
-## chainloader	  	
+	  	
 ## cmp	  	
 ## configfile	  	
 ## cpuid	  	
