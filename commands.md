@@ -187,6 +187,12 @@ Command: boot
 ```
 Command: cat [--dos] file
 ```
+顯示檔案的內容，通常是用來看你的partition table的:
+
+```
+grub> cat /etc/fstab
+```
+
 
 
 
