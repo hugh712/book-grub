@@ -145,7 +145,7 @@ Command: terminal_output [--append|--remove] [terminal1] [terminal2] …
 ```
 Command: terminfo [-a|-u|-v] [term]
 ```
-這個命令會定義你的terminal的顯示功能，主要是藉由在terminfo database裡面給定一個entry的名字來設定。
+這個命令會定義你的terminal的顯示功能，主要是藉由在terminfo database裡面給定一個entry的名字來設定，如果沒有任何參數的話，就會直接顯示目前的terminal類型。
 
 目前可取得的terminal類型是『vt100』，『vt100-color』， 『ieee1275』和 『dumb』，如果你還想要加入其他的類型的支援的話，這方面需要和官方聯繫。
 
@@ -153,7 +153,15 @@ Command: terminfo [-a|-u|-v] [term]
 
 
 
-## acpi	  	
+## acpi	  
+```
+Command: acpi [-1|-2] [--exclude=table1,…|--load-only=table1,…] [--oemid=id] [--oemtable=table] [--oemtablerev=rev] [--oemtablecreator=creator] [--oemtablecreatorrev=rev] [--no-ebda] filename …
+```
+
+
+	
+		
+				
 ## badram	  	
 ## blocklist	  	
 ## boot	  	
