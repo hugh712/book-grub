@@ -227,7 +227,7 @@ Command: configfile file
 ```
 Command: cpuid [-l]
 ```
-
+檢查CPU的功能，這個命令只能支援x86的系統。
 
 
 
