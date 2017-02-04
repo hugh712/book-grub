@@ -224,6 +224,12 @@ Command: configfile file
 讀取一個檔案當成組態檔，如果檔案裡面定義了menu entry的話，則馬上就會顯示出相關的menu。
 		
 ## cpuid	  	
+```
+Command: cpuid [-l]
+```
+
+
+
 
 ## crc	  	
 ## date 	
