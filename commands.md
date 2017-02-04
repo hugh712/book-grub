@@ -177,6 +177,12 @@ Command: blocklist file
 
   	
 ## boot	  	
+```
+Command: boot
+```
+
+
+
 ## cat	  	
 ## chainloader	  	
 ## cmp	  	
