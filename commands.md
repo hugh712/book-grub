@@ -173,7 +173,7 @@ Command: badram addr,mask[,addr,mask...]
 ```
 Command: blocklist file
 ```
-印出檔案裡的block list。
+印出檔案裡的block list。block list的語法請參考之前介紹過的『GRUB的命名規則』。
 
   	
 ## boot	  	
