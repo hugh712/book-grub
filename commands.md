@@ -245,11 +245,14 @@ date 01-01
 ```
 上面這個例子會將現在的時間設定成一月一號，但是年，時間之類的就不會變。
 
+## drivemap	
+```
+Command: drivemap -l|-r|[-s] from_drive to_drive
+```
 
 
 
-	
-## drivemap	  	
+    	
 ## echo  	
 ## export	  	
 ## false	  	
