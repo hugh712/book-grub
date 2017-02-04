@@ -227,7 +227,7 @@ Command: configfile file
 ```
 Command: cpuid [-l]
 ```
-檢查CPU的功能，這個命令只能支援x86的系統。
+檢查CPU的功能，這個命令只能支援x86的系統。如果有個參數『-l』的話，當你的CPU支援long mode(64-bit)，就會回傳『true』。
 
 
 
