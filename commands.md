@@ -216,11 +216,6 @@ Differ in size: 0x1234 [foo], 0x4321 [bar]
 Differ at the offset 777: 0xbe [foo], 0xef [bar]
 ```
 至於完全一樣的話，就不會顯示任何東西。
-
-
-
-
-
 		
 ## configfile	  	
 ## cpuid	  	
