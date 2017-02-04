@@ -217,8 +217,14 @@ Differ at the offset 777: 0xbe [foo], 0xef [bar]
 ```
 至於完全一樣的話，就不會顯示任何東西。
 		
-## configfile	  	
+## configfile	  
+```
+Command: configfile file
+```
+讀取一個檔案當成組態檔，如果檔案裡面定義了menu entry的話，則馬上就會顯示出相關的menu。
+		
 ## cpuid	  	
+
 ## crc	  	
 ## date 	
 ## drivemap	  	
