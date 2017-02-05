@@ -355,9 +355,14 @@ Command: initrd file
 Command: initrd16 file
 ```
 跟『initrd』指令一樣的效果，只是用在16-bit mode，並且搭配的是『linux16』而不是『linux』，這個命令只能用在x86的系統上。
-
   	
-## insmod	  	
+## insmod	  
+```
+Command: insmod module
+```
+
+
+
 ## keystatus	  	
 ## linux	  	
 ## linux16	  	
