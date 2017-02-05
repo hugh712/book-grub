@@ -296,12 +296,10 @@ Beep一聲(BEL)。
 carriage return，也就是回到這一行的最前頭。
 
 \t
-horizontal tab
+horizontal tab。
 
 \v
-vertical tab
-
-
+vertical tab。
 
 ## export	  	
 ## false	  	
