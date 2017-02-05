@@ -520,7 +520,7 @@ Command: parttool partition commands
 ```
 Command: password user clear-password
 ```
-
+定義一組使用者名稱和其密碼。
 
 ## password\_pbkdf2
 ```
