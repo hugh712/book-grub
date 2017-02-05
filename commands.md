@@ -319,8 +319,13 @@ Command: gettext string
 ```
 將你的輸入字串轉變成你目前的語言，目前的語言可以看變數『lang』，至於翻譯檔的路徑會存在變數『locale_dir』裡面，檔案格式為『mo』，通常預設路徑為『/boot/grub/locale』。
 
+## gptsync
+```
+Command: gptsync device [partition[+/-[type]]] …
+```
 
-## gptsync	  	
+
+	
 ## halt	  	
 ## help  	
 ## initrd	  	
