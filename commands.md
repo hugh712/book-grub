@@ -263,7 +263,6 @@ reset所有mapping到預設值。
 ```
 drivemap -s (hd0) (hd1)
 ```
-
 代表將『(hd0)』對應到『(hd1)』。
 
 
