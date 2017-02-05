@@ -290,10 +290,10 @@ Beep一聲(BEL)。
 印出『form feed』，跟列印有關係。
 
 \n
-new line
+換行符號。
 
 \r
-carriage return
+carriage return，也就是回到這一行的最前頭。
 
 \t
 horizontal tab
