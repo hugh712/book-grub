@@ -569,13 +569,11 @@ Command: set [envvar=value]
 ```
 Command: true
 ```
-
+沒什麼用處，主要是拿來在判斷式『if』或『while』用的。
 
 ## unset
 ```
 Command: unset envvar
 ```
-
-
-
+unset 特定的環境變數。
 
