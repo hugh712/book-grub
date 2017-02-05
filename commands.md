@@ -305,6 +305,7 @@ vertical tab。
 ```
 Command: export envvar
 ```
+export環境變數，通常就是給用『configfile』建出來的子組態檔看得到這個變數用的，就像是在linux的shell要給其他的shell看到某個變數也是要用export一樣。
 
 
     	
