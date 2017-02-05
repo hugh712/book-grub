@@ -478,36 +478,104 @@ ls (loop0)/
 
 
 ## ls
+```
+Command: ls [arg …]
+```
+
+
+
+
 
 ## normal
+```
+Command: normal [file]
+```
+
+
 
 ## normal\_exit
+```
+Command: normal_exit
+```
+
 
 ## parttool
+```
+Command: parttool partition commands
+```
+
 
 ## password
+```
+Command: password user clear-password
+```
+
 
 ## password\_pbkdf2
+```
+Command: password_pbkdf2 user hashed-password
+```
+
 
 ## play
+```
+Command: play file | tempo [pitch1 duration1] [pitch2 duration2] ...
+```
+
 
 ## pxe\_unload
+```
+Command: pxe_unload
+```
+
 
 ## read
+```
+Command: read [var]
+```
+
 
 ## reboot
+```
+Command: reboot
+```
+
 
 ## save\_env
+```
+Command: save_env [-f file] var …
+```
+
 
 ## search
+```
+Command: search [--file|--label|--fs-uuid] [--set [var]] [--no-floppy] name
+```
+
 
 ## sendkey
+```
+Command: sendkey [--num|--caps|--scroll|--insert|--pause|--left-shift|--right-shift|--sysrq|--numkey|--capskey|--scrollkey|--insertkey|--left-alt|--right-alt|--left-ctrl|--right-ctrl ‘on’|‘off’]… [no-led] keystroke
+```
+
 
 ## set
+```
+Command: set [envvar=value]
+```
+
 
 ## true
+```
+Command: true
+```
+
 
 ## unset
+```
+Command: unset envvar
+```
+
 
 
 
