@@ -360,7 +360,7 @@ Command: initrd16 file
 ```
 Command: insmod module
 ```
-
+匯入相關的GRUB模組。
 
 
 ## keystatus	  	
