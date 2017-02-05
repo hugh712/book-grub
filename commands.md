@@ -248,7 +248,7 @@ date 01-01
 ```
 Command: drivemap -l|-r|[-s] from_drive to_drive
 ```
-
+如果沒有其他的參數的話，會直接將『from_drive』對應到『to_drive』
 
 
     	
