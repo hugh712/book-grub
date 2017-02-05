@@ -370,10 +370,20 @@ Command: keystatus [--shift] [--ctrl] [--alt]
 
 這個指令只在某些平台上才支援，如果你不加參數直接呼叫的話，沒有回傳『true』就代表這個指令在你的平台不支援。
 
+## linux
+```
+Command: linux file …	
+```
 
 
-## linux	  	
+  	
 ## linux16	  	
+```
+Command: linux16 file …
+```
+
+
+
 ## list_env	  	
 ## load_env	  	
 ## loopback	  	
