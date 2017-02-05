@@ -333,7 +333,10 @@ Command: gptsync device [partition[+/-[type]]] …
 ```
 Command: halt --no-apm
 ```
+關閉這台電腦。
 
+--no-apm,
+不呼叫APM BIOS。
 
 
 ## help  	
