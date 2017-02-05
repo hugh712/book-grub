@@ -254,7 +254,7 @@ Command: drivemap -l|-r|[-s] from_drive to_drive
 執行反對映，也就是說反向將『to_drive』對應到『from_drive』。
 
 \-l
-
+顯示出目前的對應表。
 
 \-r,
 reset所有mapping到預設值。
