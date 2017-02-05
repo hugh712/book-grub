@@ -305,12 +305,21 @@ vertical tab。
 ```
 Command: export envvar
 ```
-export環境變數，通常就是給用『configfile』建出來的子組態檔看得到這個變數用的，就像是在linux的shell要給其他的shell看到某個變數也是要用export一樣。
-
-
+export環境變數，通常就是給用『configfile』建出來的子組態檔環境看得到這個變數用的，就像是在linux的shell要給其他的shell看到某個變數也是要用export一樣。
     	
-## false	  	
+## false	
+```
+Command: false
+```
+沒什麼用處，主要是拿來在判斷式『if』或『while』用的。
+  	
 ## gettext	  	
+```
+Command: gettext string
+```
+
+
+
 ## gptsync	  	
 ## halt	  	
 ## help  	
