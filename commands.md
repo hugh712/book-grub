@@ -323,7 +323,7 @@ Command: gettext string
 ```
 Command: gptsync device [partition[+/-[type]]] …
 ```
-
+使用GUID Partition Table (GPT)的disk因為相容性問題，所以裡面也會有Master Boot Record (MBR) partition table，這樣BIOS和比較舊的作業系統才能讀的到這個table，但是這個MBR只能代表GPT partition entry的限制子集合，無法代表整個GTP。
 
 	
 ## halt	  	
