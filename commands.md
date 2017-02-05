@@ -342,11 +342,22 @@ Command: halt --no-apm
 ```
 Command: help [pattern …]
 ```
-
-
+顯示所有內建的命令資訊，如果你沒有指定『pattern』，也就是沒有指定命令的話，則將會顯示所有可取得的命令和其簡短說明。
 
 ## initrd	  	
-## initrd16	  	
+```
+Command: initrd file
+```
+
+
+
+## initrd16	
+```
+Command: initrd16 file
+```
+
+
+  	
 ## insmod	  	
 ## keystatus	  	
 ## linux	  	
