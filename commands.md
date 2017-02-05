@@ -503,7 +503,15 @@ Command: normal_exit
 ```
 Command: parttool partition commands
 ```
-這個工具可以修改partition table的entry。每個命令只有兩個類型的輸入，一種就是『boolean』格式，另一種就是『command=value』的格式，如果是『boolean』格式的話，後面必須要有一個沒有空格的加號或減號(+/-)代表啟動或不啟動這個選項。
+這個工具可以修改partition table的entry。每個子命令只有兩個類型的輸入，一種就是『boolean』格式，另一種就是『command=value』的格式，如果是『boolean』格式的話，後面必須要有一個沒有空格的加號或減號(+/-)代表啟動或不啟動這個選項。
+
+目前『parttool』這個工具只適用在MBR的格式，可使用的子命令如下所示：
+
+'boot’ (boolean)
+
+‘type’ (value)
+
+‘hidden’ (boolean)
 
 ## password
 ```
