@@ -362,8 +362,14 @@ Command: insmod module
 ```
 匯入相關的GRUB模組。
 
+## keystatus	
+```
+Command: keystatus [--shift] [--ctrl] [--alt]
+```
 
-## keystatus	  	
+
+
+
 ## linux	  	
 ## linux16	  	
 ## list_env	  	
