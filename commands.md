@@ -259,6 +259,15 @@ Command: drivemap -l|-r|[-s] from_drive to_drive
 \-r,
 reset所有mapping到預設值。
 
+下面舉個例子：
+```
+drivemap -s (hd0) (hd1)
+```
+
+代表將『(hd0)』對應到『(hd1)』。
+
+
+
 
     	
 ## echo  	
