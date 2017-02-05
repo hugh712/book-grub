@@ -449,15 +449,19 @@ Command: linux16 file …
 ```
 Command: list_env [-f file]
 ```
+顯示出『environment block』檔案的變數。
 
-
+\-f,
+這個參數將會蓋過預設位址。
 
 ## load\_env
 ```
 Command: load_env [-f file]
 ```
+從『environment block』檔案裡面讀取所有環境變數。
 
-
+\-f,
+這個參數將會蓋過預設位址。
 
 ## loopback
 
