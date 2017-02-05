@@ -441,7 +441,8 @@ Command: linux file …
 ```
 Command: linux16 file …
 ```
-在16-bit模式中讀取Linux kernel的映像檔，第一個參數後來的空間可以用來傳遞kernel command-line參數，所有的initrd命令必須要在這個指令以後才能從新載入。
+在16-bit模式中讀取Linux kernel的映像檔，第一個參數後來的空間可以用來傳遞kernel command-line參數，所有的initrd命令必須要在這個指令以後才能從新載入，但是這個指令只能用在x86系統。
+
 
 
 
