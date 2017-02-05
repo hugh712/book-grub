@@ -272,9 +272,34 @@ Command: echo [-n] [-e] string …
 當然就是顯示字串拉，如果有多個字串的話，輸出就會以空白隔開，如果要顯示變數的值的話，就直接用『${var}』的方式。
 
 \-n,
+決定顯示完這次的結果以後是否要加個換行符號。
 
 \-e,
+如果你的字串中有需要用到跳脫字元『backslash escapes』的話就要加這個參數，以下列出所有相關的序列：
 
+\\\
+backslash
+
+\a
+alert (BEL)
+
+\c
+suppress trailing new line
+
+\f
+form feed
+
+\n
+new line
+
+\r
+carriage return
+
+\t
+horizontal tab
+
+\v
+vertical tab
 
 
 
