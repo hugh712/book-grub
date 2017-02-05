@@ -487,8 +487,11 @@ Command: ls [arg …]
 ```
 Command: normal [file]
 ```
-進入『normal mode』並且顯示GRUB menu。
+進入『normal mode』並且顯示GRUB menu，如果進入normal mode成功的話，所有的命令，檔案系統的模組(file system modules)和一些加解密的模組都會已經自動加載完成才對，當然GRUB的腳本(script) parser也已經ready了。接下來如果要在載入其他的modules的話就可以直接用命令『insmod』。
 
+如果後面有加檔案名稱，這個命令就會從檔案裡面讀取組態，否則的話，就會從『$prefix/grub.cfg』裡面讀取。
+
+這個指令也可以在『normal mode』裡面呼叫，藉此建立一個巢狀的環境，通常都會藉由『configfile』命令來達成這個目的。
 
 ## normal\_exit
 ```
