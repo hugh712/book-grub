@@ -443,7 +443,7 @@ Command: linux16 file …
 ```
 在16-bit模式中讀取Linux kernel的映像檔，第一個參數後來的空間可以用來傳遞kernel command-line參數，所有的initrd命令必須要在這個指令以後才能從新載入，但是這個指令只能用在x86系統。
 
-
+用這個指令的話，kernel將會使用傳統16-bit的boot protocol來啟動，所以就不會有在指令『Linux』所提到的『vga=』的參數問題。
 
 
 ## list\_env
