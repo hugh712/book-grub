@@ -265,11 +265,19 @@ drivemap -s (hd0) (hd1)
 ```
 代表將『(hd0)』對應到『(hd1)』。
 
+## echo
+```
+Command: echo [-n] [-e] string …
+```
+當然就是顯示字串拉，如果有多個字串的話，輸出就會以空白隔開，如果要顯示變數的值的話，就直接用『${var}』的方式。
+
+\-n,
+
+\-e,
 
 
 
-    	
-## echo  	
+
 ## export	  	
 ## false	  	
 ## gettext	  	
