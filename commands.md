@@ -511,10 +511,10 @@ Command: parttool partition commands
 當選項啟動時，會把所選的disk上的partition設定成啟動，並且清除其他的partition上的active flag。注意這個子命令只能在primary partition上用。
 
 ‘type’ (value)
-
+更改既存partition的類型，數值必須在0-0xFF之間。
 
 ‘hidden’ (boolean)
-
+當這個選項設定成『enabled』時，將會藉由設定partition type code上的hidden bit來隱藏所選的partition，相對而言，當這個選項設定成『disabled』時，就會清除這個bit然後顯示這個partition。這個子命令只有在當起動『DOS』，『Windows』或是其他的multiple primary FAT partition存在同一顆硬碟上時有用。
 
 ## password
 ```
