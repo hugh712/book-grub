@@ -487,7 +487,7 @@ Command: ls [arg …]
 ```
 Command: normal [file]
 ```
-
+進入『normal mode』並且顯示GRUB menu。
 
 
 ## normal\_exit
