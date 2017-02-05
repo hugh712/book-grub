@@ -338,8 +338,13 @@ Command: halt --no-apm
 --no-apm,
 不呼叫APM BIOS。
 
-
 ## help  	
+```
+Command: help [pattern …]
+```
+
+
+
 ## initrd	  	
 ## initrd16	  	
 ## insmod	  	
