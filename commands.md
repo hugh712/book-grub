@@ -325,6 +325,12 @@ Command: gptsync device [partition[+/-[type]]] …
 ```
 使用GUID Partition Table (GPT)的disk因為相容性問題，所以裡面也會有Master Boot Record (MBR) partition table，這樣BIOS和比較舊的作業系統才能讀的到這個table，但是這個MBR只能代表GPT partition entry的限制子集合，無法代表整個GTP。
 
+所以以上所描述到的限制，需要用這個指令來將MBR給"填充"成特殊的partition entry，最多可以有3個partition。
+
+『type』是MBR的partition type code，如果要用16進制的話前面記得加個『0x』，在partition和type之間的區隔可以有『+』和『-』，『+』的話就是讓你的partition active，『-』的話則是讓你的partition inactive，但是狀態的話只能有一個partition處於active的狀態，如果沒有特別強調哪個partition要active的話，則所有的partition都會是inactive。
+
+
+
 	
 ## halt	  	
 ## help  	
