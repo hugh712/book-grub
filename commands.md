@@ -445,7 +445,6 @@ Command: linux16 file …
 
 用這個指令的話，kernel將會使用傳統16-bit的boot protocol來啟動，所以就不會有在指令『Linux』所提到的『vga=』的參數問題。
 
-
 ## list\_env
 
 ## load\_env
