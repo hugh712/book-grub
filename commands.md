@@ -464,6 +464,8 @@ Command: load_env [-f file]
 這個參數將會蓋過預設位址。
 
 ## loopback
+Command: loopback [-d] device file
+
 
 ## ls
 
