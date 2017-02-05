@@ -366,7 +366,7 @@ Command: insmod module
 ```
 Command: keystatus [--shift] [--ctrl] [--alt]
 ```
-根據後面的參數來判斷『shift』，『control』和『alt』是否有被按，
+根據後面的參數來判斷『shift』，『control』和『alt』是否有被按，通常這個指令都是用在script裡面。
 
 
 
