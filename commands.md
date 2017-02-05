@@ -278,16 +278,16 @@ Command: echo [-n] [-e] string …
 如果你的字串中有需要用到跳脫字元『backslash escapes』的話就要加這個參數，以下列出所有相關的序列：
 
 \\\
-backslash
+印出backslash。
 
 \a
-alert (BEL)
+Beep一聲(BEL)。
 
 \c
-suppress trailing new line
+不要換行。
 
 \f
-form feed
+印出『form feed』，跟列印有關係。
 
 \n
 new line
