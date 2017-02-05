@@ -508,11 +508,13 @@ Command: parttool partition commands
 目前『parttool』這個工具只適用在MBR的格式，可使用的子命令如下所示：
 
 'boot’ (boolean)
-當選項啟動時，會把所選的partition設定成啟動
+當選項啟動時，會把所選的disk上的partition設定成啟動，並且清除其他的partition上的active flag。注意這個子命令只能在primary partition上用。
 
 ‘type’ (value)
 
+
 ‘hidden’ (boolean)
+
 
 ## password
 ```
