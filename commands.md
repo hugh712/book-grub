@@ -528,8 +528,6 @@ Command: password_pbkdf2 user hashed-password
 ```
 定義一組使用者名稱和雜湊演算法(hash)的密碼，這個密碼可以使用工具『grub-mkpasswd-pbkdf2』來產生。
 
-
-
 ## play
 ```
 Command: play file | tempo [pitch1 duration1] [pitch2 duration2] ...
