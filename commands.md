@@ -497,7 +497,7 @@ Command: normal [file]
 ```
 Command: normal_exit
 ```
-
+離開『normal mode』，如果你並不是在一個巢狀『normal mode』的話，則呼叫這個指令就會變成救援模式。
 
 ## parttool
 ```
