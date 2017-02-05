@@ -434,6 +434,8 @@ Command: linux file …
 ```
 讀取Linux kernel的映像檔，第一個參數後來的空間可以用來傳遞kernel command-line參數，所有的initrd命令必須要在這個指令以後才能從新載入。
 
+在x86系統，kernel將會使用32-bit的boot protocol來啟動，意思是『vga=』的參數已經不能用了，如果你想要設定特殊的video mode的話，就必須要設定GRUB的環境變數，像是『set gfxpayload=1024x768』或是『set gfxpayload=keep』，但是其實GRUB會自動偵測『vga=』，並且將其轉換成『gfxpayload』的設定，但是命令『linux16』將會完全的避免這個限制。
+
 ## linux16
 
 ```
