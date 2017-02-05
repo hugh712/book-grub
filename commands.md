@@ -368,6 +368,8 @@ Command: keystatus [--shift] [--ctrl] [--alt]
 ```
 根據後面的參數來判斷『shift』，『control』和『alt』是否有被按，通常這個指令都是用在script裡面。
 
+這個指令只在某些平台上才支援，如果你不加參數直接呼叫的話，沒有回傳『true』就代表這個指令在你的平台不支援。
+
 
 
 ## linux	  	
