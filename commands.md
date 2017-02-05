@@ -301,7 +301,13 @@ horizontal tab。
 \v
 vertical tab。
 
-## export	  	
+## export	
+```
+Command: export envvar
+```
+
+
+    	
 ## false	  	
 ## gettext	  	
 ## gptsync	  	
