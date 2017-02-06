@@ -716,7 +716,7 @@ Command: sendkey [--num|--caps|--scroll|--insert|--pause|--left-shift|--right-sh
 | left |  |
 | right |  |
 
-
+除了『keystrokes』以外，這個命令也有各種影響BIOS keyboard status flag的options。
 
 
 ## set
