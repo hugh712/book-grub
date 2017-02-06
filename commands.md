@@ -549,7 +549,7 @@ Command: pxe_unload
 ```
 Command: read [var]
 ```
-
+等待使用者輸入，如果在後面有指定一個參數的話，代表的就是使用者輸入的資料會存到這個變數裡。
 
 ## reboot
 ```
@@ -561,7 +561,10 @@ Command: reboot
 ```
 Command: save_env [-f file] var …
 ```
+將指定的環境變數存到『environment block』檔案裡
 
+\-f,
+這個參數代表覆蓋『environment block』的預設位置。
 
 ## search
 ```
