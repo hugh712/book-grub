@@ -6,6 +6,7 @@
   * [Feature](feature.md)
   * [Prerequisite](prerequisite.md)
 * [How it works](how-it-works.md)
+* Obtaining GRUB
 * [Naming convention](naming-convention.md)
 * [Installation](installation.md)
   * [Installing GRUB using grub-install](installing-grub-using-grub-install.md)
@@ -33,5 +34,5 @@
   * [Resolutions](resolutions.md)
 * [Re-install](re-install.md)
 * [Modules](modules.md)
-* Parsing of my grub.cfg
+* Obtaining GRUB
 
