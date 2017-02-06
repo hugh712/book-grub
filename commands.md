@@ -532,6 +532,11 @@ Command: password_pbkdf2 user hashed-password
 ```
 Command: play file | tempo [pitch1 duration1] [pitch2 duration2] ...
 ```
+發出一個聲響，如果參數是一個檔案名稱，則將會播放檔案裡面的記錄。檔案格式為第一個拍子(tempo)為一個unsigned 32-bit的little-endian數字，接下來的是一對unsigned的16-bit little-endian數字，主要是音調(pitch)和周期(duration)。
+
+如果參數是一系列的數字的話，則播放其音調。
+
+tempo的計算，60的話代表1秒，120代表半秒，依此類推，pitch是以Hz.為單位，如果將pitch設定成0的話就代表休止符。
 
 
 ## pxe\_unload
