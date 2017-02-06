@@ -570,7 +570,15 @@ Command: save_env [-f file] var …
 ```
 Command: search [--file|--label|--fs-uuid] [--set [var]] [--no-floppy] name
 ```
+藉由file(-f, --file)，filesystem label(-l, --label)，filesystem UUID(-u, --fs-uuid)來搜尋裝置。
 
+--set,
+如果有設定這個選項，則第一個找到的裝置將會設定成後面的變數，預設的變數應該為『root』。
+
+--no-floppy,
+這個選項防止搜尋『floppy device』(也就是軟碟)，以防止拖累速度。
+
+這個指令有其他種用法，像是『search.file』，『search.fs_label』， 和 『search.fs_uuid』分別對應『search --file』，『search --label』和 『search --fs-uuid』。
 
 ## sendkey
 ```
