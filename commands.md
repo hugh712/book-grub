@@ -555,7 +555,7 @@ Command: read [var]
 ```
 Command: reboot
 ```
-
+從新啟動這台電腦。
 
 ## save\_env
 ```
