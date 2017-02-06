@@ -543,7 +543,7 @@ tempo的計算，60的話代表1秒，120代表半秒，依此類推，pitch是�
 ```
 Command: pxe_unload
 ```
-
+卸載PXE的環境，這個命令只能在PC BIOS系統上使用。
 
 ## read
 ```
