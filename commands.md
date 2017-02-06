@@ -622,99 +622,99 @@ Command: sendkey [--num|--caps|--scroll|--insert|--pause|--left-shift|--right-sh
 『keystrokes』的限制，最多可到16個，因為這就是BIOS keyboard buffer的長度，『keystrokes』的名稱可以是大寫，小寫，數字，或者是底下表格的值:  
 
 
-| Name | Key |
+|Name | Key |
 | :--- | :--- |
-| escape |  |
-| exclam |  |
-| at |  |
-| numbersign |  |
-| dollar |  |
-| percent |  |
-| caret |  |
-| ampersand |  |
-| asterisk |  |
-| parenleft |  |
-| parenright |  |
-| minus |  |
-| underscore |  |
-| equal |  |
-| plus |  |
-| backspace |  |
-| tab |  |
-| bracketleft |  |
-| braceleft |  |
-| bracketright |  |
-| braceright |  |
-| enter |  |
-| control |  |
-| semicolon |  |
-| colon |  |
-| quote |  |
-| doublequote |  |
-| backquote |  |
-| tilde |  |
-| shift |  |
-| backslash |  |
-| bar |  |
-| comma |  |
-| less |  |
-| period |  |
-| greater |  |
-| slash |  |
-| question |  |
-| rshift |  |
-| alt |  |
-| space |  |
-| capslock |  |
-| F1 |  |
-| F2 |  |
-| F3 |  |
-| F4 |  |
-| F5 |  |
-| F6 |  |
-| F7 |  |
-| F8 |  |
-| F9 |  |
-| F10 |  |
-| F11 |  |
-| F12 |  |
-| num1 |  |
-| num2 |  |
-| num3 |  |
-| num4 |  |
-| num5 |  |
-| num6 |  |
-| num7 |  |
-| num8 |  |
-| num9 |  |
-| num0 |  |
-| numperiod |  |
-| numend |  |
-| numdown |  |
-| numpgdown |  |
-| numleft |  |
-| numcenter |  |
-| numright |  |
-| numhome |  |
-| numup |  |
-| numpgup |  |
-| numinsert |  |
-| numdelete |  |
-| numasterisk |  |
-| numminus |  |
-| numplus |  |
-| numslash |  |
-| numenter |  |
-| delete |  |
-| insert |  |
-| home |  |
-| end |  |
-| pgdown |  |
-| pgup |  |
-| down |  |
-| up |  |
-| left |  |
-| right |  |
+| escape | Escape |
+| exclam | ! |
+| at | @ |
+| numbersign | #  |
+| dollar |  $ |
+| percent |  % |
+| caret |  ^ |
+| ampersand | &  |
+| asterisk |  * |
+| parenleft |  ( |
+| parenright |  ) |
+| minus |  -  |
+| underscore | _  |
+| equal |  = |
+| plus | +  |
+| backspace | Backspace |
+| tab |  Tab |
+| bracketleft | [  |
+| braceleft | {  |
+| bracketright | ]  |
+| braceright | } |
+| enter | Enter |
+| control |  press and release Control |
+| semicolon | ;  |
+| colon | : |
+| quote |  ’|
+| doublequote | "  |
+| backquote | ‘ |
+| tilde |  ~ |
+| shift | press and release left Shift |
+| backslash | \\ |
+| bar |  	| |
+| comma | ,  |
+| less |  < |
+| period |  . |
+| greater |  > |
+| slash |  / |
+| question | ? |
+| rshift | press and release right Shift |
+| alt | press and release Alt |
+| space |  space bar |
+| capslock | Caps Lock |
+| F1 | F1 |
+| F2 | F2|
+| F3 | F3|
+| F4 | F4|
+| F5 | F5|
+| F6 | F6|
+| F7 | F7|
+| F8 | F8|
+| F9 | F9|
+| F10 | F10|
+| F11 | F11|
+| F12 | F12|
+| num1 | 1 (numeric keypad) |
+| num2 | 2 (numeric keypad) |
+| num3 | 3 (numeric keypad) |
+| num4 | 4 (numeric keypad) |
+| num5 | 5 (numeric keypad) |
+| num6 | 6 (numeric keypad) |
+| num7 | 7 (numeric keypad) |
+| num8 | 8 (numeric keypad) |
+| num9 | 9 (numeric keypad) |
+| num0 | 0 (numeric keypad) |
+| numperiod | .  (numeric keypad) |
+| numend | End (numeric keypad) |
+| numdown | Down  (numeric keypad) |
+| numpgdown | Page Down  (numeric keypad) |
+| numleft | Left  (numeric keypad) |
+| numcenter | 5  with Num Lock inactive (numeric keypad) |
+| numright | Right (numeric keypad) |
+| numhome | Home (numeric keypad) |
+| numup | Up (numeric keypad) |
+| numpgup |  Page Up (numeric keypad) |
+| numinsert |  Insert  (numeric keypad) |
+| numdelete |  Delete  (numeric keypad) |
+| numasterisk | *  (numeric keypad) |
+| numminus |  -  (numeric keypad) |
+| numplus |  +  (numeric keypad) |
+| numslash |  /  (numeric keypad) |
+| numenter | Enter (numeric keypad) |
+| delete | Delete |
+| insert | Insert |
+| home |  Home |
+| end | End |
+| pgdown | Page Down|
+| pgup |  Page Up |
+| down |  Down |
+| up |  Left |
+| left | Left |
+| right | Right |
 
 除了『keystrokes』以外，這個命令也有各種影響BIOS keyboard status flag的options。這類型的options的參數為『on』或『off』，表是相對應的status flag是set還是unset。如果省略某個status flag的options將會讓這個flag在啟動時保持著初始的狀態。
 
