@@ -688,23 +688,33 @@ Command: sendkey [--num|--caps|--scroll|--insert|--pause|--left-shift|--right-sh
 | num8 |  |
 | num9 |  |
 | num0 |  |
-|  |  |
-|  |  |
-|  |  |
-|  |  |
-|  |  |
-|  |  |
-
-
-
-
-
-
-
-
-
-
-
+| numperiod |  |
+| numend |  |
+| numdown |  |
+| numpgdown |  |
+| numleft |  |
+| numcenter |  |
+| numright |  |
+| numhome |  |
+| numup |  |
+| numpgup |  |
+| numinsert |  |
+| numdelete |  |
+| numasterisk |  |
+| numminus |  |
+| numplus |  |
+| numslash |  |
+| numenter |  |
+| delete |  |
+| insert |  |
+| home |  |
+| end |  |
+| pgdown |  |
+| pgup |  |
+| down |  |
+| up |  |
+| left |  |
+| right |  |
 
 
 
