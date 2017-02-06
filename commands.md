@@ -667,30 +667,36 @@ Command: sendkey [--num|--caps|--scroll|--insert|--pause|--left-shift|--right-sh
 | space |  |
 | capslock |  |
 | F1 |  |
+| F2 |  |
+| F3 |  |
+| F4 |  |
+| F5 |  |
+| F6 |  |
+| F7 |  |
+| F8 |  |
+| F9 |  |
+| F10 |  |
+| F11 |  |
+| F12 |  |
+| num1 |  |
+| num2 |  |
+| num3 |  |
+| num4 |  |
+| num5 |  |
+| num6 |  |
+| num7 |  |
+| num8 |  |
+| num9 |  |
+| num0 |  |
 |  |  |
 |  |  |
 |  |  |
 |  |  |
 |  |  |
 |  |  |
-|  |  |
-|  |  |
-|  |  |
-|  |  |
-|  |  |
-|  |  |
-|  |  |
-|  |  |
-|  |  |
-|  |  |
-|  |  |
-|  |  |
-|  |  |
-|  |  |
-|  |  |
-|  |  |
-|  |  |
-|  |  |
+
+
+
 
 
 
