@@ -584,6 +584,8 @@ Command: search [--file|--label|--fs-uuid] [--set [var]] [--no-floppy] name
 ```
 Command: sendkey [--num|--caps|--scroll|--insert|--pause|--left-shift|--right-shift|--sysrq|--numkey|--capskey|--scrollkey|--insertkey|--left-alt|--right-alt|--left-ctrl|--right-ctrl ‘on’|‘off’]… [no-led] keystroke
 ```
+在啟動系統送一些特定的『keystrokes』到keyboard的buffer裡面，這個機制是因為有時候一個作業系統或是chainloaded boot loader需要明確的按鍵被按，舉個例子來說，有可能需要按某個key來進入安全模式或是chainload其他的boot loader需要模擬按鍵盤來選擇menu之類的。
+
 
 
 ## set
