@@ -314,7 +314,7 @@ Command: echo [-n] [-e] string …
 -e,  
 如果你的字串中有需要用到跳脫字元『backslash escapes』的話就要加這個參數，以下列出所有相關的序列，至於沒有在底下的case就是會直接印出那個字元，沒有什麼特殊含意：
 
-\\  
+\  
 印出backslash。
 
 \a  
@@ -432,6 +432,7 @@ Command: keystatus [--shift] [--ctrl] [--alt]
 ```
 Command: linux file …    
 ```
+
 讀取Linux kernel的映像檔，第一個參數後來的空間可以用來傳遞kernel command-line參數，所有的initrd命令必須要在這個指令以後才能從新載入。
 
 在x86系統，kernel將會使用32-bit的boot protocol來啟動，意思是『vga=』的參數已經不能用了，如果你想要設定特殊的video mode的話，就必須要設定GRUB的環境變數，像是『set gfxpayload=1024x768』或是『set gfxpayload=keep』，但是其實GRUB會自動偵測『vga=』，並且將其轉換成『gfxpayload』的設定，但是命令『linux16』將會完全的避免這個限制。
@@ -441,168 +442,288 @@ Command: linux file …
 ```
 Command: linux16 file …
 ```
+
 在16-bit模式中讀取Linux kernel的映像檔，第一個參數後來的空間可以用來傳遞kernel command-line參數，所有的initrd命令必須要在這個指令以後才能從新載入，但是這個指令只能用在x86系統。
 
 用這個指令的話，kernel將會使用傳統16-bit的boot protocol來啟動，所以就不會有在指令『Linux』所提到的『vga=』的參數問題。
 
 ## list\_env
+
 ```
 Command: list_env [-f file]
 ```
+
 顯示出『environment block』檔案的變數。
 
-\-f,
+-f,  
 這個參數將會蓋過預設位址。
 
 ## load\_env
+
 ```
 Command: load_env [-f file]
 ```
+
 從『environment block』檔案裡面讀取所有環境變數。
 
-\-f,
+-f,  
 這個參數將會蓋過預設位址。
 
 ## loopback
+
 ```
 Command: loopback [-d] device file
 ```
+
 這個指令有點像是linux裡的『mount -t loop』的感覺，主要就是將『device』名稱對映到檔案系統裡的映像檔內容，舉個例子：
+
 ```
 loopback loop0 /path/to/image
 ls (loop0)/
 ```
 
-\-d,
+-d,  
 刪除掉之前用這個命令建立的一個裝置對應關係。
 
-
 ## ls
+
 ```
 Command: ls [arg …]
 ```
-列出裝置或是檔案，如果沒有加任何參數的話，就會印出GRUB所知道的所有裝置。如果參數是一個像是『(hd0)』這樣用括弧刮起來的裝置名稱的話，則會列出裝置根目錄的所有檔案。如果參數是絕對路徑的資料夾名稱的話，則會直接列出這個資料夾的內容。
+
+列出裝置或是檔案，如果沒有加任何參數的話，就會印出GRUB所知道的所有裝置。如果參數是一個像是『\(hd0\)』這樣用括弧刮起來的裝置名稱的話，則會列出裝置根目錄的所有檔案。如果參數是絕對路徑的資料夾名稱的話，則會直接列出這個資料夾的內容。
 
 ## normal
+
 ```
 Command: normal [file]
 ```
-進入『normal mode』並且顯示GRUB menu，如果進入normal mode成功的話，所有的命令，檔案系統的模組(file system modules)和一些加解密的模組都會已經自動加載完成才對，當然GRUB的腳本(script) parser也已經ready了。接下來如果要在載入其他的modules的話就可以直接用命令『insmod』。
+
+進入『normal mode』並且顯示GRUB menu，如果進入normal mode成功的話，所有的命令，檔案系統的模組\(file system modules\)和一些加解密的模組都會已經自動加載完成才對，當然GRUB的腳本\(script\) parser也已經ready了。接下來如果要在載入其他的modules的話就可以直接用命令『insmod』。
 
 如果後面有加檔案名稱，這個命令就會從檔案裡面讀取組態，否則的話，就會從『$prefix/grub.cfg』裡面讀取。
 
 這個指令也可以在『normal mode』裡面呼叫，藉此建立一個巢狀的環境，通常都會藉由『configfile』命令來達成這個目的。
 
 ## normal\_exit
+
 ```
 Command: normal_exit
 ```
+
 離開『normal mode』，如果你並不是在一個巢狀『normal mode』的話，則呼叫這個指令就會變成救援模式。
 
 ## parttool
+
 ```
 Command: parttool partition commands
 ```
-這個工具可以修改partition table的entry。每個子命令只有兩個類型的輸入，一種就是『boolean』格式，另一種就是『command=value』的格式，如果是『boolean』格式的話，後面必須要有一個沒有空格的加號或減號(+/-)代表啟動(enable)或不啟動(disable)這個partition。
+
+這個工具可以修改partition table的entry。每個子命令只有兩個類型的輸入，一種就是『boolean』格式，另一種就是『command=value』的格式，如果是『boolean』格式的話，後面必須要有一個沒有空格的加號或減號\(+/-\)代表啟動\(enable\)或不啟動\(disable\)這個partition。
 
 目前『parttool』這個工具只適用在MBR的格式，可使用的子命令如下所示：
 
-'boot’ (boolean)
+'boot’ \(boolean\)  
 當選項啟動時，會把所選的disk上的partition設定成啟動，並且清除其他的partition上的active flag。注意這個子命令只能在primary partition上用。
 
-‘type’ (value)
+‘type’ \(value\)  
 更改既存partition的類型，數值必須在0-0xFF之間。
 
-‘hidden’ (boolean)
+‘hidden’ \(boolean\)  
 當這個選項設定成『enabled』時，將會藉由設定partition type code上的hidden bit來隱藏所選的partition，相對而言，當這個選項設定成『disabled』時，就會清除這個bit然後顯示這個partition。這個子命令只有在當起動『DOS』，『Windows』或是其他的multiple primary FAT partition存在同一顆硬碟上時有用。
 
 ## password
+
 ```
 Command: password user clear-password
 ```
+
 定義一組使用者名稱和其密碼。
 
 ## password\_pbkdf2
+
 ```
 Command: password_pbkdf2 user hashed-password
 ```
-定義一組使用者名稱和雜湊演算法(hash)的密碼，這個密碼可以使用工具『grub-mkpasswd-pbkdf2』來產生。
+
+定義一組使用者名稱和雜湊演算法\(hash\)的密碼，這個密碼可以使用工具『grub-mkpasswd-pbkdf2』來產生。
 
 ## play
+
 ```
 Command: play file | tempo [pitch1 duration1] [pitch2 duration2] ...
 ```
-發出一個聲響，如果參數是一個檔案名稱，則將會播放檔案裡面的記錄。檔案格式為第一個拍子(tempo)為一個unsigned 32-bit的little-endian數字，接下來的是一對unsigned的16-bit little-endian數字，主要是音調(pitch)和周期(duration)。
+
+發出一個聲響，如果參數是一個檔案名稱，則將會播放檔案裡面的記錄。檔案格式為第一個拍子\(tempo\)為一個unsigned 32-bit的little-endian數字，接下來的是一對unsigned的16-bit little-endian數字，主要是音調\(pitch\)和周期\(duration\)。
 
 如果參數是一系列的數字的話，則播放其音調。
 
 tempo的計算，60的話代表1秒，120代表半秒，依此類推，pitch是以Hz.為單位，如果將pitch設定成0的話就代表休止符。
 
-
 ## pxe\_unload
+
 ```
 Command: pxe_unload
 ```
+
 卸載PXE的環境，這個命令只能在PC BIOS系統上使用。
 
 ## read
+
 ```
 Command: read [var]
 ```
+
 等待使用者輸入，如果在後面有指定一個參數的話，代表的就是使用者輸入的資料會存到這個變數裡。
 
 ## reboot
+
 ```
 Command: reboot
 ```
+
 從新啟動這台電腦。
 
 ## save\_env
+
 ```
 Command: save_env [-f file] var …
 ```
+
 將指定的環境變數存到『environment block』檔案裡
 
-\-f,
+-f,  
 這個參數代表覆蓋『environment block』的預設位置。
 
 ## search
+
 ```
 Command: search [--file|--label|--fs-uuid] [--set [var]] [--no-floppy] name
 ```
-藉由file(-f, --file)，filesystem label(-l, --label)，filesystem UUID(-u, --fs-uuid)來搜尋裝置。
 
---set,
+藉由file\(-f, --file\)，filesystem label\(-l, --label\)，filesystem UUID\(-u, --fs-uuid\)來搜尋裝置。
+
+--set,  
 如果有設定這個選項，則第一個找到的裝置將會設定成後面的變數，預設的變數應該為『root』。
 
---no-floppy,
-這個選項防止搜尋『floppy device』(也就是軟碟)，以防止拖累速度。
+--no-floppy,  
+這個選項防止搜尋『floppy device』\(也就是軟碟\)，以防止拖累速度。
 
-這個指令有其他種用法，像是『search.file』，『search.fs_label』， 和 『search.fs_uuid』分別對應『search --file』，『search --label』和 『search --fs-uuid』。
+這個指令有其他種用法，像是『search.file』，『search.fs\_label』， 和 『search.fs\_uuid』分別對應『search --file』，『search --label』和 『search --fs-uuid』。
 
 ## sendkey
+
 ```
 Command: sendkey [--num|--caps|--scroll|--insert|--pause|--left-shift|--right-shift|--sysrq|--numkey|--capskey|--scrollkey|--insertkey|--left-alt|--right-alt|--left-ctrl|--right-ctrl ‘on’|‘off’]… [no-led] keystroke
 ```
+
 在啟動系統送一些特定的『keystrokes』到keyboard的buffer裡面，這個機制是因為有時候一個作業系統或是chainloaded boot loader需要明確的按鍵被按，舉個例子來說，有可能需要按某個key來進入安全模式或是chainload其他的boot loader需要模擬按鍵盤來選擇menu之類的。
+
+『keystrokes』的限制，最多可到16個，因為這就是BIOS keyboard buffer的長度，『keystrokes』的名稱可以是大寫，小寫，數字，或者是底下表格的值:  
+
+
+| Name | Key |
+| :--- | :--- |
+| escape |  |
+| exclam |  |
+| at |  |
+| numbersign |  |
+| dollar |  |
+| percent |  |
+| caret |  |
+| ampersand |  |
+| asterisk |  |
+| parenleft |  |
+| parenright |  |
+| minus |  |
+| underscore |  |
+| equal |  |
+| plus |  |
+| backspace |  |
+| tab |  |
+| bracketleft |  |
+| braceleft |  |
+| bracketright |  |
+| braceright |  |
+| enter |  |
+| control |  |
+| semicolon |  |
+| colon |  |
+| quote |  |
+| doublequote |  |
+| backquote |  |
+| tilde |  |
+| shift |  |
+| backslash |  |
+| bar |  |
+| comma |  |
+| less |  |
+| period |  |
+| greater |  |
+| slash |  |
+| question |  |
+| rshift |  |
+| alt |  |
+| space |  |
+| capslock |  |
+| F1 |  |
+|  |  |
+|  |  |
+|  |  |
+|  |  |
+|  |  |
+|  |  |
+|  |  |
+|  |  |
+|  |  |
+|  |  |
+|  |  |
+|  |  |
+|  |  |
+|  |  |
+|  |  |
+|  |  |
+|  |  |
+|  |  |
+|  |  |
+|  |  |
+|  |  |
+|  |  |
+|  |  |
+|  |  |
+
+
+
+
+
+
+
+
+
 
 
 
 ## set
+
 ```
 Command: set [envvar=value]
 ```
+
 設定一個環境變數的值，如果沒有任何參數的話，就會印出所有的環境變數和其值。
 
 ## true
+
 ```
 Command: true
 ```
+
 沒什麼用處，主要是拿來在判斷式『if』或『while』用的。
 
 ## unset
+
 ```
 Command: unset envvar
 ```
+
 unset 特定的環境變數。
 
