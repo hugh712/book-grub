@@ -716,7 +716,15 @@ Command: sendkey [--num|--caps|--scroll|--insert|--pause|--left-shift|--right-sh
 | left |  |
 | right |  |
 
-除了『keystrokes』以外，這個命令也有各種影響BIOS keyboard status flag的options。
+除了『keystrokes』以外，這個命令也有各種影響BIOS keyboard status flag的options。這類型的options的參數為『on』或『off』，表是相對應的status flag是set還是unset。如果省略某個status flag的options將會讓這個flag在啟動時保持著初始的狀態。
+
+options 『--num』，『--caps』，『--scroll』和『--insert』會模擬相對應的模式，而『--capskey』，『--capskey』，『--scrollkey』和『--insertkey』則是模擬持續按著相對應的鍵，
+
+如果有設定『--no-led』，則status flag options將不會影響鍵盤的LED。
+如果這個命令持續送了
+
+
+
 
 
 ## set
