@@ -38,3 +38,5 @@ menuentry "May be run by user1 or a superuser" --users user1 {
 
 在Linux的命令『grub-mkconfig』並沒有內建產生有權限的組態檔這個功能，所以你必須在『/etc/grub.d/40_custom』裡面加入簡單的superuser權限，只要在這個檔案裡面加入『set superusers=』，還有命令『password』或是『password_pbkdf2 』。
 
+![](Imgs/auth/auth001.PNG)
+
