@@ -18,4 +18,5 @@ git clone <membername>@git.sv.gnu.org:/srv/git/grub.git
 
 # 如何建置
 
-因為GRUB需要套件binutils-2.9.1.0.23版本以上，所以記得先安裝相關的套件。
+因為GRUB需要套件binutils-2.9.1.0.23版本以上，所以記得先安裝相關的套件，當然也不要忘記其他的相關建置工具:
+
