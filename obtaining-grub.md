@@ -16,3 +16,5 @@ git clone git://git.savannah.gnu.org/grub.git
 git clone <membername>@git.sv.gnu.org:/srv/git/grub.git
 ```
 
+# 如何建置
+
