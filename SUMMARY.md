@@ -33,6 +33,5 @@
   * [Resolutions](resolutions.md)
 * [Re-install](re-install.md)
 * [Modules](modules.md)
-* Obtaining GRUB
 * Authentication and authorisation
 
