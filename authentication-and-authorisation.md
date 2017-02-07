@@ -44,8 +44,12 @@ Reenter password:
 PBKDF2 hash of your password is grub.pbkdf2.sha512.10000.FAF2D97BAF03AD14CF1273A55898C3C0A565B26B8703C97B8733B2DC3430F1A35C3234D821AC99EACF16BBA3039392C57D3DEAEDFFCB9E81C893157F4CD6962B.8677D96E17F07B898624627224A0C6FAF7D63EBE8B5A2B61ED98C641C211F8DDA0DF58EB484FD6D845B9466C3E9177437264C3F7D469E3E2BB7E589AC35AEBC1
 ```
 
+上面的範例中有三個menu entry，第一個因為有用『--unrestricted』，所以完全沒有任何限制，任何人都可以存取，第二個因為將使用者設定成空集合，所以只有superuser才能存取，第三個則是將使用者設定成『user1』，所以只有root和user1能使用。
 
-在Linux的命令『grub-mkconfig』並沒有內建產生有權限的組態檔這個功能，所以你必須在『/etc/grub.d/40_custom』裡面加入簡單的superuser權限，只要在這個檔案裡面加入『set superusers=』，還有命令『password』或是『password_pbkdf2 』。
-
+當你點進去有存取限制的menu entry，會出現一個簡單的prompt要你輸入帳號密碼如下:
 ![](Imgs/auth/auth001.PNG)
+
+特別注意的是，在Linux的命令『grub-mkconfig』並沒有內建產生有權限的組態檔這個功能，所以你必須在『/etc/grub.d/40_custom』裡面加入簡單的superuser權限，只要在這個檔案裡面加入『set superusers=』，還有命令『password』或是『password_pbkdf2 』。
+
+
 
