@@ -36,6 +36,18 @@ menuentry "May be run by user1 or a superuser" --users user1 {
 ```
 可以看到設定了一個superuser - 『root』，然後有另一個user - 『user1』，
 
+
+```
+# grub-mkpasswd-pbkdf2
+Enter password:
+Reenter password:
+PBKDF2 hash of your password is grub.pbkdf2.sha512.10000.FAF2D97BAF03AD14CF1273A55898C3C0A565B26B8703C97B8733B2DC3430F1A35C3234D821AC99EACF16BBA3039392C57D3DEAEDFFCB9E81C893157F4CD6962B.8677D96E17F07B898624627224A0C6FAF7D63EBE8B5A2B61ED98C641C211F8DDA0DF58EB484FD6D845B9466C3E9177437264C3F7D469E3E2BB7E589AC35AEBC1
+```
+
+
+
+
+
 在Linux的命令『grub-mkconfig』並沒有內建產生有權限的組態檔這個功能，所以你必須在『/etc/grub.d/40_custom』裡面加入簡單的superuser權限，只要在這個檔案裡面加入『set superusers=』，還有命令『password』或是『password_pbkdf2 』。
 
 ![](Imgs/auth/auth001.PNG)
