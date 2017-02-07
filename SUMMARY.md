@@ -29,6 +29,7 @@
 * [Environment Variable](environment-variable.md)
 * [Commands-GRUB](commands.md)
 * [Commands-System](commands-system.md)
+* [Platform Limitations](platform-limitations.md)
 * [Settings](settings.md)
   * [Images](images.md)
   * [Resolutions](resolutions.md)
