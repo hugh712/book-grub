@@ -25,6 +25,7 @@ sudo apt-get install binutils
 sudo apt-get install python
 sudo apt-get install autoconf
 sudo apt-get install bison
+sudo apt-get install flex
 
 
 ./autogen.sh
