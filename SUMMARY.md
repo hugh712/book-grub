@@ -24,6 +24,7 @@
 * [Themes](themes.md)
 * [Serial Line and Network](serial-line-and-network.md)
 * [Image files](image-files.md)
+* Authentication and authorisation
 * [User Interface](user-interface.md)
 * [Environment Variable](environment-variable.md)
 * [Commands-GRUB](commands.md)
@@ -33,5 +34,4 @@
   * [Resolutions](resolutions.md)
 * [Re-install](re-install.md)
 * [Modules](modules.md)
-* Authentication and authorisation
 
