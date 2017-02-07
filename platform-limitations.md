@@ -13,6 +13,9 @@ keyboard
 
 USB
 
+Chainloading
+
+BadRAM
 
 
 # 平臺限制的功能
