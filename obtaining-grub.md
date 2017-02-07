@@ -23,6 +23,7 @@ git clone <membername>@git.sv.gnu.org:/srv/git/grub.git
 sudo apt-get install build-essential
 sudo apt-get install binutils
 sudo apt-get install python
+sudo apt-get install autoconf
 
 
 ./autogen.sh
