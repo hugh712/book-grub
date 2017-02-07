@@ -23,8 +23,6 @@
   * [Embedding a configuration file](embedding-a-configuration-file.md)
 * [Themes](themes.md)
 * [Serial Line and Network](serial-line-and-network.md)
-* [Booting from network](booting-from-network.md)
-* [Serial Line](serial-line.md)
 * [Image files](image-files.md)
 * [User Interface](user-interface.md)
 * [Environment Variable](environment-variable.md)
