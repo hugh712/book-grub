@@ -22,6 +22,7 @@
   * [Multi-boot manual config](multi-boot-manual-config.md)
   * [Embedding a configuration file](embedding-a-configuration-file.md)
 * [Themes](themes.md)
+* [Serial Line and Network](serial-line-and-network.md)
 * [Booting from network](booting-from-network.md)
 * [Serial Line](serial-line.md)
 * [Image files](image-files.md)
@@ -35,4 +36,5 @@
 * [Re-install](re-install.md)
 * [Modules](modules.md)
 * Obtaining GRUB
+* Authentication and authorisation
 
