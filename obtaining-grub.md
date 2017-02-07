@@ -24,6 +24,7 @@ sudo apt-get install build-essential
 sudo apt-get install binutils
 sudo apt-get install python
 sudo apt-get install autoconf
+sudo apt-get install bison
 
 
 ./autogen.sh
