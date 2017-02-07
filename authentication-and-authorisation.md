@@ -14,3 +14,25 @@ Bootloader的預設應該是只要使用者可以取得實體的console的話，
 
 如果將上面的所有例子都放在一起的話，『grub.cfg』會如下面這個例子:
 
+```
+set superusers="root"
+password_pbkdf2 root grub.pbkdf2.sha512.10000.biglongstring
+password user1 insecure
+
+menuentry "May be run by any user" --unrestricted {
+	set root=(hd0,1)
+	linux /vmlinuz
+}
+
+menuentry "Superusers only" --users "" {
+	set root=(hd0,1)
+	linux /vmlinuz single
+}
+
+menuentry "May be run by user1 or a superuser" --users user1 {
+	set root=(hd0,2)
+	chainloader +1
+}
+```
+
+
