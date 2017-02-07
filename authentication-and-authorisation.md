@@ -36,5 +36,5 @@ menuentry "May be run by user1 or a superuser" --users user1 {
 ```
 可以看到設定了一個superuser - 『root』，然後有另一個user - 『user1』，
 
-在Linux的命令『grub-mkconfig』並沒有內建產生有權限的組態檔這個功能，所以你必須在『/etc/grub.d/40_custom』裡面加入簡單的superuser權限，只要在這個檔案裡面加入『set superusers= and password』，或者是直接用命令『password_pbkdf2 』來產生就好。
+在Linux的命令『grub-mkconfig』並沒有內建產生有權限的組態檔這個功能，所以你必須在『/etc/grub.d/40_custom』裡面加入簡單的superuser權限，只要在這個檔案裡面加入『set superusers=』，還有命令『password』或是『password_pbkdf2 』來產生就好。
 
