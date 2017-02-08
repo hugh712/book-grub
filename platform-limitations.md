@@ -25,6 +25,10 @@ chainloading的部分因為牽涉到使用相同的協定來讀取其它的bootl
 BadRAM的部分，因為協定的限制，所以mips-loongson(Linux 協定)和mips-qemu_mips只能使用記憶體上的第一個『hole』。
 
 
+## Limitation Table
+底下列出官方所發布的限制:
+
+
 
 # 平臺限制的功能
 
