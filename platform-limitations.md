@@ -70,6 +70,8 @@ BadRAM的部分，因為協定的限制，所以mips-loongson\(Linux 協定\)和
 |badram|	yes|	yes|	no|	yes|
 |compression|	no|	no|	no|	no|
 |exit|	yes|	yes|	yes|	yes|
+<br>
+<br>
 
 ||Loongson|sparc64|Powerpc|ARC|
 | :--- | :--- |:---    |:---     |:---|  
@@ -89,19 +91,19 @@ BadRAM的部分，因為協定的限制，所以mips-loongson\(Linux 協定\)和
 
 ||MIPS| qemu|	emu||
 | :--- | :--- |:---    |:---     |:---|  
-video	no	yes
-console charset	CP437	ASCII
-network	no	yes
-ATA/AHCI	yes	no
-AT keyboard	yes	no
-USB	N/A	yes
-chainloader	yes	no
-cpuid	no	no
-hints	guess	no
-PCI	no	no
-badram	yes (*)	no
-compression	configurable	no
-exit	no	yes
+|video|	no|	yes|||
+|console charset|	CP437|	ASCII|||
+|network|	|no|	yes|||
+|ATA/AHCI|	|yes|	no|||
+|AT keyboard	|yes|	no|||
+|USB|	        |N/A|   yes|||
+|chainloader|	|yes|	 no|||
+|cpuid|	no|	|no|||
+|hints|	guess|	|no|||
+|PCI|	no|	|no|||
+|badram|	|yes (*)	|no|||
+|compression|	configurable|	no|||
+|exit|	no|	yes|||
 
 # 平臺限制的功能
 
