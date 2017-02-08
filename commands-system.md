@@ -41,3 +41,9 @@ grub-probe [OPTION...] [OPTION]... [PATH|DEVICE]
 ```
 
 ## grub-reboot
+
+## grub-set-default
+
+## grub-fstest
+
+
