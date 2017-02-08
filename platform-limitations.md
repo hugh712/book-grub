@@ -71,22 +71,24 @@ BadRAM的部分，因為協定的限制，所以mips-loongson\(Linux 協定\)和
 |compression|	no|	no|	no|	no|
 |exit|	yes|	yes|	yes|	yes|
 
-	Loongson	sparc64	Powerpc	ARC
-video	yes	no	yes	no
-console charset	N/A	ASCII	ASCII	ASCII
-network	no	yes (*)	yes	no
-ATA/AHCI	yes	no	no	no
-AT keyboard	yes	no	no	no
-USB	yes	no	no	no
-chainloader	yes	no	no	no
-cpuid	no	no	no	no
-hints	good	good	good	no
-PCI	yes	no	no	no
-badram	yes (*)	no	no	no
-compression	configurable	no	no	configurable
-exit	no	yes	yes	yes
+||Loongson|sparc64|Powerpc|ARC|
+| :--- | :--- |:---    |:---     |:---|  
+|video|	yes|	no|	yes|	no|
+|console charset|	N/A|	ASCII|	ASCII|	ASCII|
+|network|no|yes (*)|yes|no|
+|ATA/AHCI|	yes|	no|	no|	no|
+|AT keyboard|	yes|	no|	no|	no|
+|USB|	yes|	no|	no|	no|
+|chainloader|	yes|	no|	no|	no|
+|cpuid|	no|	no|	no|	no|
+|hints|	good|	good|	good|	no|
+|PCI|	yes|	no|	no|	no|
+|badram|yes (*)| no|	no|	no|
+|compression|	configurable|	no|	no|	configurable|
+|exit|	no|	yes|	yes|	yes|
 
-	MIPS qemu	emu
+||MIPS| qemu|	emu||
+| :--- | :--- |:---    |:---     |:---|  
 video	no	yes
 console charset	CP437	ASCII
 network	no	yes
