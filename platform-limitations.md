@@ -88,6 +88,8 @@ BadRAM的部分，因為協定的限制，所以mips-loongson\(Linux 協定\)和
 |badram|yes (*)| no|	no|	no|
 |compression|	configurable|	no|	no|	configurable|
 |exit|	no|	yes|	yes|	yes|
+<br>
+<br>
 
 ||MIPS qemu|	emu|||
 | :--- | :--- |:---    |:---     |:---|  
