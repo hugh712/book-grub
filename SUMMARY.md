@@ -34,5 +34,4 @@
   * [Images](images.md)
   * [Resolutions](resolutions.md)
 * [Re-install](re-install.md)
-* [Modules](modules.md)
 

@@ -40,3 +40,4 @@ grub-mkrescue [OPTION...] [OPTION] SOURCE...
 grub-probe [OPTION...] [OPTION]... [PATH|DEVICE]
 ```
 
+## grub-reboot
