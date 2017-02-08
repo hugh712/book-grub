@@ -182,28 +182,28 @@ BadRAM的部分，因為協定的限制，所以mips-loongson\(Linux 協定\)和
 |32-bit EFI chainloader|	yes|	no (4)|
 |64-bit EFI chainloader|	no (4)|	yes|
 |Appleloader|	yes|	yes|
-||ia32| IEEE1275|
-|BIOS chainloading|	no (1)
-|NTLDR|	no (1)
-|Plan9|	no (1)
-|FreeDOS|	no (1)
-|FreeBSD bootloader|	crashes (1)
-|32-bit kFreeBSD|	crashes (6)
-|64-bit kFreeBSD|	crashes (6)
-|32-bit kNetBSD|	crashes (1)
-|64-bit kNetBSD|	?
-|32-bit kOpenBSD|	?
-|64-bit kOpenBSD|	?
-|Multiboot|	?
-|Multiboot2|	?
-|32-bit Linux (legacy protocol)|	no (1)
-|64-bit Linux (legacy protocol)	|no (1)
-|32-bit Linux (modern protocol)	|?
-|64-bit Linux (modern protocol)	|?
-|32-bit XNU|	?
-|64-bit XNU|	?
-|32-bit EFI chainloader|	no (3)
-|64-bit EFI chainloader	|no (3)
-|Appleloader|	no (3)
+||ia32 IEEE1275|
+|BIOS chainloading|	no (1)|
+|NTLDR|	no (1)|
+|Plan9|	no (1)|
+|FreeDOS|	no (1)|
+|FreeBSD bootloader|	crashes (1)|
+|32-bit kFreeBSD|	crashes (6)|
+|64-bit kFreeBSD|	crashes (6)|
+|32-bit kNetBSD|	crashes (1)|
+|64-bit kNetBSD|	?|
+|32-bit kOpenBSD|	?|
+|64-bit kOpenBSD|	?|
+|Multiboot|	?|
+|Multiboot2|	?|
+|32-bit Linux (legacy protocol)|	no (1)|
+|64-bit Linux (legacy protocol)	|no (1)|
+|32-bit Linux (modern protocol)	|?|
+|64-bit Linux (modern protocol)	|?|
+|32-bit XNU|	?|
+|64-bit XNU|	?|
+|32-bit EFI chainloader|	no (3)|
+|64-bit EFI chainloader	|no (3)|
+|Appleloader|	no (3)|
 
 
