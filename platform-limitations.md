@@ -1,5 +1,5 @@
 # GRUB上平臺限制
-GRUB2的設計優點為其攜帶性和移植性，所以確實是已經移植到很多的平台上。雖然官方想要把它實做成每個平台都可以運作，但是實際上卻是有些平台的支援度沒有很高。
+GRUB2的設計優點為其攜帶性和移植性，所以確實是已經移植到很多的平台上。雖然官方想要把它實做成每個平台都可以運作，但是實際上卻是有些平台的支援度沒有很高，底下是一些平台上的差異:
 
 ## ARC
 ARC系統沒辦法改變時間(Firmware似乎沒有提供相關功能)，用EMU的話也有相似的限制; 而且ARC也不支援serial port;用EMU的話也有相似的限制。 
@@ -9,15 +9,18 @@ Console charset只會支援firmware相關的console，像是gfxterm都只支援U
 
 限制最多的應該是ASCII，像是CP437提供了額外pseudographics，因為GRUB2並不使用從CP437來的語言文字，所以CP437總是因為相容的關係，被取代成這些pseudographics。而Unicode當然就是支援最多的charset，但是也是要取決於firmware的支援就對了。
 
-Network
+## Network
+在BIOS上的網路也有些限制，只有在你的映像檔是通過網路讀取的才能使用網路。在sparc64上的GRUB就無法決定它是從哪個server上啟動的。
 
-keyboard
+## Serial
+如果平台上沒有支援的serial的話，只要firmware支援的話，你依然可以直接將firmware給導到concole上。
 
-USB
+## USB
+USB有在ATA和AT上提供支援，在ATA上支援USB disk，而在AT上則是支援USB鍵盤，而且兩個都支援USB serial。
 
-Chainloading
+## Chainloading
 
-BadRAM
+## BadRAM
 
 
 
