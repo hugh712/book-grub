@@ -22,7 +22,7 @@ USB有在ATA和AT上提供支援，在ATA上支援USB disk，而在AT上則是�
 chainloading的部分因為牽涉到使用相同的協定來讀取其它的bootloader，這部分需要藉由命令『search』的option-『hints』來達成，這個選項允許使用預先預測的機制，如果是在同一個平台的話，這個預測是很準的，除非在兩次開機間你有移動你disk的介面; 但是在不同平台上這個預測機制會經過『訓練』，所以有可能會失敗，但是失敗的話只是降低效能，不代表結果失敗。
 
 ## BadRAM
-
+BadRAM的部分，因為協定的限制，所以mips-loongson(Linux 協定)和mips-qemu_mips只能使用記憶體上的第一個『hole』。
 
 
 
