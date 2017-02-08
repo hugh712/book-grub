@@ -28,6 +28,20 @@ BadRAM的部分，因為協定的限制，所以mips-loongson(Linux 協定)和mi
 ## Limitation Table
 底下列出官方所發布的限制:
 
+|     | BIOS|	Coreboot|	Multiboot|	Qemu|
+|video| yes|	yes	yes	yes
+console charset	CP437	CP437	CP437	CP437
+network	yes (*)	no	no	no
+ATA/AHCI	yes	yes	yes	yes
+AT keyboard	yes	yes	yes	yes
+USB	yes	yes	yes	yes
+chainloader	local	yes	yes	no
+cpuid	partial	partial	partial	partial
+hints	guess	guess	guess	guess
+PCI	yes	yes	yes	yes
+badram	yes	yes	yes	yes
+compression	always	pointless	no	no
+exit	yes	no	no	no
 
 
 # 平臺限制的功能
