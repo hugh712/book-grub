@@ -54,6 +54,7 @@ BadRAM的部分，因為協定的限制，所以mips-loongson\(Linux 協定\)和
 |exit    |yes    |no    |no    |no|
 
 |	|ia32 EFI|	amd64 EFI|	ia32 IEEE1275|	Itanium|
+| :--- | :--- |:---    |:---     |:---|  
 |video|	yes|	yes|	no|	no|
 |console charset|Unicode|Unicode|ASCII|Unicode|
 |network|	yes|	yes|	yes|	yes|
