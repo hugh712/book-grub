@@ -189,7 +189,11 @@ BadRAM的部分，因為協定的限制，所以mips-loongson\(Linux 協定\)和
 |32-bit EFI chainloader|	yes|	no (4)|
 |64-bit EFI chainloader|	no (4)|	yes|
 |Appleloader|	yes|	yes|
+<br><br>
+
+
 ||ia32 IEEE1275|
+| :--- | :--- |
 |BIOS chainloading|	no (1)|
 |NTLDR|	no (1)|
 |Plan9|	no (1)|
