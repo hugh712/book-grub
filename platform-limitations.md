@@ -7,7 +7,7 @@ ARC系統沒辦法改變時間(Firmware似乎沒有提供相關功能)，用EMU�
 ## Console
 Console charset只會支援firmware相關的console，像是gfxterm都只支援Unicode，Serial被設定成支援UTF-8或是ASCII。qemu和coreboot是vga_text，而Loongson總是使用gfxterm。
 
-ASCII
+限制最多的應該是ASCII，像是CP437提供了額外pseudographics，因為GRUB2並不使用從CP437來的語言文字，所以CP437總是因為相容的關係，被取代成這些pseudographics。而Unicode當然就是支援最多的charset，但是也是要取決於firmware的支援就對了。
 
 Network
 
