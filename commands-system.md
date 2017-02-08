@@ -1,4 +1,6 @@
 
+## grub-editenv
+
 ## grub-install
 
 ## grub-mkconfig
