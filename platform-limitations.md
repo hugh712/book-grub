@@ -136,7 +136,10 @@ BadRAM的部分，因為協定的限制，所以mips-loongson\(Linux 協定\)和
 |32-bit EFI chainloader|	no (3)|	no (3)|
 |64-bit EFI chainloader|	no (3)| no (3)|
 |Appleloader|	no (3)|	no (3)|
+<br><br>
+
 ||Multiboot|	Qemu|
+| :--- | :--- |:---|
 |BIOS chainloading|	no (1)|	no (1)|
 |NTLDR|	no (1)|	no (1)|
 |Plan9|	no (1)|	no (1)|
@@ -159,7 +162,11 @@ BadRAM的部分，因為協定的限制，所以mips-loongson\(Linux 協定\)和
 |32-bit EFI chainloader|	no (3)|	no (3)|
 |64-bit EFI chainloader|	no (3)| no (3)|
 |Appleloader|	no (3)|	no (3)|
+<br><br>
+
+
 ||ia32 EFI|	amd64 EFI|
+| :--- | :--- |:---|
 |BIOS chainloading|	no (1)|	no (1)|
 |NTLDR|	no (1)|	no (1)|
 |Plan9|	no (1)|	no (1)|
