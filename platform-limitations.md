@@ -110,7 +110,7 @@ BadRAM的部分，因為協定的限制，所以mips-loongson\(Linux 協定\)和
 # 平臺限制的功能
 
 # X86所支援的平臺
-
+官方有整理一個x86架構支援的表格，『Yes』的意思就是kernel可以在這個平台上運作，『crashes』代表在之前的kernel會有問題，它們會跟相關的kernel工程師一起解決這些問題，『no』表示GRUB裡面沒有支援，『headless』表示kernel還是可以運作，但是少了console的driver，但是你還是可以藉由serial還是網路來操作，至於其他的不在上敘的原因則個別在底下註解。
 
 |	|BIOS|	Coreboot|
 | :--- | :--- |:---|
