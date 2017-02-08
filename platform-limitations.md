@@ -53,6 +53,51 @@ BadRAM的部分，因為協定的限制，所以mips-loongson\(Linux 協定\)和
 |compression|    always|    pointless|    no|    no|  
 |exit    |yes    |no    |no    |no|
 
+|	|ia32 EFI|	amd64 EFI|	ia32 IEEE1275|	Itanium|
+|video|	yes|	yes|	no|	no|
+|console charset|Unicode|Unicode|ASCII|Unicode|
+|network|	yes|	yes|	yes|	yes|
+|ATA/AHCI|	yes|	yes|	yes|	no|
+|AT keyboard|	yes|	yes|	yes|	no|
+|USB|	yes|	yes|	yes|	no|
+|chainloader|	local|	local|	no|	local|
+|cpuid|	partial|partial|partial|no|
+|hints|	guess|	guess|	good|	guess|
+|PCI|	yes|	yes|	yes|	no|
+|badram|	yes|	yes|	no|	yes|
+|compression|	no|	no|	no|	no|
+|exit|	yes|	yes|	yes|	yes|
+
+	Loongson	sparc64	Powerpc	ARC
+video	yes	no	yes	no
+console charset	N/A	ASCII	ASCII	ASCII
+network	no	yes (*)	yes	no
+ATA/AHCI	yes	no	no	no
+AT keyboard	yes	no	no	no
+USB	yes	no	no	no
+chainloader	yes	no	no	no
+cpuid	no	no	no	no
+hints	good	good	good	no
+PCI	yes	no	no	no
+badram	yes (*)	no	no	no
+compression	configurable	no	no	configurable
+exit	no	yes	yes	yes
+
+	MIPS qemu	emu
+video	no	yes
+console charset	CP437	ASCII
+network	no	yes
+ATA/AHCI	yes	no
+AT keyboard	yes	no
+USB	N/A	yes
+chainloader	yes	no
+cpuid	no	no
+hints	guess	no
+PCI	no	no
+badram	yes (*)	no
+compression	configurable	no
+exit	no	yes
+
 # 平臺限制的功能
 
 # X86所支援的平臺
