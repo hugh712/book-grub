@@ -36,6 +36,7 @@ grub-editenv [OPTION...] FILENAME COMMAND
 
 ## grub-glue-efi
 
+##  grub-kbdcomp
 
 ## grub-install
 ```
