@@ -13,6 +13,7 @@
 - grub-menulst2cfg
 - grub-mkconfig.
 - grub-mkdevicemap
+- grub-mkimage
 - grub-mklayout
 - grub-mkrelpath
 - grub-mkstandalone
@@ -20,7 +21,6 @@
 - grub-script-check
 - grub-set-default
 - grub-syslinux2cfg
-- grub-mkimage
 - grub-mkpasswd-pbkdf2.
 - grub-mkrescue.
 - grub-probe.
@@ -98,6 +98,15 @@ grub-mkconfig接受底下的options:
 
 ## grub-mkdevicemap
 
+## grub-mkimage
+
+
+
+
+
+
+
+
 ## grub-mklayout
 
 ## grub-mkrelpath
@@ -114,7 +123,7 @@ grub-mkconfig接受底下的options:
 
 
 
-## grub-mkimage
+
 
 
 
