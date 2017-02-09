@@ -108,9 +108,10 @@ grub-mkrescue接受底下的options:
 --rom-directory=dir
 
 --xorriso=file
-如果你有自己的xorriso程式的話，可以用這個option指定。
+如果你有自己的xorriso程式的話，可以用這個option指定，不然就會用內建的程式。
 
 --grub-mkimage=file
+如果你有自己的grub-mkimage程式的話，可以用這個option指定，不然就會用內建的程式。
 
 ## grub-probe
 ```
