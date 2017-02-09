@@ -160,7 +160,7 @@ grub-mkdevicemap [OPTION]...
 grub-mklayout [OPTION...] [OPTIONS]
 ```
 
-這個指令會處理『keymaps』裡面的一個 keyboard layout，將其轉成GRUB keymap命令可以讀的格式。
+這個指令會處理Linux裡的一個『keymaps』 keyboard layout，將其轉成GRUB keymap命令可以讀的格式。
 
 ### grub-mklayout接受底下的options:
 
