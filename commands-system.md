@@ -100,7 +100,7 @@ grub-mkrescue接受底下的options:
 
 -o file
 --output=file
-
+這個option是必要的，會將輸出存到檔案裡。
 
 --modules=modules
 
