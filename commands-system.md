@@ -53,6 +53,9 @@ grub-install --boot-directory=/mnt/boot /dev/sdb
 --recheck
 重新檢查device map，即使『/boot/grub/device.map』已經存在了，官方建議當你加入/移除某個裝置到你的電腦時，一定要加入這個option。
 
+## grub-mkimage
+
+
 ## grub-mkconfig
 ```
 grub-mkconfig [OPTION]
