@@ -182,13 +182,13 @@ Search hints for platforms where disks are addressed directly rather than via fi
 Search hints for the EFI platform.
 
 ‘arc_hints’
-Search hints for the ARC platform.
+ARC平臺的Search hints
 
 ‘compatibility_hint’
 A guess at a reasonable GRUB drive name for this device, which may be used as a fallback if the search command fails.
 
 ‘disk’
-System device name for the whole disk.
+整個硬碟的系統裝置名稱
 
 -v
 --verbose
