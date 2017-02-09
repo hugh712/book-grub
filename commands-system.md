@@ -17,6 +17,8 @@ grub-install install_device
 ```
 裝置名稱『install_device』會是一個作業系統的裝置名稱或是GRUB的裝置名稱。
 
+grub-install接受底下的options:
+
 
 
 
