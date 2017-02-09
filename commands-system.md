@@ -249,8 +249,16 @@ A guess at a reasonable GRUB drive name for this device, which may be used as a 
 --verbose
 印出更多的訊息。
 
-
 ## grub-reboot
+```
+grub-reboot [OPTION] MENU_ENTRY
+```
+設定GRUB的預設啟動entry，在下次啟動才有效。
+
+grub-reboot接受底下的options:
+
+--boot-directory=DIR
+使用你自己的GRUB映像檔，而不是系統預設的『/boot/grub』，所以用這個option的話，路徑應該會像『DIR/grub』才對。
 
 ## grub-set-default
 ## update-grub
