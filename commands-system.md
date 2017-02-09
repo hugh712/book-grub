@@ -26,7 +26,6 @@
 - grub-probe.
 - grub-reboot
 - grub-set-default
-- grub-fstest
 - update-grub
 
 ## grub-editenv
@@ -120,14 +119,6 @@ grub-mkconfig接受底下的options:
 ## grub-set-default
 
 ## grub-syslinux2cfg
-
-
-
-
-
-
-
-
 
 
 ## grub-mkpasswd-pbkdf2
@@ -272,9 +263,6 @@ A guess at a reasonable GRUB drive name for this device, which may be used as a 
 ## grub-reboot
 
 ## grub-set-default
-
-## grub-fstest
-
 ## update-grub
 
 
