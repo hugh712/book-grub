@@ -3,6 +3,20 @@
 
 <font color="red">(options - 『help』和『version』因為都差不多，所以我就省略了，太佔篇幅了)</font>
 
+這邊的命令清單有:
+- grub-editenv
+- grub-install
+- grub-mkconfig
+- grub-mkpasswd-pbkdf2
+- grub-mkrescue
+- grub-probe
+- grub-reboot
+- grub-set-default
+- grub-fstest
+
+
+
+
 ## grub-editenv
 ```
 grub-editenv [OPTION...] FILENAME COMMAND
