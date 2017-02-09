@@ -96,9 +96,6 @@ cp my_file1 disk/boot/grub/
 grub-mkrescue -o grub.iso disk
 ```
 
-
-
-
 grub-mkrescue接受底下的options:
 
 
