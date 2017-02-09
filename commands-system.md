@@ -60,7 +60,6 @@ grub-editenv [OPTION...] FILENAME COMMAND
 
 ## grub-fstest
 
-
 ## grub-glue-efi
 
 ## grub-install
