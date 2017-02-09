@@ -127,9 +127,18 @@ grub-probe --target=drive --device /dev/sda1
 
 grub-probe必須指定裝置或是路徑，並且接受底下的options:
 
+-d
+--device
+
+-m file
+--device-map=file
 
 
+-t target
+--target=target
 
+-v
+--verbose
 
 ## grub-reboot
 
