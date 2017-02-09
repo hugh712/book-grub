@@ -143,13 +143,13 @@ grub-probe必須指定裝置或是路徑，並且接受底下的options:
 GRUB filesystem module.
 
 ‘fs_uuid’
-Filesystem Universally Unique Identifier (UUID).
+Filesystem的 Universally Unique Identifier (UUID).
 
 ‘fs_label’
 Filesystem label.
 
 ‘drive’
-GRUB device name.
+GRUB的裝置名稱.
 
 ‘device’
 System device name.
@@ -170,19 +170,19 @@ MBR partition type code (two hexadecimal digits).
 A string of platform search hints suitable for passing to the search command (see search).
 
 ‘bios_hints’
-PC BIOS平臺的Search hints.
+PC BIOS平臺的Search hints。
 
 ‘ieee1275_hints’
-Search hints for the IEEE1275 platform.
+IEEE1275平臺的Search hints。
 
 ‘baremetal_hints’
 Search hints for platforms where disks are addressed directly rather than via firmware.
 
 ‘efi_hints’
-EFI平臺的Search hints
+EFI平臺的Search hints。
 
 ‘arc_hints’
-ARC平臺的Search hints
+ARC平臺的Search hints。
 
 ‘compatibility_hint’
 A guess at a reasonable GRUB drive name for this device, which may be used as a fallback if the search command fails.
