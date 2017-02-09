@@ -186,6 +186,9 @@ grub-mkrelpath [OPTION...] PATH
 
 ## grub-script-check
 
+### 用法
+
+
 ## grub-set-default
 
 ## grub-syslinux2cfg
