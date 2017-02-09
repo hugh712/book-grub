@@ -179,7 +179,7 @@ Search hints for the IEEE1275 platform.
 Search hints for platforms where disks are addressed directly rather than via firmware.
 
 ‘efi_hints’
-Search hints for the EFI platform.
+EFI平臺的Search hints
 
 ‘arc_hints’
 ARC平臺的Search hints
