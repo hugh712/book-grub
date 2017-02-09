@@ -13,7 +13,7 @@
 - grub-mkconfig.
 - grub-mkdevicemap.
 - grub-mkimage
-- grub-mklayout
+- grub-mklayout.
 - grub-mkrelpath
 - grub-mkstandalone
 - grub-mount
