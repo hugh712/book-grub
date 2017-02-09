@@ -135,7 +135,7 @@ grub-mkconfig -o /boot/grub/grub.cfg
 ```
 grub-mkdevicemap [OPTION]...
 ```
-
+自動產生一個device map。
 
 
 ## grub-mkimage
