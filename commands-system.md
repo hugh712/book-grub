@@ -40,14 +40,17 @@ grub-editenv [OPTION...] FILENAME COMMAND
 
 ### grub-editenv接受底下的COMMAND:
 
-- create
+- create <br>
+ 建立一個空的environment block檔案。
  
-- list
+- list <br>
+列出目前的所有變數。
 
-- set [NAME=VALUE]
+- set [NAME=VALUE ...] <br>
+設定一個或多個變數。
 
-- unset [NAME ...]
- 
+- unset [NAME ...] <br>
+刪除一個或多個變數。
 ### grub-editenv接受底下的options:
 
 
