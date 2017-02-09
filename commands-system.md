@@ -20,7 +20,7 @@
 - grub-syslinux2cfg
 - grub-install.
 - grub-mkimage
-- grub-mkconfig
+- grub-mkconfig.
 - grub-mkpasswd-pbkdf2.
 - grub-mkrescue.
 - grub-probe.
