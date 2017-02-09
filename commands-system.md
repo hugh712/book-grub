@@ -27,6 +27,7 @@
 - grub-reboot
 - grub-set-default
 - grub-fstest
+- update-grub
 
 ## grub-editenv
 ```
