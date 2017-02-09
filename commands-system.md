@@ -9,6 +9,7 @@
 - grub-fstest
 - grub-glue-efi
 - grub-kbdcomp
+- grub-menulst2cfg
 - grub-install
 - grub-mkimage
 - grub-mkconfig
@@ -37,6 +38,8 @@ grub-editenv [OPTION...] FILENAME COMMAND
 ## grub-glue-efi
 
 ## grub-kbdcomp
+
+## grub-menulst2cfg
 
 ## grub-install
 ```
