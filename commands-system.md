@@ -71,9 +71,11 @@ grub-mkpasswd-pbkdf2接受底下的options:
 
 -l number
 --buflen=number
+產生hash的長度，預設是64。
 
 -s number
 --salt=number
+雜訊『salt』的長度，預設是64。
 
 ## grub-mkrescue
 ```
