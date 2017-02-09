@@ -25,8 +25,8 @@
 - grub-probe.
 - grub-reboot.
 - grub-set-default.
-- update-grub
-- update-grub2
+- update-grub.
+- update-grub2.
 
 
 
@@ -34,6 +34,14 @@
 ```
 grub-editenv [OPTION...] FILENAME COMMAND
 ```
+在環境變數那個章節有介紹過『environment block』，這個工具主要就是編輯這個block，
+
+grub-editenv接受底下的COMMAND:
+
+grub-editenv接受底下的options:
+
+
+
 
 ## grub-file
 
