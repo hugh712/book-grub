@@ -28,9 +28,6 @@
 - grub-set-default
 - grub-fstest
 
-
-
-
 ## grub-editenv
 ```
 grub-editenv [OPTION...] FILENAME COMMAND
