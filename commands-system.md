@@ -11,6 +11,7 @@
 - grub-kbdcomp
 - grub-menulst2cfg
 - grub-mkdevicemap
+- grub-mklayout
 - grub-install
 - grub-mkimage
 - grub-mkconfig
@@ -43,6 +44,8 @@ grub-editenv [OPTION...] FILENAME COMMAND
 ## grub-menulst2cfg
 
 ## grub-mkdevicemap
+
+## grub-mklayout
 
 ## grub-install
 ```
