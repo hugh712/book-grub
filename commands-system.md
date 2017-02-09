@@ -136,6 +136,10 @@ grub-mkdevicemap [OPTION]...
 ```
 自動產生一個device map。
 
+### grub-mkdevicemap接受底下的options:
+<br>
+
+
 
 ## grub-mkimage
 
