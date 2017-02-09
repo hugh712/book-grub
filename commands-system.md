@@ -10,6 +10,7 @@
 - grub-glue-efi
 - grub-kbdcomp
 - grub-menulst2cfg
+- grub-mkdevicemap
 - grub-install
 - grub-mkimage
 - grub-mkconfig
@@ -40,6 +41,8 @@ grub-editenv [OPTION...] FILENAME COMMAND
 ## grub-kbdcomp
 
 ## grub-menulst2cfg
+
+## grub-mkdevicemap
 
 ## grub-install
 ```
