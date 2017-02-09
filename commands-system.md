@@ -118,6 +118,15 @@ grub-mkrescue接受底下的options:
 ```
 grub-probe [OPTION...] [OPTION]... [PATH|DEVICE]
 ```
+這個程式會萃取你指定裝置/路徑的資訊，用法如下:
+
+```
+grub-probe --target=fs /boot/grub
+grub-probe --target=drive --device /dev/sda1
+```
+
+
+
 
 ## grub-reboot
 
