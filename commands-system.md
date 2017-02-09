@@ -261,6 +261,11 @@ grub-reboot接受底下的options:
 使用你自己的GRUB映像檔，而不是系統預設的『/boot/grub』，所以用這個option的話，路徑應該會像『DIR/grub』才對。
 
 ## grub-set-default
+```
+grub-set-default [OPTION] MENU_ENTRY
+```
+
+
 ## update-grub
 
 
