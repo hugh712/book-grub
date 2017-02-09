@@ -219,6 +219,7 @@ grub-mkstandalone [OPTION...] [OPTION] SOURCE...
 - --themes=THEMES
 
 - -v, --verbose
+印出更多資訊。
 
 - --core-compress=xz|none|auto
 
