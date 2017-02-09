@@ -5,6 +5,8 @@
 
 這邊的命令清單有:
 - grub-editenv
+- grub-file
+- grub-fstest
 - grub-install
 - grub-mkimage
 - grub-mkconfig
@@ -23,6 +25,11 @@
 grub-editenv [OPTION...] FILENAME COMMAND
 ```
 
+## grub-file
+
+
+
+## grub-fstest
 
 
 
