@@ -56,7 +56,7 @@ grub-editenv [OPTION...] FILENAME COMMAND
 
 
 - -v, --verbose <br>
-顯示出更多的訊息
+顯示出更多的訊息。
 
 
 ## grub-file
