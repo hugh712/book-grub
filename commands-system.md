@@ -24,6 +24,19 @@ grub-install install_device
 grub-install接受底下的options:
 
 --boot-directory=dir
+將GRUB映像檔安裝到資料夾『/dir/grub』下，這個命令在當你想要將GRUB安裝到個別的partition上或是一個可移除的裝置上非常有用，如果沒有特別注命這個option的話，預設會是『/boot』，所以下面兩個命令其實是相等的:
+```
+grub-install /dev/sda
+grub-install --boot-directory=/boot/ /dev/sda
+```
+
+下面這個例子是將你個別的partition給掛載到『/mnt/boot』上後，然後在將GRUB給安裝到這個partition上:
+```
+grub-install --boot-directory=/mnt/boot /dev/sdb
+```
+
+
+
 
 --recheck
 重新檢查device map，即使『/boot/grub/device.map』已經存在了，官方建議當你加入/移除某個裝置到你的電腦時，一定要加入這個option。
