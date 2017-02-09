@@ -162,7 +162,7 @@ grub-mklayout [OPTION...] [OPTIONS]
 
 這個指令會處理『keymaps』裡面的一個 keyboard layout，將其轉成GRUB keymap命令可以讀的格式。
 
-### grub-kbdcomp接受底下的options:
+### grub-mklayout接受底下的options:
 
 - -o, -- output=FILE <br>
 將檔案給匯出到指定檔案。
