@@ -144,6 +144,7 @@ grub-mkdevicemap [OPTION]...
 - -s, --probe-second-floppy
 
 - -m, --device-map=FILE
+使用指定的檔案當成device map，預設的話是『/boot/grub/device.map』。
 
 - -v, --verbose
 印出更多的資訊。
