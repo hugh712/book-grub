@@ -200,9 +200,31 @@ grub-mkstandalone [OPTION...] [OPTION] SOURCE...
 
 ### grub-mkstandalone接受底下的options:
 
+- --compress[=no,xz,gz,lzo]
 
+- -d, --directory=DIR
 
+- --fonts=FONTS
 
+- --install-modules=MODULES
+
+- -k, --pubkey=FILE
+
+- --locale-directory=DIR use translations under DIR
+
+- --locales=LOCALES
+
+- --modules=MODULES
+
+- --themes=THEMES
+
+- -v, --verbose
+
+- --core-compress=xz|none|auto
+
+- -o, --output=FILE
+
+- -O, --format=FILE
 
 ## grub-script-check
 
