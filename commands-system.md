@@ -132,7 +132,7 @@ grub-probe必須指定裝置或是路徑，並且接受底下的options:
 
 -m file
 --device-map=file
-通常預設的device map會在『/boot/grub/device.map』裡，但是如果指定這個option的話就會用指定的檔案當成你的device map
+通常預設的device map會在『/boot/grub/device.map』裡，但是如果指定這個option的話就會用指定的檔案當成你的device map。
 
 -t target
 --target=target
