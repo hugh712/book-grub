@@ -161,10 +161,10 @@ GRUB partition map module.
 GRUB abstraction module (e.g. ‘lvm’).
 
 ‘cryptodisk_uuid’
-Crypto device UUID.
+加密過的裝置UUID。
 
 ‘msdos_parttype’
-MBR partition type code (two hexadecimal digits).
+MBR partition type code (會是兩個16進制的編碼).
 
 ‘hints_string’
 A string of platform search hints suitable for passing to the search command (see search).
