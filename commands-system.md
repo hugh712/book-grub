@@ -165,9 +165,10 @@ grub-mklayout [OPTION...] [OPTIONS]
 ### grub-mklayout接受底下的options:
 
 - -i, --input=FILE <br>
+設定輸入的檔案名稱，預設是STDIN。
 
 - -o, --output=FILE <br>
-將檔案給匯出到指定檔案。
+設定輸出的檔案名稱，預設會是STDOUT。
 
 - -v, --verbose <br>
 印出更多資訊。
