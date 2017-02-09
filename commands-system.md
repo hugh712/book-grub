@@ -14,7 +14,7 @@
 - grub-mkdevicemap.
 - grub-mkimage
 - grub-mklayout.
-- grub-mkrelpath
+- grub-mkrelpath.
 - grub-mkstandalone
 - grub-mount
 - grub-script-check
@@ -174,8 +174,15 @@ grub-mklayout [OPTION...] [OPTIONS]
 印出更多資訊。
 
 
-
 ## grub-mkrelpath
+
+###用法
+```
+grub-mkrelpath [OPTION...] PATH
+```
+將系統的裝置路徑轉換成GRUB的。
+
+
 
 ## grub-mkstandalone
 
