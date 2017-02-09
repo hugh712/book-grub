@@ -81,6 +81,11 @@ grub-mkpasswd-pbkdf2接受底下的options:
 ```
 grub-mkrescue [OPTION...] [OPTION] SOURCE...
 ```
+產生一個可開機的GRUB救援映像檔，用法如下:
+```
+grub-mkrescue -o grub.iso
+```
+
 
 
 
