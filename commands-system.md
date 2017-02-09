@@ -16,7 +16,6 @@
 - grub-mklayout.
 - grub-mkrelpath.
 - grub-mkstandalone
-- grub-mount
 - grub-script-check
 - grub-syslinux2cfg
 - grub-mkpasswd-pbkdf2.
@@ -183,10 +182,7 @@ grub-mkrelpath [OPTION...] PATH
 將系統的裝置路徑轉換成GRUB的。
 
 
-
 ## grub-mkstandalone
-
-## grub-mount
 
 ## grub-script-check
 
