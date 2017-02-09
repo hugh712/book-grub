@@ -137,6 +137,9 @@ grub-probe必須指定裝置或是路徑，並且接受底下的options:
 
 -t target
 --target=target
+特別指定要印出哪些更細的分類資訊，可取得的分類如下:
+
+
 
 -v
 --verbose
