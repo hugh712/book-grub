@@ -65,6 +65,16 @@ grub-mkpasswd-pbkdf2 [OPTION...] [OPTIONS]
 
 grub-mkpasswd-pbkdf2接受底下的options:
 
+-c number
+--iteration-count=number
+設定底下演算法的疊代次數，當然疊代越多次越安全，預設是1000次。
+
+-l number
+--buflen=number
+
+-s number
+--salt=number
+
 ## grub-mkrescue
 ```
 grub-mkrescue [OPTION...] [OPTION] SOURCE...
