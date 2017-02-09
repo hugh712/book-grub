@@ -283,6 +283,6 @@ grub-reboot接受底下的options:
 update-grub
 update-grub2
 ```
-
+這兩個指令其實是一樣的，都是等於『grub-mkconfig -o  /boot/grub/grub.cfg』這個命令，就是產生GRUB2的組態檔。
 
 
