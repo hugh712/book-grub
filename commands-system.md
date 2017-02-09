@@ -125,8 +125,7 @@ grub-mkconfig -o /boot/grub/grub.cfg
 ### grub-mkconfig接受底下的options:
 <br>
 
--o file
---output=file
+- -o file, --output=file
 系統預設是將產生的組態檔輸出到standard output，所以要記得用這個option將組態給輸出到特定檔案上。
 
 ## grub-mkdevicemap
