@@ -8,8 +8,10 @@
 - grub-file
 - grub-fstest
 - grub-glue-efi
+- grub-install.
 - grub-kbdcomp
 - grub-menulst2cfg
+- grub-mkconfig.
 - grub-mkdevicemap
 - grub-mklayout
 - grub-mkrelpath
@@ -18,9 +20,7 @@
 - grub-script-check
 - grub-set-default
 - grub-syslinux2cfg
-- grub-install.
 - grub-mkimage
-- grub-mkconfig.
 - grub-mkpasswd-pbkdf2.
 - grub-mkrescue.
 - grub-probe.
@@ -42,26 +42,6 @@ grub-editenv [OPTION...] FILENAME COMMAND
 
 
 ## grub-glue-efi
-
-## grub-kbdcomp
-
-## grub-menulst2cfg
-
-## grub-mkdevicemap
-
-## grub-mklayout
-
-## grub-mkrelpath
-
-## grub-mkstandalone
-
-## grub-mount
-
-## grub-script-check
-
-## grub-set-default
-
-## grub-syslinux2cfg
 
 ## grub-install
 ```
@@ -90,8 +70,11 @@ grub-install --boot-directory=/mnt/boot /dev/sdb
 --recheck
 重新檢查device map，即使『/boot/grub/device.map』已經存在了，官方建議當你加入/移除某個裝置到你的電腦時，一定要加入這個option。
 
-## grub-mkimage
 
+
+## grub-kbdcomp
+
+## grub-menulst2cfg
 
 ## grub-mkconfig
 ```
@@ -108,6 +91,33 @@ grub-mkconfig接受底下的options:
 -o file
 --output=file
 系統預設是將產生的組態檔輸出到standard output，所以要記得用這個option將組態給輸出到特定檔案上。
+
+
+
+
+
+## grub-mkdevicemap
+
+## grub-mklayout
+
+## grub-mkrelpath
+
+## grub-mkstandalone
+
+## grub-mount
+
+## grub-script-check
+
+## grub-set-default
+
+## grub-syslinux2cfg
+
+
+
+## grub-mkimage
+
+
+
 
 
 
