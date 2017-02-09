@@ -139,7 +139,56 @@ grub-probe必須指定裝置或是路徑，並且接受底下的options:
 --target=target
 特別指定要印出哪些更細的分類資訊，可取得的分類如下:
 
+‘fs’
+GRUB filesystem module.
 
+‘fs_uuid’
+Filesystem Universally Unique Identifier (UUID).
+
+‘fs_label’
+Filesystem label.
+
+‘drive’
+GRUB device name.
+
+‘device’
+System device name.
+
+‘partmap’
+GRUB partition map module.
+
+‘abstraction’
+GRUB abstraction module (e.g. ‘lvm’).
+
+‘cryptodisk_uuid’
+Crypto device UUID.
+
+‘msdos_parttype’
+MBR partition type code (two hexadecimal digits).
+
+‘hints_string’
+A string of platform search hints suitable for passing to the search command (see search).
+
+‘bios_hints’
+Search hints for the PC BIOS platform.
+
+‘ieee1275_hints’
+Search hints for the IEEE1275 platform.
+
+‘baremetal_hints’
+Search hints for platforms where disks are addressed directly rather than via firmware.
+
+‘efi_hints’
+Search hints for the EFI platform.
+
+‘arc_hints’
+Search hints for the ARC platform.
+
+‘compatibility_hint’
+A guess at a reasonable GRUB drive name for this device, which may be used as a fallback if the search command fails.
+
+‘disk’
+System device name for the whole disk.
 
 -v
 --verbose
