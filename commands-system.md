@@ -23,8 +23,10 @@ grub-install install_device
 
 grub-install接受底下的options:
 
+--boot-directory=dir
 
-
+--recheck
+重新檢查device map，即使『/boot/grub/device.map』已經存在了，官方建議當你加入/移除某個裝置到你的電腦時，一定要加入這個option。
 
 ## grub-mkconfig
 ```
