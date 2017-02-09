@@ -11,7 +11,7 @@
 - grub-kbdcomp.
 - grub-menulst2cfg.
 - grub-mkconfig.
-- grub-mkdevicemap
+- grub-mkdevicemap.
 - grub-mkimage
 - grub-mklayout
 - grub-mkrelpath
