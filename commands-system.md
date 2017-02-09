@@ -18,12 +18,12 @@
 - grub-script-check
 - grub-set-default
 - grub-syslinux2cfg
-- grub-install
+- grub-install.
 - grub-mkimage
 - grub-mkconfig
-- grub-mkpasswd-pbkdf2
-- grub-mkrescue
-- grub-probe
+- grub-mkpasswd-pbkdf2.
+- grub-mkrescue.
+- grub-probe.
 - grub-reboot
 - grub-set-default
 - grub-fstest
