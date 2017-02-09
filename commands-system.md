@@ -164,8 +164,13 @@ grub-mklayout [OPTION...] [OPTIONS]
 
 ### grub-mklayout接受底下的options:
 
-- -o, -- output=FILE <br>
+- -i, --input=FILE <br>
+
+- -o, --output=FILE <br>
 將檔案給匯出到指定檔案。
+
+- -v, --verbose <br>
+印出更多資訊。
 
 
 
