@@ -47,6 +47,9 @@ grub-mkconfig [OPTION]
 grub-mkconfig -o /boot/grub/grub.cfg
 ```
 
+grub-mkconfig接受底下的options:
+
+
 
 
 
