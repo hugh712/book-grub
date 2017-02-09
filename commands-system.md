@@ -23,7 +23,7 @@
 - grub-mkpasswd-pbkdf2.
 - grub-mkrescue.
 - grub-probe.
-- grub-reboot
+- grub-reboot.
 - grub-set-default
 - update-grub
 
@@ -266,7 +266,7 @@ grub-reboot接受底下的options:
 ```
 grub-set-default [OPTION] MENU_ENTRY
 ```
-
+設定GRUB下一次開機預設的啟動entry，這個命令跟『grub-reboot』主要的差別是這個命令必須要將『/etc/default/grub』裡面的『GRUB_DEFAULT』設定成『GRUB_DEFAULT=saved』。
 
 ## update-grub
 
