@@ -48,6 +48,7 @@ grub-mkconfig -o /boot/grub/grub.cfg
 ```
 
 grub-mkconfig接受底下的options:
+<br>
 
 -o file
 --output=file
