@@ -170,7 +170,7 @@ MBR partition type code (two hexadecimal digits).
 A string of platform search hints suitable for passing to the search command (see search).
 
 ‘bios_hints’
-Search hints for the PC BIOS platform.
+PC BIOS平臺的Search hints.
 
 ‘ieee1275_hints’
 Search hints for the IEEE1275 platform.
