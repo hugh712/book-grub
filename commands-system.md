@@ -6,7 +6,6 @@
 這邊的命令清單有:
 - grub-editenv.
 - grub-fstest
-- grub-glue-efi
 - grub-install.
 - grub-kbdcomp.
 - grub-menulst2cfg.
@@ -56,7 +55,10 @@ grub-editenv [OPTION...] FILENAME COMMAND
 
 ## grub-fstest
 
-## grub-glue-efi
+### 用法
+```
+grub-fstest [OPTION...] IMAGE_PATH COMMANDS
+```
 
 ## grub-install
 
