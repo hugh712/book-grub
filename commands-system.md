@@ -256,4 +256,6 @@ A guess at a reasonable GRUB drive name for this device, which may be used as a 
 
 ## grub-fstest
 
+## update-grub
+
 
