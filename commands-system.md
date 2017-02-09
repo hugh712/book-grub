@@ -198,6 +198,10 @@ grub-mkstandalone [OPTION...] [OPTION] SOURCE...
 ```
 這個指令可以用來產生memdisk-based的GRUB 映像檔。
 
+### grub-mklayout接受底下的options:
+
+
+
 
 
 ## grub-script-check
