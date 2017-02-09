@@ -51,6 +51,7 @@ grub-editenv [OPTION...] FILENAME COMMAND
 
 - unset [NAME ...] <br>
 刪除一個或多個變數。
+
 ### grub-editenv接受底下的options:
 
 
