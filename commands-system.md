@@ -131,6 +131,13 @@ grub-mkconfig -o /boot/grub/grub.cfg
 
 ## grub-mkdevicemap
 
+### 用法
+```
+grub-mkdevicemap [OPTION]...
+```
+
+
+
 ## grub-mkimage
 
 ## grub-mklayout
