@@ -31,16 +31,28 @@
 
 
 ## grub-editenv
+
+### 用法
 ```
 grub-editenv [OPTION...] FILENAME COMMAND
 ```
 在環境變數那個章節有介紹過『environment block』，這個工具主要就是編輯這個block，
 
-grub-editenv接受底下的COMMAND:
+### grub-editenv接受底下的COMMAND:
 
-grub-editenv接受底下的options:
+- create
+ 
+- list
+
+- set [NAME=VALUE]
+
+- unset [NAME ...]
+ 
+### grub-editenv接受底下的options:
 
 
+- -v, --verbose <br>
+顯示出更多的訊息
 
 
 ## grub-file
