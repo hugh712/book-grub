@@ -86,6 +86,9 @@ grub-mkrescue [OPTION...] [OPTION] SOURCE...
 grub-mkrescue -o grub.iso
 ```
 
+grub-mkrescue接受底下的options:
+
+
 
 
 
