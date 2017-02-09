@@ -16,7 +16,7 @@
 - grub-mklayout.
 - grub-mkrelpath.
 - grub-mkstandalone
-- grub-script-check
+- grub-script-check.
 - grub-syslinux2cfg
 - grub-mkpasswd-pbkdf2.
 - grub-mkrescue.
