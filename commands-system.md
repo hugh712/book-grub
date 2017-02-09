@@ -187,6 +187,10 @@ grub-mkrelpath [OPTION...] PATH
 ## grub-script-check
 
 ### 用法
+```
+grub-script-check [OPTION...] [PATH]
+```
+這個指令會檢查你的『grub.cfg』的語法。
 
 
 ## grub-set-default
