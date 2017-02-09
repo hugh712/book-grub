@@ -86,7 +86,7 @@ grub-mkrescue [OPTION...] [OPTION] SOURCE...
 grub-mkrescue -o grub.iso
 ```
 
-這個命令裡面會使用另一個命令『mkisofs』來產生硬像檔，只要你的options並不是『grub-mkrescue』的options，則將會直接傳給『mkisofs』模式裡的『xorriso』當成參數，簡單來說就是只要在
+這個命令裡面會使用另一個命令『mkisofs』來產生硬像檔，只要你的options並不是『grub-mkrescue』的options，則將會直接傳給『mkisofs』模式裡的『xorriso』當成參數，簡單來說就是只要在『--』之後的參數不屬於『grub-mkrescue』的話就會直接變成『mkisofs』的參數。
 
 
 grub-mkrescue接受底下的options:
