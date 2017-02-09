@@ -15,6 +15,9 @@
 - grub-mkrelpath
 - grub-mkstandalone
 - grub-mount
+- grub-script-check
+- grub-set-default
+- grub-syslinux2cfg
 - grub-install
 - grub-mkimage
 - grub-mkconfig
@@ -55,6 +58,12 @@ grub-editenv [OPTION...] FILENAME COMMAND
 ## grub-mkstandalone
 
 ## grub-mount
+
+## grub-script-check
+
+## grub-set-default
+
+## grub-syslinux2cfg
 
 ## grub-install
 ```
