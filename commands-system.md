@@ -36,7 +36,7 @@
 ```
 grub-editenv [OPTION...] FILENAME COMMAND
 ```
-在環境變數那個章節有介紹過『environment block』，這個工具主要就是編輯這個block，
+在環境變數那個章節有介紹過『environment block』，這個工具主要就是編輯這個block，如果你的檔案名稱為『-』的話，那就會使用預設的『/boot/grub/grubenv』，而如果你想要刪除整個『environment block』的話，則直接用『rm /boot/grub/grubenv』。
 
 ### grub-editenv接受底下的COMMAND:
 
