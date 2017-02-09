@@ -24,8 +24,11 @@
 - grub-mkrescue.
 - grub-probe.
 - grub-reboot.
-- grub-set-default
+- grub-set-default.
 - update-grub
+- update-grub2
+
+
 
 ## grub-editenv
 ```
@@ -275,5 +278,11 @@ grub-reboot接受底下的options:
 
 
 ## update-grub
+## update-grub2
+```
+update-grub
+update-grub2
+```
+
 
 
