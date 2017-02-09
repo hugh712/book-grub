@@ -139,6 +139,8 @@ grub-probe必須指定裝置或是路徑，並且接受底下的options:
 
 -v
 --verbose
+印出更多的訊息。
+
 
 ## grub-reboot
 
