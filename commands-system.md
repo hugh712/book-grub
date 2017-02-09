@@ -12,6 +12,8 @@
 - grub-menulst2cfg
 - grub-mkdevicemap
 - grub-mklayout
+- grub-mkrelpath
+- grub-mkstandalone
 - grub-install
 - grub-mkimage
 - grub-mkconfig
@@ -46,6 +48,10 @@ grub-editenv [OPTION...] FILENAME COMMAND
 ## grub-mkdevicemap
 
 ## grub-mklayout
+
+## grub-mkrelpath
+
+## grub-mkstandalone
 
 ## grub-install
 ```
