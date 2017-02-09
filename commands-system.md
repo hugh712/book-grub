@@ -103,7 +103,7 @@ grub-mkrescue接受底下的options:
 這個option是必要的，會將輸出存到檔案裡。
 
 --modules=modules
-
+決定哪些模組你要預先包到這個映像檔裡，多個模組的話要使用空白鍵隔開，所以如果在script裡面用的話要記得用『" "』。
 
 --rom-directory=dir
 
