@@ -193,8 +193,6 @@ grub-script-check [OPTION...] [PATH]
 這個指令會檢查你的『grub.cfg』的語法。
 
 
-## grub-set-default
-
 ## grub-syslinux2cfg
 
 
