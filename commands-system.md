@@ -15,7 +15,7 @@ grub-install在大部分平台上就等於『grub-mkimage』加『grub-setup』�
 ```
 grub-install install_device
 ```
-裝置名稱
+裝置名稱『install_device』會是一個作業系統的裝置名稱或是GRUB的裝置名稱。
 
 
 
