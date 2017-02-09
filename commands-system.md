@@ -8,6 +8,7 @@
 - grub-file
 - grub-fstest
 - grub-glue-efi
+- grub-kbdcomp
 - grub-install
 - grub-mkimage
 - grub-mkconfig
