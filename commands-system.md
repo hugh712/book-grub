@@ -143,7 +143,7 @@ grub-probe必須指定裝置或是路徑，並且接受底下的options:
 GRUB filesystem module.
 
 ‘fs_uuid’
-Filesystem的 Universally Unique Identifier (UUID).
+Filesystem Universally Unique Identifier (UUID).
 
 ‘fs_label’
 Filesystem label.
@@ -152,7 +152,7 @@ Filesystem label.
 GRUB的裝置名稱.
 
 ‘device’
-System device name.
+系統的裝置名稱。
 
 ‘partmap’
 GRUB partition map module.
