@@ -275,7 +275,7 @@ EFI平臺的Search hints。
 ARC平臺的Search hints。
 
  - ‘compatibility_hint’
-A guess at a reasonable GRUB drive name for this device, which may be used as a fallback if the search command fails.
+對於這個裝置給一個預測的GRUB裝置名稱。
 
  - ‘disk’
 整個硬碟的系統裝置名稱
