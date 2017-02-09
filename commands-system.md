@@ -19,7 +19,6 @@
 - grub-mkstandalone
 - grub-mount
 - grub-script-check
-- grub-set-default
 - grub-syslinux2cfg
 - grub-mkpasswd-pbkdf2.
 - grub-mkrescue.
@@ -93,18 +92,9 @@ grub-mkconfig接受底下的options:
 
 
 
-
-
 ## grub-mkdevicemap
 
 ## grub-mkimage
-
-
-
-
-
-
-
 
 ## grub-mklayout
 
