@@ -69,6 +69,8 @@ grub-editenv [OPTION...] FILENAME COMMAND
 ## grub-glue-efi
 
 ## grub-install
+
+### 用法
 ```
 grub-install [OPTION...] [OPTION] [INSTALL_DEVICE]
 ```
@@ -78,9 +80,9 @@ grub-install install_device
 ```
 裝置名稱『install_device』會是一個作業系統的裝置名稱或是GRUB的裝置名稱。
 
-grub-install接受底下的options:
+### grub-install接受底下的options:
 
---boot-directory=dir
+- --boot-directory=dir
 將GRUB映像檔安裝到資料夾『/dir/grub』下，這個命令在當你想要將GRUB安裝到個別的partition上或是一個可移除的裝置上非常有用，如果沒有特別注命這個option的話，預設會是『/boot』，所以下面兩個命令其實是相等的:
 ```
 grub-install /dev/sda
@@ -92,7 +94,7 @@ grub-install --boot-directory=/boot/ /dev/sda
 grub-install --boot-directory=/mnt/boot /dev/sdb
 ```
 
---recheck
+- --recheck
 重新檢查device map，即使『/boot/grub/device.map』已經存在了，官方建議當你加入/移除某個裝置到你的電腦時，一定要加入這個option。
 
 
@@ -102,6 +104,8 @@ grub-install --boot-directory=/mnt/boot /dev/sdb
 ## grub-menulst2cfg
 
 ## grub-mkconfig
+
+### 用法
 ```
 grub-mkconfig [OPTION]
 ```
@@ -110,14 +114,12 @@ grub-mkconfig [OPTION]
 grub-mkconfig -o /boot/grub/grub.cfg
 ```
 
-grub-mkconfig接受底下的options:
+### grub-mkconfig接受底下的options:
 <br>
 
 -o file
 --output=file
 系統預設是將產生的組態檔輸出到standard output，所以要記得用這個option將組態給輸出到特定檔案上。
-
-
 
 ## grub-mkdevicemap
 
@@ -139,27 +141,31 @@ grub-mkconfig接受底下的options:
 
 
 ## grub-mkpasswd-pbkdf2
+
+### 用法
 ```
 grub-mkpasswd-pbkdf2 [OPTION...] [OPTIONS]
 ```
 為GRUB產生加密過的密碼。
 
 
-grub-mkpasswd-pbkdf2接受底下的options:
+### grub-mkpasswd-pbkdf2接受底下的options:
 
--c number
---iteration-count=number
+- -c number
+- --iteration-count=number
 設定底下演算法的疊代次數，當然疊代越多次越安全，預設是1000次。
 
--l number
---buflen=number
+- -l number
+- --buflen=number
 產生hash的長度，預設是64。
 
--s number
---salt=number
+- -s number
+- --salt=number
 雜訊『salt』的長度，預設是64。
 
 ## grub-mkrescue
+
+### 用法
 ```
 grub-mkrescue [OPTION...] [OPTION] SOURCE...
 ```
@@ -178,25 +184,27 @@ cp my_file1 disk/boot/grub/
 grub-mkrescue -o grub.iso disk
 ```
 
-grub-mkrescue接受底下的options:
+### grub-mkrescue接受底下的options:
 
--o file
---output=file
+- -o file
+- --output=file
 這個option是必要的，會將輸出存到檔案裡。
 
---modules=modules
+- --modules=modules
 決定哪些模組你要預先包到這個映像檔裡，多個模組的話要使用空白鍵隔開，所以如果在script裡面用的話要記得用『" "』。
 
---rom-directory=dir
+- --rom-directory=dir
 如果是要為QEMU還是Coreboot產生映像檔，則這個選項會將qemu.img或是 coreboot.elf給複製到這個映像檔裡。
 
---xorriso=file
+- --xorriso=file
 如果你有自己的xorriso程式的話，可以用這個option指定，不然就會用內建的程式。
 
---grub-mkimage=file
+- --grub-mkimage=file
 如果你有自己的grub-mkimage程式的話，可以用這個option指定，不然就會用內建的程式。
 
 ## grub-probe
+
+### 用法
 ```
 grub-probe [OPTION...] [OPTION]... [PATH|DEVICE]
 ```
@@ -207,73 +215,73 @@ grub-probe --target=fs /boot/grub
 grub-probe --target=drive --device /dev/sda1
 ```
 
-grub-probe必須指定裝置或是路徑，並且接受底下的options:
+### grub-probe必須指定裝置或是路徑，並且接受底下的options:
 
--d
---device
+- -d
+- --device
 如果有這個option的話，那就代表你想要知道的資訊是一個系統裝置檔，像是『/dev/sda1』，換而言之，如果沒有這個option的話，代表就是filesystem的路徑，像是『/boot/grub』，則grub-probe就會印出包含這個filesystem的裝置資訊。
 
--m file
---device-map=file
+- -m file
+- --device-map=file
 通常預設的device map會在『/boot/grub/device.map』裡，但是如果指定這個option的話就會用指定的檔案當成你的device map。
 
--t target
---target=target
+- -t target
+- --target=target
 特別指定要印出哪些更細的分類資訊，可取得的分類如下:
 
-‘fs’
+ - ‘fs’
 GRUB filesystem module.
 
-‘fs_uuid’
+ - ‘fs_uuid’
 Filesystem Universally Unique Identifier (UUID).
 
-‘fs_label’
+ - ‘fs_label’
 Filesystem label.
 
-‘drive’
+ - ‘drive’
 GRUB的裝置名稱.
 
-‘device’
+ - ‘device’
 系統的裝置名稱。
 
-‘partmap’
+ - ‘partmap’
 GRUB partition map module.
 
-‘abstraction’
+ - ‘abstraction’
 GRUB的抽象模組(abstraction module) (e.g. ‘lvm’).
 
-‘cryptodisk_uuid’
+ - ‘cryptodisk_uuid’
 加密過的裝置UUID。
 
-‘msdos_parttype’
+ - ‘msdos_parttype’
 MBR partition type code (會是兩個16進制的編碼).
 
-‘hints_string’
+ - ‘hints_string’
 可以傳進命令『search』的平臺search hints字串。
 
-‘bios_hints’
+ - ‘bios_hints’
 PC BIOS平臺的Search hints。
 
-‘ieee1275_hints’
+ - ‘ieee1275_hints’
 IEEE1275平臺的Search hints。
 
-‘baremetal_hints’
+ - ‘baremetal_hints’
 這個search hints主要是disk是直接定址而不是透過firmware。
 
-‘efi_hints’
+ - ‘efi_hints’
 EFI平臺的Search hints。
 
-‘arc_hints’
+ - ‘arc_hints’
 ARC平臺的Search hints。
 
-‘compatibility_hint’
+ - ‘compatibility_hint’
 A guess at a reasonable GRUB drive name for this device, which may be used as a fallback if the search command fails.
 
-‘disk’
+ - ‘disk’
 整個硬碟的系統裝置名稱
 
--v
---verbose
+- -v
+- --verbose
 印出更多的訊息。
 
 ## grub-reboot
