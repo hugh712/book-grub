@@ -125,6 +125,9 @@ grub-probe --target=fs /boot/grub
 grub-probe --target=drive --device /dev/sda1
 ```
 
+grub-probe必須指定裝置或是路徑，並且接受底下的options:
+
+
 
 
 
