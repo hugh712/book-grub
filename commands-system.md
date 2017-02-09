@@ -1,3 +1,5 @@
+# GRUB的作業系統命令
+除了之前的章節介紹了在GRUB上的命令只能用在GRUB上或是menu entry上以外，GRUB還有許多能在作業系統上呼叫的命令，這章節統一介紹，
 
 ## grub-editenv
 ```
