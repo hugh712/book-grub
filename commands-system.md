@@ -139,7 +139,14 @@ grub-mkdevicemap [OPTION]...
 ### grub-mkdevicemap接受底下的options:
 <br>
 
+- -n, --no-floppy
 
+- -s, --probe-second-floppy
+
+- -m, --device-map=FILE
+
+- -v, --verbose
+印出更多的資訊。
 
 ## grub-mkimage
 
