@@ -7,6 +7,7 @@
 - grub-editenv
 - grub-file
 - grub-fstest
+- grub-glue-efi
 - grub-install
 - grub-mkimage
 - grub-mkconfig
@@ -31,6 +32,8 @@ grub-editenv [OPTION...] FILENAME COMMAND
 
 ## grub-fstest
 
+
+## grub-glue-efi
 
 
 ## grub-install
