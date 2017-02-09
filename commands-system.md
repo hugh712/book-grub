@@ -27,8 +27,6 @@
 - update-grub.
 - update-grub2.
 
-
-
 ## grub-editenv
 
 ### 用法
@@ -91,9 +89,19 @@ grub-install --boot-directory=/mnt/boot /dev/sdb
 - --recheck
 重新檢查device map，即使『/boot/grub/device.map』已經存在了，官方建議當你加入/移除某個裝置到你的電腦時，一定要加入這個option。
 
-
-
 ## grub-kbdcomp
+
+### 用法
+```
+grub-kbdcomp -o OUTPUT CKBMAP_ARGUMENTS...
+```
+
+這個指令會處理『keymaps』裡面的一個 X keyboard layout，將其轉成GRUB keymap命令可以讀的格式。
+
+### grub-kbdcomp接受底下的options:
+
+- -o, -- output=FILE <br>
+將檔案給匯出到指定檔案。
 
 ## grub-menulst2cfg
 
