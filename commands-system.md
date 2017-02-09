@@ -5,7 +5,6 @@
 
 這邊的命令清單有:
 - grub-editenv.
-- grub-file
 - grub-fstest
 - grub-glue-efi
 - grub-install.
@@ -57,10 +56,6 @@ grub-editenv [OPTION...] FILENAME COMMAND
 
 - -v, --verbose <br>
 顯示出更多的訊息。
-
-
-## grub-file
-
 
 
 ## grub-fstest
