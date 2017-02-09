@@ -158,7 +158,7 @@ GRUB的裝置名稱.
 GRUB partition map module.
 
 ‘abstraction’
-GRUB abstraction module (e.g. ‘lvm’).
+GRUB的抽象模組(abstraction module) (e.g. ‘lvm’).
 
 ‘cryptodisk_uuid’
 加密過的裝置UUID。
@@ -167,7 +167,7 @@ GRUB abstraction module (e.g. ‘lvm’).
 MBR partition type code (會是兩個16進制的編碼).
 
 ‘hints_string’
-A string of platform search hints suitable for passing to the search command (see search).
+可以傳進命令『search』的平臺search hints字串。
 
 ‘bios_hints’
 PC BIOS平臺的Search hints。
@@ -176,7 +176,7 @@ PC BIOS平臺的Search hints。
 IEEE1275平臺的Search hints。
 
 ‘baremetal_hints’
-Search hints for platforms where disks are addressed directly rather than via firmware.
+這個search hints主要是disk是直接定址而不是透過firmware。
 
 ‘efi_hints’
 EFI平臺的Search hints。
