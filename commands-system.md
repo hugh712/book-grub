@@ -106,6 +106,7 @@ grub-mkrescue接受底下的options:
 決定哪些模組你要預先包到這個映像檔裡，多個模組的話要使用空白鍵隔開，所以如果在script裡面用的話要記得用『" "』。
 
 --rom-directory=dir
+如果是要為QEMU還是Coreboot
 
 --xorriso=file
 如果你有自己的xorriso程式的話，可以用這個option指定，不然就會用內建的程式。
