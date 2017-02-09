@@ -140,8 +140,10 @@ grub-mkdevicemap [OPTION]...
 <br>
 
 - -n, --no-floppy
+不要去選找任何的軟碟(floppy drive)。
 
 - -s, --probe-second-floppy
+探測第二個軟碟(floppy drive)。
 
 - -m, --device-map=FILE
 使用指定的檔案當成device map，預設的話是『/boot/grub/device.map』。
