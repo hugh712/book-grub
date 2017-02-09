@@ -129,9 +129,7 @@ grub-probe必須指定裝置或是路徑，並且接受底下的options:
 
 -d
 --device
-如果有這個option的話，那就代表你想要知道的資訊是一個系統裝置檔，像是『/dev/sda1』，換而言之，如果沒有這個option的話，
-
- If it is not given, then the non-option argument is a filesystem path (such as ‘/boot/grub’), and grub-probe will print information about the device containing that part of the filesystem.
+如果有這個option的話，那就代表你想要知道的資訊是一個系統裝置檔，像是『/dev/sda1』，換而言之，如果沒有這個option的話，代表就是filesystem的路徑，像是『/boot/grub』，則grub-probe就會印出包含這個filesystem的裝置資訊。
 
 -m file
 --device-map=file
