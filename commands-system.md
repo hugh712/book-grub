@@ -111,9 +111,6 @@ grub-menulst2cfg [INFILE [OUTFILE]]
 ```
 這個指令可以將舊版的『menu.lst』轉成『grub.cfg』。
 
-
-
-
 ## grub-mkconfig
 
 ### 用法
