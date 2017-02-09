@@ -190,7 +190,7 @@ grub-mkrelpath [OPTION...] PATH
 ```
 grub-script-check [OPTION...] [PATH]
 ```
-這個指令會檢查你的『grub.cfg』的語法。
+這個指令會檢查你的『grub.cfg』的語法(但是說真的，我亂改也試不出來=.=)。
 
 
 ## grub-syslinux2cfg
