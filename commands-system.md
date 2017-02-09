@@ -14,6 +14,7 @@
 - grub-mklayout
 - grub-mkrelpath
 - grub-mkstandalone
+- grub-mount
 - grub-install
 - grub-mkimage
 - grub-mkconfig
@@ -52,6 +53,8 @@ grub-editenv [OPTION...] FILENAME COMMAND
 ## grub-mkrelpath
 
 ## grub-mkstandalone
+
+## grub-mount
 
 ## grub-install
 ```
