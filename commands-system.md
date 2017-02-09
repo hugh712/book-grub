@@ -9,7 +9,7 @@
 - grub-glue-efi
 - grub-install.
 - grub-kbdcomp.
-- grub-menulst2cfg
+- grub-menulst2cfg.
 - grub-mkconfig.
 - grub-mkdevicemap
 - grub-mkimage
