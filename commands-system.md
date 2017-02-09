@@ -98,9 +98,18 @@ grub-mkrescue -o grub.iso disk
 
 grub-mkrescue接受底下的options:
 
+-o file
+--output=file
 
 
+--modules=modules
 
+
+--rom-directory=dir
+
+--xorriso=file
+
+--grub-mkimage=file
 
 ## grub-probe
 ```
