@@ -6,6 +6,7 @@
 這邊的命令清單有:
 - grub-editenv
 - grub-install
+- grub-mkimage
 - grub-mkconfig
 - grub-mkpasswd-pbkdf2
 - grub-mkrescue
