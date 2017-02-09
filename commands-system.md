@@ -60,8 +60,10 @@ grub-mkconfig接受底下的options:
 ```
 grub-mkpasswd-pbkdf2 [OPTION...] [OPTIONS]
 ```
+為GRUB產生加密過的密碼。
 
 
+grub-mkpasswd-pbkdf2接受底下的options:
 
 ## grub-mkrescue
 ```
