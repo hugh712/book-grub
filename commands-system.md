@@ -153,6 +153,13 @@ grub-mkdevicemap [OPTION]...
 
 ## grub-mkimage
 
+### 用法
+```
+grub-mkimage [OPTION...] [OPTION]... [MODULES]
+```
+
+
+
 ## grub-mklayout
 
 ### 用法
@@ -184,6 +191,14 @@ grub-mkrelpath [OPTION...] PATH
 
 
 ## grub-mkstandalone
+
+### 用法
+```
+grub-mkstandalone [OPTION...] [OPTION] SOURCE...
+```
+
+
+
 
 ## grub-script-check
 
