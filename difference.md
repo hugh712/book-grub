@@ -32,7 +32,7 @@ GRUB2是修改GRUB而成的，主要的差異如下:
 
 * 可以從硬碟裡面的LiveCD ISO images直接啟動。
 
-* 在Ubuntu 9.10或是之後的版本，如果沒有其它的作業系統的話，預設GRUB2將會直接開機到桌面系統或是你的login shell不會顯示任何的menu。要在開機時按住右邊的『SHIFT』鍵或是『ESC』鍵才會顯示menu。
+* <span>在Ubuntu 9.10或是之後的版本，如果沒有其它的作業系統的話，預設GRUB2將會直接開機到桌面系統或是你的login shell不會顯示任何的menu。要在開機時按住右邊的『SHIFT』鍵或是『ESC』鍵才會顯示menu。</span>
 
 
 # 其他差異
