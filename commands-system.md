@@ -219,16 +219,15 @@ grub-mkstandalone [OPTION...] [OPTION] SOURCE...
 使用指定資料夾底下的語言檔，預設路徑是『/usr/share/locale』。
 
 - --locales=LOCALES<br>
-
+只安裝相關的語言檔，預設是全部安裝。
 
 - --modules=MODULES<br>
-
+預先讀取指定的modules。
 
 - --themes=THEMES<br>
-
+安裝相關的themes，預設是『starfield』。
 
 - -v, --verbose<br>
-
 印出更多資訊。
 
 - --core-compress=xz|none|auto<br>
