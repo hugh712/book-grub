@@ -5,24 +5,24 @@
 
 這邊的命令清單有:
 - <a href="#editenv">grub-editenv</a>
-- grub-fstest
-- grub-install.
-- grub-kbdcomp.
-- grub-menulst2cfg.
-- grub-mkconfig.
-- grub-mkdevicemap.
-- grub-mkimage.
-- grub-mklayout.
-- grub-mkrelpath.
-- grub-mkstandalone.
-- grub-script-check.
-- grub-mkpasswd-pbkdf2.
-- grub-mkrescue.
-- grub-probe.
-- grub-reboot.
-- grub-set-default.
-- update-grub.
-- update-grub2.
+- <a href="#fstest">grub-fstest</a>
+- <a href="#install">grub-install</a>
+- <a href="#kbdcomp">grub-kbdcomp</a>
+- <a href="#menulst2cfg">grub-menulst2cfg</a>
+- <a href="#mkconfig">grub-mkconfig</a>
+- <a href="#mkdevicemap">grub-mkdevicemap</a>
+- <a href="#mkimage">grub-mkimage</a>
+- <a href="#mklayout">grub-mklayout</a>
+- <a href="#mkrelpath">grub-mkrelpath</a>
+- <a href="#mkstandalone">grub-mkstandalone</a>
+- <a href="#script">grub-script-check</a>
+- <a href="#mkpasswd">grub-mkpasswd-pbkdf2</a>
+- <a href="#mkrescue">grub-mkrescue</a>
+- <a href="#probe">grub-probe</a>
+- <a href="#reboot">grub-reboot</a>
+- <a href="#default">grub-set-default</a>
+- <a href="#update-grub">update-grub</a>
+- <a href="#update-grub2">update-grub2</a>
 
 ## grub-editenv
 <a id="editenv"></a>
