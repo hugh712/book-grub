@@ -6,6 +6,11 @@ GRUB2是修改GRUB而成的，主要的差異如下:
 
 * 『grub.cfg』是由『grub-mkconfig』自動產生的，是一個各種script的輸出結合，處理kernel的更新會更方便更直覺，因為每一次kernel的更新(新增/移除)都會自動的呼叫『update-grub』。
 
+* 主要關於menu『顯示』設定的組態，預設都在『/etc/default/grub』。
+
+* 設定menu的組態不只『/etc/default/grub』，還有其他許多的組態在『 /etc/grub.d/ 』。
+
+
 * Partition number由『1』開始而不是之前的『0』。
 
 * 組態檔會更接近script語言，像是有變數，條件式和迴圈等等。
