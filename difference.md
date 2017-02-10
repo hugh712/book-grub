@@ -2,7 +2,7 @@
 
 GRUB2是修改GRUB而成的，主要的差異如下:
 
-* 組態檔名稱由『menu.lst』或是『grub.conf』改成『grub.cfg』，有新語法跟新的指令，所以GRUB的語法沒辦法直接拿過來GRUB2用。
+* 組態檔名稱由『menu.lst』或是『grub.conf』改成『grub.cfg』，有新語法，新指令跟新結構，所以GRUB的語法沒辦法直接拿過來GRUB2用。
 
 * 『grub.cfg』是由『grub-mkconfig』自動產生的，所以處理kernel的更新會更方便更直覺。
 
@@ -29,6 +29,8 @@ GRUB2是修改GRUB而成的，主要的差異如下:
 * GRUB2將許多的功能都改成動態模組\(Dynamically loaded modules\)，所以主要的映像檔可以更小更有彈性。
 
 * 救援模式的支援。
+
+* 可以從硬碟裡面的LiveCD ISO images直接啟動。
 
 
 # 其他差異
