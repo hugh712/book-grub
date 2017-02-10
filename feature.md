@@ -24,6 +24,10 @@ GRUB2的主要設計兼容於『[Multiboot Specification](https://www.gnu.org/so
 支援多種的modules。
 
 
+## Automated searches other OS
+
+每當『update-grub』被執行時，都會自動的去偵測所有已安裝的作業系統，然後被放置於GRUB2 的menu裡。
+
 
 ## Load a configuration file
 
