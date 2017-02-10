@@ -14,7 +14,8 @@
   Texts.  A copy of the license is included in the section entitled ``GNU
   Free Documentation License''._
 
-
+- 有些專有名詞我會盡量保持英文。
+- 因為這篇文章整合了兩個官方文件，我會盡量將Ubuntu相依的用藍色字體區分出來。
 
 to do 
 - 統一名詞
