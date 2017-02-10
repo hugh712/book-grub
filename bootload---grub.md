@@ -1,8 +1,8 @@
 # Bootloader - GRUB
 
-簡單來說，一個『boot loader』是當電腦開起來以後第一個跑的軟體\(當然看架構，像是PC上第一個跑得應該是BIOS，然後在將控制權交給boot loader\)，主要的工作是讀取kernel到RAM裡面以後然後將控制權交給kernel，然後kernel接力以後在啟動所有的硬體，其他的subsystems，將root filesystem掛載起來，最後在啟動init程序。如果想要大概了解一下BIOS的開機程序可以參考一下這篇文章『[即將換掉傳統 BIOS 的 UEFI，你懂了嗎？](http://www.techbang.com/posts/4356)』，裡面有介紹了傳統BIOS和UEFI BIOS的開機流程。
+Ubuntu從版本9.10(Karmic Koala)開始就一直用GRUB2當它的預設bootloader。簡單來說，一個『boot loader』是當電腦開起來以後第一個跑的軟體\(當然看架構，像是PC上第一個跑得應該是BIOS，然後在將控制權交給boot loader\)，主要的工作是讀取kernel到RAM裡面以後然後將控制權交給kernel，然後kernel接力以後在啟動所有的硬體，其他的subsystems，將root filesystem掛載起來，最後在啟動init程序。如果想要大概了解一下BIOS的開機程序可以參考一下這篇文章『[即將換掉傳統 BIOS 的 UEFI，你懂了嗎？](http://www.techbang.com/posts/4356)』，裡面有介紹了傳統BIOS和UEFI BIOS的開機流程。
 
-Ubuntu從版本9.10(Karmic Koala)開始就一直用GRUB2當它的預設bootloader。
+
 
 
 _Gordon Matzigkeit_，一個GRUB狂熱者，對GRUB的描述是(有興趣者請自行體會，我就不翻譯了):
