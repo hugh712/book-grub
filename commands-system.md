@@ -157,7 +157,48 @@ grub-mkdevicemap [OPTION]...
 ```
 grub-mkimage [OPTION...] [OPTION]... [MODULES]
 ```
+這個指令可以用來產生GRUB 映像檔。
 
+### grub-mkstandalone接受底下的options:
+
+- -c, --config=FILE<br>
+嵌入一個組態檔。
+
+- --compress = (xz | none | auto) <br>
+選擇你的『core image』用的壓縮演算法。
+
+- -d, --directory=DIR<br>
+使用這個指定資料夾底下的映像檔和modules，預設的話是『default=/usr/lib/grub/&lt; platform>』。
+
+- -k, --pubkey=FILE<br>
+嵌入一個public key。
+
+- -m, --memdisk=FILE<br>
+嵌入一個memdisk image。
+
+- -n, --note <br>
+為CHAP IEEE1275加入note。
+
+- -o, --output=FILE<br>
+選擇要輸出檔案的路徑跟檔名，預設是『stdout』。
+
+- -O, --format=FILE<br>
+指定輸出image的格式|所有可以的格式包含:
+
+|||||
+| :--- | :--- | :--- | :--- |
+| i386-coreboot | i386-multiboot | i386-pc | i386-pc-pxe |
+| i386-pc-eltorito | i386-efi | i386-ieee1275 | i386-qemu |
+| x86_64-efi | i386-xen | x86_64-xen | mipsel-yeeloong-flash |
+| mipsel-fuloong2f-flash | mipsel-loongson-elf | powerpc-ieee1275 | sparc64-ieee1275-raw|
+| sparc64-ieee1275-cdcore | sparc64-ieee1275-aout | ia64-efi | mips-arc | mipsel-arc |
+| mipsel-qemu_mips-elf | mips-qemu_mips-flash | mipsel-qemu_mips-flash| mips-qemu_mips-elf |
+| arm-uboot | arm-efi | arm64-efi||
+
+- -p, --prefix=DIR<br>
+設定prefix的資料夾，預設是『/boot/grub』。
+- -v, --verbose<br>
+印出更多資訊。
 
 
 ## grub-mklayout
