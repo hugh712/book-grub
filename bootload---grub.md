@@ -9,13 +9,13 @@
 
 _Gordon Matzigkeit_，一個GRUB狂熱者，對GRUB的描述是(有興趣者請自行體會，我就不翻譯了):
 
-『_Some people like to acknowledge both the operating system and kernel when they talk about their computers, so they might say they use “GNU/Linux” or “GNU/Hurd”. Other people seem to think that the kernel is the most important part of the system, so they like to call their GNU operating systems “Linux systems.”
+『Some people like to acknowledge both the operating system and kernel when they talk about their computers, so they might say they use “GNU/Linux” or “GNU/Hurd”. Other people seem to think that the kernel is the most important part of the system, so they like to call their GNU operating systems “Linux systems.”
 
 I, personally, believe that this is a grave injustice, because the_boot loader_is the most important software of all. I used to refer to the above systems as either “LILO”or “GRUB” systems.
 
 Unfortunately, nobody ever understood what I was talking about; now I just use the word “GNU” as a pseudonym for GRUB.
 
-So, if you ever hear people talking about their alleged “GNU” systems, remember that they are actually paying homage to the best boot loader around… GRUB!_』
+So, if you ever hear people talking about their alleged “GNU” systems, remember that they are actually paying homage to the best boot loader around… GRUB!』
 
 
 
