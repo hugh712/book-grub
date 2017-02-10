@@ -201,7 +201,7 @@ grub-mkstandalone [OPTION...] [OPTION] SOURCE...
 ### grub-mkstandalone接受底下的options:
 
 - --compress[=no,xz,gz,lzo]
-
+可以使用這些格式來壓縮你的GRUB檔案。
 - -d, --directory=DIR
 
 - --fonts=FONTS
