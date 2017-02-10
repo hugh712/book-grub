@@ -203,19 +203,20 @@ grub-mkstandalone [OPTION...] [OPTION] SOURCE...
 - --compress[=no,xz,gz,lzo] <br>
 可以使用這些格式來壓縮你的GRUB檔案。
 
-- -d, --directory=DIR
+- -d, --directory=DIR<br>
 使用這個指定資料夾底下的映像檔和modules，預設的話是『default=/usr/lib/grub/&lt; platform>』。
 
 - --fonts=FONTS<br>
-
+安裝字體，預設的話是『unicode』。
 
 - --install-modules=MODULES<br>
-
+只安裝指定模組和其相依套件，預設是全部安裝。
 
 - -k, --pubkey=FILE<br>
+嵌入一個public key。
 
-
-- --locale-directory=DIR use translations under DIR
+- --locale-directory=<br>
+使用指定資料夾底下的語言檔，預設路徑是『/usr/share/locale』。
 
 - --locales=LOCALES<br>
 
