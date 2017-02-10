@@ -11,7 +11,7 @@ GRUB2是修改GRUB而成的，主要的差異如下:
 * 設定menu的組態不只『/etc/default/grub』，還有其他許多的組態在『 /etc/grub.d/ 』。
 
 
-* Partition number由『1』開始而不是之前的『0』。
+* Partition number由『1』開始而不是之前的『0』，但是第一個裝置(device/drive)預設依然是『hd0』，但是這些設定可以在『/boot/grub/device.map 』裡面被修改。
 
 * 組態檔會更接近script語言，像是有變數，條件式和迴圈等等。
 
