@@ -231,10 +231,10 @@ grub-mkstandalone [OPTION...] [OPTION] SOURCE...
 印出更多資訊。
 
 - --core-compress=xz|none|auto<br>
-
+選擇壓縮『core image』的演算法。
 
 - -o, --output=FILE<br>
-
+選擇要輸出檔案的路徑跟檔名。
 
 - -O, --format=FILE<br>
 
