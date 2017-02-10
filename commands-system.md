@@ -203,7 +203,7 @@ grub-mkstandalone [OPTION...] [OPTION] SOURCE...
 - --compress[=no,xz,gz,lzo] <br>
 可以使用這些格式來壓縮你的GRUB檔案。
 - -d, --directory=DIR
-
+使用這個指定資料夾底下的映像檔和modules。
 - --fonts=FONTS<br>
 
 
