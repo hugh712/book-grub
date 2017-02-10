@@ -238,10 +238,11 @@ grub-mkstandalone [OPTION...] [OPTION] SOURCE...
 
 - -O, --format=FILE<br>
 指定輸出image的格式|所有可以的格式包含:
+
 |||||
-|||||
- | i386-coreboot | i386-multiboot | i386-pc | i386-pc-pxe | 
- | i386-pc-eltorito | i386-efi |   i386-ieee1275 |    i386-qemu |  
+| :--- | :--- | :--- | :--- |
+| i386-coreboot | i386-multiboot | i386-pc | i386-pc-pxe | 
+| i386-pc-eltorito | i386-efi |   i386-ieee1275 |    i386-qemu |  
 |  x86_64-efi |    i386-xen |  x86_64-xen | mipsel-yeeloong-flash |  
 | mipsel-fuloong2f-flash |  mipsel-loongson-elf |  powerpc-ieee1275 | sparc64-ieee1275-raw| 
 | sparc64-ieee1275-cdcore | sparc64-ieee1275-aout | ia64-efi |  mips-arc |  mipsel-arc |
