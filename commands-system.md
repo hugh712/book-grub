@@ -25,7 +25,7 @@
 - update-grub2.
 
 ## grub-editenv
-
+<a href="editenv"></a>
 ### 用法
 ```
 grub-editenv [OPTION...] FILENAME COMMAND
