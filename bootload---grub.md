@@ -1,6 +1,6 @@
 # Bootloader - GRUB
 
-<font color="blue">Ubuntu從版本『9.10(Karmic Koala)』開始就一直用GRUB2當它的預設bootloader，而在Ubuntu版本『11.04(Natty Narwhal)』時GRUB2版本1.99已經變成新的預設，我在寫這篇文章的時候，用的Ubuntu版本是『16.04(Xenial Xerus)』，GRUB2的版本是『2.02~beta2-36ubuntu3.1』。
+<font color="#009">Ubuntu從版本『9.10(Karmic Koala)』開始就一直用GRUB2當它的預設bootloader，而在Ubuntu版本『11.04(Natty Narwhal)』時GRUB2版本1.99已經變成新的預設，我在寫這篇文章的時候，用的Ubuntu版本是『16.04(Xenial Xerus)』，GRUB2的版本是『2.02~beta2-36ubuntu3.1』。
 </font>
 簡單來說，一個『boot loader』是當電腦開起來以後第一個跑的軟體\(當然看架構，像是PC上第一個跑得應該是BIOS，然後在將控制權交給boot loader\)，主要的工作是讀取kernel到RAM裡面以後然後將控制權交給kernel，然後kernel接力以後在啟動所有的硬體，其他的subsystems，將root filesystem掛載起來，最後在啟動init程序。如果想要大概了解一下BIOS的開機程序可以參考一下這篇文章『[即將換掉傳統 BIOS 的 UEFI，你懂了嗎？](http://www.techbang.com/posts/4356)』，裡面有介紹了傳統BIOS和UEFI BIOS的開機流程。
 
