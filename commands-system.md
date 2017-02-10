@@ -522,6 +522,7 @@ ARC平臺的Search hints。
 印出更多的訊息。
 
 ## grub-reboot
+<a id="reboot"></a>
 
 ### 用法
 ```
@@ -537,6 +538,7 @@ grub-reboot [OPTION] MENU_ENTRY
 這個行為其實可以不用這個命令，只要修改相關組態在用命令『update-grub』也可以。
 
 ## grub-set-default
+<a id="default"></a>
 
 ### 用法
 ```
@@ -551,6 +553,7 @@ grub-set-default [OPTION] MENU_ENTRY
 
 ## update-grub
 ## update-grub2
+<a id="update-grub"></a>
 
 ### 用法
 ```
