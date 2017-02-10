@@ -11,7 +11,7 @@
 - grub-menulst2cfg.
 - grub-mkconfig.
 - grub-mkdevicemap.
-- grub-mkimage
+- grub-mkimage.
 - grub-mklayout.
 - grub-mkrelpath.
 - grub-mkstandalone.
