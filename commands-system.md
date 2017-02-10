@@ -24,7 +24,7 @@
 - update-grub.
 - update-grub2.
 
-## <test id="editenv">grub-editenv<test>
+## grub-editenv
 
 ### 用法
 ```
