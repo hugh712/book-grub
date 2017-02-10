@@ -4,7 +4,7 @@
 <font color="red">(options - 『help』和『version』因為都差不多，所以我就省略了，太佔篇幅了)</font>
 
 這邊的命令清單有:
-- grub-editenv.
+- <a href="editenv">grub-editenv</a>
 - grub-fstest
 - grub-install.
 - grub-kbdcomp.
@@ -24,7 +24,7 @@
 - update-grub.
 - update-grub2.
 
-## grub-editenv
+## <test id="editenv">grub-editenv<test>
 
 ### 用法
 ```
