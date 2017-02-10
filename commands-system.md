@@ -200,32 +200,42 @@ grub-mkstandalone [OPTION...] [OPTION] SOURCE...
 
 ### grub-mkstandalone接受底下的options:
 
-- --compress[=no,xz,gz,lzo]
+- --compress[=no,xz,gz,lzo] <br>
 可以使用這些格式來壓縮你的GRUB檔案。
 - -d, --directory=DIR
 
-- --fonts=FONTS
+- --fonts=FONTS<br>
 
-- --install-modules=MODULES
 
-- -k, --pubkey=FILE
+- --install-modules=MODULES<br>
+
+
+- -k, --pubkey=FILE<br>
+
 
 - --locale-directory=DIR use translations under DIR
 
-- --locales=LOCALES
+- --locales=LOCALES<br>
 
-- --modules=MODULES
 
-- --themes=THEMES
+- --modules=MODULES<br>
 
-- -v, --verbose
+
+- --themes=THEMES<br>
+
+
+- -v, --verbose<br>
+
 印出更多資訊。
 
-- --core-compress=xz|none|auto
+- --core-compress=xz|none|auto<br>
 
-- -o, --output=FILE
 
-- -O, --format=FILE
+- -o, --output=FILE<br>
+
+
+- -O, --format=FILE<br>
+
 
 ## grub-script-check
 
