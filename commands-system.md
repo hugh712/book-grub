@@ -54,6 +54,8 @@ grub-editenv [OPTION...] FILENAME COMMAND
 
 
 ## grub-fstest
+<a id="fstest"></a>
+
 
 ### 用法
 ```
@@ -118,6 +120,7 @@ grub-fstest [OPTION...] IMAGE_PATH COMMANDS
 印出更多的訊息。
 
 ## grub-install
+<a id="install"></a>
 
 ### 用法
 ```
@@ -147,6 +150,7 @@ grub-install --boot-directory=/mnt/boot /dev/sdb
 重新檢查device map，即使『/boot/grub/device.map』已經存在了，官方建議當你加入/移除某個裝置到你的電腦時，一定要加入這個option。
 
 ## grub-kbdcomp
+<a id="kbdcomp"></a>
 
 ### 用法
 ```
@@ -161,6 +165,7 @@ grub-kbdcomp -o OUTPUT CKBMAP_ARGUMENTS...
 將檔案給匯出到指定檔案。
 
 ## grub-menulst2cfg
+<a id="menulst2cfg"></a>
 
 ### 用法
 ```
@@ -169,6 +174,8 @@ grub-menulst2cfg [INFILE [OUTFILE]]
 這個指令可以將舊版的『menu.lst』轉成『grub.cfg』。
 
 ## grub-mkconfig
+<a id="mkconfig"></a>
+
 
 ### 用法
 ```
@@ -186,6 +193,7 @@ grub-mkconfig -o /boot/grub/grub.cfg
 系統預設是將產生的組態檔輸出到standard output，所以要記得用這個option將組態給輸出到特定檔案上。
 
 ## grub-mkdevicemap
+<a id="mkdevicemap"></a>
 
 ### 用法
 ```
@@ -209,6 +217,7 @@ grub-mkdevicemap [OPTION]...
 印出更多的資訊。
 
 ## grub-mkimage
+<a id="mkimage"></a>
 
 ### 用法
 ```
@@ -259,6 +268,7 @@ grub-mkimage [OPTION...] [OPTION]... [MODULES]
 
 
 ## grub-mklayout
+<a id="mklayout"></a>
 
 ### 用法
 ```
@@ -280,6 +290,7 @@ grub-mklayout [OPTION...] [OPTIONS]
 
 
 ## grub-mkrelpath
+<a id="mkrelpath"></a>
 
 ###用法
 ```
@@ -289,6 +300,8 @@ grub-mkrelpath [OPTION...] PATH
 
 
 ## grub-mkstandalone
+<a id="mkstandalone"></a>
+
 
 ### 用法
 ```
@@ -348,6 +361,7 @@ grub-mkstandalone [OPTION...] [OPTION] SOURCE...
 |  arm-uboot |  arm-efi | arm64-efi||
 
 ## grub-script-check
+<a id="script"></a>
 
 ### 用法
 ```
@@ -357,6 +371,7 @@ grub-script-check [OPTION...] [PATH]
 
 
 ## grub-mkpasswd-pbkdf2
+<a id="mkpasswd"></a>
 
 ### 用法
 ```
@@ -380,6 +395,7 @@ grub-mkpasswd-pbkdf2 [OPTION...] [OPTIONS]
 雜訊『salt』的長度，預設是64。
 
 ## grub-mkrescue
+<a id="mkrescue"></a>
 
 ### 用法
 ```
@@ -419,6 +435,11 @@ grub-mkrescue -o grub.iso disk
 如果你有自己的grub-mkimage程式的話，可以用這個option指定，不然就會用內建的程式。
 
 ## grub-probe
+<a id="probe"></a>
+
+
+
+
 
 ### 用法
 ```
