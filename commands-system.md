@@ -59,6 +59,63 @@ grub-editenv [OPTION...] FILENAME COMMAND
 ```
 grub-fstest [OPTION...] IMAGE_PATH COMMANDS
 ```
+使用在GRUB filesystem driver的debug工具。
+
+### grub-fstest接受底下的COMMAND:
+
+- blocklist FILE
+顯示檔案的blocklist。
+
+- cat FILE
+ 顯示檔案的內容。
+
+- cmp FILE LOCAL
+比對檔案內容。
+
+- cp FILE LOCAL
+複製檔案。
+
+- crc FILE
+ 取得檔案的crc32 checksum。
+
+- hex FILE
+ 秀出16進制的檔案內容。
+
+- ls PATH
+  列出路徑下的檔案清單。
+
+- xnu_uuid DEVICE
+  計算裝置的XNU UUID。
+
+
+### grub-fstest接受底下的options:
+
+- -c, --diskcount=NUM
+指定輸入檔案的數量。
+
+- -C, --crypto
+掛載上crypto 裝置。
+
+- -d, --debug=STRING
+設定debug的環境變數。
+
+- -K, --zfs-key=FILE|prompt
+讀取zfs crypto key。
+
+- -n, --length=NUM
+從輸出檔案取得N個bytes。
+
+- -r, --root=DEVICE_NAME
+設定root device。
+
+- -s, --skip=NUM
+從輸出檔案省略N個 bytes。
+
+- -u, --uncompress
+解壓縮資料。
+
+- -v, --verbose
+印出更多的訊息。
 
 ## grub-install
 
