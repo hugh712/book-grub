@@ -2,9 +2,16 @@
 
 GRUB最主要的組態主要是『grub.cfg』，通常是在『/boot/grub』底下，這個檔案會一直很常在變動，通常大部份的使用者不需要自己去動到這個檔案。
 
-如下圖所示，組態的更新主要由『update-grub』
+如下圖所示，組態的更新主要由『update-grub』來觸發：
+1. 當GRUB套件被自動更新時。
+2. Linux kernel被更新時。
+3. 使用使用者權限呼叫『update-grup』時。
 
 ![](Imgs/Config/nsystem.png)
+
+這個指令被觸發後，它會去執行在『/etc/grub.d/』裡面的script和『/etc/default/grub』裡面的設定
+
+
 
 
 底下先來探討一個比較簡單的設定。
