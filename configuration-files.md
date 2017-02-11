@@ -2,7 +2,7 @@
 
 GRUB最主要的組態主要是『grub.cfg』，通常是在『/boot/grub』底下，這個檔案會一直很常在變動，通常大部份的使用者不需要自己去動到這個檔案。
 
-如下圖所示，GRUB會
+如下圖所示，組態的更新主要由『update-grub』
 
 ![](Imgs/Config/nsystem.png)
 
