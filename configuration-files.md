@@ -15,6 +15,8 @@ GRUB最主要的組態主要是『grub.cfg』，通常是在『/boot/grub』底�
 ## menu : /boot/grub/grub.cfg
 grub.cfg是用來取代GRUB 0.97的menu.lst，這個檔案包含了GRUB2的menu 資訊，但是它不像GRUB 0.97的 menu.lst一樣通常可以直接修改，就像上面有提到的，這個檔案是上面各個部份的輸出，而各個部份都負責不一樣的功能。
 
+這個檔案你實際去看會分很多個section，每個section都會使用『###BEGIN###』開始，和使用『###END結束』，代表的是每個『/etc/grub.d』底下的檔案。
+
 
 ## 使用者設定: /etc/default/grub
 
