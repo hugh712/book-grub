@@ -162,7 +162,7 @@ GRUB_DEFAULT="2>Ubuntu, with Linux 3.2.0-18-generic-pae"
 - **GRUB_TIMEOUT = -1**
 設定成『-1』的話，代表會停在menu處一直等下去，直到使用者做出選擇為止。
 
-- 如果這個值為非0的話，就不該啟用『GRUB_HIDDEN_TIMEOUT』，但是如果你『GRUB_TIMEOUT』設定為非0值，而你的『GRUB_HIDDEN_TIMEOUT』也有設定的話，則只會看到menu出現之前的倒數，不會看到menu的倒數。因為GRUB的工程師當初的設計其實是這個選項是跟『GRUB_HIDDEN_TIMEOUT』是互斥的，也就是設定成『GRUB_TIMEOUT=1』，因為只要倒數一次就好，用途就是要讓使用者有時間去決定你要進入那一個entry。
+- 如果這個值為非0的話，就不該啟用『GRUB_HIDDEN_TIMEOUT』，但是如果你『GRUB_TIMEOUT』設定為非0值，而你的『GRUB_HIDDEN_TIMEOUT』也有設定的話，則只會看到menu出現之前的倒數，不會看到menu的倒數。因為GRUB的工程師當初的設計其實是這個選項是跟『GRUB_HIDDEN_TIMEOUT』是互斥的，因為蠻合理的，只要倒數一次就好，用途就是要讓使用者有時間去決定你要進入那一個entry，不需要兩次倒數。
 
 
 
