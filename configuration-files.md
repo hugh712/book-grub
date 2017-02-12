@@ -151,7 +151,7 @@ GRUB_DEFAULT="2>Ubuntu, with Linux 3.2.0-18-generic-pae"
 
 ## GRUB_SAVEDEFAULT <br>
 <a id="GRUB_SAVEDEFAULT"></a>
-如果這個選項是被設定成『true』，當你在開機選擇任何一個menu entry時，GRUB會將你的選擇儲存起來，這樣下一次開機的預設就會變成這個，接下來，底下兩個說明會有點饒舌，『GRUB_SAVEDEFAULT』只有在『GRUB_DEFAULT=saved』時有用，但是這又是兩個分開的選項，因為如果伴隨著『grub-set-default』或是『grub-reboot』的話，『GRUB_DEFAULT=saved』只有在沒有『GRUB_SAVEDEFAULT』的狀況才有效。這個選項預設是不啟用，而且依賴於『environment block』，所以可能不適用於所有的case。<spam>而且根據Ubuntu的官方文件說，如果你的『/boot』是在LVM或是RAID的話，這個選項是不能用的。</spam>
+如果這個選項是被設定成『true』，當你在開機選擇任何一個menu entry時，GRUB會將你的選擇儲存起來，這樣下一次開機的預設就會變成這個，接下來，底下兩個說明會有點饒舌，『GRUB_SAVEDEFAULT』只有在『GRUB_DEFAULT=saved』時有用，但是這又是兩個分開的選項，因為如果伴隨著『grub-set-default』或是『grub-reboot』的話，『GRUB_DEFAULT=saved』只有在沒有『GRUB_SAVEDEFAULT』的狀況才有效。這個選項預設是不啟用，而且依賴於『environment block』，所以可能不適用於所有的case。<span>而且根據Ubuntu的官方文件說，如果你的『/boot』是在LVM或是RAID的話，這個選項是不能用的。</span>
 
 ## GRUB_TIMEOUT <br>
 <a id="GRUB_TIMEOUT"></a>
