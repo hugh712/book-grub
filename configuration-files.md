@@ -118,7 +118,22 @@ GRUB_TERMINAL_INPUT="console serial"
 
 ## GRUB_DEFAULT<br>
 <a id="GRUB_DEFAULT"></a>
-設定預設的menu entry，可以是一個數字，或者是menu entry的標頭，或是『saved』。如果是數字的話，代表的是從0開始數的menu entry編號；如果你的menu entry很多的話，建議可以直接用你的menu entry的標頭就好，不然你還要在那邊數，很麻煩。
+設定預設的menu entry，可以是一個數字，或者是menu entry的標頭，或是『saved』。
+
+1. GRUB_DEFAULT=0
+如果是數字的話，代表的是從0開始數的menu entry編號；如果你的menu entry很多的話，建議可以直接用你的menu entry的標頭就好，不然你還要在那邊數，很麻煩。
+
+從GRUB 1.99開始，在menu的結構裡面引入了submenu，在submenu裡面的entry都會變成兩碼
+
+
+
+![](Imgs/Config/grub_submenu-examples.png)
+(Pic from https://help.ubuntu.com/community/Grub2/Setup )
+
+2. GRUB_DEFAULT="xxxx"
+
+3. GRUB_DEFAULT=saved
+
 舉例來說，如果你有個menu entry如下:
 ```
 menuentry 'Example GNU/Linux distribution' --class gnu-linux {
