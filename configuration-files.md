@@ -117,6 +117,7 @@ GRUB_TERMINAL_INPUT="console serial"
 底下則列出所有可用的『KEY』和其說明:
 
 - GRUB_DEFAULT<br>
+<a id="GRUB_DEFAULT"></a>
 設定預設的menu entry，可以是一個數字，或者是menu entry的標頭，如果是數字的話，代表的是從0開始數的menu entry編號；如果你的menu entry很多的話，建議可以直接用你的menu entry的標頭就好，不然你還要在那邊數，很麻煩。
 舉例來說，如果你有個menu entry如下:
 ```
