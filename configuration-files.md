@@ -129,6 +129,13 @@ GRUB_TERMINAL_INPUT="console serial"
 	(Picture from https://help.ubuntu.com/community/Grub2/Setup )
 
 2. GRUB_DEFAULT="xxxx"
+給一個包含『" "』切確的標題名稱，用名稱的話，預設的位置就不用管了。底下有兩個例子：
+```
+Example: GRUB_DEFAULT="Ubuntu, Linux 2.6.31-9-generic"
+Example (Submenu Entry): GRUB_DEFAULT="2>Ubuntu, Linux
+```
+
+ 2.6.38-8-generic"
 
 3. GRUB_DEFAULT=saved
 
