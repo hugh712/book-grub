@@ -193,6 +193,7 @@ GRUB_DEFAULT='Example GNU/Linux distribution'
 	統一將input和output都設定成console
 
 - GRUB_SERIAL_COMMAND <br>
+<a id="GRUB_SERIAL_COMMAND"></a>
 如果你的GRUB想要使用serial console的話就要設定這個serial port，語法的話後面的章節會介紹。
 
 - GRUB_CMDLINE_LINUX <br>
