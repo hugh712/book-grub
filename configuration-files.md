@@ -40,7 +40,7 @@ grub.cfg是用來取代GRUB 0.97的menu.lst，這個檔案包含了GRUB2的menu 
 這個script會辨識目前在使用中的作業系統，root device中的kernel版本，並且建立相關的menu entry，如果有允許recovery mode的話也會將其寫入menu entry。在GRUB 1.99之後，規則就變成只有最新的kernel才會顯示在主要的menu上，其他的版本都會顯示在『submenu』裡面。
 
 ### 20_memtest86+
-搜尋『/boot/memtest86+.bin』，並且將其包含在GRUB2裡面的menu entry裡面，如果你想要在menu entryㄕ上將這個選項移除的話，可以直接將這個檔案的executable bit移除掉，然後在執行『update-grub』如下所示：
+搜尋『/boot/memtest86+.bin』，並且將其包含在GRUB2裡面的menu entry裡面，如果你想要在menu entry上將這個選項移除的話，可以直接將這個檔案的executable bit移除掉，然後在執行『update-grub』如下所示：
 ```
 sudo chmod -x /etc/grub.d/20_memtest86+
 sudo update-grub
