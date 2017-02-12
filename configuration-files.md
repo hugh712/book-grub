@@ -197,9 +197,11 @@ GRUB_DEFAULT='Example GNU/Linux distribution'
 如果你的GRUB想要使用serial console的話就要設定這個serial port，語法的話後面的章節會介紹。
 
 - GRUB_CMDLINE_LINUX <br>
+<a id="GRUB_CMDLINE_LINUX"></a>
 要加入到menu entry的Command-line的參數，不論是一般或者是救援模式，主要是傳給kernel的。
 
 - GRUB_CMDLINE_LINUX_DEFAULT <br>
+<a id="GRUB_CMDLINE_LINUX_DEFAULT"></a>
 一般除非『GRUB_DISABLE_RECOVERY』設定成true，不然通常會有兩個menu entry出現 -『預設』和『救援模式』，而這個選項主要就是傳給那『預設』的開機選項的參數，不會傳給『救援模式』。
 
 - GRUB_CMDLINE_NETBSD <br>
