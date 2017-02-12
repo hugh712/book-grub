@@ -237,7 +237,7 @@ GRUB_DEFAULT="2>Ubuntu, with Linux 3.2.0-18-generic-pae"
 
 ## GRUB_CMDLINE_LINUX_DEFAULT <br>
 <a id="GRUB_CMDLINE_LINUX_DEFAULT"></a>
-一般除非『GRUB_DISABLE_RECOVERY』設定成true，不然通常會有兩個menu entry出現 -『預設(normal mode)』和『救援模式』，而這個選項主要就是傳給那『預設』的開機選項的參數，不會傳給『救援模式』。
+一般除非『GRUB_DISABLE_RECOVERY』設定成true，不然通常會有兩個menu entry出現 -『預設(normal mode)』和『救援模式』，跟『GRUB_CMDLINE_LINUX』的差異是，這個選項主要就是傳給那『預設』的開機選項的參數，不會傳給『救援模式』。
 
 ## GRUB_CMDLINE_NETBSD <br>
 ## GRUB_CMDLINE_NETBSD_DEFAULT <br>
