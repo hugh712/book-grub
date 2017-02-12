@@ -37,7 +37,7 @@ grub.cfg是用來取代GRUB 0.97的menu.lst，這個檔案包含了GRUB2的menu 
 設定GRUB2的背景影像，文字顏色，themes主題和highlight的顏色等等。
 
 ### 10_linux
-這個script會辨識目前在使用中的作業系統，root device中的kernel版本，並且建立相關的menu entry，如果有允許recovery mode的話也會將其寫入menu entry。
+這個script會辨識目前在使用中的作業系統，root device中的kernel版本，並且建立相關的menu entry，如果有允許recovery mode的話也會將其寫入menu entry。在GRUB 1.99之後，規則就變成只有最新的kernel才會顯示在主要的menu上，其他的版本都會顯示在『submenu』裡面。
 
 ### 20_memtest86+
 
