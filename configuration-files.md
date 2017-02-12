@@ -12,8 +12,9 @@ GRUB最主要的組態主要是『grub.cfg』，通常是在『/boot/grub』底�
 這個指令被觸發後，它會去執行在『/etc/grub.d/』裡面的script和『/etc/default/grub』裡面的設定，並且還有將『/usr/lib/grub』裡面相關的模組和image給複製過去。
 
 <font color="red">
-這邊要熟記兩條規則：
-1.沒事不要直接改『grub.cfg』，因為隨時都會被蓋掉。
+這邊要熟記兩條規則：<br>
+1.沒事不要直接改『grub.cfg』，因為隨時都會被蓋掉。<br>
+
 2. 修改其他檔案後，記得執行一下『update-grub』，不然不會更新。 </font>
 
 
