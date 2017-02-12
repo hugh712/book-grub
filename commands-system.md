@@ -546,6 +546,14 @@ grub-set-default [OPTION] MENU_ENTRY
 ```
 設定GRUB下一次開機預設的啟動entry，這個命令跟『grub-reboot』主要的差別是這個命令必須要將『/etc/default/grub』裡面的『GRUB_DEFAULT』設定成『GRUB_DEFAULT=saved』，只要這個設定沒改的話，接下來每次選定不同的entry開機都會被紀錄起來，而命令『grub-reboot』則不會被紀錄起來。
 
+底下兩個例子：
+```
+sudo grub-set-default 3
+sudo grub-set-default "Ubuntu, Linux 2.6.32-15-generic"
+```
+
+
+
 ### grub-reboot接受底下的options:
 
 - --boot-directory=DIR
