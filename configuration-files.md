@@ -46,8 +46,6 @@ sudo chmod -x /etc/grub.d/20_memtest86+
 sudo update-grub
 ```
 
-
-
 ### 30_os-prober
 
 ### 40_custom
