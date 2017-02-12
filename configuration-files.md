@@ -248,19 +248,24 @@ GRUB_DEFAULT='Example GNU/Linux distribution'
 如果你是使用『gfxterm』圖形化終端機的話，這個參數可以設定主題。
 
 - GRUB_GFXPAYLOAD_LINUX <br>
+<a id="GRUB_GFXPAYLOAD_LINUX"></a>
 如果將這個選項設定成『text』的話記會強制將kernel給啟動到文字模式(text mode)；如果是設定成『keep』，則將會繼續保持在『graphic』模式。這個選項要取決於你的kernel，distro，顯卡，任何以種組合都有可能在早期的啟動流程讓你的顯卡遇到一些問題。如果真的遇到問題的話，就直接把這個模式設定成『text』就好了。
 
 
 - GRUB_DISABLE_OS_PROBER <br>
+<a id="GRUB_DISABLE_OS_PROBER"></a>
 一般來說，grub-mkconfig會試著使用外部的作業系統偵測程式(os-prober)來偵測在同一個系統裡安裝的作業系統，並且產生適當的menu entry，如果將這個設定成true的話則會關閉這個功能。
 
 - GRUB_INIT_TUNE <br>
+<a id="GRUB_INIT_TUNE"></a>
 當GRUB開始時，主機板會出逼聲，通常在使用者無法直接看到螢幕時很有用，這部分主要是透過一個程式叫做『play』去實做的。
 
 - GRUB_BADRAM <br>
+<a id="GRUB_BADRAM"></a>
 如果這個選項有被設定的話，GRUB將會發起一個badram的命令，這個命令會將RAM裡面某些特定區域給濾掉，代表這些區域已經毀損。
 
 - GRUB_PRELOAD_MODULES <br>
+<a id="GRUB_PRELOAD_MODULES"></a>
 這個選項可以被設定成一系列的GRUB module(模組)，每個module的名稱都用空白所隔開，設定以後，在grub.cfg開始的時候，會盡快的去讀取這個些module。
 
 
