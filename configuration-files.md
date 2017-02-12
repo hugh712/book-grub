@@ -136,10 +136,15 @@ menuentry 'Example GNU/Linux distribution' --class gnu-linux {
 }
 ```
 那你的GRUB_DEFAULT就變成:
-
 ```
 GRUB_DEFAULT='Example GNU/Linux distribution'
 ```
+
+如果是要用剛剛submenu的圖的『2>0』的話，GRUB_DEFAULT就會是：
+```
+GRUB_DEFAULT="2>Ubuntu, with Linux 3.2.0-18-generic-pae"
+```
+
 
 
 3. GRUB_DEFAULT=saved
