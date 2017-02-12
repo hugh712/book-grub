@@ -175,6 +175,8 @@ GRUB_DEFAULT="2>Ubuntu, with Linux 3.2.0-18-generic-pae"
 - **GRUB_HIDDEN_TIMEOUT=0**
 如果將這個選項直接設定成『0』的話，將不會倒數，除非你直接按某些特定的鍵才會顯示，在Ubuntu裡面則是用『Shift』。
 
+- **GRUB_HIDDEN_TIMEOUT=5**
+如果後面接的是合理的正整數的話，則將會倒數，中間如果你按下任何鍵就會顯示menu entry，倒數完之前都沒按任何鍵的話，就會直接以預設的entry開機。
 
 
 ![](Imgs/Config/config001.PNG)
