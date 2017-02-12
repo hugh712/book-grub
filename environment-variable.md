@@ -53,6 +53,8 @@ GRUB_GFXMODE=1280x1024x16,800x600x24,640x480
 
 - 如果你設定的解析度都不可用的話，則GRUB將會自動的用『/etc/grub.d/00_header』裡面的預設值。
 
+- 在GRUB的console裡面直接輸入『videoinfo』會直接顯示出可用的所有解析度資訊。
+
 ## gfxpayload	 
 主要藉由取代『boot option "vga="』控制Linux Kernel開始的video mode，可以設定成『text』來讓Linux kernel強迫開機成正常的『text mode』，設定成『keep』則保持在使用『gfxmode』的圖形化介面上，這個變數通常是由『GRUB_GFXPAYLOAD_LINUX』來決定的，所以就不要手動去設定，其他的資訊請直接參考『GRUB_GFXPAYLOAD_LINUX』。
 
