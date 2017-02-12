@@ -224,21 +224,27 @@ GRUB_DEFAULT='Example GNU/Linux distribution'
 這兩個選項的參數將會在Linux和Xen menu entry的case之下將GRUB_CMDLINE_LINUX』和『GRUB_CMDLINE_LINUX_DEFAULT』的參數取代掉。
 
 - GRUB_DISABLE_LINUX_UUID <br>
+<a id="GRUB_DISABLE_LINUX_UUID"></a>
 一般來說，grub-mkconfig會為menu entry建立『universally-unique identifiers (UUIDs)』，讓kernel辨識系統的檔案系統，這部分可以使用語法『root=UUID=...』kernel參數的方式來描述，通常這種方式會比較可以信賴。將這個參數設定成true來關閉這個功能。
 
 - GRUB_DISABLE_RECOVERY <br>
+<a id="GRUB_DISABLE_RECOVERY"></a>
 如果這個選項設定成『true』，則在menu上不顯示救援模式(recovery mode)。
 
 - GRUB_VIDEO_BACKEND
+<a id="GRUB_VIDEO_BACKEND"></a>
 通常如果需要顯卡的支援的話，就代表你在使用『gfxterm』圖形化終端機，或者是選項『GRUB_GFXPAYLOAD_LINUX』被啟動了，這樣grub-mkconfig將會讀取所有的GRUB的Video driver，並且使用一個最匹配你硬體的driver。但是通常不太需要動到這個參數，除非你有特殊需求。在『grub-install』執行以後，可取得的video driver清單都會在『/boot/grub/video.lst』。
 
 - GRUB_GFXMODE <br>
+<a id="GRUB_GFXMODE"></a>
 如果你是使用『gfxterm』圖形化終端機的話，這個選項可以設定其解析度。這邊要特別注意的是這個選項只能用在你的顯卡支援VESA BIOS Extensions (VBE)的狀況之下才能用，預設的選項是『auto』，在接下來的內容裡會解釋一下這些參數。
 
 - GRUB_BACKGROUND <br>
+<a id="GRUB_BACKGROUND"></a>
 如果你是使用『gfxterm』圖形化終端機的話，可以透過這個選項來設定背景圖片，但是這些圖片的路徑必須在開機時被GRUB讀到才行，格式必須要是.png, .tga, .jpg, or .jpeg。如果有需要的話，GRUB會自動重新調整圖片來填滿螢幕。
 
 - GRUB_THEME <br>
+<a id="GRUB_THEME"></a>
 如果你是使用『gfxterm』圖形化終端機的話，這個參數可以設定主題。
 
 - GRUB_GFXPAYLOAD_LINUX <br>
