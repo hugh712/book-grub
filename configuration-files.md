@@ -126,7 +126,7 @@ GRUB_TERMINAL_INPUT="console serial"
 從GRUB 1.99開始，在menu的結構裡面引入了submenu，在submenu裡面的entry都會變成兩碼，第一個entry是在主要menu的submenu標題位置，第二個entry則是submenu裡面的位置，底下一個例子，假設我有一個submenu是在第三個主要entry底下的第一個，如下圖一樣，則設計就會是『2>0』。
 
 ![](Imgs/Config/grub_submenu-examples.png)
-(Pic from https://help.ubuntu.com/community/Grub2/Setup )
+(Picture from https://help.ubuntu.com/community/Grub2/Setup )
 
 2. GRUB_DEFAULT="xxxx"
 
