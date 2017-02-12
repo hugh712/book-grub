@@ -145,8 +145,6 @@ GRUB_DEFAULT='Example GNU/Linux distribution'
 GRUB_DEFAULT="2>Ubuntu, with Linux 3.2.0-18-generic-pae"
 ```
 
-
-
 3. GRUB_DEFAULT=saved
 
 
