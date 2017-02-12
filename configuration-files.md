@@ -34,8 +34,10 @@ grub.cfg是用來取代GRUB 0.97的menu.lst，這個檔案包含了GRUB2的menu 
 設定一些環境變數，像是系統檔案位置，video設定，上一個儲存的entry資訊，而且這個檔案也會負責匯入『/etc/default/grub』裡面的設定。使用者通常不用去更動到這個檔案的內容。
 
 ### 05_debian_theme
+設定GRUB2的背景影像，文字顏色，themes主題和highlight的顏色等等。
 
 ### 10_linux
+這個script會辨識目前在使用中的作業系統，root device中的kernel版本，並且建立相關的menu entry，如果有允許recovery mode的話也會將其寫入menu entry。
 
 ### 20_memtest86+
 
