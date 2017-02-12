@@ -11,6 +11,10 @@ GRUB最主要的組態主要是『grub.cfg』，通常是在『/boot/grub』底�
 
 這個指令被觸發後，它會去執行在『/etc/grub.d/』裡面的script和『/etc/default/grub』裡面的設定，並且還有將『/usr/lib/grub』裡面相關的模組和image給複製過去。
 
+<font color="red">(這邊要熟記兩條規則
+1.沒事不要直接改『grub.cfg』，因為隨時都會被蓋掉
+2. 修改其他檔案後，記得執行一下『update-grub』，不然不會更新) </font>
+
 
 ## menu : /boot/grub/grub.cfg
 grub.cfg是用來取代GRUB 0.97的menu.lst，這個檔案包含了GRUB2的menu 資訊，但是它不像GRUB 0.97的 menu.lst一樣通常可以直接修改，就像上面有提到的，這個檔案是上面各個部份的輸出，而各個部份都負責不一樣的功能。
