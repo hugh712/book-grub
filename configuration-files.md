@@ -61,6 +61,8 @@ sudo dmraid -r -c
 如果這個script裡面有找到其他的Ubuntu/Linux作業系統的話，它將會直接使用包含在『10_linux section』裡面的title來將其輸出到『grub.cfg』上，如果找不到的話就會使用從實際上找的的資訊建構出相關的menu entry。
 
 ### 40_custom
+所有客製化的資訊或是menu entry都要被加入這個檔案裡，通常在正常程序裡面，這個script的優先權是最低的。
+
 
 
 底下先來探討一個比較簡單的設定。
