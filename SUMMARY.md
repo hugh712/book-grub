@@ -34,4 +34,5 @@
 * [Settings](settings.md)
   * [Images](images.md)
   * [Resolutions](resolutions.md)
+* [Splash Image](splash-image.md)
 
