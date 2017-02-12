@@ -47,7 +47,18 @@ sudo update-grub
 ```
 
 ### 30_os-prober
-這個script裡面會使用『os-prober』，就是用一個作業系統的探測器，
+這個script裡面會使用『os-prober』，就是用一個作業系統的探測器來搜尋Linux和其他的作業系統，並且將其結果給輸出到menu entry上。目前支援的作業系統包含Windows，Linux，OSX和Hurd等等。如果你想要關閉這個『os-prober』的功能，並且自己在檔案『/etc/default/grub』裡面寫入自己的entry的話，當然你也是要移除這個檔案的『executable bit』移除掉，這樣它就不會被執行，然後在執行『update-grub』如下所示：
+```
+sudo chmod -x /etc/grub.d/30_os-prober
+sudo update-grub
+```
+
+預設這個『os-prober』會忽略任何擁有『dmraid signature』的磁碟，如果你有安裝『dmraid』的話，你可以使用底下指令來列出相關的清單
+```
+sudo dmraid -r -c
+```
+
+如果這個script裡面有找到其他的Ubuntu/Linux作業系統的話，它將會直接使用包含在『10_linux section』裡面的title來將其輸出到『grub.cfg』上，如果找不到的話就會使用從實際上找的的資訊建構出相關的menu entry。
 
 ### 40_custom
 
