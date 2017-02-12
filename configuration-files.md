@@ -224,8 +224,8 @@ GRUB_DEFAULT="2>Ubuntu, with Linux 3.2.0-18-generic-pae"
 ## GRUB_TERMINAL <br>
 <a id="GRUB_TERMINAL"></a>
 如果有設定這個選項，則會將『GRUB_TERMINAL_INPUT』和『GRUB_TERMINAL_OUTPUT』覆寫成相同的值。像是:<br>
-	`GRUB_TERMINAL=console` <br>
-	統一將input和output都設定成console。
+`GRUB_TERMINAL=console` <br>
+統一將input和output都設定成console。
 
 ## GRUB_SERIAL_COMMAND <br>
 <a id="GRUB_SERIAL_COMMAND"></a>
