@@ -41,13 +41,15 @@ GRUB裡面的環境變數(environment variables)，就像是Unix-like系統一�
 這個變數如果有被設定，代表如果預設的menu entry有問題導致失敗的話，就會選擇這一個。
 
 ## gfxmode	  	
-設定『gfxterm』圖形化terminal(boot menu)的解析度，這邊注意你只能使用你的顯卡經由VESA BIOS Extensions(VBE)支援的模式，預設的話是『auto』。這個解析度選項需要至少一個或以上的模式，中間以逗號『,』或是分號『;』來隔開，然後系統就會從第一個依序的找到能使用的，但是注意每一種都一定要是底下這種格式『auto』,『width x height』或是『width x height x depth』。最後一種格式其實是非必要的，但是你也可以指定你的解析度的『color bit depth』，像是1280x1024x24 或是 640x480x32，如果當你執行『update-grub』時發現有error message像是『not found』的話，可以試著把你的color bit depth調整一下。
+- 設定『gfxterm』圖形化terminal(boot menu)的解析度，這邊注意你只能使用你的顯卡經由VESA BIOS Extensions(VBE)支援的模式，預設的話是『auto』。
+
+- 這個解析度選項需要至少一個或以上的模式，中間以逗號『,』或是分號『;』來隔開，然後系統就會從第一個依序的找到能使用的，但是注意每一種都一定要是底下這種格式『auto』,『width x height』或是『width x height x depth』。最後一種格式其實是非必要的，但是你也可以指定你的解析度的『color bit depth』，像是1280x1024x24 或是 640x480x32，如果當你執行『update-grub』時發現有error message像是『not found』的話，可以試著把你的color bit depth調整一下。
 ```
 eg.直接在/etc/default/grub裡面宣告 
 GRUB_GFXMODE=1280x1024x16,800x600x24,640x480
 ```
 
-如果你有使用『splash image』的話，記得把影像size和這個選項的解析度給調整成一樣，這樣才會是最好的結果。
+- 如果你有使用『splash image』的話，記得把影像size和這個選項的解析度給調整成一樣，這樣才會是最好的結果。
 
 ## gfxpayload	 
 主要藉由取代『boot option "vga="』控制Linux Kernel開始的video mode，可以設定成『text』來讓Linux kernel強迫開機成正常的『text mode』，設定成『keep』則保持在使用『gfxmode』的圖形化介面上，這個變數通常是由『GRUB_GFXPAYLOAD_LINUX』來決定的，所以就不要手動去設定，其他的資訊請直接參考『GRUB_GFXPAYLOAD_LINUX』。
