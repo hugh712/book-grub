@@ -78,8 +78,11 @@ sudo dmraid -r -c
 ```
 GRUB_TERMINAL_INPUT="console serial"
 ```
+一開始先列出所有KEY的索引：
+- GRUB_DEFAULT
+- GRUB_SAVEDEFAULT
 
-底下列出所有可用的『KEY』和其說明:
+底下則列出所有可用的『KEY』和其說明:
 
 - GRUB_DEFAULT<br>
 設定預設的menu entry，可以是一個數字，或者是menu entry的標頭，如果是數字的話，代表的是從0開始數的menu entry編號；如果你的menu entry很多的話，建議可以直接用你的menu entry的標頭就好，不然你還要在那邊數，很麻煩。
