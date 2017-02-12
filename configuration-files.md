@@ -155,7 +155,17 @@ GRUB_DEFAULT="2>Ubuntu, with Linux 3.2.0-18-generic-pae"
 
 ## GRUB_TIMEOUT <br>
 <a id="GRUB_TIMEOUT"></a>
-這個選項主要就是在控制進入menu後會倒數幾秒，預設的話是『5』秒; 如果設定成『0』的話，代表直接用預設選項不進入menu; 設定成『-1』的話，代表會停在menu處一直等下去，直到使用者做出選擇為止。如果這個值為非0的話，就不該啟用『GRUB_HIDDEN_TIMEOUT』，但是如果你『GRUB_TIMEOUT』設定為非0值，但是你的『GRUB_HIDDEN_TIMEOUT』也有設定的話，則只會看到menu出現之前的倒數，不會看到menu的倒數。
+這個選項主要就是在控制進入menu後會倒數幾秒，預設的話是『5』秒; 
+
+- **GRUB_TIMEOUT = 0**
+如果設定成『0』的話，代表直接用預設選項不進入menu; 
+
+- **GRUB_TIMEOUT = -1**
+設定成『-1』的話，代表會停在menu處一直等下去，直到使用者做出選擇為止。
+
+- 如果這個值為非0的話，就不該啟用『GRUB_HIDDEN_TIMEOUT』，但是如果你『GRUB_TIMEOUT』設定為非0值，而你的『GRUB_HIDDEN_TIMEOUT』也有設定的話，則只會看到menu出現之前的倒數，不會看到menu的倒數。
+
+- 在單作業系統上，預設這個選項是沒用的，代表你的menu不會出現，要讓menu顯示的話就應該要將『GRUB_HIDDEN_TIMEOUT』給註解掉，然後讓這個選項的值為1或以上。
 
 ![](Imgs/Config/config002.PNG)
 
