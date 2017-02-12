@@ -227,7 +227,7 @@ GRUB_DEFAULT="2>Ubuntu, with Linux 3.2.0-18-generic-pae"
 `GRUB_TERMINAL=console` <br>
 統一將input和output都設定成console。
 
-有時候如果GRUB2的menu太多的話，你可以將這個選項直接設定成『GRUB_TERMINAL=console』，直接取消圖形化介面，這樣會比較有幫助。
+有時候如果你的GRUB2的menu太多的話，你可以試著將這個選項直接設定成『GRUB_TERMINAL=console』，直接取消圖形化介面，這樣可能會比較有幫助。
 
 ## GRUB_SERIAL_COMMAND <br>
 <a id="GRUB_SERIAL_COMMAND"></a>
