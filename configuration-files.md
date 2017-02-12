@@ -13,7 +13,7 @@ GRUB最主要的組態主要是『grub.cfg』，通常是在『/boot/grub』底�
 
 <font color="red">
 這邊要熟記兩條規則：
-1.沒事不要直接改『grub.cfg』，因為隨時都會被蓋掉
+1.沒事不要直接改『grub.cfg』，因為隨時都會被蓋掉。
 2. 修改其他檔案後，記得執行一下『update-grub』，不然不會更新。 </font>
 
 
