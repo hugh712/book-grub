@@ -133,9 +133,8 @@ GRUB_TERMINAL_INPUT="console serial"
 ```
 Example: GRUB_DEFAULT="Ubuntu, Linux 2.6.31-9-generic"
 Example (Submenu Entry): GRUB_DEFAULT="2>Ubuntu, Linux
-```
-
  2.6.38-8-generic"
+```
 
 3. GRUB_DEFAULT=saved
 
