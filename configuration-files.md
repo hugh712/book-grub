@@ -278,7 +278,7 @@ GRUB_DEFAULT="2>Ubuntu, with Linux 3.2.0-18-generic-pae"
 
 ## GRUB_BACKGROUND <br>
 <a id="GRUB_BACKGROUND"></a>
-如果你是使用『gfxterm』圖形化終端機的話，可以透過這個選項來設定背景圖片，但是這些圖片的路徑必須在開機時被GRUB讀到才行，格式必須要是.png, .tga, .jpg, or .jpeg。如果有需要的話，GRUB會自動重新調整圖片來填滿螢幕。
+如果你是使用『gfxterm』圖形化終端機的話，可以透過這個選項來設定背景圖片，但是這些圖片的路徑必須在開機時被GRUB讀到才行，格式必須要是.png, .tga, .jpg, or .jpeg。如果有需要的話，GRUB會自動重新調整圖片來填滿螢幕。這部份的設定會到『splash image』章節在詳細講解。
 
 ## GRUB_THEME <br>
 <a id="GRUB_THEME"></a>
