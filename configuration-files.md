@@ -129,16 +129,7 @@ GRUB_TERMINAL_INPUT="console serial"
 	(Picture from https://help.ubuntu.com/community/Grub2/Setup )
 
 2. GRUB_DEFAULT="xxxx"
-給一個包含『" "』切確的標題名稱，用名稱的話，預設的位置就不用管了。底下有兩個例子：
-```
-Example: GRUB_DEFAULT="Ubuntu, Linux 2.6.31-9-generic"
-Example (Submenu Entry): GRUB_DEFAULT="2>Ubuntu, Linux
- 2.6.38-8-generic"
-```
-
-3. GRUB_DEFAULT=saved
-
-舉例來說，如果你有個menu entry如下:
+給一個包含『" "』切確的標題名稱，用名稱的話，預設的位置就不用管了。舉例來說，如果你有個menu entry如下:
 ```
 menuentry 'Example GNU/Linux distribution' --class gnu-linux {
 	...
@@ -149,7 +140,17 @@ menuentry 'Example GNU/Linux distribution' --class gnu-linux {
 ```
 GRUB_DEFAULT='Example GNU/Linux distribution'
 ```
-除了以上兩種可能以外 - 『數字』和『標頭』以外，還有第三種，就是可以把它設定成『saved』，這個選項主要是藉由選項『GRUB_SAVEDEFAULT』來儲存預設的menu entry，預設的數字是『0』，除了由『GRUB_SAVEDEFAULT』選項來自動儲存以外，你也可以用grub-set-default或是grub-reboot。
+
+
+3. GRUB_DEFAULT=saved
+
+
+這個選項主要是藉由選項『GRUB_SAVEDEFAULT』來儲存預設的menu entry，預設的數字是『0』，除了由『GRUB_SAVEDEFAULT』選項來自動儲存以外，你也可以用grub-set-default或是grub-reboot。
+
+
+
+
+除了以上兩種可能以外 - 『數字』和『標頭』以外，還有第三種，就是可以把它設定成『saved』，
 
 ## GRUB_SAVEDEFAULT <br>
 <a id="GRUB_SAVEDEFAULT"></a>
