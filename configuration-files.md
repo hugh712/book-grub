@@ -32,6 +32,7 @@ grub.cfg是用來取代GRUB 0.97的menu.lst，這個檔案包含了GRUB2的menu 
 
 ### 00_header
 
+
 ### 05_debian_theme
 
 ### 10_linux
