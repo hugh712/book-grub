@@ -116,7 +116,7 @@ GRUB_TERMINAL_INPUT="console serial"
 
 底下則列出所有可用的『KEY』和其說明:
 
-- GRUB_DEFAULT<br>
+## GRUB_DEFAULT<br>
 <a id="GRUB_DEFAULT"></a>
 設定預設的menu entry，可以是一個數字，或者是menu entry的標頭，如果是數字的話，代表的是從0開始數的menu entry編號；如果你的menu entry很多的話，建議可以直接用你的menu entry的標頭就好，不然你還要在那邊數，很麻煩。
 舉例來說，如果你有個menu entry如下:
@@ -132,40 +132,40 @@ GRUB_DEFAULT='Example GNU/Linux distribution'
 ```
 除了以上兩種可能以外 - 『數字』和『標頭』以外，還有第三種，就是可以把它設定成『saved』，這個選項主要是藉由選項『GRUB_SAVEDEFAULT』來儲存預設的menu entry，預設的數字是『0』，除了由『GRUB_SAVEDEFAULT』選項來自動儲存以外，你也可以用grub-set-default或是grub-reboot。
 
-- GRUB_SAVEDEFAULT <br>
+## GRUB_SAVEDEFAULT <br>
 <a id="GRUB_SAVEDEFAULT"></a>
 如果這個選項是被設定成『true』，當你在開機選擇menu entry時，GRUB會將你的選擇儲存起來，這樣下一次開機的預設就會變成這個，接下來，底下兩個說明會有點饒舌，『GRUB_SAVEDEFAULT』只有在『GRUB_SAVEDEFAULT=saved』時有用，但是這又是兩個分開的選項，因為如果伴隨著『grub-set-default』或是『grub-reboot』的話，『GRUB_DEFAULT=saved』只有在沒有『GRUB_SAVEDEFAULT』的狀況才有效。這個選項預設是不啟用，而且依賴於『environment block』，所以可能不適用於所有的case。
 
-- GRUB_TIMEOUT <br>
+## GRUB_TIMEOUT <br>
 <a id="GRUB_TIMEOUT"></a>
 這個選項主要就是在控制進入menu後會倒數幾秒，預設的話是『5』秒; 如果設定成『0』的話，代表直接用預設選項不進入menu; 設定成『-1』的話，代表會停在menu處一直等下去。如果這個值為非0的話，就不該啟用『GRUB_HIDDEN_TIMEOUT』，但是如果你『GRUB_TIMEOUT』設定為非0值，但是你的『GRUB_HIDDEN_TIMEOUT』也有設定的話，則只會看到menu出現之前的倒數，不會看到menu的倒數。
 
 ![](Imgs/Config/config002.PNG)
 
-- GRUB_HIDDEN_TIMEOUT <br>
+## GRUB_HIDDEN_TIMEOUT <br>
 <a id="GRUB_HIDDEN_TIMEOUT"></a>
 上一個選項是『GRUB_TIMEOUT』，主要是在定義menu出現"後"要倒數幾秒，如果倒數完之前沒有按任何鍵的話，將會直接以預設的選項開機。這個選項則是相反，主要是設定menu出現"前"會倒數幾秒，如果將這個選項直接設定成『0』的話，將不會倒數，除非你直接按某些特定的鍵才會顯示，在Ubuntu裡面則是用『Shift』。
 
 ![](Imgs/Config/config001.PNG)
 
-- GRUB_HIDDEN_TIMEOUT_QUIET <br>
+## GRUB_HIDDEN_TIMEOUT_QUIET <br>
 <a id="GRUB_HIDDEN_TIMEOUT_QUIET"></a>
 通常會跟『GRUB_HIDDEN_TIMEOUT』一起共用，
 	- 如果將這個設定成『true』的話，將不會顯示倒數計時器。
 	- 設定成『false』的話則會顯示，但是我在Ubuntu上面怎麼設定都是false就對了。
 
-- GRUB_DEFAULT_BUTTON <br>
-- GRUB_TIMEOUT_BUTTON  <br>
-- GRUB_HIDDEN_TIMEOUT_BUTTON <br>  
-- GRUB_BUTTON_CMOS_ADDRESS  <br>
+## GRUB_DEFAULT_BUTTON <br>
+## GRUB_TIMEOUT_BUTTON  <br>
+## GRUB_HIDDEN_TIMEOUT_BUTTON <br>  
+## GRUB_BUTTON_CMOS_ADDRESS  <br>
 <a id="GRUB_BUTTON_CMOS_ADDRESS"></a>
 有些筆電(laptop)的供應商會在啟動特定的作業系統時，提供額外的開機按鈕，像是『Asus EeePC 1005PE』，『Dell XPS M1530』等等，而GRUB也支援這部份的需求，這部分的需求請直接看手冊，主要是藉由在這個地方寫入CMOS裡的位址。
 
-- GRUB_DISTRIBUTOR <br>
+## GRUB_DISTRIBUTOR <br>
 <a id="GRUB_BUTTON_CMOS_ADDRESS"></a>
 主要由你的GRUB的distro來設定這個選項，把它設定成他們的辨識名稱，這樣通成會在menu entry 標題的部份產生更多的資訊。
 
-- GRUB_TERMINAL_INPUT<br>
+## GRUB_TERMINAL_INPUT<br>
 <a id="GRUB_TERMINAL_INPUT"></a>
 選擇終端機(terminal)的輸入裝置，當然你可以在這邊選擇多重的裝置，中間請用空白隔開。有效的terminal輸入名稱其實取決於你的平台，但是通常會有以下的幾個(預設都是使用系統原生的terminal輸入):
 	- console (PC BIOS 和 EFI consoles)
@@ -174,7 +174,7 @@ GRUB_DEFAULT='Example GNU/Linux distribution'
 	- at_keyboard (PC AT keyboard, 主要會用在Coreboot)
 	- usb_keyboard (主要是使用HID boot protocol的USB鍵盤，這部分是以防firmware沒有去處理這部分)。
 
-- GRUB_TERMINAL_OUTPUT <br>
+## GRUB_TERMINAL_OUTPUT <br>
 <a id="GRUB_TERMINAL_OUTPUT"></a>
 選擇終端機(terminal)的輸出裝置，當然你可以在這邊選擇多重的裝置，中間請用空白隔開。有效的terminal輸出名稱其實取決於你的平台，但是通常會有以下的幾個(預設都是使用系統原生的terminal輸出):
 	- console (PC BIOS 和 EFI consoles)
@@ -186,85 +186,85 @@ GRUB_DEFAULT='Example GNU/Linux distribution'
 底下舉個例子，將OUTPUT改成console的話，圖型化介面就會變成底下這樣:
 ![](Imgs/Config/config003.PNG)
 
-- GRUB_TERMINAL <br>
+## GRUB_TERMINAL <br>
 <a id="GRUB_TERMINAL"></a>
 	- 如果有設定這個選項，則會將『GRUB_TERMINAL_INPUT』和『GRUB_TERMINAL_OUTPUT』覆寫成相同的值。像是:
 	`GRUB_TERMINAL=console` <br>
 	統一將input和output都設定成console
 
-- GRUB_SERIAL_COMMAND <br>
+## GRUB_SERIAL_COMMAND <br>
 <a id="GRUB_SERIAL_COMMAND"></a>
 如果你的GRUB想要使用serial console的話就要設定這個serial port，語法的話後面的章節會介紹。
 
-- GRUB_CMDLINE_LINUX <br>
+## GRUB_CMDLINE_LINUX <br>
 <a id="GRUB_CMDLINE_LINUX"></a>
 要加入到menu entry的Command-line的參數，不論是一般或者是救援模式，主要是傳給kernel的。
 
-- GRUB_CMDLINE_LINUX_DEFAULT <br>
+## GRUB_CMDLINE_LINUX_DEFAULT <br>
 <a id="GRUB_CMDLINE_LINUX_DEFAULT"></a>
 一般除非『GRUB_DISABLE_RECOVERY』設定成true，不然通常會有兩個menu entry出現 -『預設』和『救援模式』，而這個選項主要就是傳給那『預設』的開機選項的參數，不會傳給『救援模式』。
 
-- GRUB_CMDLINE_NETBSD <br>
-- GRUB_CMDLINE_NETBSD_DEFAULT <br>
+## GRUB_CMDLINE_NETBSD <br>
+## GRUB_CMDLINE_NETBSD_DEFAULT <br>
 <a id="GRUB_CMDLINE_NETBSD_DEFAULT"></a>
 就像是『GRUB_CMDLINE_LINUX』和『GRUB_CMDLINE_LINUX_DEFAULT』，但是是給NetBSD用的。
 
-- GRUB_CMDLINE_GNUMACH <br>
+## GRUB_CMDLINE_GNUMACH <br>
 <a id="GRUB_CMDLINE_GNUMACH"></a>
 就像是『GRUB_CMDLINE_LINUX』，但是是給GNU Mach用的。
 
-- GRUB_CMDLINE_XEN <br>
-- GRUB_CMDLINE_XEN_DEFAULT <br>
+## GRUB_CMDLINE_XEN <br>
+## GRUB_CMDLINE_XEN_DEFAULT <br>
 <a id="GRUB_CMDLINE_XEN_DEFAULT"></a>
 這兩個選項的參數會在Linux和Xen menu entry的case之下依附於『GRUB_CMDLINE_LINUX』和『GRUB_CMDLINE_LINUX_DEFAULT』的參數後面。
 
-- GRUB_CMDLINE_LINUX_XEN_REPLACE <br>
-- GRUB_CMDLINE_LINUX_XEN_REPLACE_DEFAULT <br>
+## GRUB_CMDLINE_LINUX_XEN_REPLACE <br>
+## GRUB_CMDLINE_LINUX_XEN_REPLACE_DEFAULT <br>
 <a id="GRUB_CMDLINE_LINUX_XEN_REPLACE_DEFAULT"></a>
 這兩個選項的參數將會在Linux和Xen menu entry的case之下將GRUB_CMDLINE_LINUX』和『GRUB_CMDLINE_LINUX_DEFAULT』的參數取代掉。
 
-- GRUB_DISABLE_LINUX_UUID <br>
+## GRUB_DISABLE_LINUX_UUID <br>
 <a id="GRUB_DISABLE_LINUX_UUID"></a>
 一般來說，grub-mkconfig會為menu entry建立『universally-unique identifiers (UUIDs)』，讓kernel辨識系統的檔案系統，這部分可以使用語法『root=UUID=...』kernel參數的方式來描述，通常這種方式會比較可以信賴。將這個參數設定成true來關閉這個功能。
 
-- GRUB_DISABLE_RECOVERY <br>
+## GRUB_DISABLE_RECOVERY <br>
 <a id="GRUB_DISABLE_RECOVERY"></a>
 如果這個選項設定成『true』，則在menu上不顯示救援模式(recovery mode)。
 
-- GRUB_VIDEO_BACKEND
+## GRUB_VIDEO_BACKEND
 <a id="GRUB_VIDEO_BACKEND"></a>
 通常如果需要顯卡的支援的話，就代表你在使用『gfxterm』圖形化終端機，或者是選項『GRUB_GFXPAYLOAD_LINUX』被啟動了，這樣grub-mkconfig將會讀取所有的GRUB的Video driver，並且使用一個最匹配你硬體的driver。但是通常不太需要動到這個參數，除非你有特殊需求。在『grub-install』執行以後，可取得的video driver清單都會在『/boot/grub/video.lst』。
 
-- GRUB_GFXMODE <br>
+## GRUB_GFXMODE <br>
 <a id="GRUB_GFXMODE"></a>
 如果你是使用『gfxterm』圖形化終端機的話，這個選項可以設定其解析度。這邊要特別注意的是這個選項只能用在你的顯卡支援VESA BIOS Extensions (VBE)的狀況之下才能用，預設的選項是『auto』，在接下來的內容裡會解釋一下這些參數。
 
-- GRUB_BACKGROUND <br>
+## GRUB_BACKGROUND <br>
 <a id="GRUB_BACKGROUND"></a>
 如果你是使用『gfxterm』圖形化終端機的話，可以透過這個選項來設定背景圖片，但是這些圖片的路徑必須在開機時被GRUB讀到才行，格式必須要是.png, .tga, .jpg, or .jpeg。如果有需要的話，GRUB會自動重新調整圖片來填滿螢幕。
 
-- GRUB_THEME <br>
+## GRUB_THEME <br>
 <a id="GRUB_THEME"></a>
 如果你是使用『gfxterm』圖形化終端機的話，這個參數可以設定主題。
 
-- GRUB_GFXPAYLOAD_LINUX <br>
+## GRUB_GFXPAYLOAD_LINUX <br>
 <a id="GRUB_GFXPAYLOAD_LINUX"></a>
 如果將這個選項設定成『text』的話記會強制將kernel給啟動到文字模式(text mode)；如果是設定成『keep』，則將會繼續保持在『graphic』模式。這個選項要取決於你的kernel，distro，顯卡，任何以種組合都有可能在早期的啟動流程讓你的顯卡遇到一些問題。如果真的遇到問題的話，就直接把這個模式設定成『text』就好了。
 
 
-- GRUB_DISABLE_OS_PROBER <br>
+## GRUB_DISABLE_OS_PROBER <br>
 <a id="GRUB_DISABLE_OS_PROBER"></a>
 一般來說，grub-mkconfig會試著使用外部的作業系統偵測程式(os-prober)來偵測在同一個系統裡安裝的作業系統，並且產生適當的menu entry，如果將這個設定成true的話則會關閉這個功能。
 
-- GRUB_INIT_TUNE <br>
+## GRUB_INIT_TUNE <br>
 <a id="GRUB_INIT_TUNE"></a>
 當GRUB開始時，主機板會出逼聲，通常在使用者無法直接看到螢幕時很有用，這部分主要是透過一個程式叫做『play』去實做的。
 
-- GRUB_BADRAM <br>
+## GRUB_BADRAM <br>
 <a id="GRUB_BADRAM"></a>
 如果這個選項有被設定的話，GRUB將會發起一個badram的命令，這個命令會將RAM裡面某些特定區域給濾掉，代表這些區域已經毀損。
 
-- GRUB_PRELOAD_MODULES <br>
+## GRUB_PRELOAD_MODULES <br>
 <a id="GRUB_PRELOAD_MODULES"></a>
 這個選項可以被設定成一系列的GRUB module(模組)，每個module的名稱都用空白所隔開，設定以後，在grub.cfg開始的時候，會盡快的去讀取這個些module。
 
