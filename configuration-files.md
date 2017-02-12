@@ -41,6 +41,12 @@ grub.cfg是用來取代GRUB 0.97的menu.lst，這個檔案包含了GRUB2的menu 
 
 ### 20_memtest86+
 搜尋『/boot/memtest86+.bin』，並且將其包含在GRUB2裡面的menu entry裡面，如果你想要在menu entryㄕ上將這個選項移除的話，可以直接將這個檔案的executable bit移除掉，然後在執行『update-grub』如下所示：
+```
+sudo chmod -x /etc/grub.d/20_memtest86+
+sudo update-grub
+```
+
+
 
 ### 30_os-prober
 
