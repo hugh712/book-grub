@@ -215,6 +215,7 @@ GRUB_DEFAULT='Example GNU/Linux distribution'
 
 - GRUB_CMDLINE_XEN <br>
 - GRUB_CMDLINE_XEN_DEFAULT <br>
+<a id="GRUB_CMDLINE_XEN_DEFAULT"></a>
 這兩個選項的參數會在Linux和Xen menu entry的case之下依附於『GRUB_CMDLINE_LINUX』和『GRUB_CMDLINE_LINUX_DEFAULT』的參數後面。
 
 - GRUB_CMDLINE_LINUX_XEN_REPLACE <br>
