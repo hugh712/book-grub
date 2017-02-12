@@ -2,20 +2,20 @@ GRUB裡面的環境變數(environment variables)，就像是Unix-like系統一�
 
 # Special environment variables
 
-• **biosnum**: <br>	
+## biosnum	
   	當chain-loading到其他的boot loader時，GRUB可能需要知道與root device相關的BIOS drive number，這樣它才可以去設定registers。這部分的話也可以透過命令『devicemap』來達成。
 
-• **chosen**: <br>	
+## chosen	
   	這個變數需要搭配『GRUB_SAVEDEFAULT』和『GRUB_DEFAULT』的使用，因為設定成會儲存上一次的選擇，才會用到這個變數。底下兩張圖可以看到我將『GRUB_SAVEDEFAULT』設定為true和『GRUB_DEFAULT』設定為saved，然後第一次開機自己選擇用kernel 4.4.0-31開機後，在下一次開機時，『chosen』和『default』就會把我上一次所選擇的版本給儲存起來了。
   
   ![](Imgs/env/env002.PNG)
 
   ![](Imgs/env/env001.PNG)
   
-• **color_highlight**:	  	
+## color_highlight	  	
 這個變數主要就是如果你現在terminal螢幕上有highlight的地方的話，它的文字顏色/背景顏色各是什麼。預設的話是『black/white』。其他可挑選的顏色請參考『color_normal』。
 
-• **color_normal**:	
+## color_normal
 主要在terminal螢幕上的文字/背景顏色，預設為『white/black』，有沒有發現剛好跟『highlight』的預設是相反的。可用的顏色列出如下：
   - black
   - blue
@@ -34,13 +34,13 @@ GRUB裡面的環境變數(environment variables)，就像是Unix-like系統一�
   - yellow
   - white	  	
 
-• **default**:	  	
+## default	  	
   這個變數如果有被設定的話，代表有預設的menu entry，通常是在某個timeout以後就會進入這個menu entry裡面，這個menu entry有可能是一個數字或是一串文字。這個變數通常都會經過『GRUB_DEFAULT』，『grub-set-default』或是『grub-reboot』來設定。
   
-• **fallback**:	  	
+## fallback	  	
 這個變數如果有被設定，代表如果預設的menu entry有問題導致失敗的話，就會選擇這一個。
 
-• **gfxmode**:	  	
+## gfxmode	  	
 設定『gfxterm』圖形化terminal(boot menu)的解析度，這邊注意你只能使用你的顯卡經由VESA BIOS Extensions(VBE)支援的模式，預設的話是『auto』。這個解析度選項需要至少一個或以上的模式，中間以逗號『,』或是分號『;』來隔開，然後系統就會從第一個依序的找到能使用的，但是注意每一種都一定要是底下這種格式『auto』,『width x height』或是『width x height x depth』。最後一種格式其實是非必要的，但是你也可以指定你的解析度的『color bit depth』，像是1280x1024x24 或是 640x480x32，如果當你執行『update-grub』時發現有error message像是『not found』的話，可以試著把你的color bit depth調整一下。
 ```
 eg.直接在/etc/default/grub裡面宣告 
@@ -49,24 +49,24 @@ GRUB_GFXMODE=1280x1024x16,800x600x24,640x480
 
 如果你有使用『splash image』的話，記得把影像size和這個選項的解析度給調整成一樣，這樣才會是最好的結果。
 
-• **gfxpayload**:	 
+## gfxpayload	 
 主要藉由取代『boot option "vga="』控制Linux Kernel開始的video mode，可以設定成『text』來讓Linux kernel強迫開機成正常的『text mode』，設定成『keep』則保持在使用『gfxmode』的圖形化介面上，這個變數通常是由『GRUB_GFXPAYLOAD_LINUX』來決定的，所以就不要手動去設定，其他的資訊請直接參考『GRUB_GFXPAYLOAD_LINUX』。
 
-• **gfxterm_font**:	  	
+## gfxterm_font	  	
 設定一個字體來讓『gfxterm』圖形化terminal用，如果沒有指定的話，GRUB就會使用任何一個可以取得的字體。
 
-• **icondir**:	  	
+## icondir	  	
 這個變數是關於GRUB的圖形化選單icons的設定資料夾。
 
-• **lang**:	  	
+## lang	  	
 設定『language code』，主要是由命令『gettext』來轉換字串時會用到這個變數。grub-mkconfig執行時將會根據你的系統的locale值來設定一個合理的變數給GRUB。
 
-• **locale_dir**:	  	
+## locale_dir	  	
 設定多國語言檔所在的路徑，通常預設會是『/boot/grub/locale』，如果沒有的話就代表多國語言是被取消的。grub-mkconfig執行時將會根據你的系統的locale值來設定一個合理的變數給GRUB。
 
 
-• **menu_color_highlight**:	  	
-• **menu_color_normal**:	  	
+## menu_color_highlight	  	
+## menu_color_normal	  	
 上面兩個是menu entry的hightlight/non-highlight顏色主題，顏色的搭配都是以前景/背景為組合，直接舉個例子，直接修改『/etc/grub.d/05_debian_theme』，將主要的menu entry顏色主題改為：
 
 ```
@@ -78,35 +78,35 @@ echo "${1}set menu_color_highlight=white/blue"
 
 可以看到，因為背景都設定成藍色，而non-highlight(沒有被選到的)的顏色為cyan，highlight(被選到的)的顏色為white。
 
-• **net_pxe_boot_file**:	  	
-• **net_pxe_dhcp_server_name**:	  	
-• **net_pxe_domain**:	  	
-• **net_pxe_extensionspath**:	  	
-• **net_pxe_hostname**:	  	
-• **net_pxe_ip**:	  	
-• **net_pxe_mac**:	  	
-• **net_pxe_rootpath**:	  
-• **pxe_blksize**:	  	
-• **pxe_default_gateway**:	  	
-• **pxe_default_server**:		
+## net_pxe_boot_file	  	
+## net_pxe_dhcp_server_name	  	
+## net_pxe_domain	
+## net_pxe_extensionspath	  	
+## net_pxe_hostname	
+## net_pxe_ip	  	
+## net_pxe_mac	  	
+## net_pxe_rootpath	  
+## pxe_blksize	  	
+## pxe_default_gateway	  	
+## pxe_default_server		
 以上這幾個變數都是關於PXE的部份，這邊就不探討。
 
-• **pager**:	  	
+## pager	  	
 如果設定成1的話，就很像是linux shell的less的分頁效果。預設的話不會設定這個變數。
 
-• **prefix**:	  	
+## prefix	  	
 這個變數非常的重要，主要是設定『/boot/grub』的資料夾絕對位置，通常在『grub-install』時GRUB就會設定好了，然後GRUB的moudles就會動態的從這個變數去讀取相關的資訊，所以如果這個變數不正確的話，會連最簡單的modules都無法讀取。
 
-• **root**:	  	
+## root	  	
 root的裝置名稱，只要你沒有特別指定你的檔案的裝置在那的話，都會用這個預設的，通常都會跟『prefix』的值有相關。舉個例子來說，如果GRUB被安裝在第一顆硬碟的第一個partition，則『prefix』則應該被設定成『(hd0,msdos1)/boot/grub』，『root』的話就是『hd0,msdos1』。
 
-• **superusers**:	  	
+## superusers	  	
 這個變數可以被設定成一系列的superuser名稱，可以用於權限的控制。
 
-• **theme**:	 
+## theme	 
 這個變數設定成包含GRUB圖形化選單主題的資料夾路徑，通常這個變數都是由每個distro的『GRUB_THEME』去設定的，像是debian-like的就是在『/etc/grub.d/05_debian_theme』裡。	
 
-• **timeout**:	  	
+## timeout	  	
 設定在使用預設的menu entry啟動之前，GRUB會等待多久的時間，如果你有按任何鍵的話，就會中斷倒數。『0』的話就是直接以預設的menu entry啟動，『-1』的話就是會一直等。這個變數通常都由『GRUB_TIMEOUT』和『GRUB_HIDDEN_TIMEOUT』的組合來設定的。
 
 
