@@ -274,7 +274,7 @@ GRUB_DEFAULT="2>Ubuntu, with Linux 3.2.0-18-generic-pae"
 
 ## GRUB_GFXMODE <br>
 <a id="GRUB_GFXMODE"></a>
-如果你是使用『gfxterm』圖形化終端機的話，這個選項可以設定其解析度。這邊要特別注意的是這個選項只能用在你的顯卡支援VESA BIOS Extensions (VBE)的狀況之下才能用，預設的選項是『auto』，在章節『Commands-GRUB』裡面的『gfxmode』會有更進接的介紹。
+如果你是使用『gfxterm』圖形化終端機的話，這個選項可以設定其解析度。通常GRUB2會自動的幫你設定它覺的最適合的解析度，但是如果你想要自己設定的話，還是可以從這邊設定。這邊要特別注意的是這個選項只能用在你的顯卡支援VESA BIOS Extensions (VBE)的狀況之下才能用，預設的選項是『auto』，在章節『Commands-GRUB』裡面的『gfxmode』會有更進接的介紹。
 
 ## GRUB_BACKGROUND <br>
 <a id="GRUB_BACKGROUND"></a>
