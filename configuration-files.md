@@ -47,7 +47,7 @@ sudo update-grub
 ```
 
 ### 30_os-prober
-
+這個script裡面會使用是一個『os-prober』，算是一個作業系統的探測器，
 ### 40_custom
 
 
