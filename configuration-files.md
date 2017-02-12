@@ -140,7 +140,7 @@ menuentry 'Example GNU/Linux distribution' --class gnu-linux {
 GRUB_DEFAULT='Example GNU/Linux distribution'
 ```
 
-如果是要用剛剛submenu的圖的『2>0』的話，GRUB_DEFAULT就會是：
+	如果是要用剛剛submenu的圖的『2>0』的話，GRUB_DEFAULT就會是：
 ```
 GRUB_DEFAULT="2>Ubuntu, with Linux 3.2.0-18-generic-pae"
 ```
