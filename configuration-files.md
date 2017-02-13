@@ -130,7 +130,7 @@ GRUB_TERMINAL_INPUT="console serial"
 	(Picture from https://help.ubuntu.com/community/Grub2/Setup )
 	(之前舊版的叫做『Previous Linux versions』，但是後來GRUB2.0以後就變成『Advanced options...』)
 	
-	下面這四種表示法都可以:
+	對於上面這個case，下面這四種表示法都可以:
 ```
 	1. GRUB_DEFAULT="Previous Linux versions>Ubuntu, with Linux 3.2.0-18-generic-pae"
 	2. GRUB_DEFAULT="Previous Linux versions>0"
