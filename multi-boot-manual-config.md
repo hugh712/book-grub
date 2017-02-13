@@ -105,7 +105,7 @@ menuentry "NetBSD on sda1" {
 ```
 
 ## Generic Multi-Boot
-想要啟動一個multi-boot相容的kernel，你在讀取kernel時，必須要用命令『multiboot』來讀取，有個例子可以讓你練習一下，先下載『[Grub Invaders](http://www.erikyyy.de/invaders)』，然後解壓縮放到路徑『/boot』。
+想要啟動一個multi-boot相容的kernel，你在讀取kernel時，必須要用命令『multiboot』來讀取，有個例子可以讓你練習一下，先下載『[Grub Invaders](http://www.erikyyy.de/invaders)』，然後解壓縮放到路徑『/boot』。接下來執行下面兩個步驟，沒意外的話你就會看到『invaders』已經被啟動了。
 
 1.讀取Grub invaders
 ```
