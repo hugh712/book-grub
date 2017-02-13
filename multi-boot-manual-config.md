@@ -67,8 +67,21 @@ menuentry "FreeBSD 8.0 direct" {
         kfreebsd_module /boot/splash.bmp type=splash_image_data
         set kFreeBSD.vfs.root.mountfrom=ufs:ad4s1a
 }
+```
+不確定你的UUID的話，可以用以下指令:
+```
+ls (hd0,1)
+```
+如果你想要傳遞參數給FreeBSD bootloader的option的話(/boot/loader.conf)，可以直接使用『set』命令，如下面例子:
 
 ```
+# 強制叫kernel等USB出現
+set kFreeBSD.kern.cam.boot_delay="10000"
+```
+
+
+
+
 
 
 
