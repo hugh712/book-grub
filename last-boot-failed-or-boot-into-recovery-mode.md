@@ -19,11 +19,11 @@ if [ "\${recordfail}" = 1 ] ; then
   set timeout=${GRUB_RECORDFAIL_TIMEOUT:-30}
 else
 ```
-直接改成
+直接修改成-1如下:
 ```
 if [ "\${recordfail}" = 1 ] ; then
   set timeout=-1
 else
 ```
-
+然後更新完以後記得要執行一下『update-grub』。
 
