@@ -7,6 +7,7 @@ sudo apt-get install grub2-splashimages
 ```
 一旦安裝完了以後，所有的影像檔都會在路徑『/usr/share/images/grub』底下。
 
+(是『grub2-splashimages』不是『grub-splashimages』不要裝錯了！)
 
 
 
