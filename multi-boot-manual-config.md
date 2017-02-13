@@ -4,7 +4,8 @@ GRUB的multi-boot環境取決於os-prober，也就是在『grub-install』執行
 
 這個章節來介紹一下，怎麼製作自製的簡單『grub.cfg』組態:
 
-1. 根據章節『making a grub bootable cd rom』的步驟，先建立相關資料夾，安裝grub，然後在掛載起來的路徑『/mnt/boot/grub/』底下建立一個『grub.cfg』，內容如下：
+## Linux  
+根據章節『making a grub bootable cd rom』的步驟，先建立相關資料夾，安裝grub，然後在掛載起來的路徑『/mnt/boot/grub/』底下建立一個『grub.cfg』，內容如下：
 ```
 menuentry "my Ubuntu 16.04" {
         set root=(hd0,msdos1)
