@@ -16,3 +16,6 @@ GRUB2背景影像可以使用PNG，JPG/JPEG和TGA格式的影像，除了影像�
 3. 如果你不確定你的影像格式，可以使用軟體GIMP來確認。可以使用選單路徑 Image > Mode ，將properties設定成RGB來確保它不會是Indexed的格式。
 
 
+## 設定影像 (GRUB 1.99 and later)
+剛剛講解了怎麼下載相關影像和影像的限制，這一節介紹怎麼設定。
+
