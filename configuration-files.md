@@ -69,6 +69,9 @@ sudo dmraid -r -c
 ### 40_custom
 所有客製化的資訊或是menu entry都要被加入這個檔案裡，通常在正常程序裡面，這個script的優先權是最低的。
 
+這個custom menu有底下優點:
+
+
 
 # /etc/default/grub的所有可用參數
 
