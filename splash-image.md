@@ -4,3 +4,12 @@
 sudo apt-get install grub2-splashimages
 
 /usr/share/images/grub
+
+
+## 影像限制
+GRUB2背景影像可以使用PNG，JPG/JPEG和TGA格式的影像，除了影像格式以外，還需要有底下的幾個限制:
+1. 
+2. 
+3. 
+
+
