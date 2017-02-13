@@ -4,4 +4,13 @@
 ```
 GRUB_CMDLINE_LINUX_DEFAULT="quiet splash reboot=bios"
 ```
+然後執行『update-grub』以後重開機試看看。
+
+在特定的硬體上，像是DELL之類的，就要變成『reboot=pci』如下:
+```
+GRUB_CMDLINE_LINUX_DEFAULT="quiet splash reboot=cpi"
+```
+
+
+
 
