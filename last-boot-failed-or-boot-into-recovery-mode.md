@@ -8,5 +8,20 @@
 - **GRUB_RECORDFAIL_TIMEOUT=0**<br>
 即使啟動失敗，menu也不會顯示。
 
-- **GRUB_RECORDFAIL_TIMEOUT>=1**
+- **GRUB_RECORDFAIL_TIMEOUT>=1**<br>
 menu將會根據指定的秒數來顯示。
+
+更新完以後記得要執行一下『update-grub』，不然會沒作用阿。如果在有些狀況之下修改『GRUB_RECORDFAIL_TIMEOUT』這個變數沒作用的話，請直接修改檔案『/etc/grub.d/00_header』，將在function -『make_timeout』裡面的這個部份
+```
+if [ "\${recordfail}" = 1 ] ; then
+  set timeout=${GRUB_RECORDFAIL_TIMEOUT:-30}
+else
+```
+直接改成
+```
+if [ "\${recordfail}" = 1 ] ; then
+  set timeout=-1
+else
+```
+
+
