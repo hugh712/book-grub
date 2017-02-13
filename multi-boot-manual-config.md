@@ -35,27 +35,22 @@ GRUB2可以使用命令『kfreebsd』來啟動FreeBSD kernel，流程的話如�
 ```
 set root=(/dev/ad4,msdos1)
 ```
-
 2.讀取kernel 
 ```
 kfreebsd /boot/kernel/kernel
 ```
-
 3. 讀取 kernel boot information 
 ```
 kfreebsd_loadenv /boot/device.hints
 ```
-
 4. 設定 root裝置的路徑
 ```
 set kFreeBSD.vfs.root.mountfrom=ufs:/dev/ad4s1a
 ```
-
 5. 設定file-system的options
 ```
 vfs.root.mountfrom.options=rw
 ```
-
 6. 最後，以剛剛的kernel和root file-system啟動
 ```
 boot
