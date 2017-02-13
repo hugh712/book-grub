@@ -129,6 +129,16 @@ GRUB_TERMINAL_INPUT="console serial"
 	![](Imgs/Config/grub_submenu-examples.png)
 	(Picture from https://help.ubuntu.com/community/Grub2/Setup )
 	(之前舊版的叫做『Previous Linux versions』，但是後來GRUB2.0以後就變成『Advanced options...』)
+	
+	下面這四種表示法都可以:
+```
+	1. GRUB_DEFAULT="Previous Linux versions>Ubuntu, with Linux 3.2.0-18-generic-pae"
+	2. GRUB_DEFAULT="Previous Linux versions>0"
+	3. GRUB_DEFAULT="2>0"
+	4. GRUB_DEFAULT="2>Ubuntu, with Linux 3.2.0-18-generic-pae"
+```
+
+
 
 2. **GRUB_DEFAULT="xxxx"**
 給一個包含『" "』切確的標題名稱，用名稱的話，預設的位置就不用管了。舉例來說，如果你有個menu entry如下:
