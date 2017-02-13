@@ -15,7 +15,7 @@ menuentry "my Ubuntu 16.04" {
         initrd /initrd.img
 }
 ```
-2. 然後在將grub給安裝到目錄下，然後將以上的所有內容給建立救援映像檔：<br>
+然後在將grub給安裝到目錄下，然後將以上的所有內容給建立救援映像檔：<br>
 
 ```
 grub-mkrescue -o grub.iso iso
