@@ -138,6 +138,7 @@ GRUB_TERMINAL_INPUT="console serial"
 	4. GRUB_DEFAULT="2>Ubuntu, with Linux 3.2.0-18-generic-pae"
 ```
 
+如果你給『GRUB_DEFAULT』有誤的話，可能會造成GRUB2無法決定到底要以哪一個kernel開機，這時候GRUB2預設就會以第一個主要的entry，也就是最新的kerenl開機。
 
 
 2. **GRUB_DEFAULT="xxxx"**
