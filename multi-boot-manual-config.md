@@ -109,7 +109,7 @@ menuentry "NetBSD on sda1" {
 
 1.讀取Grub invaders
 ```
-multiboot /boot/invaders
+multiboot /boot/invaders/invaders
 ```
 2.啟動
 ```
