@@ -31,10 +31,14 @@
 * [Environment Variable](environment-variable.md)
 * [Commands-GRUB](commands.md)
 * [Commands-System](commands-system.md)
-* [Splash Image](splash-image.md)
+* [Display](splash-image.md)
 * [Platform Limitations](platform-limitations.md)
 * [Troubleshooting](troubleshooting.md)
   * [Last Boot Failed or Boot into Recovery Mode](last-boot-failed-or-boot-into-recovery-mode.md)
   * [Fixing reboot/shutdown freezes](fixing-rebootshutdown-freezes.md)
+  * [Fixing a Broken System](fixing-a-broken-system.md)
+  * Boot repair after a Windows Upgrade
+  * Moving GRUB 2
+  * Purging & Reinstalling GRUB 2
 * [Ref](ref.md)
 
