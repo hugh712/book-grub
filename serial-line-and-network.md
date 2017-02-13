@@ -29,8 +29,14 @@ GRUB_TERMINAL="console serial"
 將GRUB的menu給同時導入serial和console上，預設的話，serial console的數值是ttyS0, 9600 bit/s，傳輸速率8 data bits,1個stop bit和沒有parity。
 
 如果你想要修改其數值的話，底下有兩個例子:
-1. 9600 bit/s (baud) serial line with 8 data bits, 1 stop bit and no parity
+
+```
+1. Example 1 : 9600 bit/s (baud) serial line with 8 data bits, 1 stop bit and no parity
 GRUB_SERIAL_COMMAND="serial --unit=0 --speed=9600 --word=8 --parity=no --stop=1"
-2. 4800 bit/s (baud) serial line with 7 data bits, 1 stop bit and even parity:
+
+2. Example 2 :4800 bit/s (baud) serial line with 7 data bits, 1 stop bit and even parity:
 GRUB_SERIAL_COMMAND="serial --unit=0 --speed=4800 --word=7 --parity=even --stop=1"
+```
+
+
 
