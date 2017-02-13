@@ -133,4 +133,12 @@ menuentry "Yet another distro/installation/encrypted Ubuntu installation/..." {
 
 
 
+```
+GRUB_DISABLE_OS_PROBER=true
+```
+最後記得『update-grub』。
+
+
+
+
 
