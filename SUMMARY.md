@@ -12,7 +12,7 @@
   * [Config-Format](config-format.md)
   * [Multi-boot manual config](multi-boot-manual-config.md)
   * [Embedding a configuration file](embedding-a-configuration-file.md)
-  * CustomMenus
+  * [CustomMenus](custommenus.md)
   * [remove unnecessary kernel](remove-unnecessary-kernel.md)
 * [Installation](installation.md)
   * [Installing GRUB using grub-install](installing-grub-using-grub-install.md)
