@@ -56,6 +56,22 @@ vfs.root.mountfrom.options=rw
 boot
 ```
 
+如果想要使用自制的『grub.cfg』的話，可以拿下面這個例子來加在你的『/etc/grub.d/40_custom』裡面在加以修改:
+```
+menuentry "FreeBSD 8.0 direct" {
+        insmod ufs2
+        set root='(/dev/ad4,msdos1)'
+        search --no-floppy --fs-uuid --set 4c0029f407b3cd1d
+        kfreebsd /boot/kernel/kernel
+        kfreebsd_loadenv /boot/device.hints
+        kfreebsd_module /boot/splash.bmp type=splash_image_data
+        set kFreeBSD.vfs.root.mountfrom=ufs:ad4s1a
+}
+
+```
+
+
+
 ## NetBSD
 
 ## Generic Multi-Boot
