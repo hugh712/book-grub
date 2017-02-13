@@ -27,10 +27,10 @@ grub-mkrescue -o grub.iso iso
 然後直接按『F10』應該就沒問題可以直接開機了。
 
 
-FreeBSD
+## FreeBSD
 
-NetBSD
+## NetBSD
 
-Generic Multi-Boot
+## Generic Multi-Boot
 
-Chain Loading
+## Chain Loading
