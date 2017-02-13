@@ -1,9 +1,14 @@
 這章主要來講解一下在GRUB2裡面的『splash image』機制，也就是為GRUB2加一個背景圖片(非使用GRUB2 theme)。
 # Splash Images
 
+GRUB2的sample splash images都包含在grub2-splashimages套件裡面，要安裝的話可以用下面這個指令：
+```
 sudo apt-get install grub2-splashimages
+```
+一旦安裝完了以後，所有的影像檔都會在路徑『/usr/share/images/grub』底下。
 
-/usr/share/images/grub
+
+
 
 
 ## 影像限制
