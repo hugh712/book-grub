@@ -130,7 +130,7 @@ menuentry "Yet another distro/installation/encrypted Ubuntu installation/..." {
                configfile /boot/grub/grub.cfg 
 }
 ```
-
+上面這個例子，如果你的目標作業系統的『/boot』是在『/dev/sda5』的話，那那個X就會是5，
 
 
 ```
