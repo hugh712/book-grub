@@ -79,12 +79,6 @@ ls (hd0,1)
 set kFreeBSD.kern.cam.boot_delay="10000"
 ```
 
-
-
-
-
-
-
 ## NetBSD
 
 ## Generic Multi-Boot
