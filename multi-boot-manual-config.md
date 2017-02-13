@@ -104,10 +104,6 @@ menuentry "NetBSD on sda1" {
 }
 ```
 
-
-
-
-
 ## Generic Multi-Boot
 
 ## Chain Loading
