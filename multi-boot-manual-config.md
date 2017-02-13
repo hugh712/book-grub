@@ -116,6 +116,4 @@ multiboot /boot/invaders
 boot
 ```
 
-
-
 ## Chain Loading
