@@ -31,7 +31,7 @@ grub-mkrescue -o grub.iso iso
 GRUB2可以使用命令『kfreebsd』來啟動FreeBSD kernel，流程的話如下:
 
 
-1.設定FreeBSD kernel所在的partition: 
+1.設定FreeBSD kernel所在的partition
 ```
 set root=(/dev/ad4,msdos1)
 ```
@@ -82,23 +82,26 @@ set kFreeBSD.kern.cam.boot_delay="10000"
 ## NetBSD
 GRUB2可以使用命令『knetbsd 』來啟動NetBSD kernel，流程的話如下:
 
-1.
+1.設定NetBSD kernel所在的partition，如果你的NetBSD是安裝在第一個disk的第一個partition的話
 ```
 set root=(hd0,msdos1)
 ```
-
-
-
-2. 
+2.讀取kernel並且指定root裝置的路徑
 ```
 knetbsd /netbsd --root=wd0a
 ```
-
-
-
 3.啟動kernel
 ```
 boot
+```
+
+一樣，如果想要使用自制的『grub.cfg』的話，可以拿下面這個例子來加在你的『/etc/grub.d/40_custom』裡面在加以修改:
+```
+menuentry "NetBSD on sda1" {
+        insmod ufs2
+        set root=(hd0,msdos1)
+        knetbsd /netbsd --root=wd0a
+}
 ```
 
 
