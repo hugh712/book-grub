@@ -132,8 +132,7 @@ menuentry "Yet another distro/installation/encrypted Ubuntu installation/..." {
 ```
 上面這個例子，如果你的目標作業系統的『/boot』是在『/dev/sda5』的話，那那個X就會是5，並且使用『configfile』來切換會比使用『multiboot』來的好，因為在Ubuntu 12.04時，multiboot通常會指到『/boot/grub/core.img』，但是在14.04以後『core.img』的位置換到了『/boot/grub/i386-pc/core.img』，所以如果使用multiboot時，系統會有可能混亂。
 
-在修改好你的客製化menu以後，接下來下一步就是將『os_prober』關掉，並且更新組態:
-
+在修改好你的客製化menu以後，接下來下一步就是在檔案『』裡面將『os_prober』關掉，並且更新組態:
 
 ```
 GRUB_DISABLE_OS_PROBER=true
