@@ -32,7 +32,7 @@
 * [Commands-System](commands-system.md)
 * [Splash Image](splash-image.md)
 * [Platform Limitations](platform-limitations.md)
-* Troubleshooting
+* [Troubleshooting](troubleshooting.md)
   * [Last Boot Failed or Boot into Recovery Mode](last-boot-failed-or-boot-into-recovery-mode.md)
 * [Ref](ref.md)
 
