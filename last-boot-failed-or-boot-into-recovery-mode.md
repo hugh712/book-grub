@@ -27,6 +27,5 @@ else
 ```
 然後更新完以後記得要執行一下『update-grub』。
 
-更新完上面的部分以後，似乎會造成進入『text graphics mode』，所以還需要額外的修改『/etc/grub.d/10_linux』，將
 
 
