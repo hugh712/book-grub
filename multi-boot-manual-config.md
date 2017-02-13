@@ -80,6 +80,30 @@ set kFreeBSD.kern.cam.boot_delay="10000"
 ```
 
 ## NetBSD
+GRUB2可以使用命令『knetbsd 』來啟動NetBSD kernel，流程的話如下:
+
+1.
+```
+set root=(hd0,msdos1)
+```
+
+
+
+2. 
+```
+knetbsd /netbsd --root=wd0a
+```
+
+
+
+3.啟動kernel
+```
+boot
+```
+
+
+
+
 
 ## Generic Multi-Boot
 
