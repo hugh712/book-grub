@@ -33,22 +33,11 @@ sudo apt-get update
 sudo apt-get install -y boot-repair && boot-repair
 ```
 
-
-
 ## 使用 Boot-Repair
 1.	啟動Boot-Repair，可使用『Dash』啟動或是直接CMD輸入『boot-repair』。
 2.	直接按『Recommended repair』按鈕，系統就會開始幫你處理。
 3.	修復完之後，如果有出現一個URL像是『paste.ubuntu.com/XXXXX』，記得先將其記起來，然後重開機，看是否已經解決問題了。
 4.	如果還是不能開機，就將上面的URL給論壇或是mail-list上的人，他們也許會幫助你。
-
-
-
-
-
-
-
-
-
 
 # via GRUB2 Rescue mode
 
