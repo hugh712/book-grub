@@ -116,6 +116,27 @@ sudo mount /dev/sdXY /mnt/boot
 #Example 1: sudo mount /dev/sdb6 /mnt/boot
 #Example 2: sudo mount /dev/md0 /mnt/boot
 ```
+9.配合剛剛第3步，如果你的系統partition是software RAID的話，確定底下這一行指令的輸出是在檔案『/etc/mdadm/mdadm.conf』的array定義。
+```
+mdadm --examine --scan
+```
+10.使用底下的指令來掛載『critical virtual filesystems』：
+```
+for i in /dev /dev/pts /proc /sys /run; do sudo mount -B $i /mnt$i; done
+```
+11.chroot到你的normal system device
+```
+sudo chroot /mnt
+```
+12.
+```
+grub-install /dev/sdX
+```
+
+
+
+
+
 
 
 
