@@ -27,7 +27,6 @@
 * [Serial Line and Network](serial-line-and-network.md)
 * [Image files](image-files.md)
 * [Authentication and authorisation](authentication-and-authorisation.md)
-* [User Interface](user-interface.md)
 * [Environment Variable](environment-variable.md)
 * [Commands-GRUB](commands.md)
 * [Commands-System](commands-system.md)
