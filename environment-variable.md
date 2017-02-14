@@ -34,6 +34,10 @@ GRUB裡面的環境變數(environment variables)，就像是Unix-like系統一�
   - yellow
   - white	  	
 
+這邊要特別注意一件事情，如果你有使用『splash images』的話，則第二個顏色如果是black的話，像是『white/**black**』的這個black就會是透明的，不然會擋住背景影像。
+
+
+
 ## default	  	
   這個變數如果有被設定的話，代表有預設的menu entry，通常是在某個timeout以後就會進入這個menu entry裡面，這個menu entry有可能是一個數字或是一串文字。這個變數通常都會經過『GRUB_DEFAULT』，『grub-set-default』或是『grub-reboot』來設定。
   
