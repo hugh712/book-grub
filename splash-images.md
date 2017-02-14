@@ -31,5 +31,5 @@ if [ -z "${2}" ] && [ -z "${3}" ]; then
     echo "    set color_normal=color1/black"
 fi
 ```
-
+3. 儲存後執行『update-grub』。
 
