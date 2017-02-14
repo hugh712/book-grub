@@ -50,13 +50,13 @@ sudo apt-get install -y boot-repair && boot-repair
 
 
 
-## via GRUB2 Rescue mode
+# via GRUB2 Rescue mode
 
 
-## via the LiveCD terminal
+# via the LiveCD terminal
 
 
-## via Partition Files Copy
+# via Partition Files Copy
 
 
-## via ChRoot
+# via ChRoot
