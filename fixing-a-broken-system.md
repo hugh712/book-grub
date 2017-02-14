@@ -43,9 +43,9 @@ sudo apt-get install -y boot-repair && boot-repair
 GRUB2裡面提供了救援模式，在這個模式底下允許使用者在開機時使用特別的GRUB terminal來修復GRUB2，這部份的建立和使用請參考章節『Making a GRUB bootable CD-ROM』。
 
 # via the LiveCD terminal
-這個方式主要是利用LiveCD的terminal來修復，所以使用者必須知道他的裝安裝系統的置名稱和partition，然後在從LiveCD上面去掛載。然後GRUB的檔案在從LiveCD上的檔案給複製到適當的位置或是MBR上面去。
+這個方式主要是利用LiveCD的terminal來修復，所以使用者必須知道他的安裝系統的裝置名稱和partition，然後在從LiveCD上面去掛載。然後GRUB的檔案會在從LiveCD上給複製到適當的位置或是MBR上面去。
 
-這個操作將會將資料給寫到MBR上並且回復所有的modules和core.img到『/boot/grub』裡面，但是並不會置換『grub.cfg』和損壞的檔案。
+這個操作將會將資料給寫到MBR上並且回復所有的modules和core.img到『/boot/grub』裡面，但是並不會置換『grub.cfg』和損壞的檔案，如果想要完全刪除不需要的檔案的話，則GRUB就需要整個被重新安裝。
 
 當你選擇要用LiveCD時，建議最好使用跟你Ubuntu版本一樣的LiveCD，因為GRUB在每個Ubuntu 發佈時的版本都會不一樣。
  
