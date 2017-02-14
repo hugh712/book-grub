@@ -128,10 +128,23 @@ for i in /dev /dev/pts /proc /sys /run; do sudo mount -B $i /mnt$i; done
 ```
 sudo chroot /mnt
 ```
-12.
+12.重新安裝GRUB2
 ```
 grub-install /dev/sdX
 ```
+13.重新建立GRUB2 menu組態
+```
+update-grub
+```
+14.按『CTRL-D』離開chroot。
+15.重新開機
+```
+sudo reboot
+```
+
+
+
+
 
 
 
