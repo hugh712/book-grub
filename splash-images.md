@@ -13,3 +13,23 @@
 1. 請重新檢查一下檔案的優先權。
 2. 重新執行『update-grub』並檢查輸出訊息，看是否有誤。
 3. 請在檢查一下你的字體的背景顏色，必須為透明的(也就是要是black)。
+
+
+之前的章節有提到，如果你有使用『splash images』的話，你的字體背景色必須是黑色，否則會擋到影像，但是如果每一次都這樣改蠻麻煩的，Ubuntu的手冊上提供了一個方法如下可以比較有彈性：
+
+1. 編輯『/etc/grub.d/05_debian_theme』，找到底下這幾段：
+```
+if [ -z "${2}" ] && [ -z "${3}" ]; then
+    echo "  true"
+fi
+```
+2. 將其改成
+```
+if [ -z "${2}" ] && [ -z "${3}" ]; then
+    # echo "  true"
+    echo "    set color_highlight=color1/color2"
+    echo "    set color_normal=color1/black"
+fi
+```
+
+
