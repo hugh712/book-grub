@@ -43,6 +43,29 @@ sudo apt-get install -y boot-repair && boot-repair
 GRUB2裡面提供了救援模式，在這個模式底下允許使用者在開機時使用特別的GRUB terminal來修復GRUB2，這部份的建立和使用請參考章節『Making a GRUB bootable CD-ROM』。
 
 # via the LiveCD terminal
+這個方式主要是利用LiveCD的terminal來修復，所以使用者必須知道他的裝安裝系統的置名稱和partition，然後在從LiveCD上面去掛載。然後GRUB的檔案在從LiveCD上的檔案給複製到適當的位置或是MBR上面去。
+
+這個操作將會將資料給寫到MBR上並且回復所有的modules和core.img到『/boot/grub』裡面，但是並不會置換『grub.cfg』和損壞的檔案。
+
+當你選擇要用LiveCD時，建議最好使用跟你Ubuntu版本一樣的LiveCD，因為GRUB在每個Ubuntu 發佈時的版本都會不一樣。
+ 
+如果你不確定你的Ubuntu是安裝到哪個partition的話，可以使用『fdisk』來看，或者是使用『blkid』來看也可以，『blkid』的強項就是看有『label』的partition，就看你的需求是什麼摟。
+
+然後使用底下兩個指令來掛載相關的裝置，然後在將新的GRUB給安裝到使裝置上：
+sudo mount /dev/sdXY /mnt # Example: sudo mount /dev/sda5 /mnt
+sudo grub-install --boot-directory=/mnt/boot /dev/sdX # Example: sudo grub-install --boot-directory=/mnt/boot /dev/sda
+
+在上面的兩個指令中，須注意底下的細節：
+1.	在命令『mount』的後面的參數，請用安裝Ubuntu的partition number。
+2.	在使用命令『grub-install』後面的參數請勿使用partition number。
+3.	『X』代表的是磁碟代號，而『Y』代表的是partition number。
+4.	『--boot-directory』代表的是GRUB所在的路徑，通常是『/boot』，但是如果你的GRUB不是在這個路徑的話請自行指定。
+5.	如果你的GRUB是在不同的『/boot』partition，則這個partition就應該被掛載到『/mnt/boot』上。
+
+
+如果你的Ubuntu是安裝在B-tree的file system上，像是btrfs之類的，則請將『/boot』改成『/@/boot』如下：
+sudo grub-install --boot-directory=/mnt/@/boot /dev/sdX # Example: sudo grub-install --boot-directory=/mnt/@/boot /dev/sda
+
 
 
 # via Partition Files Copy
