@@ -37,5 +37,10 @@ sudo update-grub
 第二種方法是將相關的影像給複製到GRUB資料夾底下，預設的話是『/boot/grub』，如果這個資料夾底下有許多適合的影像的話，GRUB選擇的優先權為:
 1. 第一個在『/boot/grub』裡面找到的影像，檔案格式的順序為『jpg, JPG, jpeg, JPEG, png, PNG, tga, TGA』。
 2. 如果有多張影像為相同格式/副檔名的話，就會用字母排序。
+3. 更新『grub.cfg』:
+```
+sudo update-grub
+```
+
 
 
