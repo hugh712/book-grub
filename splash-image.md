@@ -21,9 +21,21 @@ GRUB2背景影像可以使用PNG，JPG/JPEG和TGA格式的影像，除了影像�
 
 兩種方式可以加入相關的splash image，第一種是修改GRUB2的組態檔，第二種則是將相關的影像給複製到grub資料夾底下。
 
-方法一
+### 方法一
+1. 編輯檔案『/etc/default/grub』，加入這一行:
+```
+GRUB_BACKGROUND=/path/filename 
+eg. 
+GRUB_BACKGROUND="~/Pictures/grubbackround.png"
+```
+2. 更新『grub.cfg』:
+```
+sudo update-grub
+```
 
-方法二
+
+
+### 方法二
 
 
 
