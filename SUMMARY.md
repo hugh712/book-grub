@@ -31,6 +31,7 @@
 * [Commands-GRUB](commands.md)
 * [Commands-System](commands-system.md)
 * [splash images](splash-image.md)
+* [Fixing a Broken System](fixing-a-broken-system.md)
 * [Platform Limitations](platform-limitations.md)
 * [Troubleshooting](troubleshooting.md)
   * [Last Boot Failed or Boot into Recovery Mode](last-boot-failed-or-boot-into-recovery-mode.md)
