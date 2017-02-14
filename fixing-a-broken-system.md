@@ -70,11 +70,46 @@ sudo grub-install --boot-directory=/mnt/boot /dev/sdX # Example: sudo grub-insta
 sudo grub-install --boot-directory=/mnt/@/boot /dev/sdX # Example: sudo grub-install --boot-directory=/mnt/@/boot /dev/sda
 ```
 
-
-
-
-
 # via Partition Files Copy
 
 
 # via ChRoot
+這個方式主要是透過命令『chroot』來存取損壞系統的檔案，如果『chroot』執行成功了，則系統/LiveCD就會把損壞系統的『/』當成自己的，然後在『chroot』改動到的環境都是損壞系統的，而不是LiveCD的。使用這個方式可以在其他的Ubuntu系統上將損壞系統的硬碟掛載起來或是使用LiveCD，底下的流程則是用LiveCD的案例來講：
+
+1.	啟動到LiveCD的桌面，LiveCD的位元和損壞的系統位元要一致，32bits 就是對應32bits，64bits則對應64bits。
+2.	開啟terminal。
+3.	如果你的系統partitoin是在software RAID上的話，先確定tool -『mdadm』已經安裝在LiveCD的環境上：
+```
+sudo apt-get install mdadm
+```
+然後執行底下命令來重組array:
+```
+sudo mdadm --assemble --scan
+```
+4.如果使用LVM的話：
+```
+sudo sh -ec "apt-get install lvm2; vgchange -ay"
+```
+5.	如果使用bcache:
+```
+sudo sh -ec "apt-get install software-properties-common; 
+add-apt-repository ppa:g2p/storage; 
+apt-get update; 
+apt-get install bcache-tools"
+```
+6.	決定你的系統partition，像之前講過的例子，可以使用下面的命令來查看：
+```
+sudo fdisk -l
+sudo blkid
+df -Th
+```
+7.	掛載你的系統partition，一樣，『X』是你的磁碟代號，『Y』是partition number。記得要修改成正確的partition。
+```
+sudo mount /dev/sdXY /mnt
+#eg.
+#Example 1: sudo mount /dev/sda1 /mnt
+#Example 2: sudo mount /dev/md1 /mnt
+```
+
+
+
