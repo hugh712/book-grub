@@ -52,8 +52,10 @@ GRUB2裡面提供了救援模式，在這個模式底下允許使用者在開機
 如果你不確定你的Ubuntu是安裝到哪個partition的話，可以使用『fdisk』來看，或者是使用『blkid』來看也可以，『blkid』的強項就是看有『label』的partition，就看你的需求是什麼摟。
 
 然後使用底下兩個指令來掛載相關的裝置，然後在將新的GRUB給安裝到使裝置上：
+```
 sudo mount /dev/sdXY /mnt # Example: sudo mount /dev/sda5 /mnt
 sudo grub-install --boot-directory=/mnt/boot /dev/sdX # Example: sudo grub-install --boot-directory=/mnt/boot /dev/sda
+```
 
 在上面的兩個指令中，須注意底下的細節：
 1.	在命令『mount』的後面的參數，請用安裝Ubuntu的partition number。
@@ -64,7 +66,11 @@ sudo grub-install --boot-directory=/mnt/boot /dev/sdX # Example: sudo grub-insta
 
 
 如果你的Ubuntu是安裝在B-tree的file system上，像是btrfs之類的，則請將『/boot』改成『/@/boot』如下：
+```
 sudo grub-install --boot-directory=/mnt/@/boot /dev/sdX # Example: sudo grub-install --boot-directory=/mnt/@/boot /dev/sda
+```
+
+
 
 
 
