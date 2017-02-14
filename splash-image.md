@@ -47,3 +47,4 @@ sudo update-grub
 然後重新開機後，沒意外的話就會出現相關影像了:
 ![](Imgs/display/display002.PNG)
 
+

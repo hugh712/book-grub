@@ -40,5 +40,6 @@
   * Boot repair after a Windows Upgrade
   * Moving GRUB 2
   * Purging & Reinstalling GRUB 2
+  * [Splash Images](splash-images.md)
 * [Ref](ref.md)
 
