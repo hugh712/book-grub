@@ -90,20 +90,20 @@ sudo mdadm --assemble --scan
 ```
 sudo sh -ec "apt-get install lvm2; vgchange -ay"
 ```
-5.	如果使用bcache:
+5.如果使用bcache:
 ```
 sudo sh -ec "apt-get install software-properties-common; 
 add-apt-repository ppa:g2p/storage; 
 apt-get update; 
 apt-get install bcache-tools"
 ```
-6.	決定你的系統partition，像之前講過的例子，可以使用下面的命令來查看：
+6.決定你的系統partition，像之前講過的例子，可以使用下面的命令來查看：
 ```
 sudo fdisk -l
 sudo blkid
 df -Th
 ```
-7.	掛載你的系統partition，一樣，『X』是你的磁碟代號，『Y』是partition number。記得要修改成正確的partition。
+7.掛載你的系統partition，一樣，『X』是你的磁碟代號，『Y』是partition number。記得要修改成正確的partition。
 ```
 sudo mount /dev/sdXY /mnt
 #eg.
