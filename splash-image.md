@@ -41,6 +41,7 @@ sudo update-grub
 ```
 sudo update-grub
 ```
-
+如果在『update-grup』時有找到相關影像的話，就會出現底下的訊息，但是這邊注意的是，它有抓到影像訊息，不代表這章影像可以用，請注意上面提到過的限制。
+![](Imgs/display/display001.PNG)
 
 
