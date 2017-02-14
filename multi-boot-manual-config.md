@@ -151,7 +151,6 @@ GRUB_DISABLE_OS_PROBER=true
 ## Others
 底下在多三個Ubuntu官方給的案例當參考:
 
-A sample entry for a hard drive version of SystemRescueCD installed per the instructions on the web site (on sda8).
 1. 第一個為硬碟(sda8上)版本的系統救援CD
 ```
 menuentry "System Rescue CD" {
