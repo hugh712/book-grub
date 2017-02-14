@@ -31,7 +31,7 @@
 * [Environment Variable](environment-variable.md)
 * [Commands-GRUB](commands.md)
 * [Commands-System](commands-system.md)
-* [Display](splash-image.md)
+* [splash images](splash-image.md)
 * [Platform Limitations](platform-limitations.md)
 * [Troubleshooting](troubleshooting.md)
   * [Last Boot Failed or Boot into Recovery Mode](last-boot-failed-or-boot-into-recovery-mode.md)
