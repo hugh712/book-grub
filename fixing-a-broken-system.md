@@ -110,6 +110,12 @@ sudo mount /dev/sdXY /mnt
 #Example 1: sudo mount /dev/sda1 /mnt
 #Example 2: sudo mount /dev/md1 /mnt
 ```
+8.如果你有個別分開的『boot』partition，XY就如同上面說過得：
+```
+sudo mount /dev/sdXY /mnt/boot
+#Example 1: sudo mount /dev/sdb6 /mnt/boot
+#Example 2: sudo mount /dev/md0 /mnt/boot
+```
 
 
 
