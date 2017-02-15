@@ -1,1 +1,1 @@
-# 
+# GRUB2 基本console操作概念
