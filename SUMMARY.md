@@ -39,7 +39,7 @@
   * [Fixing a Broken System](fixing-a-broken-system.md)
   * Boot repair after a Windows Upgrade
   * Moving GRUB 2
-  * Purging & Reinstalling GRUB 2
+  * [Purging & Reinstalling GRUB 2](purging-and-reinstalling-grub-2.md)
   * [Splash Images](splash-images.md)
 * [Ref](ref.md)
 
