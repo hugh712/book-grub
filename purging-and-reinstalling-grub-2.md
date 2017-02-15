@@ -6,6 +6,7 @@
 
 ## via Boot-Repair Graphical Tool
 之前的章節有介紹過『Boot-Repair』這套工具，首先當然是一樣先執行它，然後直接選擇『Advanced options』->『GRUB options』->『Purge GRUB and reinstall it』，然後按Apply就好了(我這個版本一開始就已經預設是這個選項)。
+
 ![](Imgs/trouble/trouble001.PNG)
 
 ## via Terminal Commands
