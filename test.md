@@ -15,7 +15,7 @@
 |ls (hdX,Y)|檢查partition的資訊，像是格式，大小，UUID等等。|
 |ls (hdX,Y)/|檢查這個partition的root內容。|
 |ls (hdX,Y)/boot/|列出資料夾『/boot』裡面的檔案內容，正常來講裡面應該有kernel和initrd的images。|
-|ls (hdX,Y)/boot/grub/|列出資料夾『/boot/grub』裡面的內容|
+|ls (hdX,Y)/boot/grub/|列出資料夾『/boot/grub』裡面的內容。|
 |||
 |||
 |||
