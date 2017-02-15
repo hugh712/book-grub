@@ -34,11 +34,12 @@
 * [Platform Limitations](platform-limitations.md)
 * [Troubleshooting](troubleshooting.md)
   * [Last Boot Failed or Boot into Recovery Mode](last-boot-failed-or-boot-into-recovery-mode.md)
+  * boot\_console\_mode
   * [Fixing reboot/shutdown freezes](fixing-rebootshutdown-freezes.md)
   * [Fixing a Broken System](fixing-a-broken-system.md)
   * Boot repair after a Windows Upgrade
   * Moving GRUB 2
-  * [Purging & Reinstalling GRUB 2](purging-and-reinstalling-grub-2.md)
   * [Splash Images](splash-images.md)
+  * [Purging & Reinstalling GRUB 2](purging-and-reinstalling-grub-2.md)
 * [Ref](ref.md)
 
