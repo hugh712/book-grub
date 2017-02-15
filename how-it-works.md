@@ -18,14 +18,14 @@
 另外如果進入『normal mode』失敗的話，就會直接進入『rescue mode(救援模式)』，原因有可能是你的『prefix』是錯的，裝置順序錯誤，甚至也有可能是你的GRUB安裝不正確...等等。
 
 GRUB2有幾種你可以操控的介面模式(這是我自己分類的，非術語)，大概整理如下：
-**1.Menu mode**
+**1.menu mode**
 就是一般大家看到的開機選單，這個模式之下你可以進入『prompt mode
 』，也可以直接修改你的menu然後用新的組態開機。
 **2.prompt mode**
 可以說是『console mode』，是一個GRUB2的文字互動介面，可以由『menu mode』按『c』主動進入這個模式，也有可能是GRUB開機出問題，所以進入這個模式。
 **3.rescue mode**
 在你的GRUB2系統上的一個預設環境，你可以在這個救援模式底下用文字互動介面來修復你的系統。
-**4.System command**
+**4.system command**
 通常是在作業系統底下輔助GRUB2的命令。
 
 
