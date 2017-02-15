@@ -16,7 +16,13 @@
 |ls (hdX,Y)/|檢查這個partition的root內容。|
 |ls (hdX,Y)/boot/|列出資料夾『/boot』裡面的檔案內容，正常來講裡面應該有kernel和initrd的images。|
 |ls (hdX,Y)/boot/grub/|列出資料夾『/boot/grub』裡面的內容。|
-|||
-|||
-|||
-|||
+
+
+|檔案名稱|預設路徑|
+|:--|:--|
+|grub.cfg|(hdX,Y)/boot/grub/ 或是 /boot/grub/|
+|vmlinuz|(hdX,Y)/ 或是 /|
+|linux-3.2.0-14*|(hdX,Y)/boot/ 或是 /boot/|
+|initrd|(hdX,Y)/ 或是 /|
+|initrd.img-3.20-14|(hdX,Y)/ 或是 /boot/|
+
