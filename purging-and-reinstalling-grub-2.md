@@ -10,3 +10,29 @@
 ![](Imgs/trouble/trouble001.PNG)
 
 ## via Terminal Commands
+接下來這步驟，不管是在正在運作的Ubuntu或是使用LiveCD來『chroot』都是差不多的，步驟如下：
+
+1.如果你是使用LiveCD的話，請按照『Fixing a Broken System』章節的『chroot』，將你的環境給切到『chroot』底下。
+2.假設你已經在『chroot』的環境裡面了，請確保你有網路存取，否則就可以停止了，並且底下的指令都要以『root』來執行。
+3. 更新apt的資料庫
+```
+apt-get update
+```
+4. 底下的指令會完全的移除『grub-pc』和『grub-common』，並且在GRUB 1.99以後會自動移除『grub-gfxpayload-lists』。
+```
+apt-get purge grub-common
+```
+5.重新安裝GRUB
+```
+apt-get install grub-pc
+```
+6. 安裝完畢，如果你是用『chroot』環境的話，可以使用『CTRL-D』離開環境。
+7.重新開機
+```
+reboot
+```
+
+
+
+
+
