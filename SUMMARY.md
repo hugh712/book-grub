@@ -6,7 +6,6 @@
   * [Feature](feature.md)
   * [Prerequisite](prerequisite.md)
 * [How it works](how-it-works.md)
-  * [mode](how-it-works/mode.md)
 * [Obtaining GRUB](obtaining-grub.md)
 * [Naming convention](naming-convention.md)
 * [Configuration files](configuration-files.md)
