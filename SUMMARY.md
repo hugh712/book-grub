@@ -8,8 +8,7 @@
 * [How it works](how-it-works.md)
 * [Obtaining GRUB](obtaining-grub.md)
 * [Naming convention](naming-convention.md)
-  * test
-* [Search & Set](search-and-set.md)
+  * [test](test.md)
 * [Configuration files](configuration-files.md)
   * [Config-Format](config-format.md)
   * [Multi-boot manual config](multi-boot-manual-config.md)
