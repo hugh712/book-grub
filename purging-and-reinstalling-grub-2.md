@@ -5,6 +5,7 @@
 因為這項操作會讓你暫時沒有bootloader，所以請再三確保你在刪除GRUB套件之前你是可以存取網路，並且可以存取相關的repo。想要完全刪除GRUB並且重新安裝的話有兩種方式 - 『Boot-Repair』和『Terminal』，底下有詳細說明。
 
 ## via Boot-Repair Graphical Tool
-之前的章節有介紹過『Boot-Repair』這套工具，首先當然是一樣先執行它，然後直接選擇『Advanced options』->『GRUB options』->『Purge GRUB and reinstall it』，然後按Apply就好了。
+之前的章節有介紹過『Boot-Repair』這套工具，首先當然是一樣先執行它，然後直接選擇『Advanced options』->『GRUB options』->『Purge GRUB and reinstall it』，然後按Apply就好了(我這個版本一開始就已經預設是這個選項)。
+![](Imgs/trouble/trouble001.PNG)
 
 ## via Terminal Commands
