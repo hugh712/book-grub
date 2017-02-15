@@ -17,6 +17,7 @@
 |ls (hdX,Y)/boot/|列出資料夾『/boot』裡面的檔案內容，正常來講裡面應該有kernel和initrd的images。|
 |ls (hdX,Y)/boot/grub/|列出資料夾『/boot/grub』裡面的內容。|
 
+底下列出幾個重要檔案的預設路徑：
 
 |檔案名稱|預設路徑|
 |:--|:--|
@@ -26,3 +27,13 @@
 |initrd|(hdX,Y)/ 或是 /|
 |initrd.img-3.20-14|(hdX,Y)/ 或是 /boot/|
 
+像上面說過得，有四個設定一定要正確才能開機，底下列出相關的例子：
+
+|任務|命令||
+|:--|:--|:--|
+|設定prefix|set prefix=(hdX,Y)/boot/grub|設定grub的路徑|
+|設定root|set root=(hdX,Y)||
+|設定kernel|linux /vmlinuz root=/dev/sda1 ro|如果在『/』有kernel image的捷徑在的話|
+|設定kernel|linux (hdX,Y)/boot/vmlinuz-3.0.2-14 root=/dev/sda1 ro|用絕對路徑設定kernel|
+|設定initrd image|initrd /initrd.img|如果在『/』有initrd image的捷徑在的話|
+|設定initrd image|initrd (hdX,Y)/boot/initrd.img-3.0.2-14|用絕對路徑設定initrd|
