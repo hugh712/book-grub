@@ -37,7 +37,7 @@ apt-get install grub-pc
 reboot
 ```
 
-一旦你修復你的GRUB，可以開機到作業系統後，可以在由下面兩個指令來更新一下你的組態，並且檢查一下你bootloader的位置：
+8.一旦你修復你的GRUB，可以開機到作業系統後，可以在由下面兩個指令來更新一下你的組態，並且檢查一下你bootloader的位置：
 ```
 sudo update-grub
 grub-probe -t device /boot/grub
