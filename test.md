@@ -10,13 +10,13 @@
 
 |命令|用途|
 |:--|:--|
-|ls||
-|ls /||
-|ls (hdX,Y)||
-|ls (hdX,Y)/||
+|ls|搜尋整個PC的裝置和partitions。|
+|ls /|搜尋root裝置的root資料夾，如果你有正確設定你的『root』的話。|
+|ls (hdX,Y)|檢查partition的資訊，像是格式，大小，UUID等等。|
+|ls (hdX,Y)/|檢查這個partition的root內容。|
 |ls (hdX,Y)/boot/||
 |ls (hdX,Y)/boot/||
-|||
+|ls (hdX,Y)/boot/grub/||
 |||
 |||
 |||
