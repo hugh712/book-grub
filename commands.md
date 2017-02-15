@@ -88,7 +88,8 @@ Command: submenu title [--class=class …] [--users=users] [--unrestricted] [--h
 * sendkey          
 * set          
 * true          
-* unset          
+* unset        
+* vbeinfo  
 
 ## serial
 
@@ -752,3 +753,4 @@ Command: unset envvar
 
 unset 特定的環境變數。
 
+## vbeinfo
