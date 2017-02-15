@@ -22,6 +22,7 @@
   * [General boot methods](general-boot-methods.md)
   * [Loopback booting](loopback-booting.md)
   * [OS-specific notes](os-specific-notes.md)
+  * [Search & Set](search-and-set.md)
 * [Themes](themes.md)
 * [Serial Line and Network](serial-line-and-network.md)
 * [Image files](image-files.md)
