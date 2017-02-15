@@ -14,7 +14,7 @@
 
 1.如果你是使用LiveCD的話，請按照『Fixing a Broken System』章節的『chroot』，將你的環境給切到『chroot』底下。
 2.假設你已經在『chroot』的環境裡面了，請確保你有網路存取，否則就可以停止了，並且底下的指令都要以『root』來執行。
-3.更新apt的資料庫
+3.更新apt的資料庫。
 ```
 apt-get update
 ```
@@ -22,12 +22,12 @@ apt-get update
 ```
 apt-get purge grub-common
 ```
-5.重新安裝GRUB
+5.重新安裝GRUB。
 ```
 apt-get install grub-pc
 ```
 6.安裝完畢，如果你是用『chroot』環境的話，可以使用『CTRL-D』離開環境。
-7.重新開機
+7.重新開機。
 ```
 reboot
 ```
