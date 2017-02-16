@@ -41,7 +41,7 @@ GRUB2是修改GRUB Legacy而成的，主要的差異如下:
 * <span>在Ubuntu 9.10或是之後的版本，如果沒有其它的作業系統的話，預設GRUB2將會直接開機到桌面系統或是你的login shell，中間將不會顯示任何的menu。要在開機時按住右邊的『SHIFT』鍵或是『ESC』鍵才會顯示menu。</span>
 
 # 其他差異
-如同上面所描述的，Stage 1, Stage 1.5 和 Stage 2已經不存在了，因為GRUB2本來就和舊版的設計不一樣，底下列出一些舊版GRUB使用者會很常問的相關差異:
+如同上面所描述的，『Stage 1』,『Stage 1.5』和『Stage 2』已經不存在了，因為GRUB2本來就和舊版的設計不一樣，底下列出一些舊版GRUB使用者會很常問的相關差異:
 
 ## stage1
 舊版的stage 1到GRUB2以後就變成『boot.img』，它們有相同功能。
