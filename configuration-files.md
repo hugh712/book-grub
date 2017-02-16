@@ -85,8 +85,7 @@ sudo dmraid -r -c
 
 『grub-mkconfig』所產生的『grub.cfg』適用在很多的case，通常都是當你所用的distro(發行板) upgrade時，系統會自動的幫你抓到最新的kernel並且自動產生『menu entry』。
 
-檔案『/etc/default/grub』控制了『grub-mkconfig』的功能，這個檔案會由Shell Script所套用，所以記得必須遵守POSIX的Shell input，裡面的值都只是一堆的『KEY=value』，如果值有空白字元或是其它的特殊字元的話，則必須用引號『""』來處理，像是:
-
+檔案『/etc/default/grub』控制了『grub-mkconfig』的功能，這個檔案會由Shell Script所套用，所以記得必須遵守POSIX的Shell input，裡面的值格式就是一堆的『KEY=value』，如果值有空白字元或是其它的特殊字元的話，則必須用引號『""』來處理，像是:
 ```
 GRUB_TERMINAL_INPUT="console serial"
 ```
