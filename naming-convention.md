@@ -5,6 +5,7 @@ GRUB上的裝置名稱有它的特殊語法，所以使用GRUB第一件事，就
 (device[,partmap-name1part-num1[,partmap-name2part-num2[,...]]])
 ```
 
+其他裝置名稱的規則描述如下：
 - BIOS和EFI使用『fd』或是『hd』然後後面在加一個數字，像是『fd0』。
 - AHCI, PATA (ata), crypto和USB使用driver的名稱在加一個編號。
 - Memdisk和host則是被限制只能有一個disk，所以只會有一個driver名稱。
