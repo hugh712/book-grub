@@ -10,6 +10,7 @@ Copyright \(C\)  2017 Hugh Chao.
   Permission is granted to copy, distribute and/or modify this document under the terms of the GNU Free Documentation License, Version 1.2 or any later version published by the Free Software Foundation;  
   with no Invariant Sections, no Front-Cover Texts, and no Back-Cover Texts.  A copy of the license is included in the section entitled \`\`GNUFree Documentation License''.
 
+# Note
 * 有些專有名詞我會盡量保持英文。
 * 因為這篇文章整合了兩個官方文件，我會盡量將Ubuntu相依的用藍色字體區分出來，通常有提到Ubuntu的部份都會在GRUB 版本1.99以後。
 
