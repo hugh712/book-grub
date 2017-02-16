@@ -27,92 +27,54 @@ GRUB2的主要設計是兼容於『[Multiboot Specification](https://www.gnu.org
 支援圖形化選單介面，可列出所有目前的boot指令。
 
 ## 提供一個相當有彈性的command-line介面
-提供一個相當有彈性的command-line(命令列)介面，可以從menu那邊存取，也可以編輯任何的命令，又或者是你想要編輯一個全新的boot command set，如果沒有組態的話，GRUB2會直接進入command-line裡面。而GRUB2的command-line支援使用tab-completion，可以根據內容來列出裝置，partitions和檔案。
+提供一個相當有彈性的command-line(命令列)介面，如果沒有組態的話，GRUB2會直接進入command-line裡面。而GRUB2的command-line支援使用『tab-completion』，可以根據內容來列出裝置，partitions和檔案。
 
-
-
-## Support multiple filesystem types
-
+## 支援多種filesystem類型
 支援很多種的檔案系統，而且可以直接用blocklist來指定檔案，目前支援的有:
-
 * _Amiga Fast FileSystem \(AFFS\)_
-
 * _AtheOS fs_
-
 * _BeFS_
-
 * _BtrFS _
-
   ```
   包含: raid0, raid1, raid10, gzip 和 lzo。
-  ```
-
+ ```
 * _cpio_
-
   ```
   包含: little- 和 big-endian bin, odc 和 newc variants。
   ```
-
 * _Linux ext2/ext3/ext4_
-
 * _DOS FAT12/FAT16/FAT32_
-
 * _exFAT_
-
 * _HFS_
-
 * _HFS+_
-
 * _ISO9660_
-
   ```
   包含 Joliet, Rock-ridge 和 multi-chunk files。
   ```
-
 * _JFS_
-
 * _Minix fs_
-
   ```
   包含 versions 1, 2 和 3。
   ```
-
 * _nilfs2_
-
 * _NTFS_
-
   ```
   包含壓縮。
   ```
-
 * _ReiserFS_
-
 * _ROMFS_
-
 * _Amiga Smart FileSystem \(SFS\)_
-
 * _Squash4_
-
 * _tar_
-
 * _UDF_
-
 * _BSD UFS/UFS2_
-
 * _XFS_
-
 * _ZFS_
-
   ```
   包含lzjb, gzip, zle, mirror, stripe, raidz1/2/3 和 AES-CCM/AES-GCM加密。
   ```
-
-
-## Support automatic decompression
-
-會自動解壓縮gzip或是Xz2壓縮檔，可以節省很多空間和傳輸時間。但是因為像是kernel module一定會是壓縮檔，所以像類似這種的檔案就要需要用特殊的module-loading命令。
-
-
+## 支援自動解壓縮
+會自動解壓縮gzip或是Xz2壓縮檔，可以節省很多空間和傳輸時間。但是因為像是kernel module一定會是壓縮檔，所以像類似這種的檔案就要需要用特殊的讀取module命令。
 
 ## Access data on any installed device
 
