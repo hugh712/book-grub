@@ -36,10 +36,10 @@
   * [Last Boot Failed or Boot into Recovery Mode](last-boot-failed-or-boot-into-recovery-mode.md)
   * [fix\_console\_fail](boot_console_mode.md)
   * [fix\_grub\_frozen](boot_grub_frozen.md)
-  * fix\_rescue\_mode
+  * [fix\_rescue\_mode](fix_rescue_mode.md)
   * [Fixing reboot/shutdown freezes](fixing-rebootshutdown-freezes.md)
   * [Fixing a Broken System](fixing-a-broken-system.md)
-  * Boot repair after a Windows Upgrade
+  * [Boot repair after a Windows Upgrade](boot-repair-after-a-windows-upgrade.md)
   * Moving GRUB 2
   * [Splash Images](splash-images.md)
   * [Purging & Reinstalling GRUB 2](purging-and-reinstalling-grub-2.md)
