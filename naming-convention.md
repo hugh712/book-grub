@@ -68,7 +68,7 @@ GRUB上的裝置名稱有它的特殊語法，所以使用GRUB第一件事，就
 
 ![](Imgs/Name/Name002.PNG)
 
-描述的是第一個disk上的第一個partition上的檔案vmlinuz，argument completion也是用在檔案的部分，其實就是把device的部份換成以上所講的格式，其實語法就跟Linux的shell差不多了。
+描述的是第一個磁碟上的第一個partition上的檔案vmlinuz，argument completion也是用在檔案的部分，其實就是把device的部份換成以上所講的格式，其實語法就跟Linux的shell差不多了。
 
 # block lists
 有時候有些檔案沒有在任何的檔案系統上，這時候就需要block list的支援，像是如果你要用chainloader的話就要使用block list，語法如下:
