@@ -34,4 +34,4 @@ sudo apt-get install flex
 make
 sudo make install
 ```
-這部份我只描述到本機使用，所以就不描述其他的『cross-compling』的步驟，在上面的步驟都完成後，理論上你的電腦上就會安裝成功了。
+這部份我只描述到本機使用，所以就不描述其他的『cross-compling』的步驟，而在上面的步驟都完成後，理論上你的電腦上就會安裝成功了。
