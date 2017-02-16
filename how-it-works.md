@@ -49,7 +49,7 @@ GRUB2已經開始開機的流程，但是在轉移控制權給作業系統時發
 **5.Frozen**
 如果是在開機過程的畫面中當住(frozen)了，也沒有『grub>』或是『grub rescue』的prompt出現，代表有可能是kernel的video問題，因為這不是GRUB2所造成的問題，所以你還是可以使用GRUB2來修復，這部份的話就需要使用者在menu entry那邊自行調整傳給kernel的參數，然後在啟動試看看。
 
-以上各個GRUB2的啟動失敗流程，都可以用GRUB2的terminal或是直接使用LiveCD，又或者還有其他相容的第三方軟體來修復。如果你選擇LiveCD的話，建議最好是使用跟你要修復系統同一個版本的LiveCd，會減少許多相容性的問題。
+以上各個GRUB2的啟動失敗流程，都可以用GRUB2的terminal或是直接使用LiveCD，又或者還有其他相容的第三方軟體來修復。如果你選擇LiveCD的話，建議最好是使用跟你要修復系統同一個版本的LiveCd，會減少許多相容性的問題，至於修復的細節，這部份就請參考最後面的章節『Troubleshooting』。
 
 
 
