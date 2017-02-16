@@ -53,7 +53,7 @@ GRUB上的裝置名稱有它的特殊語法，所以使用GRUB第一件事，就
 |如果你有啟動網路支援的話，可以使用上面兩種的方式存取。|
 
 
-在GRUB裡面想要存取disk或是partition，你都要用相對應的語法來存取，像是底下的兩個case:
+在GRUB裡面想要存取磁碟或是partition，你都要用相對應的語法來存取，像是底下的兩個範例一樣:
 
 `set root=(fd0)`
 `parttool (hd0,msdos3) hidden-`
