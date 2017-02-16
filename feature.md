@@ -84,10 +84,8 @@ GRUB2可以在PC兼容的PC上找到所有已經安裝的RAM，這部分是使�
 ## 支援Logical Block Address mode
 在比較傳統的磁碟呼叫(traditional disk calls)(也叫做CHS mode)中，存在著一個幾何的轉換問題，就是BIOS無法存取超過磁碟的1024磁柱，所以空間的存取就被限制在508MB到8GB之間。因為各個平台之間這部分並沒有標準的介面，所以GRUB2也無法去解決這個問題。然而，也有一些比較新的平台有支援新的介面，叫做Logical Block Address (LBA) mode，只要GRUB2自動偵測到支援這個模式的話就會去採用它，在LBA模式底下，GRUB可以存取到整顆硬碟。
 
-## Support network booting
+## 支援網路開機
+雖然基礎上來說GRUB2是個以磁碟為基礎的bootloader，但是它也支援網路功能，像是它可以使用TFTP協定從網路讀取作業系統映像檔來開機。
 
-雖然基礎上來說GRUB2是個以磁碟為基礎的bootloader，但是它也支援網路功能，像是可以使用TFTP協定從網路讀取作業系統映像檔。
-
-## Support remote terminals
-
+## 支援遠端terminals操控
 有些電腦沒有支援console模式，所以GRUB2提供了remote terminal的功能，這樣你就可以從遠端的host來操控GRUB2。
