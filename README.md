@@ -13,7 +13,7 @@ Copyright \(C\)  2017 Hugh Chao.
 # Note
 * 有些專有名詞我會盡量保持英文。
 * 因為這篇文章整合了兩個官方文件，我會盡量將Ubuntu相依的用藍色字體區分出來，通常有提到Ubuntu的部份都會在GRUB 版本1.99以後。
-* 裡面有許多的GRUB2，和GRUB會混用，理論上就是如果是舊版的GRUB，我會特別強調，像是用版本，或是用『舊版GRUB』，或是『GRUB Legacy』。
+* 裡面有許多的名詞『GRUB2』和『GRUB』會混用，理論上就是如果是舊版的GRUB，我會特別強調，像是用版本，或是用『舊版GRUB』，或是『GRUB Legacy』。
 
 to do
 
