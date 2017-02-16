@@ -37,11 +37,16 @@ GRUB上的裝置名稱有它的特殊語法，所以使用GRUB第一件事，就
 (hostdisk//dev/sda)
 ```
 
-在來先來看一個例子:
+在來先來看幾個例子:
 
-`(fd0)`
+||
+|:--|
+|**case1**|
+|`(fd0)`|
+|fd代表的是軟碟(floppy disk)，0代表的是磁碟(drive)編號，GRUB的disk number是從0開始，所以這個裝置檔描述代表的是GRUB會用到整個floppy disk。底下第二個例子:
 
-fd代表的是軟碟(floppy disk)，0代表的是磁碟(drive)編號，GRUB的disk number是從0開始，所以這個裝置檔描述代表的是GRUB會用到整個floppy disk。底下第二個例子:
+|
+
 
 `(hd0,msdos2)`
 
