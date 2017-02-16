@@ -31,9 +31,9 @@
 
 |任務|命令||
 |:--|:--|:--|
-|設定prefix|set prefix=(hdX,Y)/boot/grub|設定grub的路徑|
+|設定prefix|set prefix=(hdX,Y)/boot/grub|設定grub的路徑。|
 |設定root|set root=(hdX,Y)||
-|設定kernel|linux /vmlinuz root=/dev/sda1 ro|如果在『/』有kernel image的捷徑在的話|
-|設定kernel|linux (hdX,Y)/boot/vmlinuz-3.0.2-14 root=/dev/sda1 ro|用絕對路徑設定kernel|
-|設定initrd image|initrd /initrd.img|如果在『/』有initrd image的捷徑在的話|
-|設定initrd image|initrd (hdX,Y)/boot/initrd.img-3.0.2-14|用絕對路徑設定initrd|
+|設定kernel|linux /vmlinuz root=/dev/sda1 ro|如果在『/』有kernel image的捷徑在的話。|
+|設定kernel|linux (hdX,Y)/boot/vmlinuz-3.0.2-14 root=/dev/sda1 ro|用絕對路徑設定kernel。|
+|設定initrd image|initrd /initrd.img|如果在『/』有initrd image的捷徑在的話。|
+|設定initrd image|initrd (hdX,Y)/boot/initrd.img-3.0.2-14|用絕對路徑設定initrd。|
