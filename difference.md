@@ -30,7 +30,7 @@ GRUB2是修改GRUB Legacy而成的，主要的差異如下:
 
 * 可直接由LVM和RAID上去讀取檔案。
 
-* Images(映像檔)的組成跟之前不一樣，Stage 1, Stage 1.5和 Stage 2已經不存在了，在grub的prompt(cmd)上已經沒有辦法使用指令『/find boot/grub/stage1』。
+* Images(映像檔)的組成跟之前不一樣，Stage 1, Stage 1.5和 Stage 2已經不存在了，在GRUB2的prompt(cmd)上已經沒有辦法使用指令『/find boot/grub/stage1』。
 
 * GRUB2將許多的功能都改成動態模組(Dynamically loaded modules)，所以主要的映像檔可以更小更有彈性。
 
