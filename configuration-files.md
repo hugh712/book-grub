@@ -126,9 +126,8 @@ GRUB_TERMINAL_INPUT="console serial"
 - <a href="#GRUB_PRELOAD_MODULES">GRUB_PRELOAD_MODULES</a>
 
 底下則列出所有可用的『KEY』和其說明:
-
-## GRUB_DEFAULT<br>
 <a id="GRUB_DEFAULT"></a>
+## GRUB_DEFAULT<br>
 設定預設的menu entry，可以是一個數字，或者是menu entry的標頭，或是『saved』。
 
 1. **GRUB_DEFAULT=0**
