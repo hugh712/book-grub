@@ -59,7 +59,7 @@ sudo update-grub
 sudo chmod -x /etc/grub.d/30_os-prober
 sudo update-grub
 ```
-<font color="red">不過建議使用『GRUB_DISABLE_OS_PROBER』就好，盡量不要去設定這個檔案的『executable bit』</font>
+<font color="red">不過建議使用『GRUB_DISABLE_OS_PROBER』就好，盡量不要去設定這個檔案的『executable bit』。</font>
 
 預設這個『os-prober』會忽略任何擁有『dmraid signature』的磁碟，如果你有安裝『dmraid』的話，你可以使用底下指令來列出相關的清單
 ```
