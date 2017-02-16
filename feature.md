@@ -12,33 +12,22 @@ GRUB2的主要設計是兼容於『[Multiboot Specification](https://www.gnu.org
 支援許多的『a.out』格式，並且也可以讀取Symbol table。
 
 ## 支援non-Multiboot kernels
-支援許多其他32-bit不支援Multiboot的kernel，也支援其他boot loader的Chain-loading。
+支援許多其他32-bit不支援Multiboot的kernel，也支援其他bootloader的Chain-loading。
 
-## Load multiples modules
+## 支援多種的modules
 
-支援多種的modules。
-
-
-## Automated searches other OS
-
-每當『update-grub』被執行時，都會自動的去偵測所有已安裝的作業系統，然後被放置於GRUB2 的menu裡。
+## 自動搜尋其他作業系統
+每當『update-grub』被執行時，裡面會有個『os prober』都會自動的去偵測所有已安裝的作業系統，然後被放置於GRUB2的menu裡。
 
 
-## Load a configuration file
+## 讀取組態檔
+支援可讀的文字組態檔，也可以動態讀取其它的組態檔或是將預先設定好的組態檔給嵌到GRUB2的image裡。
 
-支援可讀的文字組態檔，也可以動態讀取其它的組態檔或是將預先設定好的組態檔給嵌到GRUB2的映像檔裡。
+## 支援圖形化選單介面
+支援圖形化選單介面，可列出所有目前的boot指令。
 
-
-
-## Provide a menu interface
-
-支援圖形化介面，列出所有目前的boot指令。
-
-
-
-## Have a flexible command-line interface
-
-提供一個相當有彈性的command-line\(命令列\)介面，可以從menu那邊存取，也可以編輯任何的命令，又或者是你想要編輯一個全新的boot command set，如果沒有組態的話，GRUB2會直接進入command-line裡面。而GRUB2的command-line支援使用tab-completion，可以根據內容來列出裝置，partitions和檔案。
+## 提供一個相當有彈性的command-line介面
+提供一個相當有彈性的command-line(命令列)介面，可以從menu那邊存取，也可以編輯任何的命令，又或者是你想要編輯一個全新的boot command set，如果沒有組態的話，GRUB2會直接進入command-line裡面。而GRUB2的command-line支援使用tab-completion，可以根據內容來列出裝置，partitions和檔案。
 
 
 
