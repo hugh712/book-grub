@@ -1,6 +1,6 @@
 # GRUB2的功能
 
-GRUB2的主要設計兼容於『[Multiboot Specification](https://www.gnu.org/software/grub/manual/multiboot/multiboot.html#Top)』，並且根據底下的需求:
+GRUB2的主要設計是兼容於『[Multiboot Specification](https://www.gnu.org/software/grub/manual/multiboot/multiboot.html#Top)』，並且根據底下的需求來設計的:
 
 * 基本功能對使用者必須很直覺。
 * 必須對kernel開發者的支援。
