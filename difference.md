@@ -18,7 +18,7 @@ GRUB2是修改GRUB Legacy而成的，主要的差異如下:
 
 * 有部分的裝置在經過重新啟動之後仍然可以在GRUB2中取得，這部份實做是透過指令『save_env』，『load_env』還有『grub-editenv』。
 
-* 具有更好的方式來找到檔案和在多磁碟的系統上找到kernel元件，並且也可以藉由system label或是UUID來找到裝置。
+* 找檔案和在多磁碟的系統上找kernel具有更好的方式，並且也可以藉由system label或是UUID來找到裝置。
 
 * GRUB2支援更多非x86的系統。
 
