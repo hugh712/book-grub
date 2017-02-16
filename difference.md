@@ -14,6 +14,10 @@ GRUB2是修改GRUB Legacy而成的，主要的差異如下:
 
 * 使用者可以建立客製化選單(menu)，預設的客製化內容要被放在『/etc/grub.d/40_custom』檔案裡面。
 
+* 可使用圖形化介面來編輯。
+
+* GRUB2的介面可以被轉換。
+
 * Partition number由『1』開始而不是之前的『0』，但是第一個裝置(device/drive)預設依然是『hd0』，但是這些設定可以在『/boot/grub/device.map 』裡面被修改。
 
 * 有部分的裝置在經過重新啟動之後仍然可以在GRUB2中取得，這部份實做是透過指令『save_env』，『load_env』還有『grub-editenv』。
@@ -25,10 +29,6 @@ GRUB2是修改GRUB Legacy而成的，主要的差異如下:
 * 支援更多的檔案系統。
 
 * 可直接由LVM和RAID上去讀取檔案。
-
-* 可使用圖形化介面來編輯。
-
-* GRUB2的介面可以被轉換。
 
 * 映像檔檔案的組成跟之前不一樣，Stage 1, Stage 1.5和 Stage 2已經不存在了，在grub的prompt(cmd)上已經沒有辦法使用指令『/find boot/grub/stage1』。
 
