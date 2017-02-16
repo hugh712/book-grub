@@ -14,7 +14,6 @@
 
 ![](Imgs/Config/config009.PNG)
 
-
 另外如果進入『normal mode』失敗的話，就會直接進入『rescue mode(救援模式)』，原因有可能是你的『prefix』是錯的，裝置順序錯誤，甚至也有可能是你的GRUB安裝不正確...等等。
 
 # GRUB2 的四種操作模式
