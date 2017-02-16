@@ -55,10 +55,10 @@ GRUB2是修改GRUB Legacy而成的，主要的差異如下:
 GRUB2已經沒有單獨的『Stage 2』image，相對的是在run-time時載入『/boot/grub』裡面的modules。
 
 ## stage2_eltorito
-在GRUB2裡面，從CD-ROM開機的image現在都用『cdboot.img』和『core.img』來處理，確保裡面包含了『iso9660』的模組，如果想要建立救援碟的話，這部分可以直接用『grub-mkrescue』來達成。
+在GRUB2裡面，從CD-ROM開機的image現在都用『cdboot.img』和『core.img』來處理，這樣可以確保裡面包含了『iso9660』的模組，如果想要建立救援光碟的話，這部分可以直接用『grub-mkrescue』來達成。
 
 ## nbgrub
-在GRUB2裡面沒有相對應nbgrub的功能。
+在GRUB2裡面已經沒有相對應nbgrub的功能。
 
 ## pxegrub
-在GRUB2裡面，用網路啟動的PXE image現在都用『pxeboot.img』和『core.img』來達成。
+在GRUB2裡面，用網路啟動的『PXE image』現在都用『pxeboot.img』和『core.img』來達成。
