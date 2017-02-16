@@ -4,6 +4,8 @@ GRUB2是修改GRUB Legacy而成的，主要的差異如下:
 
 * 組態檔名稱由『menu.lst』或是『grub.conf』改成『grub.cfg』，有新語法，新指令跟新結構，所以GRUB Legacy的語法沒辦法直接拿過來GRUB2用。
 
+* 組態檔會更接近script語言，像是有變數，條件式和迴圈等等。
+
 * 『grub.cfg』是由『grub-mkconfig』自動產生的，是一個由各種script的輸出結合，處理kernel的更新會更方便更直覺，因為每一次kernel的更新(新增/移除)都會自動的呼叫『update-grub』，然後『grub-mkconfig』會在去呼叫『grub-mkconfig』。
 
 * 關於menu『顯示』設定的組態，預設都在『/etc/default/grub』。
@@ -14,7 +16,6 @@ GRUB2是修改GRUB Legacy而成的，主要的差異如下:
 
 * Partition number由『1』開始而不是之前的『0』，但是第一個裝置(device/drive)預設依然是『hd0』，但是這些設定可以在『/boot/grub/device.map 』裡面被修改。
 
-* 組態檔會更接近script語言，像是有變數，條件式和迴圈等等。
 
 * 有部分的裝置在經過重新啟動之後仍然可以在GRUB2中取得，這部份實做是透過指令『save\_env』，『load\_env』還有『grub-editenv』。
 
