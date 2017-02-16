@@ -11,6 +11,7 @@
 3. 直接按『c』進入GRUB的『command line』模式。
 
 ![](Imgs/Config/config003.PNG)
+
 ![](Imgs/Config/config009.PNG)
 
 
