@@ -11,7 +11,7 @@
 2. 選擇其一，按『e』修改既有設定後開機。
 ![](Imgs/Config/config009.PNG)
 3. 直接按『c』進入GRUB的『command line』模式。
-![](Imgs/Fix/Fix003.PNG)
+![](Imgs/Config/config010.PNG)
 
 
 
