@@ -17,7 +17,7 @@ GRUB2是修改GRUB Legacy而成的，主要的差異如下:
 * Partition number由『1』開始而不是之前的『0』，但是第一個裝置(device/drive)預設依然是『hd0』，但是這些設定可以在『/boot/grub/device.map 』裡面被修改。
 
 
-* 有部分的裝置在經過重新啟動之後仍然可以在GRUB2中取得，這部份實做是透過指令『save\_env』，『load\_env』還有『grub-editenv』。
+* 有部分的裝置在經過重新啟動之後仍然可以在GRUB2中取得，這部份實做是透過指令『save_env』，『load_env』還有『grub-editenv』。
 
 * 具有更好的方式來找到檔案和在多磁碟的系統上找到kernel元件，並且也可以藉由system label或是UUID來找到裝置。
 
