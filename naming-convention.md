@@ -1,9 +1,10 @@
 #GRUB的命名規則
-GRUB上的裝置名稱有它的特殊語法，所以使用GRUB第一件事，就是要知道這些語法，不然你會不知道如何去找到對的裝置(device)或是分區(partition)。第一個要知道的是，GRUB對裝置的描述一定要在成對的小括號『()』裡面，語法如下:
 
+GRUB上的裝置名稱有它的特殊語法，所以使用GRUB第一件事，就是要知道這些語法，不然你會不知道如何去找到對的裝置(device)或是分區(partition)。第一個要知道的事，就是GRUB對裝置的描述一定要在成對的小括號『()』裡面，語法描述如下:
 ```
 (device[,partmap-name1part-num1[,partmap-name2part-num2[,...]]])
 ```
+
 - BIOS和EFI使用『fd』或是『hd』然後後面在加一個數字；
 - AHCI, PATA (ata), crypto和USB使用driver的名稱在加一個編號；
 - Memdisk和host則是被限制只能有一個disk，所以只會有一個driver名稱；
