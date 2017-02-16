@@ -1,6 +1,6 @@
-# GRUB和GRUB2的主要差異
+# GRUB Legacy和GRUB2的主要差異
 
-GRUB2是修改GRUB而成的，主要的差異如下:
+GRUB2是修改GRUB Legacy而成的，主要的差異如下:
 
 * 組態檔名稱由『menu.lst』或是『grub.conf』改成『grub.cfg』，有新語法，新指令跟新結構，所以GRUB的語法沒辦法直接拿過來GRUB2用。
 
