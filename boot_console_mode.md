@@ -13,19 +13,31 @@ configfile /boot/grub/grub.cfg 或者是 configfile (hdX,Y)/boot/grub/grub.cfg
 
 (一樣，在強調一下。在底下的所有例子中，『X』就是硬碟代號，『Y』則是partition number，記得要根據你自己的狀況帶入相關的值)。
 
-1.	設定『root』
+1.設定『root』
 這個變數必須指到Ubuntu安裝的硬碟和partition上。
+```
 set root=(hdX,Y)
-2.	設定『prefix』
+```
+2.設定『prefix』
+```
 set prefix=(hdX,Y)/boot/grub
-3.	設定『kernel』
+```
+3.設定『kernel』
 可以使用『root』底下的kernel捷徑，如果沒有捷徑的話請使用全路徑，通常是在『/boot』底下
- linux /vmlinuz root=/dev/sdXY ro
-4.	設定『initrd』
+```
+linux /vmlinuz root=/dev/sdXY ro
+```
+4.設定『initrd』
 選擇最新的initrd image，跟kernel一樣，可能會在『root』底下會有捷徑，沒有的話也應該要在『/boot底下找到』。
+```
 initrd /initrd.img
-5.	以剛才的設定啟動
+```
+5.以剛才的設定啟動
+```
 boot
+```
+
+
 
 成功啟動後，記得去修改相對應的檔案，然後執行『update-grub』更新組態。
 如果有需要的話也可以執行『grub-install』或是『boot-repair』來重新安裝GRUB。
