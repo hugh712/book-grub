@@ -49,10 +49,10 @@ GRUB2是修改GRUB Legacy而成的，主要的差異如下:
 ## *_stage1_5
 在舊版的『stage 1.5』會引入足夠的檔案系統功能，這樣接下來才能在這個階段支援更大的檔案，但是在GRUB2裡，這部分的功能已經被『core.img』所取代掉，而且『core.img』會比舊版的更穩定，並且它是用更加有彈性的方式來建立的，也允許GRUB2支援其他更進階的檔案系統類型，像是LVM和RAID等等；而且在GRUB2裡面還提供了『rescue shell』，這樣就算你在無法讀取任何的module的狀況下，也可以手動的復原你的bootloader。
 
-舊版的GRUB可以在某些限制底下單獨執行Stage 1 或是 Stage 2，但是GRUB2的話則是一定需要『core.img』的存在。
+舊版的GRUB可以在某些限制底下單獨執行『Stage 1』或是『Stage 2』，但是GRUB2的話則是一定需要『core.img』的存在才行。
 
 ## stage2
-GRUB2已經沒有單獨的Stage 2 映像檔，相對的是在run-time時載入『/boot/grub』裡面的模組。
+GRUB2已經沒有單獨的『Stage 2』image，相對的是在run-time時載入『/boot/grub』裡面的modules。
 
 ## stage2_eltorito
 在GRUB2裡面，從CD-ROM開機的image現在都用『cdboot.img』和『core.img』來處理，確保裡面包含了『iso9660』的模組，如果想要建立救援碟的話，這部分可以直接用『grub-mkrescue』來達成。
