@@ -29,7 +29,6 @@ sudo apt-get install autoconf
 sudo apt-get install bison
 sudo apt-get install flex
 
-
 ./autogen.sh
 ./configure
 make
