@@ -37,8 +37,6 @@ initrd /initrd.img
 boot
 ```
 
-
-
 成功啟動後，記得去修改相對應的檔案，然後執行『update-grub』更新組態。
 如果有需要的話也可以執行『grub-install』或是『boot-repair』來重新安裝GRUB。
 
