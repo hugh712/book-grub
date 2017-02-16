@@ -54,7 +54,7 @@ sudo update-grub
 ```
 
 ### 30_os-prober
-這個script裡面會使用『os-prober』，就是用一個作業系統的探測器來搜尋Linux和其他的作業系統，並且將其結果給輸出到menu entry上。目前支援的作業系統包含Windows，Linux，OSX和Hurd等等。如果你想要關閉這個『os-prober』的功能，並且自己在檔案『/etc/default/grub』裡面寫入自己的entry的話，當然你也是要移除這個檔案的『executable bit』移除掉，這樣它就不會被執行，然後在執行『update-grub』如下所示：
+這個script裡面會使用『os-prober』，就是用一個作業系統的探測器來搜尋Linux和其他的作業系統，並且將其結果給輸出到menu entry上。目前支援的作業系統包含Windows，Linux，OSX和Hurd等等。如果你想要關閉這個『os-prober』的功能，並且自己在檔案『/etc/default/grub』裡面寫入自己的entry的話，當然你也是要將這個檔案的『executable bit』移除掉，這樣它就不會被執行，然後在執行『update-grub』如下所示：
 ```
 sudo chmod -x /etc/grub.d/30_os-prober
 sudo update-grub
