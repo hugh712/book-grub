@@ -11,7 +11,7 @@ Copyright \(C\)  2017 Hugh Chao.
   with no Invariant Sections, no Front-Cover Texts, and no Back-Cover Texts.  A copy of the license is included in the section entitled \`\`GNUFree Documentation License''.
 
 # Note
-* 有些專有名詞我會盡量保持英文。
+* 有些專有名詞我會盡量保持英文，但是很難全部英文還是中文，這部份請見諒，有些字就是英文看著順眼，有些則是中文看著順眼。
 * 因為這篇文章整合了兩個官方文件，我會盡量將Ubuntu相依的用藍色字體區分出來，通常有提到Ubuntu的部份都會在GRUB 版本1.99以後。
 * 裡面有許多的名詞『GRUB2』和『GRUB』會混用，理論上就是如果是舊版的GRUB，我會特別強調，像是用版本，或是用『舊版GRUB』，或是『GRUB Legacy』，不然的話GRUB就等於是GRUB2。
 
