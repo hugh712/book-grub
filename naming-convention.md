@@ -59,7 +59,7 @@ GRUB上的裝置名稱有它的特殊語法，所以使用GRUB第一件事，就
 `parttool (hd0,msdos3) hidden-`
 
 為方便使用者找到相關的device，GRUB也提供了argument completion，像是底下這個case，你只要按『tab』以後，GRUB就會列出所有的disk，partition甚至是檔案名稱:
-<div style="display:none">hugh check</div>
+
 ![](Imgs/Name/Name001.PNG)
 
 另外一件事要特別注意的是，GRUB並沒有特別區分IDE和SCSI，不管磁碟的介面，都是直接從0開始計算。一般來說，通常IDE介面會比SCSI的號碼還要小，雖然說如果你在BIOS裡面交換你的IDE和SCSI的開機順序的話，並不會直接反映在剛剛的規則上就對了。
