@@ -9,7 +9,7 @@ GRUB2的主要設計是兼容於『[Multiboot Specification](https://www.gnu.org
 除了一些特殊的相容模式以外(chain-loading和Linux piggyback格式)，所有的kernel都會以『Multiboot Spec.』上的狀態啟動。除了以上的基本需求外，底下列出其他額外的功能:
 
 ## 能辨識許多種的執行檔格式
-支援許多的a.out格式，並且也可以讀取Symbol table。
+支援許多的『a.out』格式，並且也可以讀取Symbol table。
 
 ## 支援non-Multiboot kernels
 支援許多其他32-bit不支援Multiboot的kernel，也支援其他boot loader的Chain-loading。
