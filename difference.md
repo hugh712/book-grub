@@ -44,7 +44,7 @@ GRUB2是修改GRUB Legacy而成的，主要的差異如下:
 如同上面所描述的，『Stage 1』,『Stage 1.5』和『Stage 2』已經不存在了，因為GRUB2本來就和舊版的設計不一樣，底下列出一些舊版GRUB使用者會很常問的相關差異:
 
 ## stage1
-舊版的stage 1到GRUB2以後就變成『boot.img』，它們有相同功能。
+舊版的『stage 1』到GRUB2以後就變成『boot.img』，它們有相同功能。
 
 ## *_stage1_5
 在舊版的stage 1.5會引入足夠的檔案系統功能，這樣接下來才能在在這個階段支援更大的檔案，但是在GRUB2裡，這部分的功已經被『core.img』所取代掉，而且『core.img』會比舊版的更穩定，功能更強大；在GRUB2裡面提供了『rescue shell』，這樣就算你在無法讀取任何的module的狀況下，也可以手動的復原。『core.img』是用更加有彈性的方式來建立的，它允許GRUB2支援其他更進階的檔案系統類型，像是LVM和RAID。
