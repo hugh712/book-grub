@@ -6,11 +6,11 @@ GRUB2是修改GRUB Legacy而成的，主要的差異如下:
 
 * 『grub.cfg』是由『grub-mkconfig』自動產生的，是一個由各種script的輸出結合，處理kernel的更新會更方便更直覺，因為每一次kernel的更新(新增/移除)都會自動的呼叫『update-grub』，然後『grub-mkconfig』會在去呼叫『grub-mkconfig』。
 
-* 主要關於menu『顯示』設定的組態，預設都在『/etc/default/grub』。
+* 關於menu『顯示』設定的組態，預設都在『/etc/default/grub』。
 
-* 設定menu的組態不只『/etc/default/grub』，還有其他許多的組態在『 /etc/grub.d/ 』。
+* 設定menu的組態不只『/etc/default/grub』，還有其他許多的組態在『 /etc/grub.d/』。
 
-* 使用者可以建立你得客製化選單(menu)，預設的話，客製化的檔案要被放在『/etc/grub.d/named 40_custom』。
+* 使用者可以建立客製化選單(menu)，預設的客製化內容要被放在『/etc/grub.d/40_custom』檔案裡面。
 
 * Partition number由『1』開始而不是之前的『0』，但是第一個裝置(device/drive)預設依然是『hd0』，但是這些設定可以在『/boot/grub/device.map 』裡面被修改。
 
