@@ -177,7 +177,7 @@ GRUB_DEFAULT="2>Ubuntu, with Linux 3.2.0-18-generic-pae"
 
 ## GRUB_CMDLINE_LINUX <br>
 <a id="GRUB_CMDLINE_LINUX"></a>
-要加入到命令『linux』後面的參數，不論是normal模式或者是救援模式都會有此行為，主要是傳參數給kernel的。
+要加入到GRUB命令『linux』後面的參數，不論是normal模式或者是救援模式都會有此行為，主要是傳參數給kernel的。
 
 <a id="GRUB_CMDLINE_LINUX_DEFAULT"></a>
 ## GRUB_CMDLINE_LINUX_DEFAULT <br>
