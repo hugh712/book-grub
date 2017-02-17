@@ -154,11 +154,11 @@ GRUB_DEFAULT="2>Ubuntu, with Linux 3.2.0-18-generic-pae"
 <a id="GRUB_TERMINAL_OUTPUT"></a>
 ## GRUB_TERMINAL_OUTPUT <br>
 選擇terminal的輸出裝置，當然你也可以在這邊選擇多重的裝置，中間請用空白隔開。有效的terminal輸出名稱其實取決於你的平台，但是通常會有以下的幾個(預設都是使用系統原生的terminal輸出):
-	- console (PC BIOS 和 EFI consoles)
-	- serial (serial terminal)
-	- gfxterm (graphics-mode output)
-	- ofconsole (Open Firmware console)
-	- vga_text (VGA text output, 主要是用在Coreboot).
+- console (PC BIOS 和 EFI consoles)
+- serial (serial terminal)
+- gfxterm (graphics-mode output)
+- ofconsole (Open Firmware console)
+- vga_text (VGA text output, 主要是用在Coreboot).
 
 底下舉個例子，將OUTPUT改成console的話，圖型化介面就會變成底下這樣:
 ![](Imgs/Config/config003.PNG)
