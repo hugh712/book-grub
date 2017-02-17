@@ -93,7 +93,7 @@ GRUB_DEFAULT="2>Ubuntu, with Linux 3.2.0-18-generic-pae"
 
 <a id="GRUB_TIMEOUT"></a>
 ## GRUB_TIMEOUT <br>
-這個選項主要就是在控制進入menu後會倒數幾秒，預設的話是『5』秒; 
+這個選項主要就是在控制進入menu後會倒數幾秒，預設的話是『5』秒。
 
 - **GRUB_TIMEOUT = 0**
 如果設定成『0』的話，代表直接用預設選項不進入menu; 
