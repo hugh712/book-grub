@@ -230,7 +230,7 @@ GRUB_DEFAULT="2>Ubuntu, with Linux 3.2.0-18-generic-pae"
 
 <a id="GRUB_DISABLE_OS_PROBER"></a>
 ## GRUB_DISABLE_OS_PROBER <br>
-一般來說，grub-mkconfig會試著使用外部的作業系統偵測程式(os-prober)來偵測在同一個系統裡安裝的作業系統，並且產生適當的menu entry，如果將這個設定成true的話則會關閉這個功能。
+一般來說，grub-mkconfig會試著使用外部的作業系統偵測程式(os-prober)來偵測在同一個電腦裡安裝的作業系統，並且產生適當的menu entry，如果將這個設定成true的話則會關閉這個功能。
 
 <a id="GRUB_INIT_TUNE"></a>
 ## GRUB_INIT_TUNE <br>
