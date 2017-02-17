@@ -23,7 +23,7 @@ grub.cfg是用來取代GRUB 0.97的menu.lst，這個檔案包含了GRUB2的menu 
 這個檔案你實際去看會分很多個section，每個section都會使用『###BEGIN###』開始，和使用『###END###』結束，代表的是每個『/etc/grub.d』底下的檔案。
 
 在早期的GRUB2版本，這個檔案其實是唯讀的，即使連『root』也不例外，但是因為開發者發現有時候簡單的改變這個檔案會對使用者比較方便，所以後來就開放可以編輯，這部份使用者自己要了解的是，當你或系統執行『update-grub』時，之前的修改又會被覆寫掉就對了，所以，最好還是由上圖的流程去修改你要的檔案，然後在執行『update-grub』的話會比較正規。而且官方上面還有說如果你自己手動修改的話，有可能造成『update-grub』執行時會造成更新出問題，導致無法更新grub.cfg，所以再次強調，可以的話還是照正規途徑修改吧。
-<p style="color:white;">hugh check</p>
+
 
 
 ## 使用者設定: /etc/default/grub
@@ -170,12 +170,12 @@ GRUB_DEFAULT="2>Ubuntu, with Linux 3.2.0-18-generic-pae"
 3. **GRUB_DEFAULT=saved**
 這個選項是在GRUB 1.98後開始啟用的，主要是藉由選項『GRUB_SAVEDEFAULT』來儲存預設的menu entry，預設的數字是『0』，除了由『GRUB_SAVEDEFAULT』選項來自動儲存以外，你也可以用『grub-set-default』或是『grub-reboot』。『GRUB_SAVEDEFAULT』的說明請看下一個命令，『grub-set-default』和『grub-reboot』請直接看章節『Commands-System』。
 
-## GRUB_SAVEDEFAULT <br>
 <a id="GRUB_SAVEDEFAULT"></a>
+## GRUB_SAVEDEFAULT <br>
 如果這個選項是被設定成『true』，當你在開機選擇任何一個menu entry時，GRUB會將你的選擇儲存起來，這樣下一次開機的預設就會變成這個，接下來，底下兩個說明會有點饒舌，『GRUB_SAVEDEFAULT』只有在『GRUB_DEFAULT=saved』時有用，但是這又是兩個分開的選項，因為如果伴隨著『grub-set-default』或是『grub-reboot』的話，『GRUB_DEFAULT=saved』只有在沒有『GRUB_SAVEDEFAULT』的狀況才有效。這個選項預設是不啟用，而且依賴於『environment block』，所以可能不適用於所有的case。<span>而且根據Ubuntu的官方文件說，如果你的『/boot』是在LVM或是RAID的話，這個選項是不能用的。</span>
 
-## GRUB_TIMEOUT <br>
 <a id="GRUB_TIMEOUT"></a>
+## GRUB_TIMEOUT <br>
 這個選項主要就是在控制進入menu後會倒數幾秒，預設的話是『5』秒; 
 
 - **GRUB_TIMEOUT = 0**
@@ -190,8 +190,8 @@ GRUB_DEFAULT="2>Ubuntu, with Linux 3.2.0-18-generic-pae"
 
 ![](Imgs/Config/config002.PNG)
 
-## GRUB_HIDDEN_TIMEOUT <br>
 <a id="GRUB_HIDDEN_TIMEOUT"></a>
+## GRUB_HIDDEN_TIMEOUT <br>
 上一個選項是『GRUB_TIMEOUT』，主要是在定義menu出現"後"要倒數幾秒，如果倒數完之前沒有按任何鍵的話，將會直接以預設的選項開機。這個選項則是相反，主要是設定menu出現"前"會倒數幾秒。
 
 - **GRUB_HIDDEN_TIMEOUT=0**
