@@ -193,7 +193,7 @@ GRUB_DEFAULT="2>Ubuntu, with Linux 3.2.0-18-generic-pae"
 ## GRUB_CMDLINE_XEN <br>
 <a id="GRUB_CMDLINE_XEN_DEFAULT"></a>
 ## GRUB_CMDLINE_XEN_DEFAULT <br>
-這兩個選項的參數會在Linux和Xen menu entry的case之下依附於『GRUB_CMDLINE_LINUX』和『GRUB_CMDLINE_LINUX_DEFAULT』的參數後面。
+這兩個選項的值會在Linux和Xen menu entry的case之下依附於『GRUB_CMDLINE_LINUX』和『GRUB_CMDLINE_LINUX_DEFAULT』的參數後面。
 
 ## GRUB_CMDLINE_LINUX_XEN_REPLACE <br>
 <a id="GRUB_CMDLINE_LINUX_XEN_REPLACE_DEFAULT"></a>
