@@ -166,7 +166,7 @@ GRUB_DISABLE_OS_PROBER=true
 
 
 ## Others
-底下在多三個Ubuntu官方給的案例當參考:
+<span>底下在多三個Ubuntu官方給的案例當參考:</span>
 
 1.第一個為硬碟(sda8上)版本的系統救援CD
 ```
