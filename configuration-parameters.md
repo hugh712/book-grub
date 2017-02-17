@@ -210,7 +210,7 @@ GRUB_DEFAULT="2>Ubuntu, with Linux 3.2.0-18-generic-pae"
 
 <a id="GRUB_VIDEO_BACKEND"></a>
 ## GRUB_VIDEO_BACKEND
-通常如果需要顯卡的支援的話，就代表你在使用『gfxterm』圖形化終端機，或者是選項『GRUB_GFXPAYLOAD_LINUX』被啟動了，這樣grub-mkconfig將會讀取所有的GRUB的Video driver，並且使用一個最匹配你硬體的driver。但是通常不太需要動到這個參數，除非你有特殊需求。在『grub-install』執行以後，可取得的video driver清單都會在『/boot/grub/video.lst』。
+通常如果需要顯卡的支援的話，就代表你在使用『gfxterm』圖形化terminal，或者是選項『GRUB_GFXPAYLOAD_LINUX』被啟動了，這樣命令『grub-mkconfig』將會讀取所有GRUB的Video driver，並且使用一個最匹配你硬體的driver。但是通常不太需要動到這個參數，除非你有特殊需求。在『grub-install』執行以後，可取得的video driver清單都會在『/boot/grub/video.lst』。
 
 <a id="GRUB_GFXMODE"></a>
 ## GRUB_GFXMODE <br>
