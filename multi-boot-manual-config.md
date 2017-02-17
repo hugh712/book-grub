@@ -171,15 +171,15 @@ GRUB_DISABLE_OS_PROBER=true
 1.第一個為硬碟(sda8上)版本的系統救援CD
 ```
 menuentry "System Rescue CD" {
-set root=(hd0,8)
-linux /sysrcd/rescuecd subdir=sysrcd setkmap=us
-initrd /sysrcd/initram.igz
+    set root=(hd0,8)
+    linux /sysrcd/rescuecd subdir=sysrcd setkmap=us
+    initrd /sysrcd/initram.igz
 }
 ```
 2.簡單的Windows7 chain load
 ```
 menuentry "Windows 7" {
-insmod ntfs
+    insmod ntfs
 set root='(hd0,1)'
 search --no-floppy --fs-uuid --set a3f1ea41fc67a3f1
 chainloader +1
