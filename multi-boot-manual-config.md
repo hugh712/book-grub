@@ -6,7 +6,7 @@ GRUB的multi-boot環境取決於os-prober，也就是在『grub-install』執行
 
 這個章節來介紹一下，怎麼自製簡單組態，第一個『Linux』的例子，是自制『grub.cfg』，而其它的例子則是加到『/etc/grub.d/40_custom』底下。
 
-如果要將自制的menu加到『40_custom』裡面，框架如下:
+如果要將自制的menu加到『40_custom』裡面，框架需如下:
 ```
 menuentry "Some title here" {
 <Some data>
