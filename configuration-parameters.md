@@ -149,8 +149,6 @@ GRUB_DEFAULT="2>Ubuntu, with Linux 3.2.0-18-generic-pae"
 - at_keyboard (PC AT keyboard，主要會用在Coreboot)。
 - usb_keyboard (主要是使用HID boot protocol的USB鍵盤，這部分是以防firmware沒有去處理這部分)。
 
-
-
 <a id="GRUB_TERMINAL_OUTPUT"></a>
 ## GRUB_TERMINAL_OUTPUT <br>
 選擇terminal的輸出裝置，當然你也可以在這邊選擇多重的裝置，中間請用空白隔開。有效的terminal輸出名稱其實取決於你的平台，但是通常會有以下的幾個(預設都是使用系統原生的terminal輸出):
@@ -177,7 +175,7 @@ GRUB_DEFAULT="2>Ubuntu, with Linux 3.2.0-18-generic-pae"
 
 ## GRUB_CMDLINE_LINUX <br>
 <a id="GRUB_CMDLINE_LINUX"></a>
-要加入到GRUB命令『linux』後面的參數，不論是normal模式或者是救援模式都會有此行為，主要是傳參數給kernel的。
+要加入到GRUB命令『linux』後面的參數，不論是normal mode或者是救援模式都會有此行為，主要是傳參數給kernel的。
 
 <a id="GRUB_CMDLINE_LINUX_DEFAULT"></a>
 ## GRUB_CMDLINE_LINUX_DEFAULT <br>
