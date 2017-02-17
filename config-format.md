@@ -11,11 +11,14 @@ grub.cfg是用GRUB內建的語法寫的，但是其語法跟GNU Bash或是其它
 
 # Reserved words - 保留字
 Reserved Word對GRUB來說是有特殊的意義，所以這些Reserved Word千萬不要用:
-```
-! [[ ]] { }
-case do done elif else esac fi for function
-if in menuentry select then time until while
-```
+
+||||||||||
+|:--|:--|:--|:--|:--|:--|:--|:--||
+|!|[|]|{|}||||
+|case|do|done|elif|else|esac|fi|for|funciton|
+|if|in|menuentry|select|then|time|until|while||
+
+
 當然不是全部的字都有目的，有些是為了未來可能會使用，所以先保留下來的。
 
 # Quoting
