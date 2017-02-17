@@ -103,7 +103,7 @@ GRUB_DEFAULT="2>Ubuntu, with Linux 3.2.0-18-generic-pae"
 
 - 如果這個值為非0的話，就不該啟用『GRUB\_HIDDEN\_TIMEOUT』，但是如果你『GRUB\_TIMEOUT』設定為非0值，而你的『GRUB\_HIDDEN\_TIMEOUT』也有設定的話，則只會看到menu出現之前的倒數，不會看到menu的倒數。因為GRUB的工程師當初的設計其實是這個選項是跟『GRUB\_HIDDEN\_TIMEOUT』是互斥的，其實蠻合理的，只要倒數一次就好，用途就是要讓使用者有時間去決定你要進入那一個entry，不需要兩次倒數。
 
-- 在單作業系統上，預設這個選項是沒用的，代表你的menu不會出現，要讓menu顯示的話就應該要將『GRUB_HIDDEN_TIMEOUT』給註解掉，然後讓這個選項的值為1或以上。
+- 在單作業系統上，預設這個選項是沒用的，代表你的menu不會出現，要讓menu顯示的話就應該要將『GRUB\_HIDDEN\_TIMEOUT』給註解掉，然後讓這個選項的值為1或以上。
 
 ![](Imgs/Config/config002.PNG)
 
