@@ -222,7 +222,7 @@ GRUB_DEFAULT="2>Ubuntu, with Linux 3.2.0-18-generic-pae"
 
 <a id="GRUB_THEME"></a>
 ## GRUB_THEME <br>
-如果你是使用『gfxterm』圖形化terminal的話，這個參數可以設定主題。
+如果你是使用『gfxterm』圖形化terminal的話，這個參數可以設定theme主題。
 
 <a id="GRUB_GFXPAYLOAD_LINUX"></a>
 ## GRUB_GFXPAYLOAD_LINUX <br>
