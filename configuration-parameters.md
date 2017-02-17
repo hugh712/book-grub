@@ -198,7 +198,7 @@ GRUB_DEFAULT="2>Ubuntu, with Linux 3.2.0-18-generic-pae"
 ## GRUB_CMDLINE_LINUX_XEN_REPLACE <br>
 <a id="GRUB_CMDLINE_LINUX_XEN_REPLACE_DEFAULT"></a>
 ## GRUB_CMDLINE_LINUX_XEN_REPLACE_DEFAULT <br>
-這兩個選項的參數將會在Linux和Xen menu entry的case之下將GRUB_CMDLINE_LINUX』和『GRUB_CMDLINE_LINUX_DEFAULT』的參數取代掉。
+這兩個選項的參數將會在Linux和Xen menu entry的case之下將『GRUB_CMDLINE_LINUX』和『GRUB_CMDLINE_LINUX_DEFAULT』的參數取代掉。
 
 ## GRUB_DISABLE_LINUX_UUID <br>
 <a id="GRUB_DISABLE_LINUX_UUID"></a>
