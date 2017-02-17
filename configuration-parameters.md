@@ -143,10 +143,10 @@ GRUB_DEFAULT="2>Ubuntu, with Linux 3.2.0-18-generic-pae"
 <a id="GRUB_TERMINAL_INPUT"></a>
 ## GRUB_TERMINAL_INPUT<br>
 選擇terminal的輸入裝置，當然你可以在這邊選擇多重的裝置，只要中間用空白隔開就可以了。有效的terminal輸入名稱其實取決於你的平台，但是通常會有以下的幾個(預設的話都是使用系統原生的terminal輸入):
-- console (PC BIOS 和 EFI consoles)
-- serial (serial terminal)
-- ofconsole (Open Firmware console)
-- at_keyboard (PC AT keyboard, 主要會用在Coreboot)
+- console (PC BIOS 和 EFI consoles)。
+- serial (serial terminal)。
+- ofconsole (Open Firmware console)。
+- at_keyboard (PC AT keyboard, 主要會用在Coreboot)。
 - usb_keyboard (主要是使用HID boot protocol的USB鍵盤，這部分是以防firmware沒有去處理這部分)。
 
 <a id="GRUB_TERMINAL_OUTPUT"></a>
