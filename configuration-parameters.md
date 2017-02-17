@@ -238,7 +238,9 @@ GRUB_DEFAULT="2>Ubuntu, with Linux 3.2.0-18-generic-pae"
 
 <a id="GRUB_BADRAM"></a>
 ## GRUB_BADRAM <br>
-如果這個選項有被設定的話，GRUB將會發起一個badram的命令，這個命令會將RAM裡面某些特定區域給濾掉，代表這些區域已經毀損。
+如果這個選項有被設定的話，GRUB將會發起一個badram的命令，這個命令會將RAM裡面某些特定區域給濾掉，代表這些區域已經毀損。詳細訊息請參考『[Commands-GRUB](https://hugh712.gitbooks.io/grub/content/commands.html)』。
+
+
 
 <a id="GRUB_PRELOAD_MODULES"></a>
 ## GRUB_PRELOAD_MODULES <br>
