@@ -173,7 +173,7 @@ GRUB_DEFAULT="2>Ubuntu, with Linux 3.2.0-18-generic-pae"
 
 <a id="GRUB_SERIAL_COMMAND"></a>
 ## GRUB_SERIAL_COMMAND <br>
-如果你的GRUB想要使用serial console的話就要設定這個serial port，語法的話後面的章節會介紹。
+如果你的GRUB想要使用serial console的話就要設定這個serial port，語法的話在後面的『』會介紹。
 
 ## GRUB_CMDLINE_LINUX <br>
 <a id="GRUB_CMDLINE_LINUX"></a>
