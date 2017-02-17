@@ -148,7 +148,9 @@ GRUB_DEFAULT="2>Ubuntu, with Linux 3.2.0-18-generic-pae"
 - ofconsole (Open Firmware console)。
 - at_keyboard (PC AT keyboard, 主要會用在Coreboot)。
 - usb_keyboard (主要是使用HID boot protocol的USB鍵盤，這部分是以防firmware沒有去處理這部分)。
+
 <p style="color:white;">hugh check</p>
+
 <a id="GRUB_TERMINAL_OUTPUT"></a>
 ## GRUB_TERMINAL_OUTPUT <br>
 選擇終端機(terminal)的輸出裝置，當然你可以在這邊選擇多重的裝置，中間請用空白隔開。有效的terminal輸出名稱其實取決於你的平台，但是通常會有以下的幾個(預設都是使用系統原生的terminal輸出):
