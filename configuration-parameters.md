@@ -138,7 +138,7 @@ GRUB_DEFAULT="2>Ubuntu, with Linux 3.2.0-18-generic-pae"
 
 <a id="GRUB_DISTRIBUTOR"></a>
 ## GRUB_DISTRIBUTOR <br>
-主要由你的GRUB的distro來設定這個選項，把它設定成他們的辨識名稱，這樣通成會在menu entry標題的部份產生更多的資訊。
+主要由你的GRUB的distro來設定這個選項，把它設定成他們的辨識名稱，這樣通常會在menu entry標題的部份產生更多的資訊。
 
 <a id="GRUB_TERMINAL_INPUT"></a>
 ## GRUB_TERMINAL_INPUT<br>
