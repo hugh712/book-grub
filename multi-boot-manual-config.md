@@ -124,7 +124,7 @@ multiboot /boot/invaders/invaders
 boot
 ```
 ## Chain Loading
-如果想要使用FreeBSD，NetBSD或是Windows的boot程式的話，就要使用chain load來指定特定的partition。通常一般的entry會像這樣:
+如果想要使用FreeBSD，NetBSD或是Windows的boot程式的話，也可以使用chain load來指定特定的partition。通常一般的entry會像這樣:
 ```
 menuentry "FreeBSD"{
     set root=(hd0,msdos1)
