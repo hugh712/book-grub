@@ -187,7 +187,7 @@ menuentry "Windows 7" {
 ```
 3.chainloading到其它的GRUB bootloader 
 ```
-    menuentry "Grub 1 Bootloader" {
+menuentry "Grub 1 Bootloader" {
     set root=(hd0,8)
     chainloader +1
 }
