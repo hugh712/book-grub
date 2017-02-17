@@ -2,9 +2,9 @@
 
 在GRUB裡會用到boot images，通常都會放在『/usr/lib/grub/&lt;cpu>-&lt;platform>』(假設是在BIOS系統的機器，路徑就會是/usr/lib/grub/i386-pc)，所以接下來有兩個路徑就要記清楚:
 
-- image directory <br>   
+- image directory<br>   
     就是剛剛說的，GRUB images預設安裝的資料夾。
-- boot directory <br>
+- boot directory<br>
     bootloader存放的資料夾，通常是『/boot』。
     
     
