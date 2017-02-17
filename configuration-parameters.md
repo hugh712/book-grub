@@ -123,8 +123,6 @@ GRUB_DEFAULT="2>Ubuntu, with Linux 3.2.0-18-generic-pae"
 如果等號後面沒有任何數值的話，則倒數的秒數將會從『GRUB_TIMEOUT』的值那邊拿來用。
 
 
-
-
 <a id="GRUB_HIDDEN_TIMEOUT_QUIET"></a>
 ## GRUB_HIDDEN_TIMEOUT_QUIET <br>
 通常會跟『GRUB_HIDDEN_TIMEOUT』一起共用，
