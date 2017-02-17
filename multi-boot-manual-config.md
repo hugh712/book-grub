@@ -15,7 +15,7 @@ menuentry "Some title here" {
 
 
 ## Linux  
-根據章節『Making a GRUB bootable CD-ROM』的步驟，先建立相關資料夾，安裝grub，然後在掛載起來的路徑『/mnt/boot/grub/』底下建立一個『grub.cfg』，內容如下：
+根據章節『[Making a GRUB bootable CD-ROM](https://hugh712.gitbooks.io/grub/content/making-a-grub-bootable-cd-rom.html)』的步驟，先建立相關資料夾，安裝grub，然後在掛載起來的路徑『/mnt/boot/grub/』底下建立一個『grub.cfg』，內容如下：
 ```
 menuentry "my Ubuntu 16.04" {
         set root=(hd0,msdos1)
