@@ -129,9 +129,9 @@ GRUB_DEFAULT="2>Ubuntu, with Linux 3.2.0-18-generic-pae"
 - 如果將這個設定成『true』的話，將不會顯示倒數計時器。
 - 設定成『false』的話則會顯示倒數計時器，<span>但是我在Ubuntu上面怎麼設定都是false就對了</span>。
 
-## GRUB_DEFAULT_BUTTON <br>
-## GRUB_TIMEOUT_BUTTON  <br>
-## GRUB_HIDDEN_TIMEOUT_BUTTON <br>  
+## GRUB_DEFAULT_BUTTON
+## GRUB_TIMEOUT_BUTTON
+## GRUB_HIDDEN_TIMEOUT_BUTTON
 <a id="GRUB_BUTTON_CMOS_ADDRESS"></a>
 ## GRUB_BUTTON_CMOS_ADDRESS  <br>
 以上這四個key主要是因為有些筆電(laptop)的供應商會在啟動特定的作業系統時，提供額外的開機按鈕，像是『Asus EeePC 1005PE』，『Dell XPS M1530』等等，而GRUB也支援這部份的需求，主要是藉由在這個地方寫入CMOS裡的位址，這部分的需求請直接看手冊。
