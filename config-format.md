@@ -1,4 +1,4 @@
-# Config的基本規則
+# 組態的基本規則
 
 grub.cfg是用GRUB內建的語法寫的，但是其語法跟GNU Bash或是其它的Bourne Shell分支的語法很像，底下大概講一些格式規則:
 
