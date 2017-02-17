@@ -11,6 +11,7 @@
   * [basic Console](test.md)
 * [Configuration files](configuration-files.md)
   * [Config-Format](config-format.md)
+  * [Configuration parameters](configuration-parameters.md)
   * [Multi-boot manual config](multi-boot-manual-config.md)
   * [Embedding a configuration file](embedding-a-configuration-file.md)
   * [remove unnecessary kernel](remove-unnecessary-kernel.md)
