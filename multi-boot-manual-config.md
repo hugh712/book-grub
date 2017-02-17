@@ -4,7 +4,7 @@ GRUB的multi-boot環境取決於os-prober，也就是在『grub-install』執行
 
 除了Linux和Hurd以外，GRUB2也支援像是FreeBSD，NetBSD和OpenBSD等等的作業系統，並且只要你的作業系統是用multiboot規格去編譯的話，也都可以用GRUB2來開機。
 
-這個章節來介紹一下，怎麼自製簡單組態，第一個『Linux』的例子，是自制『grub.cfg』，而其它的例子則是加到『/etc/grub.d/40_custom』底下。
+這個章節來介紹一下，怎麼自製簡單組態，第一個『Linux』的例子，是直接自制『grub.cfg』，而其它的例子則是加到『/etc/grub.d/40_custom』底下，然後在用命令『update-grub』產生『grub.cfg』。
 
 如果要將自制的menu加到『40_custom』裡面，框架需如下:
 ```
