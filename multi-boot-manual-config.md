@@ -180,16 +180,16 @@ menuentry "System Rescue CD" {
 ```
 menuentry "Windows 7" {
     insmod ntfs
-set root='(hd0,1)'
-search --no-floppy --fs-uuid --set a3f1ea41fc67a3f1
-chainloader +1
+    set root='(hd0,1)'
+    search --no-floppy --fs-uuid --set a3f1ea41fc67a3f1
+    chainloader +1
 }
 ```
 3.chainloading到其它的GRUB bootloader 
 ```
-menuentry "Grub 1 Bootloader" {
-set root=(hd0,8)
-chainloader +1
+    menuentry "Grub 1 Bootloader" {
+    set root=(hd0,8)
+    chainloader +1
 }
 ```
 
