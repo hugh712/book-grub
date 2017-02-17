@@ -87,6 +87,15 @@ ls (hd0,1)
 set kFreeBSD.kern.cam.boot_delay="10000"
 ```
 
+
+在修改好你的客製化menu以後，接下來下一步就是在檔案『/etc/default/grub』裡面將『os_prober』關掉，並且更新組態:
+
+```
+GRUB_DISABLE_OS_PROBER=true
+```
+最後記得『update-grub』。
+
+
 ## NetBSD
 GRUB2可以使用命令『knetbsd 』來啟動NetBSD kernel，流程的話如下:
 
@@ -111,6 +120,14 @@ menuentry "NetBSD on sda1" {
         knetbsd /netbsd --root=wd0a
 }
 ```
+
+在修改好你的客製化menu以後，接下來下一步就是在檔案『/etc/default/grub』裡面將『os_prober』關掉，並且更新組態:
+
+```
+GRUB_DISABLE_OS_PROBER=true
+```
+最後記得『update-grub』。
+
 
 ## Generic Multi-Boot
 想要啟動一個multi-boot相容的kernel，你在讀取kernel時，必須要用命令『multiboot』來讀取，有個例子可以讓你練習一下，先下載『[Grub Invaders](http://www.erikyyy.de/invaders)』，然後解壓縮放到路徑『/boot』。接下來執行下面兩個步驟，沒意外的話你就會看到『invaders』已經被啟動了。
