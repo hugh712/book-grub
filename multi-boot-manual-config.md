@@ -168,7 +168,7 @@ GRUB_DISABLE_OS_PROBER=true
 ## Others
 底下在多三個Ubuntu官方給的案例當參考:
 
-1. 第一個為硬碟(sda8上)版本的系統救援CD
+1.第一個為硬碟(sda8上)版本的系統救援CD
 ```
 menuentry "System Rescue CD" {
 set root=(hd0,8)
@@ -185,7 +185,7 @@ search --no-floppy --fs-uuid --set a3f1ea41fc67a3f1
 chainloader +1
 }
 ```
-3. chainloading到其它的GRUB bootloader 
+3.chainloading到其它的GRUB bootloader 
 ```
 menuentry "Grub 1 Bootloader" {
 set root=(hd0,8)
