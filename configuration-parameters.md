@@ -244,7 +244,7 @@ GRUB_DEFAULT="2>Ubuntu, with Linux 3.2.0-18-generic-pae"
 
 <a id="GRUB_PRELOAD_MODULES"></a>
 ## GRUB_PRELOAD_MODULES <br>
-這個選項可以被設定成一系列的GRUB module(模組)，每個module的名稱都用空白所隔開，設定以後，在grub.cfg開始的時候，會盡快的去讀取這個些module。
+這個選項可以被設定成一系列的GRUB module(模組)，每個module的名稱都用空白所隔開，設定以後在grub.cfg開始的時候，會盡快的去讀取這個些module。
 
 
 
