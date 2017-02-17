@@ -130,7 +130,7 @@ GRUB_TERMINAL_INPUT="console serial"
 ## GRUB_DEFAULT<br>
 設定預設的menu entry，可以是一個數字，或者是menu entry的標頭，或是『saved』。
 
-1. **GRUB_DEFAULT=0**
+1. **GRUB_DEFAULT=0**<br>
 如果是數字的話，代表的是從0開始數的menu entry編號；如果你的menu entry很多的話，建議可以直接用你的menu entry的標頭就好，不然你還要在那邊數，很麻煩。
 
 	從GRUB 1.99開始，在menu的結構裡面引入了submenu，在submenu裡面的entry都會變成兩碼，第一個entry是在主要menu的submenu標題位置，第二個entry則是submenu裡面的位置，底下一個例子，假設我有一個submenu是在第三個主要entry底下的第一個，如下圖一樣，則設計就會是『2>0』。
@@ -150,7 +150,7 @@ GRUB_TERMINAL_INPUT="console serial"
 如果你給『GRUB_DEFAULT』有誤的話，可能會造成GRUB2無法決定到底要以哪一個kernel開機，這時候GRUB2預設就會以第一個主要的entry，也就是最新的kerenl開機。
 
 
-2. **GRUB_DEFAULT="xxxx"**
+2. **GRUB_DEFAULT="xxxx"**<br>
 給一個包含『" "』切確的標題名稱，用名稱的話，預設的位置就不用管了。舉例來說，如果你有個menu entry如下:
 ```
 menuentry 'Example GNU/Linux distribution' --class gnu-linux {
@@ -167,7 +167,7 @@ GRUB_DEFAULT='Example GNU/Linux distribution'
 GRUB_DEFAULT="2>Ubuntu, with Linux 3.2.0-18-generic-pae"
 ```
 
-3. **GRUB_DEFAULT=saved**
+3. **GRUB_DEFAULT=saved**<br>
 這個選項是在GRUB 1.98後開始啟用的，主要是藉由選項『GRUB_SAVEDEFAULT』來儲存預設的menu entry，預設的數字是『0』，除了由『GRUB_SAVEDEFAULT』選項來自動儲存以外，你也可以用『grub-set-default』或是『grub-reboot』。『GRUB_SAVEDEFAULT』的說明請看下一個命令，『grub-set-default』和『grub-reboot』請直接看章節『Commands-System』。
 
 <a id="GRUB_SAVEDEFAULT"></a>
