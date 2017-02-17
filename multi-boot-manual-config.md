@@ -124,14 +124,14 @@ multiboot /boot/invaders/invaders
 boot
 ```
 ## Chain Loading
-如果想要使用FreeBSD，NetBSD或是Windows的boot程式的話，也可以使用chain loading來指定特定的partition。通常一般的entry會像這樣:
+如果想要使用FreeBSD，NetBSD或是Windows的boot程式的話，也可以使用chainloading來指定特定的partition。通常一般的entry會像這樣:
 ```
 menuentry "FreeBSD"{
     set root=(hd0,msdos1)
     chainloader +1
 }
 ```
-而如果你有兩個版本以上的Ubnutu或是多種的作業系統安裝的話，最好就不要使用chainload，而是要在『/etc/grub.d/40_custom』加入像底下這樣子的entry:
+而如果你有兩個版本以上的Ubnutu或是多種的作業系統安裝的話，最好就不要使用chainloading，而是要在『/etc/grub.d/40_custom』加入像底下這樣子的entry:
 ```
 menuentry "Yet another distro/installation/encrypted Ubuntu installation/..." { 
                set root=(hd0,msdosX) 
