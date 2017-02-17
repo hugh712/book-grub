@@ -146,7 +146,7 @@ GRUB_DEFAULT="2>Ubuntu, with Linux 3.2.0-18-generic-pae"
 - console (PC BIOS 和 EFI consoles)。
 - serial (serial terminal)。
 - ofconsole (Open Firmware console)。
-- at_keyboard (PC AT keyboard, 主要會用在Coreboot)。
+- at_keyboard (PC AT keyboard，主要會用在Coreboot)。
 - usb_keyboard (主要是使用HID boot protocol的USB鍵盤，這部分是以防firmware沒有去處理這部分)。
 
 
@@ -158,7 +158,7 @@ GRUB_DEFAULT="2>Ubuntu, with Linux 3.2.0-18-generic-pae"
 - serial (serial terminal)。
 - gfxterm (graphics-mode output)。
 - ofconsole (Open Firmware console)。
-- vga_text (VGA text output, 主要是用在Coreboot)。
+- vga_text (VGA text output， 主要是用在Coreboot)。
 
 底下舉個例子，將OUTPUT改成console的話，圖型化介面就會變成底下這樣:
 ![](Imgs/Config/config003.PNG)
