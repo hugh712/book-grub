@@ -85,7 +85,7 @@ GRUB_DEFAULT="2>Ubuntu, with Linux 3.2.0-18-generic-pae"
 ```
 
 3.**GRUB_DEFAULT=saved**<br>
-這個選項是在GRUB 1.98後開始啟用的，主要是藉由選項『GRUB_SAVEDEFAULT』來儲存預設的menu entry，預設的數字是『0』，除了由『GRUB_SAVEDEFAULT』選項來自動儲存以外，你也可以用『grub-set-default』或是『grub-reboot』。『GRUB_SAVEDEFAULT』的說明請看下一個命令，『grub-set-default』和『grub-reboot』請直接看章節『Commands-System』。
+這個選項是在GRUB 1.98後開始啟用的，主要是藉由選項『GRUB_SAVEDEFAULT』來儲存預設的menu entry，預設的數字是『0』，除了由『GRUB_SAVEDEFAULT』選項來自動儲存以外，你也可以用『grub-set-default』或是『grub-reboot』。『GRUB_SAVEDEFAULT』的說明請看下一個命令，『grub-set-default』和『grub-reboot』請直接看章節『[Commands-System](https://hugh712.gitbooks.io/grub/content/commands-system.html)』。
 
 <a id="GRUB_SAVEDEFAULT"></a>
 ## GRUB_SAVEDEFAULT <br>
