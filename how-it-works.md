@@ -1,7 +1,9 @@
 # GRUB的整體流程圖
 前一章介紹過GRUB Legacy和GRUB2的差異，還有介紹過GRUB2的主要功能，根據我的習慣，接下來這一章就要來描繪一下整個GRUB2的大地圖。
 
-![](Imgs/Flow/nboot.png)
+![](Imgs/Flow/nboot.png)<br>
+(簡單的GRUB2開機流程圖)<br>
+
 
 看到上圖，正常的開機流程中，當BIOS/UEFI將控制權交給MBR/GPT中的GRUB後，前兩個重要的步驟就是找到『prefix』和『root』，然後就會使用命令『normal』讀取組態『/boot/grub/grub.cfg』而進入『normal mode』，如果進入normal mode成功的話，所有的命令，filesystem的modules和一些加解密的modules都會已經自動加載完成才對，而且GRUB的『script parser』也應該已經好了。接下來如果要在載入其他的modules的話就可以直接用命令『insmod』。
 
