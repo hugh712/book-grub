@@ -234,7 +234,7 @@ GRUB_DEFAULT="2>Ubuntu, with Linux 3.2.0-18-generic-pae"
 
 <a id="GRUB_INIT_TUNE"></a>
 ## GRUB_INIT_TUNE <br>
-當GRUB開始時，主機板會出逼聲，通常在使用者無法直接看到螢幕時很有用，這部分主要是透過一個程式叫做『play』去實做的。menu會等到這些聲音播放完以後才會出現，所以要使用的話請斟酌。詳細訊息請參考『Commands-GRUB』裡面的『play』指令。
+當GRUB開始時，主機板會出逼聲，通常在使用者無法直接看到螢幕時很有用，這部分主要是透過一個程式叫做『play』去實做的。menu會等到這些聲音播放完以後才會出現，所以要使用的話請斟酌。詳細訊息請參考『[Commands-GRUB](https://hugh712.gitbooks.io/grub/content/commands.html)』。
 
 <a id="GRUB_BADRAM"></a>
 ## GRUB_BADRAM <br>
