@@ -43,55 +43,56 @@ Command: submenu title [--class=class …] [--users=users] [--unrestricted] [--h
 
 # general commands
 
-* serial
-* terminal\_input
-* terminal\_output
-* terminfo
-* acpi          
-* badram          
-* blocklist          
-* boot          
-* cat          
-* chainloader          
-* cmp          
-* configfile          
-* cpuid          
-* crc          
-* date     
-* drivemap          
-* echo      
-* export          
-* false          
-* gettext          
-* gptsync          
-* halt          
-* help      
-* initrd          
-* initrd16          
-* insmod          
-* keystatus          
-* linux          
-* linux16          
-* list\_env          
-* load\_env          
-* loopback          
-* ls          
-* normal          
-* normal\_exit          
-* parttool          
-* password          
-* password\_pbkdf2          
-* play          
-* pxe\_unload          
-* read      
-* reboot          
-* save\_env          
-* search          
-* sendkey          
-* set          
-* true          
-* unset        
-* vbeinfo  
+列出所有的命令清單連結：
+- <a href="#serial">serial</a>
+- <a href="#terminal_input">terminal\_input</a>
+- <a href="#terminal_output">terminal\_output</a>
+- <a href="#terminfo">terminfo</a>
+- <a href="#acpi">acpi</a>
+- <a href="#badram">badram</a>
+- <a href="#blocklist">blocklist</a>
+- <a href="#boot">boot</a>
+- <a href="#cat">cat</a>
+- <a href="#chainloader">chainloader</a>
+- <a href="#cmp">cmp</a>
+- <a href="#configfile">configfile</a>
+- <a href="#cpuid">cpuid</a>
+- <a href="#crc">crc</a>
+- <a href="#date">date</a>
+- <a href="#drivemap">drivemap</a>
+- <a href="#echo">echo</a>
+- <a href="#export">export</a>
+- <a href="#false">false</a>
+- <a href="#gettext">gettext</a>
+- <a href="#gptsync">gptsync</a>
+- <a href="#halt">halt</a>
+- <a href="#help">help</a>
+- <a href="#initrd">initrd</a>
+- <a href="#initrd16">initrd16</a>
+- <a href="#insmod">insmod</a>
+- <a href="#keystatus">keystatus</a>
+- <a href="#linux">linux</a>
+- <a href="#linux16">linux16</a>
+- <a href="#list_env">list\_env</a>
+- <a href="#load_env">load\_env</a>
+- <a href="#loopback">loopback</a>
+- <a href="#ls">ls</a>
+- <a href="#normal">normal</a>
+- <a href="#normal_exit">normal\_exit</a>
+- <a href="#parttool">parttool</a>
+- <a href="#password">password</a>
+- <a href="#password_pbkdf2 ">password\_pbkdf2 </a>
+- <a href="#play">play</a>
+- <a href="#pxe_unload">pxe\_unload</a>
+- <a href="#read">read</a>
+- <a href="#reboot">reboot</a>
+- <a href="#save_env">save\_env</a>
+- <a href="#search">search</a>
+- <a href="#sendkey">sendkey</a>
+- <a href="#set">set</a>
+- <a href="#true">true</a>
+- <a href="#unset">unset</a>
+- <a href="#vbeinfo">vbeinfo</a>
 
 ## serial
 
