@@ -228,7 +228,7 @@ grub-mkimage [OPTION...] [OPTION]... [MODULES]
 選擇你的『core image』用的壓縮演算法。
 
 - -d, --directory=DIR<br>
-使用這個指定資料夾底下的映像檔和modules，預設的話是『default=/usr/lib/grub/&lt; platform>』。
+使用這個指定資料夾底下的image和modules，預設的話是『default=/usr/lib/grub/&lt; platform>』。
 
 - -k, --pubkey=FILE<br>
 嵌入一個public key。
