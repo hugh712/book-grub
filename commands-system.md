@@ -309,7 +309,7 @@ grub-mkstandalone [OPTION...] [OPTION] SOURCE...
 可以使用這些格式來壓縮你的GRUB檔案。
 
 - -d, --directory=DIR<br>
-使用這個指定資料夾底下的映像檔和modules，預設的話是『default=/usr/lib/grub/&lt; platform>』。
+使用這個指定資料夾底下的image和modules，預設的話是『default=/usr/lib/grub/&lt; platform>』。
 
 - --fonts=FONTS<br>
 安裝字體，預設的話是『unicode』。
