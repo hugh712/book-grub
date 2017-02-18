@@ -34,7 +34,7 @@ set prefix=(hd0,msdos1)/boot/grub
 search --set=root --file /vmlinuz
 ```
 
-4. 使用指令『linux』來讀取kernel:
+4.使用指令『linux』來讀取kernel:
 ```
 #這個vmlinuz檔案通常是個捷徑
 #假設是第一個磁碟的第一個partiton
@@ -50,7 +50,7 @@ grub> linux /vmlinuz root=/dev/sda1 acpi=off
 ```
 grub> linux16 /vmlinuz root=/dev/sda1 acpi=off
 ```
-5. 如果你有initrd的話，直接在指令『linux』後面使用:
+5.如果你有initrd的話，直接在指令『linux』後面使用:
 ```
 grub> initrd /initrd
 ```
@@ -58,7 +58,7 @@ grub> initrd /initrd
 ```
 grub> initrd16 /initrd
 ```
-6. 最後一步，使用『boot』啟動。
+6.最後一步，使用『boot』啟動。
 
 
 
