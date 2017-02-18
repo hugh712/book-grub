@@ -17,7 +17,7 @@
 set root=(hdX,Y)
 
 #假設是第一個磁碟的第一個partiton
-set root=(hd0,mosds1)
+set root=(hd0,msdos1)
 
 
 
