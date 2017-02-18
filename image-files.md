@@ -46,7 +46,7 @@ pxeboot.img: data
 
 ## lnxboot.img
 
-如果是用LILO開機的話，這個image可以被放置在core image的前頭，這樣可以讓core image看起來很像Linux Kernel，這樣LILO可以用『image=sector來開機。
+如果是用LILO開機的話，這個image可以被放置在core image的前頭，這樣可以讓core image看起來很像Linux Kernel，這樣LILO就可以用『image=sector』來開機。
 
 ```
 # ll lnxboot.img; file lnxboot.img
