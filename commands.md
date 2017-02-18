@@ -648,6 +648,7 @@ Command: save_env [-f file] var …
 
 將指定的環境變數存到『environment block』檔案裡
 
+### save_env接受底下的options:
 -f  
 這個參數代表覆蓋『environment block』的預設位置。
 
