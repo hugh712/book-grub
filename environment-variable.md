@@ -29,6 +29,7 @@ GRUB裡面的環境變數(environment variables)，就像是Unix-like系統一�
 - <a href="#pxe_default_server">pxe_default_gateway</a>
 - <a href="#pxe_default_server">pxe_default_server</a>
 - <a href="#pager">pager</a>
+- <a href="#prefix">prefix</a>
 - <a href="#root">root</a>
 - <a href="#superusers">superusers</a>
 - <a href="#theme">theme</a>
