@@ -27,11 +27,6 @@ set prefix=(hdX,Y)/boot/grub
 
 #假設是第一個磁碟的第一個partiton
 set prefix=(hd0,msdos1)/boot/grub
-
-
-
-
-
 ```
 
 3.將GRUB的root裝置設定成跟Linux一樣，可以利用底下的指令幫你完成這部份的功能。
@@ -42,6 +37,8 @@ search --set=root --file /vmlinuz
 4. 使用指令『linux』來讀取kernel:
 ```
 #這個vmlinuz檔案通常是個捷徑
+#假設是第一個磁碟的第一個partiton
+
 grub> linux /vmlinuz root=/dev/sda1
 ```
 至於如果你想要加一些kernel的參數的話，可以直接加到後面，像是底下的例子，主要是將acpi給設定成off:
