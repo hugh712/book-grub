@@ -2,6 +2,41 @@ GRUB裡面的環境變數(environment variables)，就像是Unix-like系統一�
 
 # Special environment variables
 
+底下列出清單連結
+- <a href="#biosnum">biosnum</a>
+- <a href="#chosen">chosen</a>
+- <a href="#color_highlight">color_highlight</a>
+- <a href="#color_normal">color_normal</a>
+- <a href="#debug">debug</a>
+- <a href="#default">default</a>
+- <a href="#fallback">fallback</a>
+- <a href="#gfxmode">gfxmode</a>
+- <a href="#gfxpayload">gfxpayload</a>
+- <a href="#gfxterm_font">gfxterm_font</a>
+- <a href="#icondir">icondir</a>
+- <a href="#lang">lang</a>
+- <a href="#locale_dir">locale_dir</a>
+- <a href="#menu_color_normal">menu_color_highlight</a>
+- <a href="#menu_color_normal">menu_color_normal</a>
+- <a href="#pxe_default_server">net_pxe_boot_file</a>
+- <a href="#pxe_default_server">net_pxe_dhcp_server_name</a>
+- <a href="#pxe_default_server">net_pxe_domain</a>
+- <a href="#pxe_default_server">net_pxe_extensionspath</a>
+- <a href="#pxe_default_server">net_pxe_hostname</a>
+- <a href="#pxe_default_server">net_pxe_ip</a>
+- <a href="#pxe_default_server">net_pxe_mac</a>
+- <a href="#pxe_default_server">net_pxe_rootpath</a>
+- <a href="#pxe_default_server">pxe_blksize</a>
+- <a href="#pxe_default_server">pxe_default_gateway</a>
+- <a href="#pxe_default_server">pxe_default_server</a>
+- <a href="#pager">pager</a>
+- <a href="#root">root</a>
+- <a href="#superusers">superusers</a>
+- <a href="#theme">theme</a>
+- <a href="#timeout">timeout</a>
+
+
+
 ## biosnum	
   	當chain-loading到其他的boot loader時，GRUB可能需要知道與root device相關的BIOS drive number，這樣它才可以去設定registers。這部分的話也可以透過命令『devicemap』來達成。
 
