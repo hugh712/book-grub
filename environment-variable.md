@@ -38,7 +38,7 @@ GRUB裡面的環境變數(environment variables)，就像是Unix-like系統一�
 
 <a id="biosnum"></a>
 ## biosnum	
-當chain-loading到其他的boot loader時，GRUB可能需要知道與root device相關的BIOS drive number，這樣它才可以去設定registers。這部分的話也可以透過命令『devicemap』來達成。
+當chain-loading到其他的bootloader時，GRUB可能需要知道與root device相關的BIOS drive number，這樣它才可以去設定registers。這部分的話也可以透過命令『devicemap』來達成。
 
 <a id="chosen"></a>
 ## chosen	
