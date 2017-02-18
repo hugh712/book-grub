@@ -415,6 +415,7 @@ Command: halt --no-apm
 
 關閉這台電腦。
 
+### halt接受底下的options:
 --no-apm  
 不呼叫APM BIOS。
 
