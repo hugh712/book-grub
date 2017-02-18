@@ -146,24 +146,29 @@ echo "${1}set menu_color_highlight=white/blue"
 ## pxe_default_server		
 以上這幾個變數都是關於PXE的部份，這邊就不探討。
 
+<a id="pager"></a>
 ## pager	  	
 如果設定成1的話，就很像是linux shell的less的分頁效果。預設的話不會設定這個變數。
 
+<a id="prefix"></a>
 ## prefix	  	
 這個變數非常的重要，主要是設定『/boot/grub』的資料夾絕對位置，通常在『grub-install』時GRUB就會設定好了，然後GRUB的moudles就會動態的從這個變數去讀取相關的資訊，所以如果這個變數不正確的話，會連最簡單的modules都無法讀取。
 
+<a id="root"></a>
 ## root	  	
 root的裝置名稱，只要你沒有特別指定你的檔案的裝置在那的話，都會用這個預設的，通常都會跟『prefix』的值有相關。舉個例子來說，如果GRUB被安裝在第一顆硬碟的第一個partition，則『prefix』則應該被設定成『(hd0,msdos1)/boot/grub』，『root』的話就是『hd0,msdos1』。
 
+<a id="superusers"></a>
 ## superusers	  	
 這個變數可以被設定成一系列的superuser名稱，可以用於權限的控制。
 
+<a id="theme"></a>
 ## theme	 
 這個變數設定成包含GRUB圖形化選單主題的資料夾路徑，通常這個變數都是由每個distro的『GRUB_THEME』去設定的，像是debian-like的就是在『/etc/grub.d/05_debian_theme』裡。	
 
+<a id="timeout"></a>
 ## timeout	  	
 設定在使用預設的menu entry啟動之前，GRUB會等待多久的時間，如果你有按任何鍵的話，就會中斷倒數。『0』的話就是直接以預設的menu entry啟動，『-1』的話就是會一直等。這個變數通常都由『GRUB_TIMEOUT』和『GRUB_HIDDEN_TIMEOUT』的組合來設定的。
-
 
 # The GRUB environment block
 通常在兩次開機之間如果有辦法去紀錄一些資訊的話，對一個系統來說都會很有幫助，像是紀錄上一次的你選擇的menu entry等等，但是GRUB為了減少在這個時間點檔案系統毀損的機會，所以沒有特別實做一般的檔案寫入機制，取而代之的則是提供了『environment block』的機制。『environment block』是一個預先連結的1024-byte的檔案，通常路徑會在『/boot/grub/grubenv』，在開機時，命令『load_env』會去讀取這個block裡面的環境變數，而命令『save_env』則是將環境變數存到這個block裡。而在一個執行中的作業系統裡想要編輯這個block就要使用命令『grub-editenv』。
