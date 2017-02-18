@@ -101,7 +101,7 @@ grub-fstest [OPTION...] IMAGE_PATH COMMANDS
 - -d, --debug=STRING<br>
 設定debug的環境變數。
 
-- -K, --zfs-key=FILE|prompt<br>
+- -K, --zfs-key=FILE | prompt<br>
 讀取zfs crypto key。
 
 - -n, --length=NUM<br>
