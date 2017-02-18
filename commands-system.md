@@ -65,28 +65,28 @@ grub-fstest [OPTION...] IMAGE_PATH COMMANDS
 
 ### grub-fstest接受底下的COMMAND:
 
-- blocklist FILE
+- blocklist FILE<br>
 顯示檔案的blocklist。
 
-- cat FILE
+- cat FILE<br>
  顯示檔案的內容。
 
-- cmp FILE LOCAL
+- cmp FILE LOCAL<br>
 比對檔案內容。
 
-- cp FILE LOCAL
+- cp FILE LOCAL<br>
 複製檔案。
 
-- crc FILE
+- crc FILE<br>
  取得檔案的crc32 checksum。
 
-- hex FILE
+- hex FILE<br>
  秀出16進制的檔案內容。
 
-- ls PATH
+- ls PATH<br>
   列出路徑下的檔案清單。
 
-- xnu_uuid DEVICE
+- xnu_uuid DEVICE<br>
   計算裝置的XNU UUID。
 
 
