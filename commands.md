@@ -12,7 +12,7 @@ GRUB的命令分為兩個群組:
 * submenu
 
 ## menuentry
-
+### 用法
 ```
 Command: menuentry title [--class=class …] [--users=users] [--unrestricted] [--hotkey=key] { command; … }
 ```
@@ -32,7 +32,7 @@ Command: menuentry title [--class=class …] [--users=users] [--unrestricted] [-
 結合menu entry與某個熱鍵\(hotkey\)，有可能是單一個字母鍵，或者是別名\(eg. 'backspace', 'tab' 或是 'delete'\)。
 
 ## submenu
-
+### 用法
 ```
 Command: submenu title [--class=class …] [--users=users] [--unrestricted] [--hotkey=key] { menu entries … }
 ```
