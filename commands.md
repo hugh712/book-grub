@@ -205,6 +205,7 @@ Command: boot
 
 啟動已經載入的作業系統或是chain-loader，但是這個指令通常只會在互動式的cmd才需要，因為在menu entry的最後面會自動呼叫。
 
+<a id="cat"></a>
 ## cat
 
 ```
@@ -219,6 +220,7 @@ grub> cat /etc/fstab
 
 如果有用參數『--dos』的話，結尾符號是CLRF的windows格式話就不會特別顯示，但是如果你沒有加這個參數，那結尾就會有一個『&lt;d&gt;』。
 
+<a id="chainloader"></a>
 ## chainloader
 
 ```
@@ -230,6 +232,7 @@ Command: chainloader [--force] file
 --force,  
 強制的讀取檔案，不論它是否是正確的signature，通常是在你想要讀取一個有缺陷的boot loader時就需要用到。
 
+<a id="cmp"></a>
 ## cmp
 
 ```
@@ -250,6 +253,7 @@ Differ at the offset 777: 0xbe [foo], 0xef [bar]
 
 至於完全一樣的話，就不會顯示任何東西。
 
+<a id="configfile"></a>
 ## configfile
 
 ```
@@ -258,6 +262,7 @@ Command: configfile file
 
 讀取一個檔案當成組態檔，如果檔案裡面定義了menu entry的話，則馬上就會顯示出相關的menu。
 
+<a id="cpuid"></a>
 ## cpuid
 
 ```
@@ -266,6 +271,7 @@ Command: cpuid [-l]
 
 檢查CPU的功能，這個命令只能支援x86的系統。如果有個參數『-l』的話，當你的CPU支援long mode\(64-bit\)，就會回傳『true』。
 
+<a id="crc"></a>
 ## crc
 
 ```
@@ -274,6 +280,7 @@ Command: crc file
 
 顯示一個檔案的CRC32 checksum。
 
+<a id="date"></a>
 ## date
 
 ```
@@ -288,6 +295,7 @@ date 01-01
 
 上面這個例子會將現在的時間設定成一月一號，但是年，時間之類的就不會變。
 
+<a id="drivemap"></a>
 ## drivemap
 
 ```
@@ -313,6 +321,7 @@ drivemap -s (hd0) (hd1)
 
 代表將『\(hd0\)』對應到『\(hd1\)』。
 
+<a id="echo"></a>
 ## echo
 
 ```
@@ -351,6 +360,7 @@ horizontal tab。
 \v  
 vertical tab。
 
+<a id="export"></a>
 ## export
 
 ```
@@ -359,6 +369,7 @@ Command: export envvar
 
 export環境變數，通常就是給用『configfile』建出來的子組態檔環境看得到這個變數用的，就像是在linux的shell要給其他的shell看到某個變數也是要用export一樣。
 
+<a id="false"></a>
 ## false
 
 ```
@@ -367,6 +378,7 @@ Command: false
 
 沒什麼用處，主要是拿來在判斷式『if』或『while』用的。
 
+<a id="gettext"></a>
 ## gettext
 
 ```
@@ -375,6 +387,7 @@ Command: gettext string
 
 將你的輸入字串轉變成你目前的語言，目前的語言可以看變數『lang』，至於翻譯檔的路徑會存在變數『locale\_dir』裡面，檔案格式為『mo』，通常預設路徑為『/boot/grub/locale』。
 
+<a id="gptsync"></a>
 ## gptsync
 
 ```
@@ -387,6 +400,7 @@ Command: gptsync device [partition[+/-[type]]] …
 
 『type』是MBR的partition type code，如果要用16進制的話前面記得加個『0x』，在partition和type之間的區隔可以有『+』和『-』，『+』的話就是讓你的partition active，『-』的話則是讓你的partition inactive，但是狀態的話只能有一個partition處於active的狀態，如果沒有特別強調哪個partition要active的話，則所有的partition都會是inactive。
 
+<a id="halt"></a>
 ## halt
 
 ```
@@ -398,6 +412,7 @@ Command: halt --no-apm
 --no-apm,  
 不呼叫APM BIOS。
 
+<a id="help"></a>
 ## help
 
 ```
@@ -406,6 +421,7 @@ Command: help [pattern …]
 
 顯示所有內建的命令資訊，如果你沒有指定『pattern』，也就是沒有指定命令的話，則將會顯示所有可取得的命令和其簡短說明。
 
+<a id="initrd"></a>
 ## initrd
 
 ```
@@ -414,6 +430,7 @@ Command: initrd file
 
 讀取一個initial ramdisk映像檔，並且未Linux在記憶體裡的setup區域設定相關的參數，這個指令只在命令『linux』執行以後才有用處。
 
+<a id="initrd16"></a>
 ## initrd16
 
 ```
