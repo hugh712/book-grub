@@ -117,6 +117,7 @@ BadRAM的部分，因為協定的限制，所以mips-loongson\(Linux 協定\)和
 - efi: lsefisystab, lssal, lsefimmap
 - i386-pc: lsapm
 - acpi-enabled (i386-pc, i386-coreboot, i386-multiboot, *-efi): lsacpi
+
 ## 解決一些平台相依的問題
 - i386-efi/x86_64-efi: loadbios, fixvideo
 - acpi-enabled (i386-pc, i386-coreboot, i386-multiboot, *-efi): acpi (覆蓋 ACPI tables)
