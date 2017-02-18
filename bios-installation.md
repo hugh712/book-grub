@@ -5,7 +5,7 @@
 
 2. core image可以被安裝到一個檔案系統裡面，又或者是可以被安裝到一系列的blocks裡面，這兩種方式都要能確保可以被安裝到這個partition的第一個sector裡。
 
-上面的兩種方式都有其缺點，第一種的話，主要是放置在embedding area並無法保證這個保留區域是絕對安全的，或者有可能會被其他的軟體所覆寫掉，又或者是系統有時候在建制partition的時候沒有在第一個partition留有足夠的空間等等問題。第二種方式就很有可能被一些filesystem的功能所影響，像是『tail packing』還是『fsck』等等會去影響到block的功能，所以其實依賴於filesystem的作法其實也是很脆弱的。並且第二種方式也只能用在『/boot』和BIOS開機的硬碟是同一顆的狀態下才能用。
+上面的兩種方式都有其缺點，第一種的話，主要是放置在embedding area並無法保證這個保留區域是絕對安全的，或者有可能會被其他的軟體所覆寫掉，又或者是系統有時候在建制partition的時候沒有在第一個partition留有足夠的空間等等問題。第二種方式就很有可能被一些檔案系統的功能所影響，像是『tail packing』還是『fsck』等等會去影響到block的功能，所以其實依賴於filesystem的作法其實也是很脆弱的。並且第二種方式也只能用在『/boot』和BIOS開機的硬碟是同一顆的狀態下才能用。
 
 GRUB的研發團隊通常會建議將GRUB嵌在第一個partition之前，你必須確保第一個partition至少會是在磁碟一開始的31 KiB(63 sectors)之後;但是現在的硬碟因為效能的關係，所以可以將第一個partition給擴充到1 MiB的地方比較好。
 
