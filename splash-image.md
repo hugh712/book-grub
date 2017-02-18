@@ -51,6 +51,7 @@ sudo update-grub
 如果在『update-grup』時有找到相關影像的話，就會出現底下的訊息，但是這邊注意的是，它有抓到影像訊息，不代表這張影像可以用，請注意上面提到過的限制。
 ![](Imgs/display/display001.PNG)
 
+
 然後重新開機後，沒意外的話就會出現相關影像了:
 ![](Imgs/display/display002.PNG)
 
