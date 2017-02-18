@@ -19,13 +19,19 @@ set root=(hdX,Y)
 #假設是第一個磁碟的第一個partiton
 set root=(hd0,msdos1)
 
-
-
 ```
 
 2.設定『prefix』
 ```
 set prefix=(hdX,Y)/boot/grub
+
+#假設是第一個磁碟的第一個partiton
+set prefix=(hd0,msdos1)/boot/grub
+
+
+
+
+
 ```
 
 3.將GRUB的root裝置設定成跟Linux一樣，可以利用底下的指令幫你完成這部份的功能。
