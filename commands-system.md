@@ -174,8 +174,6 @@ grub-menulst2cfg [INFILE [OUTFILE]]
 
 ## grub-mkconfig
 <a id="mkconfig"></a>
-
-
 ### 用法
 ```
 grub-mkconfig [OPTION]
@@ -222,7 +220,7 @@ grub-mkimage [OPTION...] [OPTION]... [MODULES]
 ```
 這個指令可以用來產生GRUB 映像檔。
 
-### grub-mkstandalone接受底下的options:
+### grub-mkimage接受底下的options:
 
 - -c, --config=FILE<br>
 嵌入一個組態檔。
