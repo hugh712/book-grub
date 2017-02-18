@@ -793,7 +793,7 @@ options 『--num』，『--caps』，『--scroll』和『--insert』會模擬相
 Command: set [envvar=value]
 ```
 
-設定一個環境變數的值，如果沒有任何參數的話，就會印出所有的環境變數和其值。
+設定一個環境變數的值，如果沒有任何參數的話，就會印出所有的環境變數和值。
 
 <a id="true"></a>
 ## true
