@@ -168,7 +168,7 @@ root的裝置名稱，只要你沒有特別指定你的檔案的裝置在那的�
 
 <a id="timeout"></a>
 ## timeout	  	
-設定在使用預設的menu entry啟動之前，GRUB會等待多久的時間，如果你有按任何鍵的話，就會中斷倒數。『0』的話就是直接以預設的menu entry啟動，『-1』的話就是會一直等。這個變數通常都由『GRUB_TIMEOUT』和『GRUB_HIDDEN_TIMEOUT』的組合來設定的。
+設定在選單出現後，使用預設的menu entry啟動之前，GRUB會等待多久的時間，如果你有按任何鍵的話，就會中斷倒數。『0』的話就是直接以預設的menu entry啟動，『-1』的話就是會一直等。這個變數通常都由『GRUB_TIMEOUT』和『GRUB_HIDDEN_TIMEOUT』的組合來設定的。
 
 # The GRUB environment block
 通常在兩次開機之間如果有辦法去紀錄一些資訊的話，對一個系統來說都會很有幫助，像是紀錄上一次的你選擇的menu entry等等，但是GRUB為了減少在這個時間點檔案系統毀損的機會，所以沒有特別實做一般的檔案寫入機制，取而代之的則是提供了『environment block』的機制。『environment block』是一個預先連結的1024-byte的檔案，通常路徑會在『/boot/grub/grubenv』，在開機時，命令『load_env』會去讀取這個block裡面的環境變數，而命令『save_env』則是將環境變數存到這個block裡。而在一個執行中的作業系統裡想要編輯這個block就要使用命令『grub-editenv』。
