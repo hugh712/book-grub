@@ -8,11 +8,21 @@
 
 通常一般的步驟會如下所示:
 
-1. 將GRUB的root device設定成跟Linux一樣，可以利用底下的指令幫你完成這部份的功能。
+1. 將GRUB的root裝置設定成跟Linux一樣，可以利用底下的指令幫你完成這部份的功能。
 ```
 search --set=root --file /vmlinuz
 ```
-2. 使用指令『linux』來讀取kernel:
+2.設定『root』
+```
+set root=(hdX,Y)
+```
+
+3.設定『prefix』
+```
+set prefix=(hdX,Y)/boot/grub
+```
+
+4. 使用指令『linux』來讀取kernel:
 ```
 grub> linux /vmlinuz root=/dev/sda1
 ```
@@ -25,7 +35,7 @@ grub> linux /vmlinuz root=/dev/sda1 acpi=off
 ```
 grub> linux16 /vmlinuz root=/dev/sda1 acpi=off
 ```
-3. 如果你有initrd的話，直接在指令『linux』後面使用:
+5. 如果你有initrd的話，直接在指令『linux』後面使用:
 ```
 grub> initrd /initrd
 ```
@@ -33,7 +43,7 @@ grub> initrd /initrd
 ```
 grub> initrd16 /initrd
 ```
-4. 最後一步，使用『boot』啟動。
+6. 最後一步，使用『boot』啟動。
 
 
 
