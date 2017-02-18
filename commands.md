@@ -453,7 +453,7 @@ Command: initrd16 file
 Command: insmod module
 ```
 
-匯入相關的GRUB模組。
+匯入相關的GRUB modules。
 
 <a id="keystatus"></a>
 ## keystatus
