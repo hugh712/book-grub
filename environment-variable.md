@@ -116,7 +116,7 @@ GRUB_GFXMODE=1280x1024x16,800x600x24,640x480
 
 <a id="locale_dir"></a>
 ## locale_dir	  	
-設定多國語言檔所在的路徑，通常預設會是『/boot/grub/locale』，如果沒有的話就代表多國語言是被取消的。grub-mkconfig執行時將會根據你的系統的locale值來設定一個合理的變數給GRUB。
+設定多國語言檔(Multi Language)所在的路徑，通常預設會是『/boot/grub/locale』，如果沒有的話就代表多國語言是被取消的。grub-mkconfig執行時將會根據你的系統的locale值來設定一個合理的變數給GRUB。
 
 ## menu_color_highlight
 <a id="menu_color_normal"></a>	  	
