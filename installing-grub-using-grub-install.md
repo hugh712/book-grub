@@ -50,6 +50,7 @@ root@hugh-VirtualBox:/home/hugh# mkdir /mnt/boot
 root@hugh-VirtualBox:/home/hugh# grub-install /dev/sdb --boot-directory=/mnt/boot
 Installing for i386-pc platform.
 Installation finished. No error reported.
+```
 
 7.檢查一下裝置內是否已經有相關檔案：
 root@hugh-VirtualBox:/home/hugh# ls /mnt/boot/grub/
