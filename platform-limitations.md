@@ -241,7 +241,7 @@ BadRAM的部分，因為協定的限制，所以mips-loongson\(Linux 協定\)和
 1. 需要BIOS。
 2. 因為記憶體位置0x0-0x1000不可存取。
 3. EFI only。
-4. 32-bit和64-bit EFI 的結構不一樣，而且運作在不同的CPU模式上，所以不可能在64-bit平台上chainload到32-bit的bootloader上，相對也無法在632-bit的平台chainload到64-bit的bootloader上。
+4. 32-bit和64-bit EFI 的結構不一樣，而且運作在不同的CPU模式上，所以不可能在64-bit平台上chainload到32-bit的bootloader上，相對也無法在32-bit的平台chainload到64-bit的bootloader上。
 5. 有些modules也許必須被關閉。
 6. 需要ACPI的支援。
 PowerPC, IA64 and Sparc64的ports只有支援Linux，而MIPS的ports支援Linux和multiboot2。
