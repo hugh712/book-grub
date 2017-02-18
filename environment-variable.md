@@ -42,11 +42,11 @@ GRUB裡面的環境變數(environment variables)，就像是Unix-like系統一�
 
 <a id="chosen"></a>
 ## chosen	
-  	這個變數需要搭配『GRUB_SAVEDEFAULT』和『GRUB_DEFAULT』的使用，因為設定成會儲存上一次的選擇，才會用到這個變數。底下兩張圖可以看到我將『GRUB_SAVEDEFAULT』設定為true和『GRUB_DEFAULT』設定為saved，然後第一次開機自己選擇用kernel 4.4.0-31開機後，在下一次開機時，『chosen』和『default』就會把我上一次所選擇的版本給儲存起來了。
+這個變數需要搭配『GRUB_SAVEDEFAULT』和『GRUB_DEFAULT』的使用，因為設定成會儲存上一次的選擇，才會用到這個變數。底下兩張圖可以看到我將『GRUB_SAVEDEFAULT』設定為true和『GRUB_DEFAULT』設定為saved，然後第一次開機自己選擇用kernel 4.4.0-31開機後，在下一次開機時，『chosen』和『default』就會把我上一次所選擇的版本給儲存起來了。
   
-  ![](Imgs/env/env002.PNG)
+![](Imgs/env/env002.PNG)
 
-  ![](Imgs/env/env001.PNG)
+![](Imgs/env/env001.PNG)
   
 <a id="color_highlight"></a>
 ## color_highlight	  	
