@@ -525,7 +525,7 @@ grub-reboot [OPTION] MENU_ENTRY
 
 ### grub-reboot接受底下的options:
 
-- --boot-directory=DIR
+- --boot-directory=DIR<br>
 使用你自己的GRUB映像檔，而不是系統預設的『/boot/grub』，所以用這個option的話，路徑應該會像『DIR/grub』才對。
 
 這個行為其實可以不用這個命令，只要修改相關組態在用命令『update-grub』也可以。
@@ -544,12 +544,9 @@ grub-set-default [OPTION] MENU_ENTRY
 sudo grub-set-default 3
 sudo grub-set-default "Ubuntu, Linux 2.6.32-15-generic"
 ```
-
-
-
 ### grub-reboot接受底下的options:
 
-- --boot-directory=DIR
+- --boot-directory=DIR<br>
 使用你自己的GRUB映像檔，而不是系統預設的『/boot/grub』，所以用這個option的話，路徑應該會像『DIR/grub』才對。
 
 ## update-grub
