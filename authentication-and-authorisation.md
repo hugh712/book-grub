@@ -37,7 +37,7 @@ menuentry "May be run by user1 or a superuser" --users user1 {
 	chainloader +1
 }
 ```
-可以看到設定了一個superuser - 『root』，然後有另一個user - 『user1』，user1的密碼就是『insecure』，而root的密碼就是之前應該用Linux的指令『grub-mkpasswd-pbkdf2』所建立出來的密碼如下:
+可以看到設定了一個superuser - 『root』，然後有另一個user - 『user1』，user1的密碼就是『insecure』，而root的密碼就是之前應該用Linux的指令『grub-mkpasswd-pbkdf2』所建立出來的密碼如下(這是在Linux系統底下產生的):
 
 ```
 # grub-mkpasswd-pbkdf2
