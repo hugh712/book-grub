@@ -175,7 +175,6 @@ root的裝置名稱，只要你沒有特別指定你的檔案的裝置在那的�
 
 『environment block』是一個預先連結的1024-byte的檔案，通常路徑會在『/boot/grub/grubenv』，在開機時，命令『load_env』會去讀取這個block裡面的環境變數，而命令『save_env』則是將環境變數存到這個block裡。而在一個執行中的作業系統裡想要編輯這個block就要使用命令『grub-editenv』。『grub-mkconfig』也是使用這個機制來實做『GRUB_SAVEDEFAULT』。
 
-
 因為一些安全機制，所以這個block只能在plain disk裡面安裝，意思是像是LVM或是RAID的就不能安裝，其他限制還有，如果沒有checksum的檔案系統(不能是ZFS)就不能使用，或者是必須要使用BIOS或是EFI功能才能使用(不能是ATA，USB，IEEE1275)。
 
 
