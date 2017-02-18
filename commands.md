@@ -97,32 +97,32 @@ Command: submenu title [--class=class …] [--users=users] [--unrestricted] [--h
 
 <a id="serial"></a>
 ## serial
-
+### 用法
 ```
 Command: serial [--unit=unit] [--port=port] [--speed=speed] [--word=word] [--parity=parity] [--stop=stop]
 ```
 
 初始化一個串列設備\(serial device\)，這邊要特別注意的是，這個命令一定要搭配『terminal\_input』和『terminal\_output』的使用。
 
---unit,  
+--unit  
 代表哪個serial port會被使用，範圍是0~3，預設的話是0，對應port的話是COM1。
 
---port,  
+--port  
 代表哪個I/O port UART會被找到。
 
---speed,  
+--speed  
 這是傳輸速率，預設是9600。
 
---word,  
---stop,  
+--word  
+--stop  
 word和stop是data bits和stop bits，data bits必須是5~8，stop bits必須是1或2，預設的話是data bits - 8和stop bit - 1。
 
---parity,  
+--parity  
 parity的值會是『no』,『odd』,『even』其一，預設的話是『no』。
 
 <a id="terminal_input"></a>
 ## terminal\_input
-
+### 用法
 ```
 Command: terminal_input [--append|--remove] [terminal1] [terminal2] …
 ```
@@ -130,15 +130,15 @@ Command: terminal_input [--append|--remove] [terminal1] [terminal2] …
 列出或選擇一個輸入terminal。如果沒有輸入參數的話，就是列出所有已啟動  
 和可取得的輸入terminal。如果沒有其他參數但是有一系列的terminal名稱的話，就會只讓列出的terminal名稱啟動。
 
---append,  
+--append  
 後面會接一個/多個terminal的名稱，然後這個選項會將這個terminal加到啟動輸入清單裡面。清單裡面每個terminal都會提供GRUB輸入。
 
---remove,  
+--remove  
 後面會接一個/多個terminal的名稱，然後這個選項會從啟動清單裡面將這個terminal移除掉。
 
 <a id="terminal_output"></a>
 ## terminal\_output
-
+### 用法
 ```
 Command: terminal_output [--append|--remove] [terminal1] [terminal2] …
 ```
@@ -146,15 +146,15 @@ Command: terminal_output [--append|--remove] [terminal1] [terminal2] …
 列出或選擇一個輸出terminal。如果沒有輸入參數的話，就是列出所有已啟動  
 和可取得的輸出terminal。如果沒有其他參數但是有一系列的terminal名稱的話，就會只讓列出的terminal名稱啟動。
 
---append,  
+--append  
 後面會接一個/多個terminal的名稱，然後這個選項會將這個terminal加到啟動輸出清單裡面。清單裡面每個terminal都會接到GRUB的輸出資訊。
 
---remove,  
+--remove  
 後面會接一個/多個terminal的名稱，然後這個選項會從啟動清單裡面將這個terminal移除掉。
 
 <a id="terminfo"></a>
 ## terminfo
-
+### 用法
 ```
 Command: terminfo [-a|-u|-v] [term]
 ```
@@ -167,7 +167,7 @@ Command: terminfo [-a|-u|-v] [term]
 
 <a id="acpi"></a>
 ## acpi
-
+### 用法
 ```
 Command: acpi [-1|-2] [--exclude=table1,…|--load-only=table1,…] [--oemid=id] [--oemtable=table] [--oemtablerev=rev] [--oemtablecreator=creator] [--oemtablecreatorrev=rev] [--no-ebda] filename …
 ```
@@ -178,7 +178,7 @@ Command: acpi [-1|-2] [--exclude=table1,…|--load-only=table1,…] [--oemid=id]
 
 <a id="badram"></a>
 ## badram
-
+### 用法
 ```
 Command: badram addr,mask[,addr,mask...]
 ```
@@ -189,7 +189,7 @@ Command: badram addr,mask[,addr,mask...]
 
 <a id="blocklist"></a>
 ## blocklist
-
+### 用法
 ```
 Command: blocklist file
 ```
@@ -198,7 +198,7 @@ Command: blocklist file
 
 <a id="boot"></a>
 ## boot
-
+### 用法
 ```
 Command: boot
 ```
@@ -207,7 +207,7 @@ Command: boot
 
 <a id="cat"></a>
 ## cat
-
+### 用法
 ```
 Command: cat [--dos] file
 ```
@@ -222,7 +222,7 @@ grub> cat /etc/fstab
 
 <a id="chainloader"></a>
 ## chainloader
-
+### 用法
 ```
 Command: chainloader [--force] file
 ```
@@ -234,7 +234,7 @@ Command: chainloader [--force] file
 
 <a id="cmp"></a>
 ## cmp
-
+### 用法
 ```
 Command: cmp file1 file2
 ```
@@ -255,7 +255,7 @@ Differ at the offset 777: 0xbe [foo], 0xef [bar]
 
 <a id="configfile"></a>
 ## configfile
-
+### 用法
 ```
 Command: configfile file
 ```
@@ -264,7 +264,7 @@ Command: configfile file
 
 <a id="cpuid"></a>
 ## cpuid
-
+### 用法
 ```
 Command: cpuid [-l]
 ```
@@ -273,7 +273,7 @@ Command: cpuid [-l]
 
 <a id="crc"></a>
 ## crc
-
+### 用法
 ```
 Command: crc file
 ```
@@ -282,7 +282,7 @@ Command: crc file
 
 <a id="date"></a>
 ## date
-
+### 用法
 ```
 Command: date [[year-]month-day] [hour:minute[:second]]
 ```
@@ -297,7 +297,7 @@ date 01-01
 
 <a id="drivemap"></a>
 ## drivemap
-
+### 用法
 ```
 Command: drivemap -l|-r|[-s] from_drive to_drive
 ```
@@ -310,7 +310,7 @@ Command: drivemap -l|-r|[-s] from_drive to_drive
 -l  
 顯示出目前的對應表。
 
--r,  
+-r  
 reset所有mapping到預設值。
 
 下面舉個例子：
@@ -323,17 +323,17 @@ drivemap -s (hd0) (hd1)
 
 <a id="echo"></a>
 ## echo
-
+### 用法
 ```
 Command: echo [-n] [-e] string …
 ```
 
 當然就是顯示字串拉，如果有多個字串的話，輸出就會以空白隔開，如果要顯示變數的值的話，就直接用『${var}』的方式。
 
--n,  
+-n  
 決定顯示完這次的結果以後是否要加個換行符號。
 
--e,  
+-e  
 如果你的字串中有需要用到跳脫字元『backslash escapes』的話就要加這個參數，以下列出所有相關的序列，至於沒有在底下的case就是會直接印出那個字元，沒有什麼特殊含意：
 
 \  
@@ -362,7 +362,7 @@ vertical tab。
 
 <a id="export"></a>
 ## export
-
+### 用法
 ```
 Command: export envvar
 ```
@@ -371,7 +371,7 @@ export環境變數，通常就是給用『configfile』建出來的子組態檔�
 
 <a id="false"></a>
 ## false
-
+### 用法
 ```
 Command: false
 ```
@@ -380,7 +380,7 @@ Command: false
 
 <a id="gettext"></a>
 ## gettext
-
+### 用法
 ```
 Command: gettext string
 ```
@@ -389,7 +389,7 @@ Command: gettext string
 
 <a id="gptsync"></a>
 ## gptsync
-
+### 用法
 ```
 Command: gptsync device [partition[+/-[type]]] …
 ```
@@ -402,19 +402,19 @@ Command: gptsync device [partition[+/-[type]]] …
 
 <a id="halt"></a>
 ## halt
-
+### 用法
 ```
 Command: halt --no-apm
 ```
 
 關閉這台電腦。
 
---no-apm,  
+--no-apm  
 不呼叫APM BIOS。
 
 <a id="help"></a>
 ## help
-
+### 用法
 ```
 Command: help [pattern …]
 ```
@@ -423,7 +423,7 @@ Command: help [pattern …]
 
 <a id="initrd"></a>
 ## initrd
-
+### 用法
 ```
 Command: initrd file
 ```
@@ -432,7 +432,7 @@ Command: initrd file
 
 <a id="initrd16"></a>
 ## initrd16
-
+### 用法
 ```
 Command: initrd16 file
 ```
@@ -441,7 +441,7 @@ Command: initrd16 file
 
 <a id="insmod"></a>
 ## insmod
-
+### 用法
 ```
 Command: insmod module
 ```
@@ -450,7 +450,7 @@ Command: insmod module
 
 <a id="keystatus"></a>
 ## keystatus
-
+### 用法
 ```
 Command: keystatus [--shift] [--ctrl] [--alt]
 ```
@@ -461,7 +461,7 @@ Command: keystatus [--shift] [--ctrl] [--alt]
 
 <a id="linux"></a>
 ## linux
-
+### 用法
 ```
 Command: linux file …    
 ```
@@ -471,7 +471,7 @@ Command: linux file …
 在x86系統，kernel將會使用32-bit的boot protocol來啟動，意思是『vga=』的參數已經不能用了，如果你想要設定特殊的video mode的話，就必須要設定GRUB的環境變數，像是『set gfxpayload=1024x768』或是『set gfxpayload=keep』，但是其實GRUB會自動偵測『vga=』，並且將其轉換成『gfxpayload』的設定，但是命令『linux16』將會完全的避免這個限制。
 <a id="linux16"></a>
 ## linux16
-
+### 用法
 ```
 Command: linux16 file …
 ```
@@ -482,7 +482,7 @@ Command: linux16 file …
 
 <a id="list_env"></a>
 ## list\_env
-
+### 用法
 ```
 Command: list_env [-f file]
 ```
@@ -494,7 +494,7 @@ Command: list_env [-f file]
 
 <a id="load_env"></a>
 ## load\_env
-
+### 用法
 ```
 Command: load_env [-f file]
 ```
@@ -506,7 +506,7 @@ Command: load_env [-f file]
 
 <a id="loopback"></a>
 ## loopback
-
+### 用法
 ```
 Command: loopback [-d] device file
 ```
@@ -518,12 +518,12 @@ loopback loop0 /path/to/image
 ls (loop0)/
 ```
 
--d,  
+-d  
 刪除掉之前用這個命令建立的一個裝置對應關係。
 
 <a id="ls"></a>
 ## ls
-
+### 用法
 ```
 Command: ls [arg …]
 ```
@@ -532,7 +532,7 @@ Command: ls [arg …]
 
 <a id="normal"></a>
 ## normal
-
+### 用法
 ```
 Command: normal [file]
 ```
@@ -545,7 +545,7 @@ Command: normal [file]
 
 <a id="normal_exit"></a>
 ## normal\_exit
-
+### 用法
 ```
 Command: normal_exit
 ```
@@ -554,7 +554,7 @@ Command: normal_exit
 
 <a id="parttool"></a>
 ## parttool
-
+### 用法
 ```
 Command: parttool partition commands
 ```
@@ -574,7 +574,7 @@ Command: parttool partition commands
 
 <a id="password"></a>
 ## password
-
+### 用法
 ```
 Command: password user clear-password
 ```
@@ -583,7 +583,7 @@ Command: password user clear-password
 
 <a id="password_pbkdf2"></a>
 ## password\_pbkdf2
-
+### 用法
 ```
 Command: password_pbkdf2 user hashed-password
 ```
@@ -592,7 +592,7 @@ Command: password_pbkdf2 user hashed-password
 
 <a id="play"></a>
 ## play
-
+### 用法
 ```
 Command: play file | tempo [pitch1 duration1] [pitch2 duration2] ...
 ```
@@ -605,7 +605,7 @@ tempo的計算，60的話代表1秒，120代表半秒，依此類推，pitch是�
 
 <a id="pxe_unload"></a>
 ## pxe\_unload
-
+### 用法
 ```
 Command: pxe_unload
 ```
@@ -614,7 +614,7 @@ Command: pxe_unload
 
 <a id="read"></a>
 ## read
-
+### 用法
 ```
 Command: read [var]
 ```
@@ -623,7 +623,7 @@ Command: read [var]
 
 <a id="reboot"></a>
 ## reboot
-
+### 用法
 ```
 Command: reboot
 ```
@@ -632,36 +632,36 @@ Command: reboot
 
 <a id="save_env"></a>
 ## save\_env
-
+### 用法
 ```
 Command: save_env [-f file] var …
 ```
 
 將指定的環境變數存到『environment block』檔案裡
 
--f,  
+-f  
 這個參數代表覆蓋『environment block』的預設位置。
 
 <a id="search"></a>
 ## search
-
+### 用法
 ```
 Command: search [--file|--label|--fs-uuid] [--set [var]] [--no-floppy] name
 ```
 
 藉由file\(-f, --file\)，filesystem label\(-l, --label\)，filesystem UUID\(-u, --fs-uuid\)來搜尋裝置。
 
---set,  
+--set  
 如果有設定這個選項，則第一個找到的裝置將會設定成後面的變數，預設的變數應該為『root』。
 
---no-floppy,  
+--no-floppy  
 這個選項防止搜尋『floppy device』\(也就是軟碟\)，以防止拖累速度。
 
 這個指令有其他種用法，像是『search.file』，『search.fs\_label』， 和 『search.fs\_uuid』分別對應『search --file』，『search --label』和 『search --fs-uuid』。
 
 <a id="sendkey"></a>
 ## sendkey
-
+### 用法
 ```
 Command: sendkey [--num|--caps|--scroll|--insert|--pause|--left-shift|--right-shift|--sysrq|--numkey|--capskey|--scrollkey|--insertkey|--left-alt|--right-alt|--left-ctrl|--right-ctrl ‘on’|‘off’]… [no-led] keystroke
 ```
@@ -775,7 +775,7 @@ options 『--num』，『--caps』，『--scroll』和『--insert』會模擬相
 
 <a id="set"></a>
 ## set
-
+### 用法
 ```
 Command: set [envvar=value]
 ```
@@ -784,7 +784,7 @@ Command: set [envvar=value]
 
 <a id="true"></a>
 ## true
-
+### 用法
 ```
 Command: true
 ```
@@ -793,7 +793,7 @@ Command: true
 
 <a id="unset"></a>
 ## unset
-
+### 用法
 ```
 Command: unset envvar
 ```
@@ -802,3 +802,4 @@ unset 特定的環境變數。
 
 <a id="vbeinfo"></a>
 ## vbeinfo
+### 用法
