@@ -661,6 +661,7 @@ Command: search [--file|--label|--fs-uuid] [--set [var]] [--no-floppy] name
 
 藉由file\(-f, --file\)，filesystem label\(-l, --label\)，filesystem UUID\(-u, --fs-uuid\)來搜尋裝置。
 
+### search接受底下的options:
 --set  
 如果有設定這個選項，則第一個找到的裝置將會設定成後面的變數，預設的變數應該為『root』。
 
