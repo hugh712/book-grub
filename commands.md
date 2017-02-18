@@ -21,13 +21,13 @@ Command: menuentry title [--class=class …] [--users=users] [--unrestricted] [-
 
 ### menuentry接受底下的options:
 
---class,  
-這個參數是用來將不同的menu entry給設定成相同的class群組，menu的theme有可能會根據不同的class風格而呈現不同的效果。
+--class  
+這個option是用來將不同的menu entry給設定成相同的class群組，menu的theme有可能會根據不同的class風格而呈現不同的效果。
 
---users,  
-這個參數主要是授權給特殊的使用者才能使用這個menu entry。
+--users  
+這個option主要是授權給特殊的使用者才能使用這個menu entry。
 
---unrestricted,  
+--unrestricted  
 授權給所有使用者來存取特殊的menu entry。
 
 --hotkey  
