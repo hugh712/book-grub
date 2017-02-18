@@ -7,7 +7,6 @@ GRUB裡面的環境變數(environment variables)，就像是Unix-like系統一�
 - <a href="#chosen">chosen</a>
 - <a href="#color_highlight">color_highlight</a>
 - <a href="#color_normal">color_normal</a>
-- <a href="#debug">debug</a>
 - <a href="#default">default</a>
 - <a href="#fallback">fallback</a>
 - <a href="#gfxmode">gfxmode</a>
