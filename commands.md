@@ -603,6 +603,7 @@ Command: play file | tempo [pitch1 duration1] [pitch2 duration2] ...
 
 tempo的計算，60的話代表1秒，120代表半秒，依此類推，pitch是以Hz.為單位，如果將pitch設定成0的話就代表休止符。
 
+<a id="pxe_unload"></a>
 ## pxe\_unload
 
 ```
@@ -611,6 +612,7 @@ Command: pxe_unload
 
 卸載PXE的環境，這個命令只能在PC BIOS系統上使用。
 
+<a id="read"></a>
 ## read
 
 ```
@@ -619,6 +621,7 @@ Command: read [var]
 
 等待使用者輸入，如果在後面有指定一個參數的話，代表的就是使用者輸入的資料會存到這個變數裡。
 
+<a id="reboot"></a>
 ## reboot
 
 ```
@@ -627,6 +630,7 @@ Command: reboot
 
 從新啟動這台電腦。
 
+<a id="save_env"></a>
 ## save\_env
 
 ```
@@ -638,6 +642,7 @@ Command: save_env [-f file] var …
 -f,  
 這個參數代表覆蓋『environment block』的預設位置。
 
+<a id="search"></a>
 ## search
 
 ```
@@ -654,6 +659,7 @@ Command: search [--file|--label|--fs-uuid] [--set [var]] [--no-floppy] name
 
 這個指令有其他種用法，像是『search.file』，『search.fs\_label』， 和 『search.fs\_uuid』分別對應『search --file』，『search --label』和 『search --fs-uuid』。
 
+<a id="sendkey"></a>
 ## sendkey
 
 ```
@@ -767,10 +773,7 @@ options 『--num』，『--caps』，『--scroll』和『--insert』會模擬相
 如果這個命令持續送了好幾次的話，則只有最後一次的呼叫會有影響。
 因為這個命令是藉由操作BIOS的keyboard buffer來達成相關的目的，所以有可能在某些系統上會造成當機，重啟或是其它不可預知的行為。或者是在GRUB之後的作業系統或是boot loader是用自己的keyboard driver，而不是BIOS的keyboard functions，在這種案例之下則這個命令將不會有任何的效果，而且還有一個限制就是這個命令只在PC BIOS下才有效果
 
-
-
-
-
+<a id="set"></a>
 ## set
 
 ```
@@ -779,6 +782,7 @@ Command: set [envvar=value]
 
 設定一個環境變數的值，如果沒有任何參數的話，就會印出所有的環境變數和其值。
 
+<a id="true"></a>
 ## true
 
 ```
@@ -787,6 +791,7 @@ Command: true
 
 沒什麼用處，主要是拿來在判斷式『if』或『while』用的。
 
+<a id="unset"></a>
 ## unset
 
 ```
@@ -795,4 +800,5 @@ Command: unset envvar
 
 unset 特定的環境變數。
 
+<a id="vbeinfo"></a>
 ## vbeinfo
