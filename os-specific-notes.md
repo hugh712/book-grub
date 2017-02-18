@@ -62,7 +62,7 @@ grub> initrd16 /initrd
 ```
 grub> boot
 ```
-
+如果沒有什麼問題的話，接下來你應該會看到進入Linux的login prompt了。
 
 
 
