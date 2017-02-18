@@ -17,6 +17,7 @@ sr0     11:0    1 1024M  0 rom
 
 2.format這個裝置：
 ```
+#這個format的內容我就不解釋了
 root@hugh-VirtualBox:/home/hugh# fdisk /dev/sdb 
 ```
 
