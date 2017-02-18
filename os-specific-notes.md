@@ -59,6 +59,9 @@ grub> initrd /initrd
 grub> initrd16 /initrd
 ```
 6.最後一步，使用『boot』啟動。
+```
+grub> boot
+```
 
 
 
