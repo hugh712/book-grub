@@ -27,6 +27,7 @@ search --set=root --file /vmlinuz
 
 4. 使用指令『linux』來讀取kernel:
 ```
+#這個vmlinuz檔案通常是個捷徑
 grub> linux /vmlinuz root=/dev/sda1
 ```
 至於如果你想要加一些kernel的參數的話，可以直接加到後面，像是底下的例子，主要是將acpi給設定成off:
