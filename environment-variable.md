@@ -148,7 +148,7 @@ echo "${1}set menu_color_highlight=white/blue"
 
 <a id="pager"></a>
 ## pager	  	
-如果設定成1的話，就很像是linux shell的less的分頁效果。預設的話不會設定這個變數。
+如果設定成1的話，就很像是linux shell的『less』的分頁效果。預設的話不會設定這個變數。
 
 <a id="prefix"></a>
 ## prefix	  	
