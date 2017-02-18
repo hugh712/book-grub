@@ -50,7 +50,7 @@ GRUB裡面的環境變數(environment variables)，就像是Unix-like系統一�
   
 <a id="color_highlight"></a>
 ## color_highlight	  	
-這個變數主要就是如果你現在terminal螢幕上有highlight的地方的話，它的文字顏色/背景顏色各是什麼。預設的話是『black/white』。其他可挑選的顏色請參考『color_normal』。
+這個變數主要就是如果你現在terminal螢幕上有highlight的地方的話，它的文字顏色/背景顏色各是什麼。預設的話是『black/white』。其他可挑選的顏色請參考底下的『color_normal』。
 
 <a id="color_normal"></a>
 ## color_normal
