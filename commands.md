@@ -435,7 +435,7 @@ Command: help [pattern …]
 Command: initrd file
 ```
 
-讀取一個initial ramdisk映像檔，並且未Linux在記憶體裡的setup區域設定相關的參數，這個指令只在命令『linux』執行以後才有用處。
+讀取一個initial ramdisk映像檔，並且為Linux在記憶體裡的setup區域設定相關的參數，這個指令只在命令『linux』執行以後才有用處。
 
 <a id="initrd16"></a>
 ## initrd16
