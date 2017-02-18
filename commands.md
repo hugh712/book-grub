@@ -637,7 +637,7 @@ Command: read [var]
 Command: reboot
 ```
 
-從新啟動這台電腦。
+重新啟動這台電腦。
 
 <a id="save_env"></a>
 ## save\_env
