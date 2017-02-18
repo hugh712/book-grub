@@ -123,6 +123,7 @@ BadRAM的部分，因為協定的限制，所以mips-loongson\(Linux 協定\)和
 - acpi-enabled (i386-pc, i386-coreboot, i386-multiboot, *-efi): acpi (覆蓋 ACPI tables)
 - i386-pc: drivemap
 - i386-pc: sendkey
+
 ## 其他
 - x86: iorw (直接存取 I/O ports)
 - cmos (x86-*, ieee1275, mips-qemu_mips, mips-loongson): cmostest (在有些筆電上用來檢查特殊的電源鍵)
