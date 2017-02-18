@@ -135,7 +135,7 @@ grub-install install_device
 ### grub-install接受底下的options:
 
 - --boot-directory=dir<br>
-將GRUB image安裝到資料夾『/dir/grub』下，這個命令在當你想要將GRUB安裝到個別的partition上或是一個可移除的裝置上非常有用，如果沒有特別注命這個option的話，預設會是『/boot』，所以下面兩個命令其實是相等的:
+將GRUB image安裝到資料夾『/dir/grub』下，這個命令在當你想要將GRUB安裝到個別的partition上或是一個可移除的裝置上非常有用，如果沒有特別指定這個option的話，預設會是『/boot』，所以下面兩個命令其實是相等的:
 ```
 grub-install /dev/sda
 grub-install --boot-directory=/boot/ /dev/sda
