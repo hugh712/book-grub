@@ -116,7 +116,7 @@ Command: serial [--unit=unit] [--port=port] [--speed=speed] [--word=word] [--par
 
 --word  
 --stop  
-word和stop是data bits和stop bits，data bits必須是5~8，stop bits必須是1或2，預設的話是data bits - 8和stop bit - 1。
+word和stop是data bits和stop bits，data bits必須是5~8，stop bits必須是1或2，預設的話是data bits = 8和stop bit = 1。
 
 --parity  
 parity的值會是『no』,『odd』,『even』其一，預設的話是『no』。
