@@ -134,7 +134,7 @@ grub-install install_device
 
 ### grub-install接受底下的options:
 
-- --boot-directory=dir
+- --boot-directory=dir<br>
 將GRUB映像檔安裝到資料夾『/dir/grub』下，這個命令在當你想要將GRUB安裝到個別的partition上或是一個可移除的裝置上非常有用，如果沒有特別注命這個option的話，預設會是『/boot』，所以下面兩個命令其實是相等的:
 ```
 grub-install /dev/sda
@@ -146,7 +146,7 @@ grub-install --boot-directory=/boot/ /dev/sda
 grub-install --boot-directory=/mnt/boot /dev/sdb
 ```
 
-- --recheck
+- --recheck<br>
 重新檢查device map，即使『/boot/grub/device.map』已經存在了，官方建議當你加入/移除某個裝置到你的電腦時，一定要加入這個option。
 
 ## grub-kbdcomp
@@ -187,9 +187,8 @@ grub-mkconfig -o /boot/grub/grub.cfg
 ```
 
 ### grub-mkconfig接受底下的options:
-<br>
 
-- -o file, --output=file
+- -o file, --output=file<br>
 系統預設是將產生的組態檔輸出到standard output，所以要記得用這個option將組態給輸出到特定檔案上。
 
 ## grub-mkdevicemap
@@ -202,18 +201,17 @@ grub-mkdevicemap [OPTION]...
 自動產生一個device map。
 
 ### grub-mkdevicemap接受底下的options:
-<br>
 
-- -n, --no-floppy
+- -n, --no-floppy<br>
 不要去選找任何的軟碟(floppy drive)。
 
-- -s, --probe-second-floppy
+- -s, --probe-second-floppy<br>
 探測第二個軟碟(floppy drive)。
 
-- -m, --device-map=FILE
+- -m, --device-map=FILE<br>
 使用指定的檔案當成device map，預設的話是『/boot/grub/device.map』。
 
-- -v, --verbose
+- -v, --verbose<br>
 印出更多的資訊。
 
 ## grub-mkimage
