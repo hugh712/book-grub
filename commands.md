@@ -526,7 +526,7 @@ Command: loopback [-d] device file
 loopback loop0 /path/to/image
 ls (loop0)/
 ```
-
+### loopback接受底下的options:
 -d  
 刪除掉之前用這個命令建立的一個裝置對應關係。
 
