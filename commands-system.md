@@ -346,13 +346,13 @@ grub-mkstandalone [OPTION...] [OPTION] SOURCE...
 
 |||||
 | :--- | :--- | :--- | :--- |
-| i386-coreboot | i386-multiboot | i386-pc | i386-pc-pxe | 
-| i386-pc-eltorito | i386-efi |   i386-ieee1275 |    i386-qemu |  
-|  x86_64-efi |    i386-xen |  x86_64-xen | mipsel-yeeloong-flash |  
-| mipsel-fuloong2f-flash |  mipsel-loongson-elf |  powerpc-ieee1275 | sparc64-ieee1275-raw| 
-| sparc64-ieee1275-cdcore | sparc64-ieee1275-aout | ia64-efi |  mips-arc |  mipsel-arc |
-| mipsel-qemu_mips-elf |   mips-qemu_mips-flash |  mipsel-qemu_mips-flash|  mips-qemu_mips-elf |
-|  arm-uboot |  arm-efi | arm64-efi||
+| i386-coreboot | i386-multiboot | i386-pc | i386-pc-pxe |
+| i386-pc-eltorito | i386-efi | i386-ieee1275 | i386-qemu |
+| x86_64-efi | i386-xen | x86_64-xen | mipsel-yeeloong-flash |
+| mipsel-fuloong2f-flash | mipsel-loongson-elf | powerpc-ieee1275 | sparc64-ieee1275-raw|
+| sparc64-ieee1275-cdcore | sparc64-ieee1275-aout | ia64-efi | mips-arc | 
+|mipsel-arc | mipsel-qemu_mips-elf | mips-qemu_mips-flash | mipsel-qemu_mips-flash| 
+|mips-qemu_mips-elf | arm-uboot | arm-efi | arm64-efi|
 
 ## grub-script-check
 <a id="script"></a>
