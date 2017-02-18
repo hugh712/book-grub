@@ -14,24 +14,24 @@
 
 1.設定『root』。
 ```
-set root=(hdX,Y)
+grub> set root=(hdX,Y)
 
 #假設是第一個磁碟的第一個partiton
-set root=(hd0,msdos1)
+grub> set root=(hd0,msdos1)
 
 ```
 
 2.設定『prefix』。
 ```
-set prefix=(hdX,Y)/boot/grub
+grub> set prefix=(hdX,Y)/boot/grub
 
 #假設是第一個磁碟的第一個partiton
-set prefix=(hd0,msdos1)/boot/grub
+grub> set prefix=(hd0,msdos1)/boot/grub
 ```
 
 3.將GRUB的root裝置設定成跟Linux一樣，可以利用底下的指令幫你完成這部份的功能。
 ```
-search --set=root --file /vmlinuz
+grub> search --set=root --file /vmlinuz
 ```
 
 4.使用指令『linux』來讀取kernel:
