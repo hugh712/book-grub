@@ -417,7 +417,7 @@ grub-mkrescue -o grub.iso disk
 這個option是必要的，會將輸出存到檔案裡。
 
 - --modules=modules<br>
-決定哪些modules你要預先包到這個image裡，多個模組的話要使用空白鍵隔開，所以如果在script裡面用的話要記得用『" "』。
+決定哪些modules你要預先包到這個image裡，多個modules的話要使用空白鍵隔開，所以如果在script裡面用的話要記得用『" "』。
 
 - --rom-directory=dir<br>
 如果是要為QEMU還是Coreboot產生映像檔，則這個選項會將qemu.img或是 coreboot.elf給複製到這個映像檔裡。
