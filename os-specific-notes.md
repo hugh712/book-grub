@@ -7,19 +7,22 @@
 - **initrd**
 
 通常一般的步驟會如下所示:
+(在底下的所有例子中，『X』就是硬碟代號，『Y』則是partition number，記得要根據你自己的狀況帶入相關的值)。)
 
-1. 將GRUB的root裝置設定成跟Linux一樣，可以利用底下的指令幫你完成這部份的功能。
-```
-search --set=root --file /vmlinuz
-```
-2.設定『root』
+
+1.設定『root』
 ```
 set root=(hdX,Y)
 ```
 
-3.設定『prefix』
+2.設定『prefix』
 ```
 set prefix=(hdX,Y)/boot/grub
+```
+
+3. 將GRUB的root裝置設定成跟Linux一樣，可以利用底下的指令幫你完成這部份的功能。
+```
+search --set=root --file /vmlinuz
 ```
 
 4. 使用指令『linux』來讀取kernel:
