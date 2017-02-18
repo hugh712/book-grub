@@ -232,6 +232,7 @@ Command: chainloader [--force] file
 
 讀取檔案來當成你的chain-loader，就像是在filesystem底下的檔案讀取程式碼一樣，可以使用『blocklist』的標記，像是用『+1』標記目前partition的第一個sector。
 
+### chainloader接受底下的options:
 --force,  
 強制的讀取檔案，不論它是否是正確的signature，通常是在你想要讀取一個有缺陷的boot loader時就需要用到。
 
