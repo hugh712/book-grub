@@ -1,8 +1,8 @@
 #GRUB所有相關Images
 
-GRUB是由許多image所組成的，包含了：
-1.一系列的bootstrap images\(對應各種方式開啟GRUB\)。
-2.一個kernel image。
+GRUB是由許多image所組成的，包含了：<br>
+1.一系列的bootstrap images\(對應各種方式開啟GRUB\)。<br>
+2.一個kernel image。<br>
 3.一系列的modules會跟kernel image綁在一起然後組成core image。
 
 (在我的電腦，這些檔案都在路徑『/usr/lib/grub/i386-pc』底下。)
