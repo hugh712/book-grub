@@ -140,8 +140,7 @@ grub-install install_device
 grub-install /dev/sda
 grub-install --boot-directory=/boot/ /dev/sda
 ```
-
- 下面這個例子是將你個別的partition給掛載到『/mnt/boot』上後，然後在將GRUB給安裝到這個partition上:
+下面這個例子是將你個別的partition給掛載到『/mnt/boot』上後，然後在將GRUB給安裝到這個partition上:
 ```
 grub-install --boot-directory=/mnt/boot /dev/sdb
 ```
