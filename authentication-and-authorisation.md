@@ -4,7 +4,7 @@ Bootloader的預設應該是只要使用者可以取得實體的console的話，
 
 對於大部分的系統來說，像這樣只要你能實體存取GRUB的話，確實可以取得任何權限是很合理的，如果使用GRUB這個bootloader level 還要先取得授權的話，如果想要復原損壞的系統還要這樣真的是很麻煩。但是在有些環境，像是kiosks，就需要在執行某些功能前需要取得權限才行。
 
-GRUB2提供了密碼保護的功能，你可以對全部的menu做保護，也可以針對特定的幾個entry做保護。這樣子的機制可以提供基本的保護機制，可以防止讓不必要的使用者從GRUB2 menu取得權限進入作業系統。
+GRUB2提供了密碼保護的功能，你可以對全部的entry做保護，也可以針對特定的幾個entry做保護。這樣子的機制可以提供基本的保護機制，可以防止讓不必要的使用者從GRUB2 menu取得權限進入作業系統。
 
 命令『password』和『password_pbkdf2』可以在定義使用者和其密碼(所以代表的是這個帳號跟密碼是跟作業系統沒關係的)。『password』的話設定的密碼是明碼，而且你的『grub.cfg』是需要被保護的; 而『password_pbkdf2』則是使用Password-Based Key Derivation Function (RFC 2898)來加密你的密碼，這部份的使用需要在Linux系統上使用命令『grub-mkpasswd-pbkdf2』來產生。
 
