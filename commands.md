@@ -152,6 +152,7 @@ Command: terminal_output [--append|--remove] [terminal1] [terminal2] …
 --remove,  
 後面會接一個/多個terminal的名稱，然後這個選項會從啟動清單裡面將這個terminal移除掉。
 
+<a id="terminfo"></a>
 ## terminfo
 
 ```
@@ -164,6 +165,7 @@ Command: terminfo [-a|-u|-v] [term]
 
 參數-a\(--ascii\)，-u\(--utf8\)，-v（--visual-utf8\)控制non-ASCII的文字怎麼顯示，『-a』代表ASCII-only; 『-u』代表邏輯順序\(logically-ordered\)的UTF-8，『-v』代表的是視覺邏輯的UTF-8。
 
+<a id="acpi"></a>
 ## acpi
 
 ```
@@ -174,6 +176,7 @@ Command: acpi [-1|-2] [--exclude=table1,…|--load-only=table1,…] [--oemid=id]
 
 正常來說，這個命令將會置換在擴充BIOS資料區域中的Root System Description Pointer \(RSDP\)，這樣才會指到新的table。但是如果你用參數『--no-ebda』的話，這個新的table將只會被GRUB知道，或者是GRUB的EFI模擬系統。
 
+<a id="badram"></a>
 ## badram
 
 ```
