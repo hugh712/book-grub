@@ -243,7 +243,7 @@ grub-mkimage [OPTION...] [OPTION]... [MODULES]
 選擇要輸出檔案的路徑跟檔名，預設是『stdout』。
 
 - -O, --format=FILE<br>
-指定輸出image的格式|所有可以的格式包含:
+指定輸出image的格式，所有可以的格式包含:
 
 |||||
 | :--- | :--- | :--- | :--- |
