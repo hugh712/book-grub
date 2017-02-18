@@ -234,7 +234,7 @@ Command: chainloader [--force] file
 
 ### chainloader接受底下的options:
 --force  
-強制的讀取檔案，不論它是否是正確的signature，通常是在你想要讀取一個有缺陷的boot loader時就需要用到。
+強制的讀取檔案，不論它是否是正確的signature，通常是在你想要讀取一個有缺陷的bootloader時就需要用到。
 
 <a id="cmp"></a>
 ## cmp
