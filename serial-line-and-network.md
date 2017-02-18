@@ -22,7 +22,7 @@ terminal_input serial console
 要使用serial terminal另外一個限制是，GRUB會假設你的terminal emulator是相容於VT100的，當然以現在來說幾乎所有的case都相容VT100，但是如果沒有相容的話就請看一下你的terminal emulator的手冊。
 
 ## 設定/etc/default/grub
-剛剛講的是如何在GRUB的console底下將輸入與輸出給導到serial line，這小節獎的則是在Linux底下去設定『/etc/default/grub』，然後下次開機後，直接就會將輸入/輸出給導到serial line，第一，先在檔案『/etc/default/grub』修改底下這一行:
+剛剛講的是如何在GRUB的console底下將輸入與輸出給導到serial line，這小節講的則是在Linux底下去設定『/etc/default/grub』，然後下次開機後，直接就會將輸入/輸出給導到serial line，第一，先在檔案『/etc/default/grub』修改底下這一行:
 ```
 GRUB_TERMINAL="console serial" 
 ```
