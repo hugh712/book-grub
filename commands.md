@@ -520,7 +520,7 @@ Command: load_env [-f file]
 Command: loopback [-d] device file
 ```
 
-這個指令有點像是linux裡的『mount -t loop』的感覺，主要就是將『device』名稱對映到檔案系統裡的映像檔內容，舉個例子：
+這個指令有點像是linux裡的『mount -t loop』的感覺，主要就是將『device』名稱對映到檔案系統裡的image內容，舉個例子：
 
 ```
 loopback loop0 /path/to/image
