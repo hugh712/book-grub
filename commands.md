@@ -439,6 +439,7 @@ Command: initrd16 file
 
 跟『initrd』指令一樣的效果，只是用在16-bit mode，並且搭配的是『linux16』而不是『linux』，這個命令只能用在x86的系統上。
 
+<a id="insmod"></a>
 ## insmod
 
 ```
@@ -447,6 +448,7 @@ Command: insmod module
 
 匯入相關的GRUB模組。
 
+<a id="keystatus"></a>
 ## keystatus
 
 ```
@@ -457,6 +459,7 @@ Command: keystatus [--shift] [--ctrl] [--alt]
 
 這個指令只在某些平台上才支援，如果你不加參數直接呼叫的話，沒有回傳『true』就代表這個指令在你的平台不支援。
 
+<a id="linux"></a>
 ## linux
 
 ```
@@ -466,7 +469,7 @@ Command: linux file …
 讀取Linux kernel的映像檔，第一個參數後來的空間可以用來傳遞kernel command-line參數，所有的initrd命令必須要在這個指令以後才能從新載入。
 
 在x86系統，kernel將會使用32-bit的boot protocol來啟動，意思是『vga=』的參數已經不能用了，如果你想要設定特殊的video mode的話，就必須要設定GRUB的環境變數，像是『set gfxpayload=1024x768』或是『set gfxpayload=keep』，但是其實GRUB會自動偵測『vga=』，並且將其轉換成『gfxpayload』的設定，但是命令『linux16』將會完全的避免這個限制。
-
+<a id="linux16"></a>
 ## linux16
 
 ```
@@ -477,6 +480,7 @@ Command: linux16 file …
 
 用這個指令的話，kernel將會使用傳統16-bit的boot protocol來啟動，所以就不會有在指令『Linux』所提到的『vga=』的參數問題。
 
+<a id="list_env"></a>
 ## list\_env
 
 ```
@@ -488,6 +492,7 @@ Command: list_env [-f file]
 -f,  
 這個參數將會蓋過預設位址。
 
+<a id="load_env"></a>
 ## load\_env
 
 ```
@@ -499,6 +504,7 @@ Command: load_env [-f file]
 -f,  
 這個參數將會蓋過預設位址。
 
+<a id="loopback"></a>
 ## loopback
 
 ```
@@ -515,6 +521,7 @@ ls (loop0)/
 -d,  
 刪除掉之前用這個命令建立的一個裝置對應關係。
 
+<a id="ls"></a>
 ## ls
 
 ```
@@ -523,6 +530,7 @@ Command: ls [arg …]
 
 列出裝置或是檔案，如果沒有加任何參數的話，就會印出GRUB所知道的所有裝置。如果參數是一個像是『\(hd0\)』這樣用括弧刮起來的裝置名稱的話，則會列出裝置根目錄的所有檔案。如果參數是絕對路徑的資料夾名稱的話，則會直接列出這個資料夾的內容。
 
+<a id="normal"></a>
 ## normal
 
 ```
@@ -535,6 +543,7 @@ Command: normal [file]
 
 這個指令也可以在『normal mode』裡面呼叫，藉此建立一個巢狀的環境，通常都會藉由『configfile』命令來達成這個目的。
 
+<a id="normal_exit"></a>
 ## normal\_exit
 
 ```
@@ -543,6 +552,7 @@ Command: normal_exit
 
 離開『normal mode』，如果你並不是在一個巢狀『normal mode』的話，則呼叫這個指令就會變成救援模式。
 
+<a id="parttool"></a>
 ## parttool
 
 ```
@@ -562,6 +572,7 @@ Command: parttool partition commands
 ‘hidden’ \(boolean\)  
 當這個選項設定成『enabled』時，將會藉由設定partition type code上的hidden bit來隱藏所選的partition，相對而言，當這個選項設定成『disabled』時，就會清除這個bit然後顯示這個partition。這個子命令只有在當起動『DOS』，『Windows』或是其他的multiple primary FAT partition存在同一顆硬碟上時有用。
 
+<a id="password"></a>
 ## password
 
 ```
@@ -570,6 +581,7 @@ Command: password user clear-password
 
 定義一組使用者名稱和其密碼。
 
+<a id="password_pbkdf2"></a>
 ## password\_pbkdf2
 
 ```
@@ -578,6 +590,7 @@ Command: password_pbkdf2 user hashed-password
 
 定義一組使用者名稱和雜湊演算法\(hash\)的密碼，這個密碼可以使用工具『grub-mkpasswd-pbkdf2』來產生。
 
+<a id="play"></a>
 ## play
 
 ```
