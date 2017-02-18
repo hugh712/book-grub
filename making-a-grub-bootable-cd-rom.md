@@ -21,7 +21,7 @@ root@hugh-VirtualBox:/home/hugh# mkdir iso
 root@hugh-VirtualBox:/home/hugh# mkdir -p iso/boot/grub
 ```
 
-3.有需要的話，可以將相關的組態/moudles給複製到grub資料夾裡:
+3.有需要的話，可以將相關的組態還是moudles給複製到grub資料夾裡:
 
 ```
 root@hugh-VirtualBox:/home/hugh# cp /boot/grub/grub.cfg iso/boot/grub/
