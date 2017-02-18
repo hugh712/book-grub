@@ -53,5 +53,5 @@ root@hugh-VirtualBox:/home/hugh# file grub.iso
 grub.iso: DOS/MBR boot sector; GRand Unified Bootloader, stage1 version 0x79, boot drive 0xbb, stage2 address 0x8e70, 1st sector stage2 0xb8db31c3, stage2 segment 0x201 ISO 9660 CD-ROM filesystem data (DOS/MBR boot sector) 'ISOIMAGE' (bootable)
 ```
 
-如上面所看到的，產生了一個『grub.iso』，接下來你就可以把這個image給燒入CD-ROM或是USB裡面以後，放入相關媒體重新開機後你的機器一開始應該就會讀到了。
+如上面所看到的，產生了一個『grub.iso』，接下來你就可以把這個image給燒入CD-ROM或是USB裡面以後，放入相關媒體重新開機後，你的機器一開始應該就會讀到了。
 
