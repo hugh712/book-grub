@@ -18,12 +18,11 @@ GRUB的研發團隊通常會建議將GRUB嵌在第一個partition之前，你必
 
 如果是使用這種格式的話，系統就會保留整個partition給GRUB，這個partition就會被稱為『BIOS Boot Partition』。所以如果GRUB被嵌在這個partition裡面的話，就不必擔心被其他軟體所覆寫還是被檔案系統的功能所影響到了。
 
-當你要在GPT系統要建立BIOS Boot Partiton的話，你要確保他的容量至少要31 KiB，但是因為GPT-格式的磁碟通常都不小，所以官方建議你保留的容量要比31 KiB還要大，像是1 MiB左右。
+當你要在GPT系統裡面建立BIOS Boot Partiton的話，你要確保他的容量至少要31 KiB，但是因為GPT格式的磁碟通常都不小，所以官方建議你保留的容量要比31 KiB還要大，像是1 MiB左右。
 
 並且你要確保它有個適當的partition type，要作到這一點，底下用兩個工具來講:
 
 1. 如果你要使用GNU Parted程式的話，使用底下命令:
-
 
 ```
 # parted /dev/disk set partition-number bios_grub on
