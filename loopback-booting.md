@@ -6,4 +6,6 @@
 
 對於knetBSD的話，這個映像檔必須要被放到miniroot.kmod裡面，並且這整個miniroot.kmod必須先被讀進去。
 
-而在kopenbsd則是預設就被設定成disabled。至於初始化ramdisk的其他行為都取決於CLI的參數，數種distros因為這個參數，所以將相關的元件都已經整合到它們的standard ramdisk裡面了，想要了解這部分的話，就要翻一下你的kernel或是distro的文件。有部分的loader像是appleloader, chainloader (BIOS, EFI, coreboot), freedos, ntldr和plan9等等則是沒有提供這個讀取initial ramdisk的功能，如果你的loader是上敘這些不支援initial ramdisk的話，建議可以使用將映像檔裡面的檔案整個複製到相關partition裡面。
+而在kopenbsd則是預設就被設定成disabled。至於初始化ramdisk的其他行為都取決於CLI的參數，數種distros因為這個參數，所以已經將相關的元件都已經整合到它們的標準的ramdisk裡面了，想要了解這部分的話，就要翻一下你的kernel或是distro的文件。
+
+有部分的bootloader像是appleloader, chainloader (BIOS, EFI, coreboot), freedos, ntldr和plan9等等則是沒有提供這個讀取initial ramdisk的功能，如果你的loader是上敘這些不支援initial ramdisk的話，建議可以使用將映像檔裡面的檔案整個複製到相關partition裡面。
