@@ -496,7 +496,8 @@ Command: list_env [-f file]
 
 顯示出『environment block』檔案的變數。
 
--f,  
+### list_env接受底下的options:
+-f  
 這個參數將會蓋過預設位址。
 
 <a id="load_env"></a>
@@ -508,7 +509,8 @@ Command: load_env [-f file]
 
 從『environment block』檔案裡面讀取所有環境變數。
 
--f,  
+### load_env接受底下的options:
+-f  
 這個參數將會蓋過預設位址。
 
 <a id="loopback"></a>
