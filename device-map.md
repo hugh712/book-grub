@@ -24,7 +24,7 @@ lrwxrwxrwx 1 root root 9  一  14 13:53 /dev/disk/by-id/ata-VBOX_HARDDISK_VB3b4a
 
 但是不幸的是，OS的裝置名稱也常常不穩定，Linux kernel也是常常在開機途中修改到這部份，『prefix』也是會根據不同的driver subsystem的使用狀況而改變，所以就是在某些系統上的device.map需要很常的去修改。
 
-GRUB為了避免以上提到的所有問題，所以在產生grub.cfg時都採用UUID或是filesystem label的作法，聽起來好像這個device.map差不多快被淘汰掉了，但是其實有些狀況還是需要它，像是如果你的開機環境跟你OS的環境不一樣時(eg. 使用虛擬機裡面使用LVM或partition...)。
+GRUB為了避免以上提到的所有問題，所以在產生grub.cfg時都採用UUID或是檔案系統label的作法，聽起來好像這個device.map差不多快被淘汰掉了，但是其實有些狀況還是需要它，像是如果你的開機環境跟你OS的環境不一樣時(eg. 使用虛擬機裡面使用LVM或partition...)。
 
 
 
