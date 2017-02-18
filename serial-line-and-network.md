@@ -26,7 +26,7 @@ terminal_input serial console
 ```
 GRUB_TERMINAL="console serial" 
 ```
-將GRUB的menu給同時導入serial和console上，預設的話，serial console的數值是ttyS0, 9600 bit/s，傳輸速率8 data bits,1個stop bit和沒有parity。
+將GRUB的menu給同時導入serial和console上，預設的話，serial console的數值是『ttyS0, 9600 bit/s，傳輸速率8 data bits,1個stop bit和沒有parity』。
 
 如果你想要修改其數值的話，底下有兩個例子:
 
