@@ -402,7 +402,7 @@ grub-mkrescue -o grub.iso
 
 這個命令裡面會使用另一個命令『mkisofs』來產生image，只要你的options並不是『grub-mkrescue』的options，則這個指令將會直接傳給『mkisofs』模式裡的『xorriso』當成參數，簡單來說就是只要在『--』之後的參數不屬於『grub-mkrescue』的話就會直接變成『mkisofs』的參數。
 
-如果要在你的映像檔裡面加一些檔案的話，就要建立資料夾，並且指定它，用法如下，它會將檔案『my_file1』給包到硬像檔裡面:
+如果要在你的image裡面加一些檔案的話，就要建立資料夾，並且指定它，用法如下，它會將檔案『my_file1』給包到硬像檔裡面:
 
 ```
 mkdir -p disk/boot/grub
