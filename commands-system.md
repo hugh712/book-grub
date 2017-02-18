@@ -213,7 +213,6 @@ grub-mkdevicemap [OPTION]...
 
 ## grub-mkimage
 <a id="mkimage"></a>
-
 ### 用法
 ```
 grub-mkimage [OPTION...] [OPTION]... [MODULES]
