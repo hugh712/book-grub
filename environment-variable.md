@@ -2,7 +2,7 @@ GRUB裡面的環境變數(environment variables)，就像是Unix-like系統一�
 
 # Special environment variables
 
-底下列出清單連結
+底下列出清單連結:
 - <a href="#biosnum">biosnum</a>
 - <a href="#chosen">chosen</a>
 - <a href="#color_highlight">color_highlight</a>
