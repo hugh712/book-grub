@@ -15,7 +15,7 @@ Console charset只會支援firmware相關的console，像是gfxterm都只支援U
 
 ## Network
 
-在BIOS上的網路也有些限制，只有在你的映像檔是通過網路讀取的才能使用網路。在sparc64上的GRUB就無法決定它是從哪個server上啟動的。
+在BIOS上的網路也有些限制，只有在你的image是通過網路讀取的才能使用網路。在sparc64上的GRUB就無法決定它是從哪個server上啟動的。
 
 ## Serial
 
