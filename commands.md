@@ -131,6 +131,7 @@ Command: terminal_input [--append|--remove] [terminal1] [terminal2] …
 列出或選擇一個輸入terminal。如果沒有輸入參數的話，就是列出所有已啟動  
 和可取得的輸入terminal。如果沒有其他參數但是有一系列的terminal名稱的話，就會只讓列出的terminal名稱啟動。
 
+### terminal_input接受底下的options:
 --append  
 後面會接一個/多個terminal的名稱，然後這個選項會將這個terminal加到啟動輸入清單裡面。清單裡面每個terminal都會提供GRUB輸入。
 
