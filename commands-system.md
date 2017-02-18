@@ -380,16 +380,16 @@ grub-mkpasswd-pbkdf2 [OPTION...] [OPTIONS]
 
 ### grub-mkpasswd-pbkdf2接受底下的options:
 
-- -c number
-- --iteration-count=number
+- -c number<br>
+- --iteration-count=number<br>
 設定底下演算法的疊代次數，當然疊代越多次越安全，預設是1000次。
 
-- -l number
-- --buflen=number
+- -l number<br>
+- --buflen=number<br>
 產生hash的長度，預設是64。
 
-- -s number
-- --salt=number
+- -s number<br>
+- --salt=number<br>
 雜訊『salt』的長度，預設是64。
 
 ## grub-mkrescue
@@ -416,29 +416,24 @@ grub-mkrescue -o grub.iso disk
 
 ### grub-mkrescue接受底下的options:
 
-- -o file
-- --output=file
+- -o file<br>
+- --output=file<br>
 這個option是必要的，會將輸出存到檔案裡。
 
-- --modules=modules
+- --modules=modules<br>
 決定哪些模組你要預先包到這個映像檔裡，多個模組的話要使用空白鍵隔開，所以如果在script裡面用的話要記得用『" "』。
 
-- --rom-directory=dir
+- --rom-directory=dir<br>
 如果是要為QEMU還是Coreboot產生映像檔，則這個選項會將qemu.img或是 coreboot.elf給複製到這個映像檔裡。
 
-- --xorriso=file
+- --xorriso=file<br>
 如果你有自己的xorriso程式的話，可以用這個option指定，不然就會用內建的程式。
 
-- --grub-mkimage=file
+- --grub-mkimage=file<br>
 如果你有自己的grub-mkimage程式的話，可以用這個option指定，不然就會用內建的程式。
 
 ## grub-probe
 <a id="probe"></a>
-
-
-
-
-
 ### 用法
 ```
 grub-probe [OPTION...] [OPTION]... [PATH|DEVICE]
@@ -452,71 +447,71 @@ grub-probe --target=drive --device /dev/sda1
 
 ### grub-probe必須指定裝置或是路徑，並且接受底下的options:
 
-- -d
-- --device
+- -d<br>
+- --device<br>
 如果有這個option的話，那就代表你想要知道的資訊是一個系統裝置檔，像是『/dev/sda1』，換而言之，如果沒有這個option的話，代表就是filesystem的路徑，像是『/boot/grub』，則grub-probe就會印出包含這個filesystem的裝置資訊。
 
-- -m file
-- --device-map=file
+- -m file<br>
+- --device-map=file<br>
 通常預設的device map會在『/boot/grub/device.map』裡，但是如果指定這個option的話就會用指定的檔案當成你的device map。
 
-- -t target
-- --target=target
+- -t target<br>
+- --target=target<br>
 特別指定要印出哪些更細的分類資訊，可取得的分類如下:
 
- - ‘fs’
+ - ‘fs’<br>
 GRUB filesystem module.
 
- - ‘fs_uuid’
+ - ‘fs_uuid’<br>
 Filesystem Universally Unique Identifier (UUID).
 
- - ‘fs_label’
+ - ‘fs_label’<br>
 Filesystem label.
 
- - ‘drive’
+ - ‘drive’<br>
 GRUB的裝置名稱.
 
- - ‘device’
+ - ‘device’<br>
 系統的裝置名稱。
 
- - ‘partmap’
+ - ‘partmap’<br>
 GRUB partition map module.
 
- - ‘abstraction’
+ - ‘abstraction’<br>
 GRUB的抽象模組(abstraction module) (e.g. ‘lvm’).
 
- - ‘cryptodisk_uuid’
+ - ‘cryptodisk_uuid’<br>
 加密過的裝置UUID。
 
- - ‘msdos_parttype’
+ - ‘msdos_parttype’<br>
 MBR partition type code (會是兩個16進制的編碼).
 
- - ‘hints_string’
+ - ‘hints_string’<br>
 可以傳進命令『search』的平臺search hints字串。
 
- - ‘bios_hints’
+ - ‘bios_hints’<br>
 PC BIOS平臺的Search hints。
 
- - ‘ieee1275_hints’
+ - ‘ieee1275_hints’<br>
 IEEE1275平臺的Search hints。
 
- - ‘baremetal_hints’
+ - ‘baremetal_hints’<br>
 這個search hints主要是disk是直接定址而不是透過firmware。
 
- - ‘efi_hints’
+ - ‘efi_hints’<br>
 EFI平臺的Search hints。
 
- - ‘arc_hints’
+ - ‘arc_hints’<br>
 ARC平臺的Search hints。
 
- - ‘compatibility_hint’
+ - ‘compatibility_hint’<br>
 對於這個裝置給一個預測的GRUB裝置名稱。
 
- - ‘disk’
+ - ‘disk’<br>
 整個硬碟的系統裝置名稱
 
-- -v
-- --verbose
+- -v<br>
+- --verbose<br>
 印出更多的訊息。
 
 ## grub-reboot
