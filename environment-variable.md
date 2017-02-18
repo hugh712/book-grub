@@ -36,10 +36,11 @@ GRUB裡面的環境變數(environment variables)，就像是Unix-like系統一�
 - <a href="#timeout">timeout</a>
 
 
-
+<a id="biosnum"></a>
 ## biosnum	
   	當chain-loading到其他的boot loader時，GRUB可能需要知道與root device相關的BIOS drive number，這樣它才可以去設定registers。這部分的話也可以透過命令『devicemap』來達成。
 
+<a id="chosen"></a>
 ## chosen	
   	這個變數需要搭配『GRUB_SAVEDEFAULT』和『GRUB_DEFAULT』的使用，因為設定成會儲存上一次的選擇，才會用到這個變數。底下兩張圖可以看到我將『GRUB_SAVEDEFAULT』設定為true和『GRUB_DEFAULT』設定為saved，然後第一次開機自己選擇用kernel 4.4.0-31開機後，在下一次開機時，『chosen』和『default』就會把我上一次所選擇的版本給儲存起來了。
   
@@ -47,9 +48,11 @@ GRUB裡面的環境變數(environment variables)，就像是Unix-like系統一�
 
   ![](Imgs/env/env001.PNG)
   
+<a id="color_highlight"></a>
 ## color_highlight	  	
 這個變數主要就是如果你現在terminal螢幕上有highlight的地方的話，它的文字顏色/背景顏色各是什麼。預設的話是『black/white』。其他可挑選的顏色請參考『color_normal』。
 
+<a id="color_normal"></a>
 ## color_normal
 主要在terminal螢幕上的文字/背景顏色，預設為『white/black』，有沒有發現剛好跟『highlight』的預設是相反的。可用的顏色列出如下：
   - black
@@ -71,14 +74,15 @@ GRUB裡面的環境變數(environment variables)，就像是Unix-like系統一�
 
 這邊要特別注意一件事情，如果你有使用『splash images』的話，則第二個顏色如果是black的話，像是『white/**black**』的這個black就會是透明的，不然會擋住背景影像。
 
-
-
+<a id="default"></a>
 ## default	  	
   這個變數如果有被設定的話，代表有預設的menu entry，通常是在某個timeout以後就會進入這個menu entry裡面，這個menu entry有可能是一個數字或是一串文字。這個變數通常都會經過『GRUB_DEFAULT』，『grub-set-default』或是『grub-reboot』來設定。
   
+<a id="fallback"></a>
 ## fallback	  	
 這個變數如果有被設定，代表如果預設的menu entry有問題導致失敗的話，就會選擇這一個。
 
+<a id="gfxmode"></a>
 ## gfxmode	  	
 - 設定『gfxterm』圖形化terminal(boot menu)的解析度，這邊注意你只能使用你的顯卡經由VESA BIOS Extensions(VBE)支援的模式，預設的話是『auto』。
 
@@ -94,23 +98,28 @@ GRUB_GFXMODE=1280x1024x16,800x600x24,640x480
 
 - 在GRUB的console裡面直接輸入『videoinfo』會直接顯示出可用的所有解析度資訊。
 
+<a id="gfxpayload"></a>
 ## gfxpayload	 
 主要藉由取代『boot option "vga="』控制Linux Kernel開始的video mode，可以設定成『text』來讓Linux kernel強迫開機成正常的『text mode』，設定成『keep』則保持在使用『gfxmode』的圖形化介面上，這個變數通常是由『GRUB_GFXPAYLOAD_LINUX』來決定的，所以就不要手動去設定，其他的資訊請直接參考『GRUB_GFXPAYLOAD_LINUX』。
 
+<a id="gfxterm_font"></a>
 ## gfxterm_font	  	
 設定一個字體來讓『gfxterm』圖形化terminal用，如果沒有指定的話，GRUB就會使用任何一個可以取得的字體。
 
+<a id="icondir"></a>
 ## icondir	  	
 這個變數是關於GRUB的圖形化選單icons的設定資料夾。
 
+<a id="lang"></a>
 ## lang	  	
 設定『language code』，主要是由命令『gettext』來轉換字串時會用到這個變數。grub-mkconfig執行時將會根據你的系統的locale值來設定一個合理的變數給GRUB。
 
+<a id="locale_dir"></a>
 ## locale_dir	  	
 設定多國語言檔所在的路徑，通常預設會是『/boot/grub/locale』，如果沒有的話就代表多國語言是被取消的。grub-mkconfig執行時將會根據你的系統的locale值來設定一個合理的變數給GRUB。
 
-
-## menu_color_highlight	  	
+## menu_color_highlight
+<a id="menu_color_normal"></a>	  	
 ## menu_color_normal	  	
 上面兩個是menu entry的hightlight/non-highlight顏色主題，顏色的搭配都是以前景/背景為組合，直接舉個例子，直接修改『/etc/grub.d/05_debian_theme』，將主要的menu entry顏色主題改為：
 
