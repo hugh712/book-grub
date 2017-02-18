@@ -308,6 +308,7 @@ Command: drivemap -l|-r|[-s] from_drive to_drive
 
 如果沒有其他的參數的話，會直接將『from\_drive』對映\(map\)到『to\_drive』，通常這樣子的機制會常用在chain-load到某些沒有在第一個drive作業系統上。
 
+### drivemap接受底下的options:
 -s  
 執行反對映，也就是說反向將『to\_drive』對應到『from\_drive』。
 
