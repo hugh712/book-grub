@@ -95,6 +95,7 @@ Command: submenu title [--class=class …] [--users=users] [--unrestricted] [--h
 - <a href="#unset">unset</a>
 - <a href="#vbeinfo">vbeinfo</a>
 
+<a id="serial"></a>
 ## serial
 
 ```
@@ -119,6 +120,7 @@ word和stop是data bits和stop bits，data bits必須是5~8，stop bits必須是
 --parity,  
 parity的值會是『no』,『odd』,『even』其一，預設的話是『no』。
 
+<a id="terminal_input"></a>
 ## terminal\_input
 
 ```
@@ -134,6 +136,7 @@ Command: terminal_input [--append|--remove] [terminal1] [terminal2] …
 --remove,  
 後面會接一個/多個terminal的名稱，然後這個選項會從啟動清單裡面將這個terminal移除掉。
 
+<a id="terminal_output"></a>
 ## terminal\_output
 
 ```
