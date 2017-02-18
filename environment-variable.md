@@ -76,7 +76,7 @@ GRUB裡面的環境變數(environment variables)，就像是Unix-like系統一�
 
 <a id="default"></a>
 ## default	  	
-  這個變數如果有被設定的話，代表有預設的menu entry，通常是在某個timeout以後就會進入這個menu entry裡面，這個menu entry有可能是一個數字或是一串文字。這個變數通常都會經過『GRUB_DEFAULT』，『grub-set-default』或是『grub-reboot』來設定。
+  這個變數如果有被設定的話，代表有預設的menu entry，通常是在某個timeout以後就會進入這個menu entry裡面，這個menu entry有可能是一個數字或是一串文字。這個變數通常都會經過設定變數『GRUB_DEFAULT』，或是使用命令『grub-set-default』，『grub-reboot』來設定。
   
 <a id="fallback"></a>
 ## fallback	  	
