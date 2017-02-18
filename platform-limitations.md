@@ -135,7 +135,7 @@ BadRAM的部分，因為協定的限制，所以mips-loongson\(Linux 協定\)和
 
 |	|BIOS|	Coreboot|
 | :--- | :--- |:---|
-|BIOS| chainloading|	yes|	no (1)|
+|BIOS chainloading|	yes|	no (1)|
 |NTLDR|	yes|	no (1)|
 |Plan9|	yes|	no (1)|
 |Freedos|	yes|	no (1)|
