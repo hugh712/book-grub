@@ -150,10 +150,10 @@ Command: terminal_output [--append|--remove] [terminal1] [terminal2] …
 
 ### terminal_output接受底下的options:
 --append  
-後面會接一個/多個terminal的名稱，然後這個選項會將這個terminal加到啟動輸出清單裡面。清單裡面每個terminal都會接到GRUB的輸出資訊。
+後面會接一個/多個terminal的名稱，然後這個option會將這個terminal加到啟動輸出清單裡面。清單裡面每個terminal都會接到GRUB的輸出資訊。
 
 --remove  
-後面會接一個/多個terminal的名稱，然後這個選項會從啟動清單裡面將這個terminal移除掉。
+後面會接一個/多個terminal的名稱，然後這個option會從啟動清單裡面將這個terminal移除掉。
 
 <a id="terminfo"></a>
 ## terminfo
@@ -166,7 +166,7 @@ Command: terminfo [-a|-u|-v] [term]
 
 目前可取得的terminal類型是『vt100』，『vt100-color』， 『ieee1275』和 『dumb』，如果你還想要加入其他的類型的支援的話，這方面需要和官方聯繫。
 
-參數-a\(--ascii\)，-u\(--utf8\)，-v（--visual-utf8\)控制non-ASCII的文字怎麼顯示，『-a』代表ASCII-only; 『-u』代表邏輯順序\(logically-ordered\)的UTF-8，『-v』代表的是視覺邏輯的UTF-8。
+option -a\(--ascii\)，-u\(--utf8\)，-v（--visual-utf8\)控制non-ASCII的文字怎麼顯示，『-a』代表ASCII-only; 『-u』代表邏輯順序\(logically-ordered\)的UTF-8，『-v』代表的是視覺邏輯的UTF-8。
 
 <a id="acpi"></a>
 ## acpi
