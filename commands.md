@@ -782,7 +782,7 @@ options 『--num』，『--caps』，『--scroll』和『--insert』會模擬相
 
 如果有設定『--no-led』，則status flag options將不會影響鍵盤的LED。
 如果這個命令持續送了好幾次的話，則只有最後一次的呼叫會有影響。
-因為這個命令是藉由操作BIOS的keyboard buffer來達成相關的目的，所以有可能在某些系統上會造成當機，重啟或是其它不可預知的行為。或者是在GRUB之後的作業系統或是boot loader是用自己的keyboard driver，如果不是BIOS的keyboard functions，在這種案例之下則這個命令將不會有任何的效果，而且還有一個限制就是這個命令只在PC BIOS下才有效果
+因為這個命令是藉由操作BIOS的keyboard buffer來達成相關的目的，所以有可能在某些系統上會造成當機，重啟或是其它不可預知的行為。如果是在GRUB之後的作業系統或是bootloader是用自己的keyboard driver的話，或者是使用BIOS的keyboard functions，在這種案例之下則這個命令將不會有任何的效果，而且還有一個限制就是這個命令只在PC BIOS下才有效果
 
 <a id="set"></a>
 ## set
