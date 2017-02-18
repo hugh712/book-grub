@@ -6,7 +6,7 @@ Bootloader的預設應該是只要使用者可以取得實體的console的話，
 
 GRUB2提供了密碼保護的功能，你可以對全部的entry做保護，也可以針對特定的幾個entry做保護。這樣子的機制可以提供基本的保護機制，可以防止讓不必要的使用者從GRUB2 menu取得權限進入作業系統。
 
-命令『password』和『password_pbkdf2』可以在定義使用者和其密碼(所以代表的是這個帳號跟密碼是跟作業系統沒關係的)。『password』的話設定的密碼是明碼，而且你的『grub.cfg』是需要被保護的; 而『password_pbkdf2』則是使用Password-Based Key Derivation Function (RFC 2898)來加密你的密碼，這部份的使用需要在Linux系統上使用命令『grub-mkpasswd-pbkdf2』來產生。
+命令『password』和『password\_pbkdf2』可以在定義使用者和其密碼(所以代表的是這個帳號跟密碼是跟作業系統沒關係的)。『password』的話設定的密碼是明碼，而且你的『grub.cfg』是需要被保護的; 而『password_pbkdf2』則是使用Password-Based Key Derivation Function (RFC 2898)來加密你的密碼，這部份的使用需要在Linux系統上使用命令『grub-mkpasswd-pbkdf2』來產生。
 
 為了在GRUB上啟用權限機制，第一件事就是要設定環境變數『superusers』，多個使用者名稱的話可以用空白，逗號(,)，分號(;)，pipe(|)或是ampersands(&)來區隔。superuser可以使用GRUB的command line，編輯menu entry和執行任何的menu entry。相對而言，如果你有設定『superuser』的話，則當然command line就會限制一般使用者的使用。
 
