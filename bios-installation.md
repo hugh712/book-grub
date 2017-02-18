@@ -10,7 +10,7 @@
 GRUB的研發團隊通常會建議將GRUB嵌在第一個partition之前，你必須確保第一個partition至少會是在磁碟一開始的31 KiB(63 sectors)之後;但是現在的硬碟因為效能的關係，所以可以將第一個partition給擴充到1 MiB的地方比較好。
 
 # GPT
-現在一些比較新的系統都會使用GUID Partition Table (GPT)格式，這種格式被稱為是部份的Extensible Firmware Interface (EFI)，但是只要你同系統平台支援的話，當然你的BIOS平台也可以使用(GRUB/GNU Linux就可以支援)。如果是使用這種格式的話，系統就會保留整個partition給GRUB，這個partition就會被稱為『BIOS Boot Partition』。所以如果GRUB被嵌在這個partition裡面的話，就不必擔心被其他軟體所覆寫還是被filesystem的功能所影響到了。
+現在一些比較新的系統都會使用GUID Partition Table (GPT)格式，這種格式被稱為是部份的Extensible Firmware Interface (EFI)，但是只要你同系統平台支援的話，當然你的BIOS平台也就可以使用(GRUB/GNU Linux就可以支援)。如果是使用這種格式的話，系統就會保留整個partition給GRUB，這個partition就會被稱為『BIOS Boot Partition』。所以如果GRUB被嵌在這個partition裡面的話，就不必擔心被其他軟體所覆寫還是被filesystem的功能所影響到了。
 
 當你要在GPT系統要建立BIOS Boot Partiton的話，你要確保他的容量至少要31 KiB，但是因為GPT-格式的磁碟通常都不小，所以官方建議你保留的容量要比31 KiB還要大，像是1 MiB左右。
 
