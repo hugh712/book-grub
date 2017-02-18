@@ -12,7 +12,7 @@
 (在底下的所有例子中，『X』就是硬碟代號，『Y』則是partition number，記得要根據你自己的狀況帶入相關的值)。)
 
 
-1.設定『root』
+1.設定『root』。
 ```
 set root=(hdX,Y)
 
@@ -21,7 +21,7 @@ set root=(hd0,msdos1)
 
 ```
 
-2.設定『prefix』
+2.設定『prefix』。
 ```
 set prefix=(hdX,Y)/boot/grub
 
