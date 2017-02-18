@@ -84,7 +84,7 @@ GRUB裡面的環境變數(environment variables)，就像是Unix-like系統一�
 
 <a id="gfxmode"></a>
 ## gfxmode	  	
-- 設定『gfxterm』圖形化terminal(boot menu)的解析度，這邊注意你只能使用你的顯卡經由VESA BIOS Extensions(VBE)支援的模式，預設的話是『auto』。
+- 設定『gfxterm』圖形化terminal(boot menu)的解析度，這邊注意你只能使用你的顯卡上有VESA BIOS Extensions(VBE)支援的模式，預設的話是『auto』。
 
 - 這個解析度選項需要至少一個或以上的模式，中間以逗號『,』或是分號『;』來隔開，然後系統就會從第一個依序的找到能使用的，但是注意每一種都一定要是底下這種格式『auto』,『width x height』或是『width x height x depth』。最後一種格式其實是非必要的，但是你也可以指定你的解析度的『color bit depth』，像是1280x1024x24 或是 640x480x32，如果當你執行『update-grub』時發現有error message像是『not found』的話，可以試著把你的color bit depth調整一下。
 ```
