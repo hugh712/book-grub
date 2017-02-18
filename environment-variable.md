@@ -100,7 +100,7 @@ GRUB_GFXMODE=1280x1024x16,800x600x24,640x480
 
 <a id="gfxpayload"></a>
 ## gfxpayload	 
-主要藉由取代『boot option "vga="』控制Linux Kernel開始的video mode，可以設定成『text』來讓Linux kernel強迫開機成正常的『text mode』，設定成『keep』則保持在使用『gfxmode』的圖形化介面上，這個變數通常是由『GRUB_GFXPAYLOAD_LINUX』來決定的，所以就不要手動去設定，其他的資訊請直接參考『GRUB_GFXPAYLOAD_LINUX』。
+主要藉由取代『boot option "vga="』來控制Linux Kernel開始的video mode，可以設定成『text』來讓Linux kernel強迫開機成正常的『text mode』，設定成『keep』則保持在使用『gfxmode』的圖形化介面上，這個變數通常是由『GRUB_GFXPAYLOAD_LINUX』來決定的，所以就不要手動去設定，其他的資訊請直接參考『GRUB_GFXPAYLOAD_LINUX』。
 
 <a id="gfxterm_font"></a>
 ## gfxterm_font	  	
