@@ -7,5 +7,7 @@
 就是剛剛說的，GRUB images預設安裝的資料夾。
 - Boot directory<br>
 bootloader存放的資料夾，通常是『/boot』。
+
+這一個章節整理一下GRUB相關的安裝資訊。
     
     
