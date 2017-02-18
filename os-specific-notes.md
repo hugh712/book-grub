@@ -1,6 +1,6 @@
 #手動啟動作業系統
 
-這部分官方有提供三種作業系統的說明- 『DOS/Windows』，『GNU/Linux』和『GNU/Hurd』，但是這邊我只會說明『GNU/Linux』的部分，其他有興趣的就請去翻閱官方的手冊吧。
+這部分官方有提供三種作業系統的說明- 『DOS/Windows』，『GNU/Linux』和『GNU/Hurd』，但是這邊我只會說明『GNU/Linux』的部分，其他有興趣的就請去翻閱[官方的手冊](https://www.gnu.org/software/grub/manual/grub.html#OS_002dspecific-notes)吧。
 
 在GRUB裡想要啟動GNU/Linux算是相對的簡單，因為Linux本身就整合成Multiboot兼容的作業系統，這邊你只要記得，想要手動啟動GNU/Linux，至少需要有底下四種資訊:
 - **prefix**
