@@ -16,7 +16,7 @@ GRUB2背景影像可以使用PNG，JPG/JPEG和TGA格式的影像，除了影像�
 3. 如果你不確定你的影像格式，可以使用軟體GIMP來確認。可以使用選單路徑 Image > Mode ，將properties設定成RGB來確保它不會是Indexed的格式。
 
 ## 影像優先權
-如果GRUB2有許多適合的影像的可選擇的話，選擇的優先權底下：
+如果GRUB2有許多適合的影像的可選擇的話，選擇的優先權如底下：
 1. 在『/etc/default/grub』底下的『GRUB_BACKGROUND』設定。
 2. 第一個在『/boot/grub』裡面找到的影像，檔案格式的順序為『jpg, JPG, jpeg, JPEG, png, PNG, tga, TGA』。如果有多張影像為相同格式/副檔名的話，就會用字母排序。
 3. 如果找的到『desktop-base』的話，在『/usr/share/desktop-base/grub_background.sh』裡面指定的桌布。
