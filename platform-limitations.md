@@ -19,7 +19,7 @@ Console charset只會支援firmware相關的console，像是gfxterm都只支援U
 
 ## Serial
 
-如果平台上沒有支援的serial的話，只要firmware支援的話，你依然可以直接將firmware給導到concole上。
+如果平台上沒有支援的serial的話，只要firmware支援的話，你依然可以直接將firmware給導到console上。
 
 ## USB
 
