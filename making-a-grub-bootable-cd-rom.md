@@ -1,3 +1,4 @@
+#建立可啟動的CD-ROM GRUB image
 GRUB也可以直接由CD-ROM或是USB上驅動，這部分需要一份映像檔叫做-『cdboot.img』，然後還有另一個映像檔-『core.img』。core.img的使用至少應該有『iso9660』和『biosdisk』模組，而你的CD-ROM通常也需要包含組態檔-『grub.cfg』和其他的模組，總之就像如下公式:
 
 `GRUB CD-ROM = cdboot.img + core.img + [grub.cfg] + [modules]`
