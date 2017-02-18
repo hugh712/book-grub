@@ -7,7 +7,9 @@
 
 這個指令會將device.map給安裝到/boot/grub/裡面，所以如果在開機時這個檔案存在的話，GRUB的相關程式就會將它從BIOS讀取到OS device，這個檔案的組成如下:
 
+```
 \(device\) file
+```
 
 看一下剛剛我產生的device.map，內容是指到另一個路徑的檔案，而且是一個連結檔，又指到『/dev/sda』這個裝置。
 
