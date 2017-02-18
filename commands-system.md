@@ -92,31 +92,31 @@ grub-fstest [OPTION...] IMAGE_PATH COMMANDS
 
 ### grub-fstest接受底下的options:
 
-- -c, --diskcount=NUM
+- -c, --diskcount=NUM<br>
 指定輸入檔案的數量。
 
-- -C, --crypto
+- -C, --crypto<br>
 掛載上crypto 裝置。
 
-- -d, --debug=STRING
+- -d, --debug=STRING<br>
 設定debug的環境變數。
 
-- -K, --zfs-key=FILE|prompt
+- -K, --zfs-key=FILE|prompt<br>
 讀取zfs crypto key。
 
-- -n, --length=NUM
+- -n, --length=NUM<br>
 從輸出檔案取得N個bytes。
 
-- -r, --root=DEVICE_NAME
+- -r, --root=DEVICE_NAME<br>
 設定root device。
 
-- -s, --skip=NUM
+- -s, --skip=NUM<br>
 從輸出檔案省略N個 bytes。
 
-- -u, --uncompress
+- -u, --uncompress<br>
 解壓縮資料。
 
-- -v, --verbose
+- -v, --verbose<br>
 印出更多的訊息。
 
 ## grub-install
