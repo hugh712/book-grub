@@ -4,7 +4,8 @@ GRUB2的設計優點為其攜帶性和移植性，所以確實是已經移植到
 
 ## ARC
 
-ARC系統沒辦法改變時間\(Firmware似乎沒有提供相關功能\)，用EMU的話也有相似的限制; 而且ARC也不支援serial port;用EMU的話也有相似的限制。
+- ARC系統沒辦法改變時間\(Firmware似乎沒有提供相關功能\)，用EMU的話也有相似的限制; 
+- 而且ARC也不支援serial port;用EMU的話也有相似的限制。
 
 ## Console
 
