@@ -474,7 +474,7 @@ GRUB的裝置名稱.
 GRUB partition map module.
 
  - ‘abstraction’<br>
-GRUB的抽象模組(abstraction module) (e.g. ‘lvm’).
+GRUB的抽象模組(abstraction module) (e.g. ‘lvm’)。
 
  - ‘cryptodisk_uuid’<br>
 加密過的裝置UUID。
