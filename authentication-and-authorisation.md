@@ -8,7 +8,7 @@ GRUB2提供了密碼保護的功能，你可以對全部的entry做保護，也�
 
 命令『password』和『password\_pbkdf2』可以定義使用者和其密碼(所以代表的是這個帳號跟密碼是跟作業系統沒關係的)。『password』的話設定的密碼是明碼，而且在這個條件之下你的『grub.cfg』是需要被保護的; 而『password_pbkdf2』則是使用Password-Based Key Derivation Function (RFC 2898)來加密你的密碼，這部份的使用需要在Linux系統上使用命令『grub-mkpasswd-pbkdf2』來產生(底下會介紹)。
 
-為了在GRUB上啟用權限機制，第一件事就是要設定環境變數『superusers』，多個使用者名稱的話可以用空白，逗號(,)，分號(;)，pipe(|)或是ampersands(&)來區隔。superuser可以使用GRUB的command line，編輯menu entry和執行任何的menu entry。相對而言，如果你有設定『superuser』的話，則當然command line就會限制一般使用者的使用。
+為了在GRUB上啟用權限機制，第一件事就是要設定環境變數『superusers』，多個使用者名稱的話可以用空白，逗號(,)，分號(;)，pipe(|)或是ampersands(&)來區隔。superuser可以使用GRUB的command line，編輯和執行任何的menu entry。相對而言，如果你有設定『superuser』的話，則當然command line就會限制一般使用者的使用。
 
 在有設定權限的條件下，一般使用者可以使用特定的menu entry，條件是這些特殊的menu entry上有標注option 『--users』，所以相對而言，如果沒有設定這個option『--user』的話，就只有superuser才能使用這個menu entry。
 
