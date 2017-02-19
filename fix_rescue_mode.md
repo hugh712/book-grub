@@ -41,7 +41,7 @@ linux /vmlinuz root=/dev/sdXY ro
 ```
 initrd /initrd.img
 ```
-8.以剛才的設定啟動。   
+8.以剛才的設定啟動系統。   
 ```
 boot
 ```
