@@ -2,10 +2,12 @@
 我想大部分的人會想要來動到GRUB，通常應該都是因為無法開機了，或者是MBR/GPT的磁區損壞了，這章節會把Ubuntu 社群的相關救援主題整理一下。
 
 這章的系統救援的重點主要分為:
-- 使用Boot-Repair
-- 使用GRUB2 Rescue mode
-- 使用LiveCD terminal
-- 使用ChRoot
+- <a href="#Boot-Repair">Boot-Repair</a>
+- <a href="#Rescue">Rescue</a>
+- <a href="#LiveCD">LiveCD</a>
+- <a href="#ChRoot">ChRoot</a>
+
+<a id="Boot-Repair"></a>
 # via Boot-Repair Graphical Tool
 Boot-Repair是一套可以修復多種GRUB2問題的GUI軟體。這個軟體可以被使用在LiveCD裡, 或將這個軟體自己燒錄成CD-ROM或者是在一般的Ubuntu session上都可以用。
 
@@ -44,9 +46,11 @@ sudo apt-get install -y boot-repair && boot-repair
 3.	修復完之後，如果有出現一個URL像是『paste.ubuntu.com/XXXXX』，記得先將其記起來，然後重開機，看是否已經解決問題了。
 4.	如果還是不能開機，就將上面的URL給論壇或是mail-list上的人，他們也許會幫助你。
 
+<a id="Rescue"></a>
 # via GRUB2 Rescue mode
 GRUB2裡面提供了救援模式，在這個模式底下允許使用者在開機時使用特別的GRUB terminal來修復GRUB2，這部份的建立和使用請參考章節『[Making a GRUB bootable CD-ROM](https://hugh712.gitbooks.io/grub/content/making-a-grub-bootable-cd-rom.html)』。
 
+<a id="LiveCD"></a>
 # via the LiveCD terminal
 這個方式主要是利用LiveCD的terminal來修復，所以使用者必須知道他的安裝系統的裝置名稱和partition，然後在從LiveCD上面去掛載。之後GRUB的檔案會在從LiveCD上給複製到適當的位置或是MBR上面去。
 
@@ -81,7 +85,7 @@ sudo grub-install --boot-directory=/mnt/@/boot /dev/sdX
 # Example: 
 sudo grub-install --boot-directory=/mnt/@/boot /dev/sda
 ```
-
+<a id="ChRoot"></a>
 # via ChRoot
 這個方式主要是透過命令『chroot』來存取損壞系統的檔案，如果『chroot』執行成功了，則系統/LiveCD就會把損壞系統的『/』當成自己的，然後在『chroot』改動到的環境都是損壞系統的，而不是LiveCD的。
 
