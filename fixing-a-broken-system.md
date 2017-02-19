@@ -2,10 +2,10 @@
 我想大部分的人會想要來動到GRUB，通常應該都是因為無法開機了，或者是MBR/GPT的磁區損壞了，這章節會把Ubuntu 社群的相關救援主題整理一下。
 
 這章的系統救援的重點主要分為:
-- <a href="#Boot-Repair">Boot-Repair</a>
-- <a href="#Rescue">Rescue</a>
-- <a href="#LiveCD">LiveCD</a>
-- <a href="#ChRoot">ChRoot</a>
+- <a href="#Boot-Repair">使用Boot-Repair</a>
+- <a href="#Rescue">使用Boot-Repair</a>
+- <a href="#LiveCD">使用Boot-Repair</a>
+- <a href="#ChRoot">使用Boot-Repairt</a>
 
 <a id="Boot-Repair"></a>
 # via Boot-Repair Graphical Tool
