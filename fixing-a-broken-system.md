@@ -53,7 +53,10 @@ GRUB2裡面提供了救援模式，在這個模式底下允許使用者在開機
 
 使用底下兩個指令來掛載相關的裝置，然後在將新的GRUB給安裝到相關裝置上：
 ```
-sudo mount /dev/sdXY /mnt # Example: sudo mount /dev/sda5 /mnt
+sudo mount /dev/sdXY /mnt 
+
+# Example: sudo mount /dev/sda5 /mnt
+
 sudo grub-install --boot-directory=/mnt/boot /dev/sdX 
 
 # Example: 
