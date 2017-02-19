@@ -49,7 +49,7 @@ GRUB2裡面提供了救援模式，在這個模式底下允許使用者在開機
 
 當你選擇要用LiveCD時，建議最好使用跟你Ubuntu版本一樣的LiveCD，因為GRUB在每個Ubuntu 發佈時的版本都會不一樣。
  
-如果你不確定你的Ubuntu是安裝到哪個partition的話，可以使用指令『fdisk』來看，或者是使用指令『blkid』來看也可以，『blkid』的強項就是看有『label』的partition，就看你的需求是什麼摟。
+如果你不確定你的Ubuntu是安裝到哪個partition的話，可以使用指令『fdisk』來看，或者是使用指令『blkid』來看也可以，兩個工具的差異主要就是『blkid』的強項就是看有『label』的partition，就看你的需求是什麼摟。
 
 然後使用底下兩個指令來掛載相關的裝置，然後在將新的GRUB給安裝到使裝置上：
 ```
