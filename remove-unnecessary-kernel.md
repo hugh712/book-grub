@@ -6,7 +6,7 @@
 
 ![](Imgs/Config/remove_kernel001.png)
 
-2. 列出所有相關『kernel』的dpkg 清單：
+2.列出所有相關『kernel』的dpkg 清單：
 使用底下這個指令來看一下相關的kernel
 ```
 dpkg -l | grep "linux"
@@ -22,23 +22,23 @@ dpkg -l | grep "linux-headers"
 dpkg -l | grep "linux-image-extra"
 ```
 
-2.刪除『image』
+3.刪除『image』
 ```
 sudo apt-get purge linux-image-4.4.0-53-generic
 sudo apt-get purge linux-image-4.4.0-57-generic
 ```
 
-3.刪除『headers』
+4.刪除『headers』
 ```
 sudo apt-get purge linux-headers-4.4.0-53
 sudo apt-get purge linux-headers-4.4.0-57
 ```
 
-4.刪除『image-extra』
+5.刪除『image-extra』
 像剛才說的，如果要瘦身的話，可以刪除舊的『image-extra』，剛好我的電腦裡面有個古董 - 『linux-image-extra-4.4.0-21-generic』
 ```
 sudo apt-get purge linux-image-extra-4.4.0-21-generic
 ```
 
-5.接下來重開機後，你就可以看到整個清單被瘦身了。<br>
+6.接下來重開機後，你就可以看到整個清單被瘦身了。<br>
 ![](Imgs/Config/remove_kernel002.png)
