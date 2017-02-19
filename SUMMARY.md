@@ -40,8 +40,6 @@
   * [fix\_rescue\_mode](fix_rescue_mode.md)
   * [Fixing reboot/shutdown freezes](fixing-rebootshutdown-freezes.md)
   * [Fixing a Broken System](fixing-a-broken-system.md)
-  * [Boot repair after a Windows Upgrade](boot-repair-after-a-windows-upgrade.md)
-  * Moving GRUB 2
   * [Splash Images](splash-images.md)
   * [Purging & Reinstalling GRUB 2](purging-and-reinstalling-grub-2.md)
 * [Ref](ref.md)
