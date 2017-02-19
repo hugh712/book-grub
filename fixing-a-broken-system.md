@@ -149,6 +149,7 @@ grub-install /dev/sdX
 update-grub
 ```
 14.按『CTRL-D』離開chroot。
+
 15.重新開機
 ```
 sudo reboot
