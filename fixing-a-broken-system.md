@@ -4,7 +4,7 @@
 # via Boot-Repair Graphical Tool
 Boot-Repair是一套可以修復多種GRUB2問題的GUI軟體。這個軟體可以被使用在LiveCD裡, 或將這個軟體自己燒錄成CD-ROM或者是在一般的Ubuntu session上都可以用。
 
-當你在Ubuntu上面遇到開機的問題，或是當你安裝完其它的Linux dirtros/Windows之類的造成無法開機，安裝完Ubuntu以後Windows無法開機等等，Boot-Repair是最簡單的一套工具可以協助你處理這些疑難雜症。
+當你在Ubuntu上面遇到開機的問題，或是安裝完其它的Linux dirtros/Windows之類的造成無法開機，安裝完Ubuntu以後Windows無法開機等等，Boot-Repair是最簡單的一套工具可以協助你處理這些疑難雜症。
 
 ![](Imgs/Fix/Fix001.PNG)
 
