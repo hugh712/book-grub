@@ -4,13 +4,13 @@
 
 ![](Imgs/Fix/Fix003.PNG)
 
-# 如果有『grub.cfg』
+## 如果有『grub.cfg』
 使用『search』和『set』來確認你的路徑和環境變數，然後檢查你的『/boot/grub』裡面是否有『grub.cfg』，又或者名字錯誤，如果名字錯誤的話，或者是你有其他的『.cfg』檔案的話，請使用底下的命令讀取其組態，當然你要自己置換路徑跟檔名，不要直接複製貼上了：
 configfile /boot/grub/grub.cfg 或者是 configfile (hdX,Y)/boot/grub/grub.cfg
 
 正常來說，如果以上的命令執行成功了，你的電腦應該就會出現menu entry讓你選擇，開機後，記得去修改相對應的檔案，然後執行『update-grub』更新組態。
 
-# 手動開機
+## 手動開機
 上面的例子是有『grub.cfg』的話，你還可以利用這個組態，那如果你的狀態是沒有這個組態的話，就要自己手動設定開機了，像之前說過得，GRUB只要知道你的『prefix』，『root』，『kernel』和『initrd』的話，它就有辦法開機，步驟如下：
 
 (一樣，在強調一下。在底下的所有例子中，『X』就是硬碟代號，『Y』則是partition number，記得要根據你自己的狀況帶入相關的值)。
