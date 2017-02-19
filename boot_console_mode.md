@@ -1,3 +1,5 @@
+#修復console fail
+
 像之前有講過的，如果你的GRUB開機失敗直接進入concole mode的話代表已經讀取各個module，也應該已經找到相關的啟動資訊，但是無法找到組態檔。
 
 ![](Imgs/Fix/Fix003.PNG)
