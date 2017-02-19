@@ -118,7 +118,7 @@ sudo mount /dev/sdXY /mnt
 #Example 1: sudo mount /dev/sda1 /mnt
 #Example 2: sudo mount /dev/md1 /mnt
 ```
-8.如果你有個別分開的『boot』partition，就必須要將這個partition給掛載起來，XY就如同上面說過得：
+8.如果你有個別分開的『boot』partition，就必須要將這個partition給掛載起來：
 ```
 sudo mount /dev/sdXY /mnt/boot
 
