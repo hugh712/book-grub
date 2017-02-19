@@ -3,9 +3,9 @@
 
 這章的系統救援的重點主要分為:
 - <a href="#Boot-Repair">使用Boot-Repair</a>
-- <a href="#Rescue">使用Boot-Repair</a>
-- <a href="#LiveCD">使用Boot-Repair</a>
-- <a href="#ChRoot">使用Boot-Repairt</a>
+- <a href="#Rescue">使用GRUB2 Rescue mode</a>
+- <a href="#LiveCD">使用LiveCD terminal</a>
+- <a href="#ChRoot">使用ChRoot</a>
 
 <a id="Boot-Repair"></a>
 # via Boot-Repair Graphical Tool
