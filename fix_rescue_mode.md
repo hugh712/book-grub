@@ -26,7 +26,7 @@ insmod (hdX,Y)/usr/lib/grub/i386-pc/normal.mod
 ```
 normal
 ```
-5.導入『linux』module。
+5.導入『linux』module。   
 需要導入『linux』module，待回才能載入Linux Kernel。
 ```
 Insmod linux
