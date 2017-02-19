@@ -10,10 +10,10 @@ Boot-Repair是一套可以修復多種GRUB2問題的GUI軟體。這個軟體可�
 
 
 這套軟體除了可以使用GUI以外，它也有一些進階的功能，像是：
-1.可以備份『table partition』。
-2.備份『boot sectors』。
-3.可以建立Boot-info，Boot-info主要是使用script來收集各種系統的資訊，這些資訊會讓你的問題在社群或是IRC上比較好被辨識。
-4.	還可以修改預設的repair參數，像是設定GRUB組態，增加kernel options，刪除GRUB，改動預設的OS，回復Windows相容的 MBR，修復損壞的檔案系統，特別指定GRUB要安裝到哪裡等等的資訊。
+1.可以備份『table partition』。<br>
+2.備份『boot sectors』。<br>
+3.可以建立Boot-info，Boot-info主要是使用script來收集各種系統的資訊，這些資訊會讓你的問題在社群或是IRC上比較好被辨識。<br>
+4.還可以修改預設的repair參數，像是設定GRUB組態，增加kernel options，刪除GRUB，改動預設的OS，回復Windows相容的 MBR，修復損壞的檔案系統，特別指定GRUB要安裝到哪裡等等的資訊。<br>
 
 ![](Imgs/Fix/Fix002.PNG)
 
