@@ -35,7 +35,7 @@ set prefix=(hdX,Y)/boot/grub
 ```
 linux /vmlinuz root=/dev/sdXY ro
 ```
-4.設定『initrd』。
+4.設定『initrd』。<br>
 選擇最新的initrd image，跟kernel一樣，可能會在『root』底下會有捷徑，沒有的話也應該要在『/boot底下找到』。
 ```
 initrd /initrd.img
