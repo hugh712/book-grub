@@ -6,7 +6,9 @@
 
 ## 如果有『grub.cfg』
 使用『search』和『set』來確認你的路徑和環境變數，然後檢查你的『/boot/grub』裡面是否有『grub.cfg』，又或者名字錯誤，如果名字錯誤的話，或者是你有其他的『.cfg』檔案的話，請使用底下的命令讀取其組態，當然你要自己置換路徑跟檔名，不要直接複製貼上了：
+```
 configfile /boot/grub/grub.cfg 或者是 configfile (hdX,Y)/boot/grub/grub.cfg
+```
 
 正常來說，如果以上的命令執行成功了，你的電腦應該就會出現menu entry讓你選擇，開機後，記得去修改相對應的檔案，然後執行『update-grub』更新組態。
 
