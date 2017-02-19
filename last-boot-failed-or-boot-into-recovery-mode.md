@@ -1,6 +1,8 @@
 # 上次啟動失敗或是進入救援模式
 
 <span>(Ubuntu Only)</span>
+
+
 雖然Ubuntu的官方文件有說明這個部份，但是我實際上看GRUB的官方文件，還有GRUB2的source code和git history卻找不到，找了一下網路資料，『[This GRUB does not start (in Ubuntu)](https://thelastmaimou.wordpress.com/2013/11/11/this-grub-does-not-start-in-ubuntu/)』也跟我有一樣的疑慮，他的猜測是Ubuntu自己修改並加進這個參數的。
 
 
