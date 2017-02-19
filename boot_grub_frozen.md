@@ -3,7 +3,7 @@
 
 ![](Imgs/Fix/Fix004.PNG)
 
-在這個況況底下，因為連GRUB2都不能用了，所以一定要用到其他的作業系統還是LiveCD，然後使用『chroot』到損壞的partition裡面去重新安裝GRUB2。這部份更進接的訊息請參考『[Fixing a Broken System](https://hugh712.gitbooks.io/grub/content/fixing-a-broken-system.html)』
+在這個況況底下，因為連GRUB2都不能用了，所以一定要用到其他的作業系統還是LiveCD，然後使用『chroot』到損壞的partition裡面去重新安裝GRUB2。這部份更進接的訊息請參考『[Fixing a Broken System](https://hugh712.gitbooks.io/grub/content/fixing-a-broken-system.html)』。
 	
 
 
