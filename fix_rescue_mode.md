@@ -14,7 +14,7 @@ set root=(hdX,Y)
 set prefix=(hdX,Y)/boot/grub
 ```
 3.導入『normal』 module。   
-呆回需要這個指令，所以要先導入相關模組。
+待回需要這個指令，所以要先導入相關模組。
 ```
 Insmod normal
 ```
