@@ -72,7 +72,9 @@ sudo grub-install --boot-directory=/mnt/boot /dev/sda
 
 如果你的Ubuntu是安裝在B-tree的file system上，像是btrfs之類的，則請將『/boot』改成『/@/boot』如下：
 ```
-sudo grub-install --boot-directory=/mnt/@/boot /dev/sdX # Example: sudo grub-install --boot-directory=/mnt/@/boot /dev/sda
+sudo grub-install --boot-directory=/mnt/@/boot /dev/sdX 
+# Example: 
+sudo grub-install --boot-directory=/mnt/@/boot /dev/sda
 ```
 
 # via ChRoot
@@ -115,8 +117,12 @@ sudo mount /dev/sdXY /mnt
 8.如果你有個別分開的『boot』partition，XY就如同上面說過得：
 ```
 sudo mount /dev/sdXY /mnt/boot
-#Example 1: sudo mount /dev/sdb6 /mnt/boot
-#Example 2: sudo mount /dev/md0 /mnt/boot
+
+#Example 1: 
+sudo mount /dev/sdb6 /mnt/boot
+
+#Example 2: 
+sudo mount /dev/md0 /mnt/boot
 ```
 9.配合剛剛第3步，如果你的系統partition是software RAID的話，確定底下這一行指令的輸出是在檔案『/etc/mdadm/mdadm.conf』的array定義。
 ```
