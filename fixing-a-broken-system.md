@@ -82,6 +82,8 @@ sudo grub-install --boot-directory=/mnt/@/boot /dev/sda
 
 使用『chroot』的方式可以使用其他Ubuntu系統或是使用LiveCD將損壞系統的硬碟掛載起來，底下的流程則是用LiveCD的案例來講：
 
+(底下所有的例子，『X』是你的磁碟代號，『Y』是partition number。記得要修改成正確的partition)
+
 1.啟動到LiveCD的桌面，LiveCD的位元和損壞的系統位元要一致，32bits 就是對應32bits，64bits則對應64bits。<br>
 2.開啟terminal。<br>
 3.如果你的系統partitoin是在software RAID上的話，先確定tool -『mdadm』已經安裝在LiveCD的環境上：
@@ -109,7 +111,7 @@ sudo fdisk -l
 sudo blkid
 df -Th
 ```
-7.掛載你的系統partition，一樣，『X』是你的磁碟代號，『Y』是partition number。記得要修改成正確的partition。
+7.掛載你的系統partition。
 ```
 sudo mount /dev/sdXY /mnt
 #eg.
