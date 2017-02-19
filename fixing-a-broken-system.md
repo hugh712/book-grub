@@ -40,7 +40,7 @@ sudo apt-get install -y boot-repair && boot-repair
 4.	如果還是不能開機，就將上面的URL給論壇或是mail-list上的人，他們也許會幫助你。
 
 # via GRUB2 Rescue mode
-GRUB2裡面提供了救援模式，在這個模式底下允許使用者在開機時使用特別的GRUB terminal來修復GRUB2，這部份的建立和使用請參考章節『Making a GRUB bootable CD-ROM』。
+GRUB2裡面提供了救援模式，在這個模式底下允許使用者在開機時使用特別的GRUB terminal來修復GRUB2，這部份的建立和使用請參考章節『[Making a GRUB bootable CD-ROM](https://hugh712.gitbooks.io/grub/content/making-a-grub-bootable-cd-rom.html)』。
 
 # via the LiveCD terminal
 這個方式主要是利用LiveCD的terminal來修復，所以使用者必須知道他的安裝系統的裝置名稱和partition，然後在從LiveCD上面去掛載。然後GRUB的檔案會在從LiveCD上給複製到適當的位置或是MBR上面去。
