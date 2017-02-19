@@ -56,7 +56,8 @@ GRUB2裡面提供了救援模式，在這個模式底下允許使用者在開機
 sudo mount /dev/sdXY /mnt # Example: sudo mount /dev/sda5 /mnt
 sudo grub-install --boot-directory=/mnt/boot /dev/sdX 
 
-# Example: sudo grub-install --boot-directory=/mnt/boot /dev/sda
+# Example: 
+sudo grub-install --boot-directory=/mnt/boot /dev/sda
 ```
 
 在上面的兩個指令中，須注意底下的細節：
