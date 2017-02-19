@@ -31,7 +31,7 @@ apt-get install grub-pc
 接下來會有提示讓你選你要安裝到那的裝置如下：
 ![](Imgs/trouble/trouble003.PNG)
 
-6.安裝完畢，如果你是用『chroot』環境的話，可以使用『CTRL-D』離開環境。
+6.安裝完畢，如果你是用『chroot』環境的話，可以使用『CTRL-D』離開環境。<br>
 7.重新開機。
 ```
 reboot
