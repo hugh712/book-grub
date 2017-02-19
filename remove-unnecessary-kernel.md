@@ -42,5 +42,6 @@ sudo apt-get purge linux-headers-4.4.0-57
 sudo apt-get purge linux-image-extra-4.4.0-21-generic
 ```
 
-6.接下來重開機後，你就可以看到整個清單被瘦身了。<br>
+6.接下來重開機後，你就可以看到整個清單被瘦身了。這個部份不需要去更新『update-grub』是因為之前有講過kernel的新增/刪減都會自動的去呼叫『update-grub』。
+
 ![](Imgs/Config/remove_kernel002.png)
