@@ -21,7 +21,7 @@ configfile (hdX,Y)/boot/grub/grub.cfg
 
 (一樣，在強調一下。在底下的所有例子中，『X』就是硬碟代號，『Y』則是partition number，記得要根據你自己的狀況帶入相關的值)。
 
-1.設定『root』。
+1.設定『root』。<br>
 這個變數必須指到Ubuntu安裝的硬碟和partition上。
 ```
 set root=(hdX,Y)
@@ -30,7 +30,7 @@ set root=(hdX,Y)
 ```
 set prefix=(hdX,Y)/boot/grub
 ```
-3.設定『kernel』。
+3.設定『kernel』。<br>
 可以使用『root』底下的kernel捷徑，如果沒有捷徑的話請使用全路徑，通常是在『/boot』底下
 ```
 linux /vmlinuz root=/dev/sdXY ro
