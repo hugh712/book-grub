@@ -1,6 +1,6 @@
 #用救援模式修復
 
-進入救援模式，出現這個代表GRUB2無法找到資料夾『grub』，或者是無法讀取『normal』modules，在這個模式底下，可以使用的modules和命令有限制，所以如果要用的話，就必須要設定好相對的『prefix』和『root』環境變數，然後在透過『insmod』來導入相關的modules。可藉由指令『normal』來回到標準的『console mode』。處理的流程如下：
+進入救援模式，出現這個代表GRUB2無法找到資料夾『grub』，或者是無法讀取『normal』modules，在這個模式底下，可以使用的modules和命令有限制，所以如果要用的話，就必須要設定好相對的『prefix』和『root』環境變數，然後在透過『insmod』來導入相關的modules。如果有需要的話，也可以藉由指令『normal』來回到標準的『console mode』。處理的流程如下：
 
 (一樣，在強調一下。在底下的所有例子中，『X』就是硬碟代號，『Y』則是partition number，記得要根據你自己的狀況帶入相關的值)。
 
