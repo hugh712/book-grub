@@ -47,7 +47,8 @@ boot
 ```
 
 成功啟動後，記得去修改相對應的檔案，然後執行『update-grub』更新組態。
-如果有需要的話也可以執行『grub-install』或是『boot-repair』來重新安裝GRUB。
+如果有需要的話也可以執行『grub-install』或是『boot-repair』來重新安裝GRUB。這部份更進接的訊息請參考『[Fixing a Broken System](https://hugh712.gitbooks.io/grub/content/fixing-a-broken-system.html)』。
+
 
 
 
