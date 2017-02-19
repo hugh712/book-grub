@@ -1,6 +1,11 @@
 # GRUB2系統救援
 我想大部分的人會想要來動到GRUB，通常應該都是因為無法開機了，或者是MBR/GPT的磁區損壞了，這章節會把Ubuntu 社群的相關救援主題整理一下。
 
+這章的系統救援的重點主要分為:
+- 使用Boot-Repair
+- 使用GRUB2 Rescue mode
+- 使用LiveCD terminal
+- 使用ChRoot
 # via Boot-Repair Graphical Tool
 Boot-Repair是一套可以修復多種GRUB2問題的GUI軟體。這個軟體可以被使用在LiveCD裡, 或將這個軟體自己燒錄成CD-ROM或者是在一般的Ubuntu session上都可以用。
 
