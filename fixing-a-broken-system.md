@@ -63,11 +63,11 @@ sudo grub-install --boot-directory=/mnt/boot /dev/sda
 ```
 
 在上面的兩個指令中，須注意底下的細節：
-1.在命令『mount』的後面的參數，請用安裝Ubuntu的partition number。
-2.在使用命令『grub-install』後面的參數請勿使用partition number。
-3.『X』代表的是磁碟代號，而『Y』代表的是partition number。
-4.『--boot-directory』代表的是GRUB所在的路徑，通常是『/boot』，但是如果你的GRUB不是在這個路徑的話請自行指定。
-5.如果你的GRUB是在不同的『/boot』partition，則這個partition就應該被掛載到『/mnt/boot』上。
+1.在命令『mount』的後面的參數，請用安裝Ubuntu的partition number。<br>
+2.在使用命令『grub-install』後面的參數請勿使用partition number。<br>
+3.『X』代表的是磁碟代號，而『Y』代表的是partition number。<br>
+4.『--boot-directory』代表的是GRUB所在的路徑，通常是『/boot』，但是如果你的GRUB不是在這個路徑的話請自行指定。<br>
+5.如果你的GRUB是在不同的『/boot』partition，則這個partition就應該被掛載到『/mnt/boot』上。<br>
 
 
 如果你的Ubuntu是安裝在B-tree的file system上，像是btrfs之類的，則請將『/boot』改成『/@/boot』如下：
