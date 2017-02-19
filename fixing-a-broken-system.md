@@ -80,7 +80,7 @@ sudo grub-install --boot-directory=/mnt/@/boot /dev/sda
 # via ChRoot
 這個方式主要是透過命令『chroot』來存取損壞系統的檔案，如果『chroot』執行成功了，則系統/LiveCD就會把損壞系統的『/』當成自己的，然後在『chroot』改動到的環境都是損壞系統的，而不是LiveCD的。
 
-使用『chroot』的方式可以使用其他Ubuntu系統上將損壞系統的硬碟掛載起來或是使用LiveCD，底下的流程則是用LiveCD的案例來講：
+使用『chroot』的方式可以使用其他Ubuntu系統將損壞系統的硬碟掛載起來或是使用LiveCD，底下的流程則是用LiveCD的案例來講：
 
 1.啟動到LiveCD的桌面，LiveCD的位元和損壞的系統位元要一致，32bits 就是對應32bits，64bits則對應64bits。<br>
 2.開啟terminal。<br>
