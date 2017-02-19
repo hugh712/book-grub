@@ -96,7 +96,7 @@ sudo mdadm --assemble --scan
 ```
 sudo sh -ec "apt-get install lvm2; vgchange -ay"
 ```
-5.如果使用bcache:
+5.如果使用bcache：
 ```
 sudo sh -ec "apt-get install software-properties-common; 
 add-apt-repository ppa:g2p/storage; 
