@@ -1,5 +1,5 @@
 # GRUB Frozen
-如果只有螢幕左上角有個『GRUB』，但是沒有任何反應的話，代表GRUB2連MBR或是開機磁區的基本資訊都找不到。因此，『core.img』，『/boot/gurb』的位置GRUB2完全都抓不到。
+如果只有螢幕左上角有個『GRUB』，但是沒有任何反應的話，代表GRUB2連MBR或是開機磁區的基本資訊都找不到。因此，『core.img』和『/boot/gurb』的位置GRUB2完全都抓不到。
 
 ![](Imgs/Fix/Fix004.PNG)
 
