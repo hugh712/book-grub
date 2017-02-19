@@ -12,7 +12,7 @@
 ## via Terminal Commands
 接下來這步驟，不管是在正在運作的Ubuntu或是使用LiveCD來『chroot』都是差不多的，步驟如下：
 
-1.如果你是使用LiveCD的話，請按照『Fixing a Broken System』章節的『chroot』，將你的環境給切到『chroot』底下。
+1.如果你是使用LiveCD的話，請按照『[Fixing a Broken System](https://hugh712.gitbooks.io/grub/content/fixing-a-broken-system.html#ChRoot)』章節來將你的環境給切到『chroot』底下。
 2.假設你已經在『chroot』的環境裡面了，請確保你有網路存取，否則就可以停止了，並且底下的指令都要以『root』來執行。
 3.更新apt的資料庫。
 ```
