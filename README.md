@@ -4,7 +4,6 @@
 
 雖然Ubuntu已經有中文的[Grub2網站](https://wiki.ubuntu-tw.org/index.php?title=Grub2)，但是沒有什麼比自己找資料，實做學的更多了，所以我還是想要寫一篇Grub2的文章，內容主要是參考英文的『[Ubuntu Wiki](https://help.ubuntu.com/community/Grub2)』和『[GNU官方手冊](https://www.gnu.org/software/grub/manual/html_node/)』的內容，就是兩個官方/社群的文件都被我翻譯並整理過了。
 
-<font color="red">本文還在架構中，預計2017-03月前release。</font>
 
 Copyright \(C\)  2017 Hugh Chao.  
   Permission is granted to copy, distribute and/or modify this document under the terms of the GNU Free Documentation License, Version 1.2 or any later version published by the Free Software Foundation;  
@@ -15,18 +14,20 @@ Copyright \(C\)  2017 Hugh Chao.
 * 因為這篇文章整合了兩個官方文件，我會盡量將Ubuntu相依的用藍色字體區分出來，通常有提到Ubuntu的部份都會在GRUB 版本1.99以後。
 * 裡面有許多的名詞『GRUB2』和『GRUB』會混用，理論上就是如果是舊版的GRUB，我會特別強調，像是用版本，或是用『舊版GRUB』，或是『GRUB Legacy』，不然的話GRUB就等於是GRUB2。
 
-to do
-
-* 統一名詞
-  * options
-  * parameter 
-  * 映像檔 - images
-  * filesystem - 檔案系統
 
 # Revised History
 |日期|內容|
 |:--|:--|
 |2017-02-16|草稿完成|
 |2017-02-19|完成第一次校稿|
+
+
+
+to do
+* 統一名詞
+  * options
+  * parameter 
+  * 映像檔 - images
+  * filesystem - 檔案系統
 
 
