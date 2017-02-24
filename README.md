@@ -29,5 +29,8 @@ to do
   * parameter 
   * 映像檔 - images
   * filesystem - 檔案系統
+* 預計加入modules 介紹
+* 預計加入更多的MBR和GPT格式
+* 預計加入雙系統安裝說明
 
 
