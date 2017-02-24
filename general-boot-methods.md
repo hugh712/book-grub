@@ -23,6 +23,21 @@ menuentry "Windows" {
 }
 ```
 
+又或者是你想要在加一個menu可以回到『MBR』去的話可以像底下一樣：
 
+```
+menuentry 'Windows' --id 'win' {
+        insmod chain
+        insmod ntfs
+        set root=(hd0,1)
+        chainloader +1
+}
+menuentry 'MBR' --id 'mbr' {
+        insmod chain
+        set root=(hd0)
+        chainloader +1
+}
+
+```
 
 
